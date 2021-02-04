@@ -1,0 +1,102 @@
+body {
+  font-family: $font-en;
+  color: $color-default;
+  direction: $direction;
+  text-align: $start-direction;
+}
+html[dir="rtl"] body {
+  font-family: $font-ar;
+}
+*,
+*:focus,
+*:active,
+button:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  font-size: 15px;
+  color: #48494c;
+  line-height: 30px;
+}
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: $color-default;
+}
+.primary-color {
+  color: $primary-color;
+}
+.green-color {
+  color: $green-color;
+}
+.brown-color {
+  color: $brown-color;
+}
+.default-color {
+  color: $color-default;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.ml-30 {
+  margin-left: 30px !important;
+}
+.mt-70 {
+  margin-top: 70px !important;
+}
+.mt-50 {
+  margin-top: 50px !important;
+}
+.strong {
+  font-weight: bold;
+}
+ul.blue-dots {
+  list-style: none;
+  line-height: 32px;
+  li::before {
+    content: "";
+    background-color: $primary-color;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-#{$end-direction}: 10px;
+  }
+}
+ol {
+  list-style: decimal;
+  line-height: 32px;
+  li {
+    padding-#{$start-direction}: 10px;
+  }
+}
+.text-left {
+  text-align: #{$end-direction} !important;
+}
+.text-right {
+  text-align: #{$start-direction} !important;
+}
+.float-left {
+  float: #{$end-direction} !important;
+}
+.float-right {
+  float: #{$start-direction} !important;
+}

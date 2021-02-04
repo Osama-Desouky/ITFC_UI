@@ -1,0 +1,33 @@
+$font-ar: 'frutiger';
+$font-en: 'montserrat';
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+$color-default: #949486;
+$primary-color: #90426f;
+$gray-color: #9297a1;
+$green-color: #23a56d;
+$orange-color: #ed4c21;
+$red-color: #d5313a;
+$yellow-color: #b29f56;
+$brown-color: #9a6a3c;
+
+$theme-colors: (
+  "primary": $primary-color,
+  "warning": $orange-color,
+  "success": $green-color,
+  "gray": $gray-color,
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Demi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
