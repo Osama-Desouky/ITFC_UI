@@ -13,7 +13,7 @@ this UI is made desktop first.
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 65px;
   }
-  .main-header .slider-wrapper .social{
+  .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 1140px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
@@ -72,7 +72,7 @@ this UI is made desktop first.
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link {
     font-size: 13px;
   }
-  .main-header .slider-wrapper .social{
+  .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 960px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
@@ -121,7 +121,7 @@ this UI is made desktop first.
   .main-navbar .top-nav .nav-item .nav-link {
     font-size: 12px;
   }
-  .main-header .slider-wrapper .social{
+  .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 720px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
@@ -144,8 +144,7 @@ this UI is made desktop first.
       margin-bottom: 15px;
     }
   }
-  .main-header .slider-wrapper .social
-  {
+  .main-header .slider-wrapper .social {
     #{$end-direction}: calc((100vw - 540px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
@@ -154,7 +153,17 @@ this UI is made desktop first.
   }
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 40px;
-}
+  }
+  .navigator {
+    li {
+      ::after {
+        bottom: 9px;
+      }
+      a {
+        font-size: 0 !important;
+      }
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -162,13 +171,13 @@ this UI is made desktop first.
   .main-navbar .nav-wrapper .top-nav {
     display: none;
   }
-  .main-header .slider-wrapper .social{
-    #{$end-direction}: 15px
+  .main-header .slider-wrapper .social {
+    #{$end-direction}: 15px;
   }
   .main-header .slider-wrapper .actions {
-    #{$start-direction}: 15px
+    #{$start-direction}: 15px;
   }
-  .in-focus .slider-wrapper .owl-carousel::before{
+  .in-focus .slider-wrapper .owl-carousel::before {
     display: none;
   }
 }

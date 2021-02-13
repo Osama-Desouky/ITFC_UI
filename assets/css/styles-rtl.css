@@ -11321,6 +11321,61 @@ button.scroll-up {
   z-index: 99;
 }
 
+.navigator {
+  position: fixed;
+  top: calc(50% - (228px / 2));
+  height: 228px;
+  right: 25px;
+  padding: 0;
+  z-index: 999;
+  list-style: none;
+}
+.navigator li {
+  padding-top: 24px;
+  position: relative;
+  transition: 0.3s;
+}
+.navigator li ::before {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #C8C1B1;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.navigator li ::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  right: 5px;
+  height: 100%;
+  width: 2px;
+  background-color: #C8C1B1;
+  transition: 0.3s;
+}
+.navigator li:first-child ::after {
+  display: none;
+}
+.navigator li.active ::before, .navigator li.active ::after {
+  background-color: #BF675D;
+}
+.navigator li.active a {
+  color: #BF675D;
+}
+.navigator li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #C8C1B1;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.navigator li a:hover {
+  color: #BF675D;
+}
+
 /*
 this UI is made desktop first.
 */
@@ -11479,6 +11534,13 @@ this UI is made desktop first.
 
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 40px;
+  }
+
+  .navigator li ::after {
+    bottom: 9px;
+  }
+  .navigator li a {
+    font-size: 0 !important;
   }
 }
 @media (max-width: 575.98px) {
