@@ -1,5 +1,5 @@
-$font-ar: 'frutiger';
-$font-en: 'montserrat';
+$font-ar: "DINNextLT";
+$font-en: "montserrat";
 
 $font-path: "../fonts/";
 $img-path: "../images/";
@@ -7,12 +7,21 @@ $img-path: "../images/";
 // colors
 $color-default: #949486;
 $primary-color: #90426f;
+$secondary-color: #c9b27a;
 $gray-color: #9297a1;
 $green-color: #23a56d;
 $orange-color: #ed4c21;
+$bright-orange-color: #f36b21;
 $red-color: #d5313a;
+$dark-red-color: #cd2233;
 $yellow-color: #b29f56;
 $brown-color: #9a6a3c;
+$light-brown-color: #9b636f;
+$black-color: #1d1d1b;
+$title-color-2: #ae9d96;
+$border-color: #aaaaaa;
+$p-color: #5e5e59;
+$gray-bg: #f3f6fb;
 
 $theme-colors: (
   "primary": $primary-color,

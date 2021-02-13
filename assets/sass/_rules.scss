@@ -26,6 +26,13 @@ h4 {
   font-weight: bold;
   color: $color-default;
 }
+label{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: $w-bold;
+   color: $black-color;
+   line-height: 28px;
+}
 .primary-color {
   color: $primary-color;
 }
@@ -64,6 +71,12 @@ h4 {
 }
 .mt-50 {
   margin-top: 50px !important;
+}
+.pl-15{
+  padding-#{$start-direction}: 15px !important;
+}
+.pl-30{
+  padding-#{$start-direction}: 30px !important;
 }
 .strong {
   font-weight: bold;

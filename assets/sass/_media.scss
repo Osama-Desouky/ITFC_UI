@@ -1,43 +1,174 @@
-@media (min-width: 1800px) {
+/*
+this UI is made desktop first.
+*/
+@media (min-width: 1400px) {
   .container {
-    max-width: 1720px;
+    max-width: 1260px;
   }
 }
-
-@media (min-width: 1600px) and (max-width: 1799.98px) {
-  .container {
-    max-width: 1520px;
+@media (max-width: 1399.97px) {
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
+    margin-left: auto;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption {
+    top: 65px;
+  }
+  .main-header .slider-wrapper .social{
+    #{$end-direction}: calc((100vw - 1140px + 30px) / 2);
+  }
+  .main-header .slider-wrapper .actions {
+    #{$start-direction}: calc((100vw - 1140px + 30px) / 2);
   }
 }
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
-@media (min-width: 1400px) and (max-width: 1599.98px) {
-  .container {
-    max-width: 1320px;
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 135px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+  .main-navbar.fixed .navbar .dropdown-menu {
+    top: 69px;
+  }
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
   }
 }
-@media (max-width: 1599.98px) {
-
-}
-@media (max-width: 1399.98px) {
-
-}
-
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-
+@include media-breakpoint-down(lg) {
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link {
+    font-size: 13px;
+  }
+  .main-header .slider-wrapper .social{
+    #{$end-direction}: calc((100vw - 960px + 30px) / 2);
+  }
+  .main-header .slider-wrapper .actions {
+    #{$start-direction}: calc((100vw - 960px + 30px) / 2);
+  }
 }
-
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-
-  
+@include media-breakpoint-down(md) {
+  .main-navbar {
+    #navbarSupportedContent {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background: #fff;
+      top: 135px;
+      z-index: 99;
+      > .navbar-nav {
+        > .nav-item {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .navbar-brand {
+      align-self: flex-start;
+    }
+    .navbar-toggler {
+      position: absolute;
+      #{$end-direction}: 50px;
+      top: 70px;
+    }
+    .nav-wrapper {
+      flex-grow: 1;
+      width: auto;
+      align-self: flex-start;
+      margin-top: 20px;
+      .top-nav {
+        margin-top: 0;
+        .nav-item {
+          margin-#{$start-direction}: auto;
+        }
+      }
+    }
+  }
+  .main-navbar .top-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .main-header .slider-wrapper .social{
+    #{$end-direction}: calc((100vw - 720px + 30px) / 2);
+  }
+  .main-header .slider-wrapper .actions {
+    #{$start-direction}: calc((100vw - 720px + 30px) / 2);
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-
+@include media-breakpoint-down(sm) {
+  .side-border {
+    border: none;
+  }
+  .navbar .dropdown-menu {
+    &.show {
+      text-align: center;
+      padding-bottom: 0;
+      background-color: rgba(238, 238, 238, 0.5) !important;
+    }
+    ul.nav {
+      margin-bottom: 15px;
+    }
+  }
+  .main-header .slider-wrapper .social
+  {
+    #{$end-direction}: calc((100vw - 540px + 30px) / 2);
+  }
+  .main-header .slider-wrapper .actions {
+    #{$start-direction}: calc((100vw - 540px + 30px) / 2);
+    bottom: 20px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption {
+    top: 40px;
+}
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+@include media-breakpoint-down(xs) {
+  .main-navbar .nav-wrapper .top-nav {
+    display: none;
+  }
+  .main-header .slider-wrapper .social{
+    #{$end-direction}: 15px
+  }
+  .main-header .slider-wrapper .actions {
+    #{$start-direction}: 15px
+  }
+  .in-focus .slider-wrapper .owl-carousel::before{
+    display: none;
+  }
 }
