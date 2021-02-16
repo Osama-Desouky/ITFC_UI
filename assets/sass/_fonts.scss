@@ -1,27 +1,31 @@
 // montserrat
 @font-face {
   font-family: "montserrat";
-  src: url($font-path + "Montserrat-Regular.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Montserrat-Regular.woff2") format("woff2"),
     url($font-path + "Montserrat-Regular.ttf");
   font-weight: $w-normal;
 }
 @font-face {
   font-family: "montserrat";
-  src: url($font-path + "Montserrat-Medium.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Montserrat-Medium.woff2") format("woff2"),
     url($font-path + "Montserrat-Medium.ttf");
   font-weight: $w-medium;
   //medium
 }
 @font-face {
   font-family: "montserrat";
-  src: url($font-path + "Montserrat-SemiBold.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Montserrat-SemiBold.woff2") format("woff2"),
     url($font-path + "Montserrat-SemiBold.ttf");
   font-weight: $w-semi-bold;
   // semi bold
 }
 @font-face {
   font-family: "montserrat";
-  src: url($font-path + "Montserrat-Bold.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Montserrat-Bold.woff2") format("woff2"),
     url($font-path + "Montserrat-Bold.ttf");
   font-weight: $w-bold;
   // bold
@@ -70,27 +74,31 @@
 // Roboto
 @font-face {
   font-family: Roboto;
-  src: url($font-path + "Roboto-Regular.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Roboto-Regular.woff2") format("woff2"),
     url($font-path + "Roboto-Regular.ttf") format("truetype");
   font-weight: $w-normal;
 }
 @font-face {
   font-family: Roboto;
-  src: url($font-path + "Roboto-Medium.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Roboto-Medium.woff2") format("woff2"),
     url($font-path + "Roboto-Medium.ttf");
   font-weight: $w-medium;
   //medium
 }
 @font-face {
   font-family: Roboto;
-  src: url($font-path + "Roboto-Bold.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Roboto-Bold.woff2") format("woff2"),
     url($font-path + "Roboto-Bold.ttf");
   font-weight: $w-bold;
   // bold
 }
 @font-face {
   font-family: Roboto;
-  src: url($font-path + "Roboto-Black.woff2") format("woff2"),
+  src:
+  //  url($font-path + "Roboto-Black.woff2") format("woff2"),
     url($font-path + "Roboto-Black.ttf");
   font-weight: $w-black;
   // black
