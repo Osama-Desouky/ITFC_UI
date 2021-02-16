@@ -2,11 +2,13 @@
 
 .main-navbar {
   max-height: 135px;
-  box-shadow: 0px 1px 2px #0000000f;
+  box-shadow: 0px 1px 2px rgba($color: #000000, $alpha: 0.06);
   .navbar-brand {
     padding-top: 20px;
   }
-
+  .navbar{
+    position: static;
+  }
   .navbar .dropdown-menu {
     border: none;
     background-color: #fff !important;
@@ -14,6 +16,7 @@
     padding-bottom: 30px;
     margin: 0;
     border-top: 1px solid #e6e6e6;
+    box-shadow: 0 46px 45px rgba($color: #373434, $alpha: 0.13);
     .row {
       width: 100%;
     }
@@ -153,14 +156,16 @@
   .search-box {
     position: absolute;
     top: 25px;
-    width: 300px;
+    width: 600px;
     #{$end-direction}: 0;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
     display: none;
     z-index: 99;
+    border-radius: 15px;
+    overflow: hidden;
     .search-btn {
       position: absolute;
-      top: 4px;
+      top: 12px;
       #{$start-direction}: 0;
       background: none;
       border: none;
@@ -168,12 +173,15 @@
     input[type="text"] {
       padding-#{$start-direction}: 30px;
       padding-#{$end-direction}: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       border-radius: 0;
-      border-bottom: 2px solid $primary-color;
+      height: auto;
+      border: none;
     }
     .exit-btn {
       position: absolute;
-      top: 6px;
+      top: 14px;
       #{$end-direction}: 10px;
     }
   }
@@ -185,6 +193,7 @@
     right: 0;
     z-index: 999;
     background: #fff;
+    box-shadow: 0 10px 25px rgba($color: #332E2E, $alpha: 0.10);
     .top-nav,
     .navbar-brand {
       display: none;
@@ -231,11 +240,23 @@
     top: 0;
     .owl-carousel {
       height: 100%;
+      .owl-item{
+        &.active{
+          .item >img{
+            transform: scale(1.05);
+          }
+          .item .caption{
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
       .item {
         overflow: hidden;
         > img {
           min-width: 100%;
           min-height: 100%;
+          transition: all 8s;
         }
         .caption {
           position: absolute;
@@ -243,6 +264,9 @@
           width: 100%;
           left: 0;
           z-index: 3;
+          opacity: 0;
+          transition: all 2s;
+          transform: translateY(50px);
           h2 {
             font-family: Roboto;
             font-weight: $w-black;
@@ -261,7 +285,7 @@
               left: -8px;
               top: 8px;
               width: calc(100% + 16px);
-              height: 54px;
+              height: 48px;
               background-color: $primary-color;
             }
           }

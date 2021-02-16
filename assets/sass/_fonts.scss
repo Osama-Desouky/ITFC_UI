@@ -62,3 +62,28 @@
   src: url($font-path + "DINNextLTArabic-Black.ttf");
   font-weight: $black;
 }
+// Roboto
+// montserrat
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Regular.ttf");
+  font-weight: $w-normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Medium.ttf");
+  font-weight: $w-medium;
+  //medium
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Bold.ttf");
+  font-weight: $w-bold;
+  // bold
+}
+@font-face {
+  font-family: Roboto;
+  src: url($font-path + "Roboto-Black.ttf");
+  font-weight: $w-black;
+  // black
+}

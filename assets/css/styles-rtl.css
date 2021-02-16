@@ -10089,6 +10089,26 @@ h3 {
   src: url("../fonts/DINNextLTArabic-Black.ttf");
   font-weight: #000;
 }
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Black.ttf");
+  font-weight: 900;
+}
 body {
   font-family: "montserrat";
   color: #949486;
@@ -10235,10 +10255,13 @@ ol li {
 
 .main-navbar {
   max-height: 135px;
-  box-shadow: 0px 1px 2px #0000000f;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
 }
 .main-navbar .navbar-brand {
   padding-top: 20px;
+}
+.main-navbar .navbar {
+  position: static;
 }
 .main-navbar .navbar .dropdown-menu {
   border: none;
@@ -10247,6 +10270,7 @@ ol li {
   padding-bottom: 30px;
   margin: 0;
   border-top: 1px solid #e6e6e6;
+  box-shadow: 0 46px 45px rgba(55, 52, 52, 0.13);
 }
 .main-navbar .navbar .dropdown-menu .row {
   width: 100%;
@@ -10372,15 +10396,17 @@ ol li {
 .main-navbar .search-box {
   position: absolute;
   top: 25px;
-  width: 300px;
+  width: 600px;
   left: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 99;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .main-navbar .search-box .search-btn {
   position: absolute;
-  top: 4px;
+  top: 12px;
   right: 0;
   background: none;
   border: none;
@@ -10388,12 +10414,15 @@ ol li {
 .main-navbar .search-box input[type=text] {
   padding-right: 30px;
   padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 0;
-  border-bottom: 2px solid #90426f;
+  height: auto;
+  border: none;
 }
 .main-navbar .search-box .exit-btn {
   position: absolute;
-  top: 6px;
+  top: 14px;
   left: 10px;
 }
 .main-navbar.fixed {
@@ -10404,6 +10433,7 @@ ol li {
   right: 0;
   z-index: 999;
   background: #fff;
+  box-shadow: 0 10px 25px rgba(51, 46, 46, 0.1);
 }
 .main-navbar.fixed .top-nav,
 .main-navbar.fixed .navbar-brand {
@@ -10451,12 +10481,20 @@ ol li {
 .main-header .slider-wrapper .owl-carousel {
   height: 100%;
 }
+.main-header .slider-wrapper .owl-carousel .owl-item.active .item > img {
+  transform: scale(1.05);
+}
+.main-header .slider-wrapper .owl-carousel .owl-item.active .item .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
 .main-header .slider-wrapper .owl-carousel .item {
   overflow: hidden;
 }
 .main-header .slider-wrapper .owl-carousel .item > img {
   min-width: 100%;
   min-height: 100%;
+  transition: all 8s;
 }
 .main-header .slider-wrapper .owl-carousel .item .caption {
   position: absolute;
@@ -10464,6 +10502,9 @@ ol li {
   width: 100%;
   left: 0;
   z-index: 3;
+  opacity: 0;
+  transition: all 2s;
+  transform: translateY(50px);
 }
 .main-header .slider-wrapper .owl-carousel .item .caption h2 {
   font-family: Roboto;
@@ -10484,7 +10525,7 @@ ol li {
   left: -8px;
   top: 8px;
   width: calc(100% + 16px);
-  height: 54px;
+  height: 48px;
   background-color: #90426f;
 }
 .main-header .slider-wrapper .owl-carousel .item .caption p {
