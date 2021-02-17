@@ -10036,27 +10036,27 @@ h3 {
 /*** LTR websites ***/
 @font-face {
   font-family: "montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../fonts/Montserrat-Medium.ttf");
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.ttf");
+  src: url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf");
   font-weight: 900;
 }
 @font-face {
@@ -10091,22 +10091,22 @@ h3 {
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Black.ttf");
+  src: url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf");
   font-weight: 900;
 }
 body {
