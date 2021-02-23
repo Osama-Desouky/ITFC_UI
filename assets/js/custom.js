@@ -11,6 +11,7 @@ var scrollTo = function (sectionEl = "", callback = function () {}) {
   );
 };
 var calculateOffset = function (el) {
+  if ($(el).length == 0) return;
   if ($(window).width() >= 980) return Math.floor($(el).offset().top - 69);
   return Math.floor($(el).offset().top);
 };
@@ -72,8 +73,6 @@ $(function () {
     )
       $("#navISDB").addClass("active");
     else $("#navISDB").removeClass("active");
-
-    console.log(scroll, calculateOffset(".publications"));
   });
   $(".search-toggle").on("click", function () {
     $(".search-box").toggle();
