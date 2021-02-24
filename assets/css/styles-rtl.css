@@ -10270,6 +10270,7 @@ ol li {
   padding-bottom: 30px;
   margin: 0;
   border-top: 1px solid #e6e6e6;
+  border-radius: 0;
   box-shadow: 0 46px 45px rgba(55, 52, 52, 0.13);
 }
 .main-navbar .navbar .dropdown-menu .row {
