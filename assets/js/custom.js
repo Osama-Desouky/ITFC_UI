@@ -111,4 +111,15 @@ $(function () {
       $("#navISDB").addClass("active");
     });
   });
+  $("#trade-expand").on("click", function () {
+    var tradeC=$("#trade-content");
+    var tradeScrollH=document.getElementById('trade-content')
+    tradeC.css("max-height",tradeScrollH.scrollHeight);
+    tradeC.removeClass("collapsed");
+  });
+  $("#trade-collapse").on("click", function () {
+    var tradeC=$("#trade-content");
+    tradeC.addClass("collapsed");
+    tradeC.removeAttr("style")
+  });
 });
