@@ -1474,7 +1474,7 @@ button.scroll-up {
       margin-bottom: 0;
     }
   }
-  .video-box{
+  .video-box {
     height: 663px;
   }
   cite {
@@ -1745,7 +1745,7 @@ button.scroll-up {
       margin-top: 30px;
     }
   }
-  .video-box{
+  .video-box {
     height: 663px;
   }
 }
@@ -1802,9 +1802,9 @@ button.scroll-up {
     height: 210px;
   }
 }
-.related-item{
+.related-item {
   margin-bottom: 15px;
-  h4{
+  h4 {
     margin-top: 15px;
     font-family: Roboto;
     font-size: 20px;
@@ -1827,7 +1827,7 @@ button.scroll-up {
     z-index: 2;
   }
   &:hover {
-    a{
+    a {
       opacity: 1;
     }
   }
@@ -1853,6 +1853,103 @@ button.scroll-up {
     opacity: 0.8;
   }
 }
+.board-members {
+  padding-top: 39px;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url($img-path + "globe-dotted-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.main-member-card{
+  margin-bottom: 46px;
+  .img-box{
+    height: 412px;
+    overflow: hidden;
+    img{
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .content-box{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+      font-family: Roboto;
+      font-size: 40px;
+      font-weight: $w-black;
+      line-height: 52px;
+      color: $black-color;
+      margin-bottom: 22px;
+    }
+    span{
+      display: block;
+      font-size: 24px;
+      font-weight: $w-medium;
+      line-height: 30px;
+      color: $black-color;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 18px;
+      font-weight: $w-normal;
+      line-height: 28px;
+      color: $p-color;
+    }
+  }
+}
+.member-card{
+  margin-bottom: 30px;
+  .img-box{
+    height: 317px;
+    overflow: hidden;
+    img{
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .content-box{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 19px;
+    h4{
+      font-size: 24px;
+      font-weight: $w-bold;
+      line-height: 33px;
+      height: calc(33px * 2);
+      color: $black-color;
+      margin-bottom: 10px;
+      overflow: hidden;
+
+    }
+    span{
+      display: block;
+      font-size: 24px;
+      font-weight: $w-medium;
+      line-height: 30px;
+      color: $black-color;
+      margin-bottom: 15px;
+    }
+  }
+}
+
 // RTL
 html[dir="rtl"] {
 }

@@ -12045,6 +12045,102 @@ button.scroll-up {
   opacity: 0.8;
 }
 
+.board-members {
+  padding-top: 39px;
+  position: relative;
+}
+.board-members::after {
+  content: "";
+  background-image: url("../images/globe-dotted-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.main-member-card {
+  margin-bottom: 46px;
+}
+.main-member-card .img-box {
+  height: 412px;
+  overflow: hidden;
+}
+.main-member-card .img-box img {
+  min-height: 100%;
+  min-width: 100%;
+}
+.main-member-card .content-box {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-member-card .content-box h2 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 52px;
+  color: #1d1d1b;
+  margin-bottom: 22px;
+}
+.main-member-card .content-box span {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #1d1d1b;
+  margin-bottom: 15px;
+}
+.main-member-card .content-box p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5e5e59;
+}
+
+.member-card {
+  margin-bottom: 30px;
+}
+.member-card .img-box {
+  height: 317px;
+  overflow: hidden;
+}
+.member-card .img-box img {
+  min-height: 100%;
+  min-width: 100%;
+}
+.member-card .content-box {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+.member-card .content-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  height: calc(33px * 2);
+  color: #1d1d1b;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.member-card .content-box span {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #1d1d1b;
+  margin-bottom: 15px;
+}
+
 /*
 this UI is made desktop first.
 */
