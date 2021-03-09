@@ -112,3 +112,72 @@ $(function () {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mmousa
+
+// font increase & decrease
+$("#font-increase").click(function () {
+  console.log("+");
+  if ($("html").hasClass("Xlarge-font-size")) {$("html").removeClass("Xlarge-font-size").addClass("XXlarge-font-size");}
+  if ($("html").hasClass("large-font-size")) {$("html").removeClass("large-font-size").addClass("Xlarge-font-size");}
+  if ($("html").hasClass("reg-font-size")) {$("html").removeClass("reg-font-size").addClass("large-font-size");}
+});
+$("#font-decrease").click(function () {
+  console.log("-");
+  if ($("html").hasClass("large-font-size")) {$("html").removeClass("large-font-size").addClass("reg-font-size");}
+  if ($("html").hasClass("Xlarge-font-size")) {$("html").removeClass("Xlarge-font-size").addClass("large-font-size");}
+  if ($("html").hasClass("XXlarge-font-size")) {$("html").removeClass("XXlarge-font-size").addClass("Xlarge-font-size");}
+});
+
+
+  // $('#datepicker').datepicker({
+  //     weekStart: 6,
+  //     // daysOfWeekHighlighted: "6,0",
+  //     autoclose: true,
+  //     todayHighlight: true,
+  // });
+  // // $('#datepicker').datepicker("setDate", new Date());
+
+
+  // grid vs list VIEW
+
+  // List View
+function listView() {
+  if ($("section").hasClass("grid-show")) {
+    $("section").removeClass("grid-show").addClass("list-show");
+    $(".gridShow").removeClass("active")
+    $(".listShow").addClass("active")
+  }
+
+}
+
+// Grid View
+function gridView() {
+  if ($("section").hasClass("list-show")) {
+    $("section").removeClass("list-show").addClass("grid-show");
+    $(".listShow").removeClass("active")
+    $(".gridShow").addClass("active")
+  }
+
+}
