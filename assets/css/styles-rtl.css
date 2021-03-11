@@ -11551,6 +11551,9 @@ button.scroll-up {
 .inner-heading h1 span {
   color: #FE9E36;
 }
+.inner-heading h1 span.red {
+  color: #d5313a;
+}
 
 .in-numbers {
   padding-top: 85px;
@@ -12141,6 +12144,172 @@ button.scroll-up {
   margin-bottom: 15px;
 }
 
+.main-hub {
+  padding-top: 39px;
+  height: calc(100vh - 135px);
+  background-color: #f3f6fb;
+  background-image: url("../images/right-globe-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 100%;
+}
+.main-hub .inner-heading h1 {
+  margin-bottom: 66px;
+}
+.main-hub .hub-content h2 {
+  margin-bottom: 32px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 52px;
+  color: #1d1d1b;
+}
+.main-hub .hub-content h2 span {
+  color: #FE9E36;
+}
+.main-hub .hub-content p {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #1d1d1b;
+}
+.main-hub .hub-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 12px;
+  color: #1d1d1b;
+}
+.main-hub .hub-content ul {
+  padding: 0;
+  list-style: none;
+}
+.main-hub .hub-content ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #1d1d1b;
+  margin-bottom: 0;
+}
+.main-hub .hub-content ul li .num {
+  direction: ltr;
+}
+.main-hub .hub-content ul li .mail {
+  color: #d5313a;
+}
+.main-hub .hub-content ul li .mail:hover {
+  text-decoration: underline;
+}
+
+.regional-hubs {
+  padding-top: 38px;
+  padding-bottom: 78px;
+}
+.regional-hubs .header {
+  margin-bottom: 34px;
+}
+.regional-hubs .header h2 {
+  margin-bottom: 15px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #1d1d1b;
+}
+
+.hub-card {
+  position: relative;
+  margin-bottom: 42px;
+  min-height: 356px;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid #E0E3E6;
+  box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+}
+.hub-card .img-box {
+  width: 310px;
+  height: 245px;
+  align-self: center;
+  overflow: hidden;
+}
+.hub-card .img-box img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.hub-card .content-box {
+  flex-grow: 1;
+}
+.hub-card .content-box h3 {
+  color: #d5313a;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.hub-card .content-box > ul {
+  padding: 0;
+  padding-right: 25px;
+  list-style: none;
+}
+.hub-card .content-box > ul li {
+  position: relative;
+  margin-bottom: 16px;
+}
+.hub-card .content-box > ul li.horizontal .title {
+  display: block;
+  margin-bottom: 15px;
+}
+.hub-card .content-box > ul li span {
+  line-height: 24px;
+}
+.hub-card .content-box > ul li .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1b;
+  margin-left: 5px;
+}
+.hub-card .content-box > ul li .value {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5e5e59;
+}
+.hub-card .content-box > ul li .value.red {
+  color: #d5313a;
+}
+.hub-card .content-box > ul li .icon {
+  position: absolute;
+  top: 3px;
+  right: -25px;
+}
+.hub-card .content-box > ul li ul {
+  list-style: none;
+  padding: 0;
+}
+.hub-card .content-box > ul li ul li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.hub-card .content-box > ul li ul li:first-child {
+  margin-left: 50px;
+}
+.hub-card.headquarter {
+  border: 2px solid #d5313a;
+}
+.hub-card.headquarter::after {
+  content: "";
+  height: 12px;
+  width: calc(100% - 32px);
+  position: absolute;
+  bottom: -12px;
+  left: 11px;
+  background-color: #d5313a;
+}
+.hub-card.headquarter .content-box h3 {
+  margin-bottom: 45px;
+}
+
 /*
 this UI is made desktop first.
 */
@@ -12272,6 +12441,13 @@ this UI is made desktop first.
 
   .main-header .slider-wrapper .actions {
     right: calc((100vw - 720px + 30px) / 2);
+  }
+
+  .hub-card {
+    flex-direction: column;
+  }
+  .hub-card .img-box {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767.98px) {

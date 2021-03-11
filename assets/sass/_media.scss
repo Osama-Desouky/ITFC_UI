@@ -127,6 +127,12 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     #{$start-direction}: calc((100vw - 720px + 30px) / 2);
   }
+  .hub-card{
+    flex-direction: column;
+    .img-box{
+      margin-bottom: 20px;
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
