@@ -12317,6 +12317,7 @@ ul.fixed-social {
   position: fixed;
   right: 16px;
   top: calc(50% - 280px / 2);
+  z-index: 99;
 }
 ul.fixed-social li {
   width: 38px;

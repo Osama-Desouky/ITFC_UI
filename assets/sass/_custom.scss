@@ -2132,6 +2132,7 @@ ul.fixed-social
   position: fixed;
   #{$start-direction}:16px;
   top: calc(50% - 280px / 2);
+  z-index: 99;
   li{
     width: 38px;
     height: 38px;
