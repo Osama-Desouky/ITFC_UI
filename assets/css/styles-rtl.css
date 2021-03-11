@@ -12310,6 +12310,35 @@ button.scroll-up {
   margin-bottom: 45px;
 }
 
+ul.fixed-social {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  right: 16px;
+  top: calc(50% - 280px / 2);
+}
+ul.fixed-social li {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  background-color: rgba(94, 94, 89, 0.8);
+}
+ul.fixed-social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+ul.fixed-social li a img {
+  transition: 0.3s;
+}
+ul.fixed-social li:hover a img {
+  transform: scale(1.1);
+}
+
 /*
 this UI is made desktop first.
 */
