@@ -1807,7 +1807,8 @@ button.scroll-up {
      }
     }
 
-    #datepicker::placeholder  {
+    #datepicker::placeholder ,
+    #datepicker2::placeholder  {
      font-size: 15px;
      font-weight: $w-medium;
      color: $p-color;
@@ -2058,70 +2059,6 @@ button.scroll-up {
   }
 }
 
-
-
-// pagination
-
-.pagination-section {
-  display: inline-block;
-
-  .pagination {
-    display: inline-block;
-    a {
-      color: #5E5E59;
-      float: left;
-      padding: 8px 16px;
-      text-decoration: none;
-      background-color: #F2F2F2;
-      transition: background-color .3s;
-      font-weight: $w-medium;
-      font-size: 16px;
-      margin: 0 4px;
-      width: 40px;
-      height: 40px;
-    
-      &.active{
-        background-color: $dark-red-color;
-        color: #fff;
-        border: 1px solid $dark-red-color;
-      }
-      &:hover:not(.active) {
-        background-color: $dark-red-color;
-        color: #fff;
-      }
-      &:first-child , &:last-child{
-        background-color: transparent;
-        color: $dark-red-color ;
-      }
-      &.disabled{
-        cursor: not-allowed;
-        opacity: .4;
-        &:hover{
-          background-color: transparent;
-          color: $dark-red-color ;
-        }
-      }
-    }
-  }
-}
-
-.pageCount{
-  float: right;
-  label{
-    font-size: 16px;
-    font-weight: $w-medium;
-    margin-#{$end-direction}: 15px ;
-    color: $p-color;
-    font-family: "montserrat";
-  }
-  select{
-    border-radius: 0;
-    border: 2px solid #E0E3E5;
-    color: $p-color;
-    
-  }
-}
-
 // news inner
 
 .news-inner-section {
@@ -2337,6 +2274,444 @@ button.scroll-up {
   }
 }
 
+.events-list-section{
+  &::before{
+    background-image: url($img-path + "events/toparea-bg.png");
+  }
+  .top-filter{
+    &::after{
+      display: none;
+    }
+  }
+  .list-filter{
+    width: 254px;
+    padding-#{$end-direction}: 17px;
+    margin-#{$end-direction}: 18px;
+    border-right: 1px solid #E4E6E9;
+    position: relative;
+    display: table;
+
+    .filter-head{
+      margin-bottom: 15px;
+      h4{
+        color: $black-color;
+        font-size: 18px;
+        font-weight: $w-bold;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 0;
+        img{
+          margin-#{$end-direction}: 10px ;
+        }
+      }
+      span.clear-all{
+        float: right;
+
+        a{
+          font-size: 12px;
+          font-weight: $w-medium;
+          color: $red-color;
+        }
+      }
+    }
+    .collapsed-item{
+      border-bottom: 1px solid #E4E6E9;
+      .collapsed-item-head{
+        position: relative;
+        a{
+          display: block;
+          font-size: 16px;
+          font-weight: $w-bold;
+          line-height: 28px;
+          color: $p-color;
+          padding: 10px 0;
+          &::after{
+            content: "";
+            position: absolute;
+            right: 2px;
+            top: 20px;
+            width: 13px;
+            height: 8px;
+            background-repeat: no-repeat;
+            background-image: url($img-path + "/news/down-arrow.svg");
+          }
+        }
+      }
+      .collapsed-item-content{
+        padding: 10px 0 20px;
+
+        .form-group{
+          position: relative;
+          input{
+            border-radius: 0;
+            border: 2px solid #E0E3E5;
+            color: #5e5e59;
+            padding-right: 30px;
+            height: 42px;
+          }
+          .calender-icon{
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            width: 18px;
+            height: 22px;
+            overflow: hidden;
+          }
+        }
+        .btn-apply{
+          background-color: #C9B27A;
+          border-radius: 4px;
+          width: 70px;
+          height: 36px;
+          font-size: 14px;
+          color: #fff;
+        }
+        select {
+          border-radius: 0;
+          border: 2px solid #E0E3E5;
+          color: #5e5e59;
+          font-weight: $w-medium;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: transparent;
+          background-image: url($img-path + "/news/down-arrow.svg");
+          background-repeat: no-repeat;
+          background-position-x: 97%;
+          background-position-y: 14px;
+      }
+      }
+    }
+  }
+  .list-with-filter{
+    width: calc(100% - 285px);
+    margin-#{$start-direction}:13px ;
+    margin-top: 0 !important;
+  }
+  .list-with-filter.list-show{
+    .list-item {
+      height: 169px;
+      padding-bottom: 26px;
+      position: relative;
+
+      &:hover{
+        .event-card-content{
+
+          h4{
+            color: $dark-red-color;
+            &::after{
+              width:85px ;
+              // border-color: $red-color;
+              background-color: $red-color;
+            }
+          }
+        }
+      }
+
+      .date-card{
+        width: 85px;
+        height: 138px;
+        flex: 0 0 85px;
+        margin: 0 15px;
+        padding: 22px 20px;
+        background-color: rgba($color: #AE9D96, $alpha: 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .day{
+          font-family: Roboto;
+          font-size: 40px;
+          font-weight: $w-bold;
+          color: $orange-color;
+          line-height: 45px;
+          padding-bottom: 3px;
+        }
+        .month{
+          font-size: 16px;
+          font-weight: $w-medium;
+          color: $p-color;
+
+        }
+        .year{
+          font-size: 16px;
+          font-weight: $w-bold;
+          color: $p-color;
+          line-height: 15px;
+        }
+      }
+
+      .event-card-content{
+
+        h4{
+          font-weight: $w-bold;
+          font-size: 18px;
+          line-height: 28px;
+          color: $black-color;
+          margin-bottom: 28px;
+          position: relative;
+          transition: 300ms;
+
+          &::after{
+            content: '';
+            width:45px ;
+            height: 2px;
+            // border: 2px solid #eceff1;
+            background-color: #eceff1;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            transition: 300ms linear;
+          }
+        }
+        p{
+          font-weight: $w-medium;
+          font-size: 18px;
+          line-height: 28.8px;
+          color: $p-color;
+          height: 68px;
+          margin: 0;
+          overflow: hidden;
+        }
+        .bottom-content{
+          display: flex;
+          div{
+            img{
+              margin-#{$end-direction}:10px ;
+              vertical-align: text-top;
+            }
+          }
+          .end-date{
+            color: $yellow-color;
+            margin-#{$end-direction}:40px ;
+            font-size: 16px;
+            font-weight: $w-medium;
+          }
+          .location{
+            color: $p-color;
+            font-size: 15px;
+            font-weight: $w-medium;
+          }
+        }
+      }
+    }
+  }
+  .list-with-filter.grid-show{
+   
+    :nth-child(odd).list-item {
+      border-top: 4px solid $primary-color;
+    }
+    :nth-child(even).list-item {
+      border-top: 4px solid $secondary-color;
+    }
+    :nth-child(3n+0).list-item {
+      margin-#{$end-direction}: 0;
+    }
+    .list-item {
+      height: 346px;
+      width: calc(100% / 3 - 10px);
+      box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.15);
+      padding-top: 46px;
+      padding-bottom: 20px;
+      position: relative;
+      margin-bottom: 30px;
+      margin-#{$end-direction}:10px ;
+
+      
+      &:hover{
+        .event-card-content{
+
+          h4{
+            color: $dark-red-color;
+            &::after{
+              width:167px ;
+              // border-color: $red-color;
+              background-color: $red-color;
+            }
+          }
+        }
+      }
+
+      .date-card{
+        margin-#{$start-direction}: 17px;
+        margin-bottom: 17px;
+        .day{
+          font-family: Roboto;
+          font-size: 40px;
+          font-weight: $w-bold;
+          color: $orange-color;
+          line-height: 45px;
+          display: inline-block;
+          position: relative;
+          width: 55px;
+          text-align: center;
+          vertical-align: -webkit-baseline-middle;
+          &::before{
+            content: "";
+            display: block;
+            height: 55px;
+            width: 55px;
+            background-color: rgba(174, 157, 150, 0.15);
+            position: absolute;
+            left: 0;
+            top: -18px;
+            border-radius: 50%;
+          }
+        }
+        .month{
+          font-size: 16px;
+          font-weight: $w-medium;
+          color: $p-color;
+          display: inline-block;
+          line-height: 45px;
+          margin-#{$start-direction}: 5px;
+
+        }
+        .year{
+          font-size: 16px;
+          font-weight: $w-bold;
+          color: $p-color;
+          display: inline-block;
+          line-height: 45px;
+          margin-#{$start-direction}: 6px;
+        }
+      }
+
+      .event-card-content{
+        padding: 0 27px;
+        h4{
+          font-weight: $w-bold;
+          font-size: 18px;
+          line-height: 28px;
+          color: $black-color;
+          margin-bottom: 28px;
+          position: relative;
+          transition: 300ms;
+          height: 107px;
+
+          &::after{
+            content: '';
+            width:45px ;
+            height: 2px;
+            // border: 2px solid #eceff1;
+            background-color: #eceff1;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            transition: 300ms linear;
+          }
+        }
+        p{
+         display: none;
+        }
+        .bottom-content{
+          display: block;
+          div{
+            img{
+              margin-#{$end-direction}:10px ;
+              vertical-align: text-top;
+            }
+          }
+          .end-date{
+            color: $yellow-color;
+            margin-bottom:17px ;
+            font-size: 16px;
+            font-weight: $w-medium;
+          }
+          .location{
+            color: $p-color;
+            font-size: 15px;
+            font-weight: $w-medium;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+// 
+/*
+main styles 
+ */
+
+ // pagination
+
+.pagination-section {
+  display: inline-block;
+
+  .pagination {
+    display: inline-block;
+    a {
+      color: #5E5E59;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      background-color: #F2F2F2;
+      transition: background-color .3s;
+      font-weight: $w-medium;
+      font-size: 16px;
+      margin: 0 4px;
+      width: 40px;
+      height: 40px;
+    
+      &.active{
+        background-color: $dark-red-color;
+        color: #fff;
+        border: 1px solid $dark-red-color;
+      }
+      &:hover:not(.active) {
+        background-color: $dark-red-color;
+        color: #fff;
+      }
+      &:first-child , &:last-child{
+        background-color: transparent;
+        color: $dark-red-color ;
+      }
+      &.disabled{
+        cursor: not-allowed;
+        opacity: .4;
+        &:hover{
+          background-color: transparent;
+          color: $dark-red-color ;
+        }
+      }
+    }
+  }
+}
+
+.pageCount{
+  float: right;
+  label{
+    font-size: 16px;
+    font-weight: $w-medium;
+    margin-#{$end-direction}: 15px ;
+    color: $p-color;
+    font-family: "montserrat";
+  }
+  select{
+    border-radius: 0;
+    border: 2px solid #E0E3E5;
+    color: $p-color;
+    font-weight: $w-medium;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url($img-path + "/news/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position-x: 92%;
+    background-position-y: 14px;
+    width: 55px !important;
+
+  }
+}
+
+ // related section " publication"
+
 .related-items{
 
   .publication-items{
@@ -2434,15 +2809,11 @@ button.scroll-up {
   }
 }
 
+
+// datepicker 
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover{
   background-image: linear-gradient(to bottom,#bfdaff,#b0bbf3);
 }
-
-
-
-
-
-
 
 // font increase & decrease func
 .reg-font-size .fontSizeWillChange{
@@ -2458,6 +2829,10 @@ button.scroll-up {
   font-size: 22px !important;
 }
 
+
+.form-control:focus{
+  box-shadow: none;
+}
 
 
 // RTL

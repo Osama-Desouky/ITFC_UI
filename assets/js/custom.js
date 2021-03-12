@@ -164,8 +164,8 @@ $("#font-decrease").click(function () {
 
   // List View
 function listView() {
-  if ($("section").hasClass("grid-show")) {
-    $("section").removeClass("grid-show").addClass("list-show");
+  if ($("#gridVSlist").hasClass("grid-show")) {
+    $("#gridVSlist").removeClass("grid-show").addClass("list-show");
     $(".gridShow").removeClass("active")
     $(".listShow").addClass("active")
   }
@@ -174,8 +174,8 @@ function listView() {
 
 // Grid View
 function gridView() {
-  if ($("section").hasClass("list-show")) {
-    $("section").removeClass("list-show").addClass("grid-show");
+  if ($("#gridVSlist").hasClass("list-show")) {
+    $("#gridVSlist").removeClass("list-show").addClass("grid-show");
     $(".listShow").removeClass("active")
     $(".gridShow").addClass("active")
   }
