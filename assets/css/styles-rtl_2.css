@@ -11130,7 +11130,7 @@ a.text-red:hover, a.text-red:focus {
   }
 }
 
-/*** LTR websites ***/
+/*** RTL websites ***/
 @font-face {
   font-family: "montserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf");
@@ -11224,8 +11224,8 @@ a.text-red:hover, a.text-red:focus {
 body {
   font-family: "montserrat";
   color: #949486;
-  direction: ltr;
-  text-align: left;
+  direction: rtl;
+  text-align: right;
 }
 
 html[dir="rtl"] body {
@@ -11316,11 +11316,11 @@ label {
 }
 
 .pl-15 {
-  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 .pl-30 {
-  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 .strong {
@@ -11339,7 +11339,7 @@ ul.blue-dots li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 ol {
@@ -11348,23 +11348,23 @@ ol {
 }
 
 ol li {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .text-left {
-  text-align: right !important;
-}
-
-.text-right {
   text-align: left !important;
 }
 
+.text-right {
+  text-align: right !important;
+}
+
 .float-left {
-  float: right !important;
+  float: left !important;
 }
 
 .float-right {
-  float: left !important;
+  float: right !important;
 }
 
 .main-navbar {
@@ -11428,7 +11428,7 @@ ol li {
   width: 4px;
   background-color: #cd2233;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 5px;
   opacity: 0;
   -webkit-transition: 0.3s;
@@ -11453,7 +11453,7 @@ ol li {
 }
 
 .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.show-on-fixed {
@@ -11527,7 +11527,7 @@ ol li {
   position: relative;
   padding: 0;
   margin: 0;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .main-navbar .top-nav .nav-item .nav-link {
@@ -11553,7 +11553,7 @@ ol li {
   position: absolute;
   top: 25px;
   width: 600px;
-  right: 0;
+  left: 0;
   -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
   display: none;
@@ -11565,14 +11565,14 @@ ol li {
 .main-navbar .search-box .search-btn {
   position: absolute;
   top: 12px;
-  left: 0;
+  right: 0;
   background: none;
   border: none;
 }
 
 .main-navbar .search-box input[type="text"] {
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-right: 30px;
+  padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 0;
@@ -11583,7 +11583,7 @@ ol li {
 .main-navbar .search-box .exit-btn {
   position: absolute;
   top: 14px;
-  right: 10px;
+  left: 10px;
 }
 
 .main-navbar.fixed {
@@ -11634,12 +11634,12 @@ ol li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
 .side-border {
-  border-right: 1px solid #aaaaaa;
+  border-left: 1px solid #aaaaaa;
 }
 
 .main-header {
@@ -11733,8 +11733,8 @@ ol li {
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
-  padding-left: 20px;
-  padding-right: 22px;
+  padding-right: 20px;
+  padding-left: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0;
@@ -11750,7 +11750,7 @@ ol li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .main-header .slider-wrapper .owl-carousel .item::before {
@@ -11774,7 +11774,7 @@ ol li {
 
 .main-header .slider-wrapper .social {
   position: absolute;
-  right: calc((100vw - 1260px + 30px) / 2);
+  left: calc((100vw - 1260px + 30px) / 2);
   top: 50%;
   z-index: 5;
   list-style: none;
@@ -11797,7 +11797,7 @@ ol li {
 
 .main-header .slider-wrapper .actions {
   position: absolute;
-  left: calc((100vw - 1260px + 30px) / 2);
+  right: calc((100vw - 1260px + 30px) / 2);
   bottom: 50px;
   z-index: 5;
   display: -webkit-box;
@@ -11820,7 +11820,7 @@ ol li {
   background-position: center center;
   background-size: cover;
   background-image: url("../images/scroll-down.svg");
-  margin-right: 45px;
+  margin-left: 45px;
 }
 
 .main-header .slider-wrapper .actions .next-arrow,
@@ -11944,7 +11944,7 @@ ol li {
 
 .in-focus .slider-wrapper .actions .navigations a.next-arrow {
   background-image: url("../images/next-sm-arrow.svg");
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .in-focus .slider-wrapper .actions .navigations a.prev-arrow {
@@ -11987,7 +11987,7 @@ ol li {
   background-color: #eceff1;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -12122,7 +12122,7 @@ ol li {
 
 .latest-news .container > .actions {
   margin-top: 30px;
-  text-align: right;
+  text-align: left;
 }
 
 .news-card {
@@ -12160,7 +12160,7 @@ ol li {
 }
 
 .news-card .content-box .date img {
-  margin-right: 8px;
+  margin-left: 8px;
   vertical-align: text-top;
   display: inline-block;
 }
@@ -12196,8 +12196,8 @@ ol li {
 }
 
 .news-card > .actions .read-more {
-  margin-left: auto;
-  margin-right: 32px;
+  margin-right: auto;
+  margin-left: 32px;
   font-size: 16px;
   font-weight: 500;
   color: #1d1d1b;
@@ -12216,7 +12216,7 @@ ol li {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .news-card > .actions .read-more::before {
@@ -12271,7 +12271,7 @@ a.show-all::after {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 14px;
+  margin-right: 14px;
 }
 
 a.show-all:hover {
@@ -12286,7 +12286,7 @@ a.show-all:hover {
 
 .upcoming-events .container > .actions {
   margin-top: 30px;
-  text-align: right;
+  text-align: left;
 }
 
 .upcoming-events .heading {
@@ -12348,7 +12348,7 @@ a.show-all:hover {
   font-weight: 500;
   color: #5e5e59;
   line-height: 45px;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .event-card .start-date .year {
@@ -12357,7 +12357,7 @@ a.show-all:hover {
   font-weight: 700;
   color: #5e5e59;
   line-height: 45px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .event-card .content {
@@ -12396,7 +12396,7 @@ a.show-all:hover {
 
 .event-card .end-date img {
   vertical-align: text-top;
-  margin-right: 21px;
+  margin-left: 21px;
 }
 
 .event-card .location {
@@ -12408,7 +12408,7 @@ a.show-all:hover {
 
 .event-card .location img {
   vertical-align: text-top;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .event-card:hover h5 {
@@ -12456,7 +12456,7 @@ a.show-all:hover {
 }
 
 .publications .actions {
-  text-align: right;
+  text-align: left;
 }
 
 .publications .white-card {
@@ -12595,19 +12595,19 @@ footer .links ul {
 
 footer .links ul li {
   position: relative;
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 footer .links ul li::after {
   content: "|";
   position: absolute;
-  left: -20px;
+  right: -20px;
   top: 5px;
 }
 
 footer .links ul li:first-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 footer .links ul li:first-child::after {
@@ -12615,7 +12615,7 @@ footer .links ul li:first-child::after {
 }
 
 footer .links ul li:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 footer .links ul li a {
@@ -12671,12 +12671,12 @@ footer hr {
   font-weight: 500;
   line-height: 31px;
   height: auto;
-  padding-right: 145px;
+  padding-left: 145px;
 }
 
 .subscription .form-group button[type="submit"] {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   width: 138px;
   height: 45px;
@@ -12697,7 +12697,7 @@ footer hr {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .follow-us {
@@ -12713,7 +12713,7 @@ footer hr {
 }
 
 .follow-us .social li {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .follow-us .social li a {
@@ -12741,7 +12741,7 @@ button.scroll-up {
   border-radius: 2px;
   position: fixed;
   bottom: 23px;
-  right: 23px;
+  left: 23px;
   z-index: 99;
   background-color: #cd2233;
   border-color: #cd2233;
@@ -12756,7 +12756,7 @@ button.scroll-up:hover {
   position: fixed;
   top: calc(50% - (228px / 2));
   height: 228px;
-  left: 25px;
+  right: 25px;
   padding: 0;
   z-index: 999;
   list-style: none;
@@ -12776,7 +12776,7 @@ button.scroll-up:hover {
   width: 12px;
   border-radius: 50%;
   background-color: #C8C1B1;
-  margin-right: 10px;
+  margin-left: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -12785,7 +12785,7 @@ button.scroll-up:hover {
   content: "";
   position: absolute;
   bottom: 7px;
-  left: 5px;
+  right: 5px;
   height: 100%;
   width: 2px;
   background-color: #C8C1B1;
@@ -13234,7 +13234,7 @@ button.scroll-up:hover {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 42px;
   height: 38px;
   background-image: url("../images/br-orange-border.svg");
@@ -13245,7 +13245,7 @@ button.scroll-up:hover {
 
 .trade-box .header {
   padding-top: 50px;
-  padding-right: 10px;
+  padding-left: 10px;
   margin-bottom: 30px;
 }
 
@@ -13315,7 +13315,7 @@ button.scroll-up:hover {
 .trade-box #trade-content .read-more {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 3;
   font-size: 16px;
   line-height: 21px;
@@ -13393,7 +13393,7 @@ button.scroll-up:hover {
   display: block;
   width: 100%;
   position: relative;
-  text-align: left;
+  text-align: right;
   color: #d5313a;
   font-size: 45px;
   font-weight: 900;
@@ -13420,7 +13420,7 @@ button.scroll-up:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  right: 0;
+  left: 0;
   top: 26px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -13864,7 +13864,7 @@ button.scroll-up:hover {
 
 .hub-card .content-box > ul {
   padding: 0;
-  padding-left: 25px;
+  padding-right: 25px;
   list-style: none;
 }
 
@@ -13886,7 +13886,7 @@ button.scroll-up:hover {
   font-size: 18px;
   font-weight: 700;
   color: #1d1d1b;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .hub-card .content-box > ul li .value {
@@ -13902,7 +13902,7 @@ button.scroll-up:hover {
 .hub-card .content-box > ul li .icon {
   position: absolute;
   top: 3px;
-  left: -25px;
+  right: -25px;
 }
 
 .hub-card .content-box > ul li ul {
@@ -13916,7 +13916,7 @@ button.scroll-up:hover {
 }
 
 .hub-card .content-box > ul li ul li:first-child {
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .hub-card.headquarter {
@@ -13942,7 +13942,7 @@ ul.fixed-social {
   list-style: none;
   margin: 0;
   position: fixed;
-  left: 16px;
+  right: 16px;
   top: calc(50% - 280px / 2);
   z-index: 99;
 }
@@ -14154,7 +14154,7 @@ ul.fixed-social li:hover a img {
 .news-list-section .list-card .top-filter label {
   font-size: 16px;
   font-weight: 500;
-  margin-right: 15px;
+  margin-left: 15px;
   color: #5e5e59;
   font-family: "montserrat";
 }
@@ -14163,7 +14163,7 @@ ul.fixed-social li:hover a img {
   border-radius: 0;
   border: 2px solid #e0e3e5;
   color: #5e5e59;
-  padding-right: 30px;
+  padding-left: 30px;
   width: 230px;
   height: 42px;
 }
@@ -14200,7 +14200,7 @@ ul.fixed-social li:hover a img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .news-list-section .list-card .top-filter .right-filter #btnContainer label {
@@ -14361,7 +14361,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-list-section .list-card .list-show .list-item .list-content {
-  margin-left: 30px;
+  margin-right: 30px;
   position: relative;
 }
 
@@ -14374,7 +14374,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-list-section .list-card .list-show .list-item .list-content .date img {
-  margin-right: 8px;
+  margin-left: 8px;
   vertical-align: text-top;
   display: inline-block;
 }
@@ -14427,7 +14427,7 @@ ul.fixed-social li:hover a img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .news-list-section .list-card .list-show .list-item .list-content .actions .read-more::before {
@@ -14462,7 +14462,7 @@ ul.fixed-social li:hover a img {
 
 .news-list-section .list-card .grid-show {
   margin-top: 33px;
-  margin-right: -6px;
+  margin-left: -6px;
 }
 
 .news-list-section .list-card .grid-show .list-item {
@@ -14508,7 +14508,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-list-section .list-card .grid-show .list-item .list-content .date img {
-  margin-right: 8px;
+  margin-left: 8px;
   vertical-align: text-top;
   display: inline-block;
 }
@@ -14544,7 +14544,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-list-section .list-card .grid-show .list-item .list-content .actions .read-more {
-  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   font-weight: 500;
   color: #1d1d1b;
@@ -14563,7 +14563,7 @@ ul.fixed-social li:hover a img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .news-list-section .list-card .grid-show .list-item .list-content .actions .read-more::before {
@@ -14635,7 +14635,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-inner-section .news-inner-card .left-news-section {
-  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .news-inner-section .news-inner-card .left-news-section h2 {
@@ -14684,7 +14684,7 @@ ul.fixed-social li:hover a img {
 }
 
 .news-inner-section .news-inner-card .left-news-section .font-btns button:first-child {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .news-inner-section .news-inner-card .left-news-section .font-btns button:hover {
@@ -14760,14 +14760,14 @@ ul.fixed-social li:hover a img {
 }
 
 .news-inner-section .size-changes {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .news-inner-section .size-changes .card-1 {
   background-color: #f3f6fb;
   border-top: 3px solid #d1d5db;
   padding: 20px;
-  padding-left: 13px;
+  padding-right: 13px;
   margin-bottom: 40px;
 }
 
@@ -14780,7 +14780,7 @@ ul.fixed-social li:hover a img {
 
 .news-inner-section .size-changes .card-1 ul {
   list-style-image: url("../images/news/list-style.svg");
-  padding-left: 14px;
+  padding-right: 14px;
   margin-bottom: 6px;
 }
 
@@ -14819,12 +14819,12 @@ ul.fixed-social li:hover a img {
   font-weight: 500;
   line-height: 31px;
   height: auto;
-  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .news-inner-section .size-changes .card-1 .sign-up .form-group button[type="submit"] {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   width: 47px;
   height: 45px;
@@ -14846,8 +14846,8 @@ ul.fixed-social li:hover a img {
 
 .events-list-section .list-filter {
   width: 254px;
-  padding-right: 17px;
-  margin-right: 18px;
+  padding-left: 17px;
+  margin-left: 18px;
   border-right: 1px solid #e4e6e9;
   position: relative;
   display: table;
@@ -14867,7 +14867,7 @@ ul.fixed-social li:hover a img {
 }
 
 .events-list-section .list-filter .filter-head h4 img {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .events-list-section .list-filter .filter-head span.clear-all {
@@ -14958,7 +14958,7 @@ ul.fixed-social li:hover a img {
 
 .events-list-section .list-with-filter {
   width: calc(100% - 285px);
-  margin-left: 13px;
+  margin-right: 13px;
   margin-top: 0 !important;
 }
 
@@ -15063,13 +15063,13 @@ ul.fixed-social li:hover a img {
 }
 
 .events-list-section .list-with-filter.list-show .list-item .event-card-content .bottom-content div img {
-  margin-right: 10px;
+  margin-left: 10px;
   vertical-align: text-top;
 }
 
 .events-list-section .list-with-filter.list-show .list-item .event-card-content .bottom-content .end-date {
   color: #b29f56;
-  margin-right: 40px;
+  margin-left: 40px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -15089,7 +15089,7 @@ ul.fixed-social li:hover a img {
 }
 
 .events-list-section .list-with-filter.grid-show :nth-child(3n + 0).list-item {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .events-list-section .list-with-filter.grid-show .list-item {
@@ -15101,7 +15101,7 @@ ul.fixed-social li:hover a img {
   padding-bottom: 20px;
   position: relative;
   margin-bottom: 30px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .events-list-section .list-with-filter.grid-show .list-item:hover .event-card-content h4 {
@@ -15114,7 +15114,7 @@ ul.fixed-social li:hover a img {
 }
 
 .events-list-section .list-with-filter.grid-show .list-item .date-card {
-  margin-left: 17px;
+  margin-right: 17px;
   margin-bottom: 17px;
 }
 
@@ -15149,7 +15149,7 @@ ul.fixed-social li:hover a img {
   color: #5e5e59;
   display: inline-block;
   line-height: 45px;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .events-list-section .list-with-filter.grid-show .list-item .date-card .year {
@@ -15158,7 +15158,7 @@ ul.fixed-social li:hover a img {
   color: #5e5e59;
   display: inline-block;
   line-height: 45px;
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .events-list-section .list-with-filter.grid-show .list-item .event-card-content {
@@ -15198,7 +15198,7 @@ ul.fixed-social li:hover a img {
 }
 
 .events-list-section .list-with-filter.grid-show .list-item .event-card-content .bottom-content div img {
-  margin-right: 10px;
+  margin-left: 10px;
   vertical-align: text-top;
 }
 
@@ -15274,7 +15274,7 @@ main styles
 .pageCount label {
   font-size: 16px;
   font-weight: 500;
-  margin-right: 15px;
+  margin-left: 15px;
   color: #5e5e59;
   font-family: "montserrat";
 }
@@ -15313,11 +15313,11 @@ main styles
 }
 
 .related-items .publication-items .publication-item:first-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .related-items .publication-items .publication-item:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .related-items .publication-items .publication-item::after {
@@ -15414,6 +15414,231 @@ main styles
           box-shadow: none;
 }
 
+.custom-control {
+  margin-bottom: 5px;
+}
+
+.custom-control .custom-control-label {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "montserrat";
+  line-height: 28px;
+  padding-right: 5px;
+  color: #5e5e59;
+}
+
+.custom-control .custom-control-label::before {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  border: 2px solid #E0E3E5;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #E0E3E5;
+  background-color: #fff;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  left: -22px;
+  background-size: 13px 13px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18'%3E%3Cpath id='Path' d='M0,9.766,8.219,18,24,2.234,21.734,0,8.219,13.5,2.234,7.516Z' fill='%23365029'/%3E%3C/svg%3E%0A");
+}
+
+.events-list-section .list-with-filter {
+  width: 100%;
+}
+
+.events-list-section .top-filter {
+  padding-bottom: 28px !important;
+}
+
+.events-list-section .top-filter .left-filter .nav.nav-pills .nav-item {
+  border-bottom: 2px solid #d5313a;
+}
+
+.events-list-section .top-filter .left-filter .nav.nav-pills .nav-item .nav-link {
+  padding: 10px 15px;
+  color: #5e5e59;
+  background-color: #fff;
+  border: 1px solid #E8EBEF;
+  font-size: 16px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 0;
+}
+
+.events-list-section .top-filter .left-filter .nav.nav-pills .nav-item .nav-link.active {
+  background-color: #d5313a;
+  border: 1px solid #d5313a;
+  color: #fff;
+}
+
+.events-list-section .top-filter .left-filter .nav.nav-pills .nav-item:first-child {
+  padding-left: 10px;
+}
+
+.events-list-section .list-filter {
+  -webkit-transition: 850ms;
+  transition: 850ms;
+}
+
+.events-list-section .list-filter .side-filter-btn {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -18px;
+  top: 0;
+  border: 1px solid #E4E6E9;
+  background-image: url("../images//events/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.events-list-section .list-filter .closed-filter-btn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 0;
+}
+
+.events-list-section .list-filter .closed {
+  display: none;
+}
+
+.events-list-section .widthZero {
+  width: 0 !important;
+}
+
+.events-inner::before {
+  background-image: url("../images//events/toparea-bg.png");
+}
+
+.events-inner .news-inner-card .left-news-section h2 {
+  margin-bottom: 23px;
+}
+
+.events-inner .news-inner-card .left-news-section div.date {
+  font-size: 18px;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.events-inner .news-inner-card .left-news-section div.date img {
+  margin-left: 15px;
+}
+
+.events-inner .news-inner-card .left-news-section div.location {
+  font-size: 18px;
+  color: #1d1d1b;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.events-inner .news-inner-card .left-news-section div.location img {
+  margin-left: 15px;
+  vertical-align: text-top;
+}
+
+.events-inner .news-inner-card .left-news-section div.location-details {
+  margin-bottom: 21px;
+}
+
+.events-inner .news-inner-card .left-news-section div.location-details p {
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.events-inner .news-inner-card .left-news-section div.location-details .label {
+  color: #ed4c21;
+}
+
+.events-inner .news-inner-card .left-news-section div.location-details .location {
+  color: #1d1d1b;
+}
+
+.events-inner .news-inner-card .left-news-section div.location-details .detail {
+  color: #1d1d1b;
+  font-weight: 500;
+}
+
+.events-inner .news-inner-card .left-news-section .more-details {
+  margin-bottom: 40px;
+}
+
+.events-inner .news-inner-card .left-news-section .more-details p {
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #1d1d1b;
+}
+
+.events-inner .news-inner-card .left-news-section .more-details p span {
+  font-weight: 500;
+}
+
+.events-inner .news-inner-card .left-news-section .more-details p:first-child {
+  margin-left: 45px;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns {
+  margin-bottom: 50px;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-pdf {
+  height: 55px;
+  border: 2px solid #DDE2E9;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d1d1b;
+  border-radius: 0;
+  margin-left: 30px;
+  padding-right: 18px;
+  padding-left: 25px;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-pdf img {
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-pdf:hover {
+  color: #d5313a;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-pdf:last-child {
+  margin-left: 0;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-red {
+  height: 55px;
+  padding: 16px 45px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.events-inner .news-inner-card .left-news-section .action-btns .btn-red img {
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.events-inner .news-inner-card .left-news-section .details-h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #EB412F;
+  margin-bottom: 18px;
+}
+
 /*
 this UI is made desktop first.
 */
@@ -15431,10 +15656,10 @@ this UI is made desktop first.
     top: 65px;
   }
   .main-header .slider-wrapper .social {
-    right: calc((100vw - 1140px + 30px) / 2);
+    left: calc((100vw - 1140px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    left: calc((100vw - 1140px + 30px) / 2);
+    right: calc((100vw - 1140px + 30px) / 2);
   }
 }
 
@@ -15488,10 +15713,10 @@ this UI is made desktop first.
     font-size: 13px;
   }
   .main-header .slider-wrapper .social {
-    right: calc((100vw - 960px + 30px) / 2);
+    left: calc((100vw - 960px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    left: calc((100vw - 960px + 30px) / 2);
+    right: calc((100vw - 960px + 30px) / 2);
   }
 }
 
@@ -15520,7 +15745,7 @@ this UI is made desktop first.
   }
   .main-navbar .navbar-toggler {
     position: absolute;
-    right: 50px;
+    left: 50px;
     top: 70px;
   }
   .main-navbar .nav-wrapper {
@@ -15536,16 +15761,16 @@ this UI is made desktop first.
     margin-top: 0;
   }
   .main-navbar .nav-wrapper .top-nav .nav-item {
-    margin-left: auto;
+    margin-right: auto;
   }
   .main-navbar .top-nav .nav-item .nav-link {
     font-size: 12px;
   }
   .main-header .slider-wrapper .social {
-    right: calc((100vw - 720px + 30px) / 2);
+    left: calc((100vw - 720px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    left: calc((100vw - 720px + 30px) / 2);
+    right: calc((100vw - 720px + 30px) / 2);
   }
   .hub-card {
     -webkit-box-orient: vertical;
@@ -15571,10 +15796,10 @@ this UI is made desktop first.
     margin-bottom: 15px;
   }
   .main-header .slider-wrapper .social {
-    right: calc((100vw - 540px + 30px) / 2);
+    left: calc((100vw - 540px + 30px) / 2);
   }
   .main-header .slider-wrapper .actions {
-    left: calc((100vw - 540px + 30px) / 2);
+    right: calc((100vw - 540px + 30px) / 2);
     bottom: 20px;
   }
   .main-header .slider-wrapper .owl-carousel .item .caption {
@@ -15593,13 +15818,13 @@ this UI is made desktop first.
     display: none;
   }
   .main-header .slider-wrapper .social {
-    right: 15px;
+    left: 15px;
   }
   .main-header .slider-wrapper .actions {
-    left: 15px;
+    right: 15px;
   }
   .in-focus .slider-wrapper .owl-carousel::before {
     display: none;
   }
 }
-/*# sourceMappingURL=styles-ltr.css.map */
+/*# sourceMappingURL=styles-rtl_2.css.map */

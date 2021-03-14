@@ -18,6 +18,8 @@
 
   <!-- custom -->
   <link rel="stylesheet" href="../assets/css/styles-ltr.css">
+  <link rel="stylesheet" href="../assets/css/styles-ltr_2.css">
+
 </head>
 
 <body>
@@ -485,24 +487,16 @@
 
       <div class="top-filter row " >
         <div class="left-filter col-lg-8">
-          <!-- <form class="form-inline">
-            <div class="form-group mb-2">
-              <label >Search</label>
-              <input type="text" class="form-control search-input" id="search1" placeholder="Search Keyword ..."  aria-describedby="basic-addon2">
-             
-                <span class="search-icon" >
-                  <img src="../assets/images/news/Search.svg" alt="srch">
-                </span>
-             
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-              <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="Specific Date Range">
-              <span class="search-icon" >
-                <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
-              </span>
-            </div>
-          
-          </form> -->
+         
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#Upcoming">Upcoming Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#Past">Past Events</a>
+            </li>
+          </ul>
+
         </div>
         <div class="col-lg-4 right-filter">
           <div class="dropdown">
@@ -531,271 +525,375 @@
 
       <div class="d-flex">
         <section class="list-filter">
-          <div class="filter-head">
-            <h4>
-              <img src="../assets/images/events/Filter.svg" alt="">
-              Filter
-            </h4>
-            <span class="clear-all">
-              <a href="#">
-                Clear All 
-               <span> x</span>
-              </a>
-            </span>
-          </div>
-          <div id="accordion">
-
-            <div class="collapsed-item">
-              <div class="collapsed-item-head">
-                <a class="card-link" data-toggle="collapse" href="#country">
-                  Country
+          <div class="collabse-side-filter">
+            <div class="filter-head">
+              <h4>
+                <img src="../assets/images/events/Filter.svg" alt="">
+                Filter
+              </h4>
+              <span class="clear-all">
+                <a href="#">
+                  Clear All 
+                <span> x</span>
                 </a>
-              </div>
-              <div id="country" class="collapse" data-parent="#accordion">
-                <div class="collapsed-item-content">
-                  <select class="form-control ">
-                    <option>KSA</option>
-                    <option>USA</option>
-                    <option>UAE</option>
-                    <option>Egypt</option>
-                    <option>United Kingdom</option>
-                  </select>
-                </div>
-              </div>
+              </span>
             </div>
-          
-            <div class="collapsed-item">
-              <div class="collapsed-item-head">
-                <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
-                  Specific Date Range
-                </a>
-              </div>
-              <div id="dateRange" class="collapse" data-parent="#accordion">
-                <div class="collapsed-item-content">
-                  <div class="form-group">
-                    <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="Start Date">
-                    <span class="calender-icon">
-                      <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
-                    </span>
-                  </div>
-                  <div class="form-group">
-                    <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control" placeholder="End Date">
-                    <span class="calender-icon">
-                      <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
-                    </span>
-                  </div>
-                  <button class="btn btn-apply">
-                    Apply
-                  </button>
-                </div>
-              </div>
-            </div>
-          
-            <div class="collapsed-item">
-              <div class="collapsed-item-head">
-                <a class="collapsed card-link " data-toggle="collapse" href="#category">
-                  Category
-                </a>
-              </div>
-              <div id="category" class="collapse" data-parent="#accordion">
-                <div class="collapsed-item-content">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
+            <div id="accordion">
 
-            <div class="collapsed-item">
-              <div class="collapsed-item-head">
-                <a class="collapsed card-link" data-toggle="collapse" href="#language">
-                  Language
-                </a>
-              </div>
-              <div id="language" class="collapse" data-parent="#accordion">
-                <div class="collapsed-item-content">
-                  <select class="form-control ">
-                    <option>English</option>
-                    <option>Arabic</option>
-                    <option>Espaniol</option>
-                  </select>
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="card-link" data-toggle="collapse" href="#country">
+                    Country
+                  </a>
+                </div>
+                <div id="country" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <select class="form-control ">
+                      <option>KSA</option>
+                      <option>USA</option>
+                      <option>UAE</option>
+                      <option>Egypt</option>
+                      <option>United Kingdom</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-          
-          </div>
-        </section>
-
-        <section class="list-show list-with-filter  aos-init aos-animate" data-aos="fade-in" data-aos-delay="150" id="gridVSlist">
-
-              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-                <div class="date-card">
-                  <div class="day">
-                    06
-                  </div>
-                  <div class="month">
-                    Feb
-                  </div>
-                  <div class="year">
-                    2021
-                  </div>
-                </div>
-                <div class="event-card-content">
-                  <h4>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                  </p>
-                  <div class="bottom-content">
-                    <div class="end-date">
-                      <img src="../assets/images/events/calendar-dates.svg" alt="calender">
-                      Ends 10 Feb
-                    </div>
-                    <div class="location">
-                      <img src="../assets/images/events/Location.svg" alt="location">
-                      Riyadh, KSA
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="stretched-link"></a>
-              </div>
-
-              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-                <div class="date-card">
-                  <div class="day">
-                    06
-                  </div>
-                  <div class="month">
-                    Feb
-                  </div>
-                  <div class="year">
-                    2021
-                  </div>
-                </div>
-                <div class="event-card-content">
-                  <h4>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                  </p>
-                  <div class="bottom-content">
-                    <div class="end-date">
-                      <img src="../assets/images/events/calendar-dates.svg" alt="calender">
-                      Ends 10 Feb
-                    </div>
-                    <div class="location">
-                      <img src="../assets/images/events/Location.svg" alt="location">
-                      Riyadh, KSA
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="stretched-link"></a>
-              </div>
-
-              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-                <div class="date-card">
-                  <div class="day">
-                    06
-                  </div>
-                  <div class="month">
-                    Feb
-                  </div>
-                  <div class="year">
-                    2021
-                  </div>
-                </div>
-                <div class="event-card-content">
-                  <h4>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                  </p>
-                  <div class="bottom-content">
-                    <div class="end-date">
-                      <img src="../assets/images/events/calendar-dates.svg" alt="calender">
-                      Ends 10 Feb
-                    </div>
-                    <div class="location">
-                      <img src="../assets/images/events/Location.svg" alt="location">
-                      Riyadh, KSA
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="stretched-link"></a>
-              </div>
-
-              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-                <div class="date-card">
-                  <div class="day">
-                    06
-                  </div>
-                  <div class="month">
-                    Feb
-                  </div>
-                  <div class="year">
-                    2021
-                  </div>
-                </div>
-                <div class="event-card-content">
-                  <h4>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                  </p>
-                  <div class="bottom-content">
-                    <div class="end-date">
-                      <img src="../assets/images/events/calendar-dates.svg" alt="calender">
-                      Ends 10 Feb
-                    </div>
-                    <div class="location">
-                      <img src="../assets/images/events/Location.svg" alt="location">
-                      Riyadh, KSA
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="stretched-link"></a>
-              </div>
-
-              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-                <div class="date-card">
-                  <div class="day">
-                    06
-                  </div>
-                  <div class="month">
-                    Feb
-                  </div>
-                  <div class="year">
-                    2021
-                  </div>
-                </div>
-                <div class="event-card-content">
-                  <h4>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                  </p>
-                  <div class="bottom-content">
-                    <div class="end-date">
-                      <img src="../assets/images/events/calendar-dates.svg" alt="calender">
-                      Ends 10 Feb
-                    </div>
-                    <div class="location">
-                      <img src="../assets/images/events/Location.svg" alt="location">
-                      Riyadh, KSA
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="stretched-link"></a>
-              </div>
-
             
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
+                    Specific Date Range
+                  </a>
+                </div>
+                <div id="dateRange" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="Start Date">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control" placeholder="End Date">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <button class="btn btn-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link " data-toggle="collapse" href="#category">
+                    Category
+                  </a>
+                </div>
+                <div id="category" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        All (128)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                      Category 01 (22)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        Category 02 (45)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        Category 03 (70)
+                      </label>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
 
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#language">
+                    Language
+                  </a>
+                </div>
+                <div id="language" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <select class="form-control ">
+                      <option>English</option>
+                      <option>Arabic</option>
+                      <option>Espaniol</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <button class="side-filter-btn" onclick="filterOption()"></button>
         </section>
+       
+         
+            <section class="list-show list-with-filter  aos-init aos-animate" data-aos="fade-in" data-aos-delay="150" id="gridVSlist">
+              <div class="tab-content">
+                  <!-- tab 1 -->
+                  <div class="tab-pane active" id="Upcoming">
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            Feb
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              Ends 10 Feb
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              Riyadh, KSA
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            Feb
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              Ends 10 Feb
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              Riyadh, KSA
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            Feb
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              Ends 10 Feb
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              Riyadh, KSA
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            Feb
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              Ends 10 Feb
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              Riyadh, KSA
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            Feb
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              Ends 10 Feb
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              Riyadh, KSA
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                    </div>
+
+                  <!-- tab 2 -->
+                  <div class="tab-pane" id="Past">
+                    <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                      <div class="date-card">
+                        <div class="day">
+                        10
+                        </div>
+                        <div class="month">
+                          Feb
+                        </div>
+                        <div class="year">
+                          2021
+                        </div>
+                      </div>
+                      <div class="event-card-content">
+                        <h4>
+                          Hello this is Past tab
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        </p>
+                        <div class="bottom-content">
+                          <div class="end-date">
+                            <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                            Ends 10 Feb
+                          </div>
+                          <div class="location">
+                            <img src="../assets/images/events/Location.svg" alt="location">
+                            Riyadh, KSA
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="stretched-link"></a>
+                    </div>
+
+                    <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                      <div class="date-card">
+                        <div class="day">
+                          06
+                        </div>
+                        <div class="month">
+                          Feb
+                        </div>
+                        <div class="year">
+                          2021
+                        </div>
+                      </div>
+                      <div class="event-card-content">
+                        <h4>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        </p>
+                        <div class="bottom-content">
+                          <div class="end-date">
+                            <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                            Ends 10 Feb
+                          </div>
+                          <div class="location">
+                            <img src="../assets/images/events/Location.svg" alt="location">
+                            Riyadh, KSA
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="stretched-link"></a>
+                    </div>
+
+                  </div>
+
+
+            </section>
+          
+         
+        </div>
       </div>
-    </div>
+    
 <div class="text-center">
     <div class="pagination-section ">
       <div >

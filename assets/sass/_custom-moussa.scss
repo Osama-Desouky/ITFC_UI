@@ -1,1 +1,210 @@
 // here goes M. moussa new sass code
+
+
+
+.custom-control{
+    margin-bottom: 5px;
+    .custom-control-label{
+        font-size: 15px;
+        font-weight: $w-medium;
+        font-family: "montserrat";
+        line-height: 28px;
+        padding-#{$start-direction}: 5px;
+        color: $p-color;
+        &::before{
+            width: 18px;
+            height: 18px;
+            border-radius: 0;
+            border: 2px solid #E0E3E5;
+        }
+       
+    }
+}
+.custom-control-input:checked ~ .custom-control-label::before{
+    color: #fff;
+    border-color: #E0E3E5;
+    background-color: #fff;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+   
+    left: -22px;
+    background-size: 13px 13px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18'%3E%3Cpath id='Path' d='M0,9.766,8.219,18,24,2.234,21.734,0,8.219,13.5,2.234,7.516Z' fill='%23365029'/%3E%3C/svg%3E%0A");
+}
+
+.events-list-section {
+    .list-with-filter{
+        width: 100%;
+    }
+    .top-filter{
+        padding-bottom: 28px !important;
+        .left-filter{
+            .nav.nav-pills{
+                .nav-item{
+                    border-bottom: 2px solid $red-color;
+                    .nav-link{
+                        padding: 10px 15px;
+                        color: $p-color;
+                        background-color: #fff;
+                        border: 1px solid #E8EBEF;
+                        font-size: 16px;
+                        // line-height: 28px;
+                        height: 40px;
+                        font-weight: $w-medium;
+                        border-radius: 0;
+                        &.active{
+                            background-color: $red-color;
+                            border: 1px solid $red-color;
+                            color: #fff;
+                        }
+                    }
+                    &:first-child{
+                        padding-#{$end-direction}: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .list-filter{
+        transition: 850ms;
+        .side-filter-btn{
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: -18px;
+            top: 0;
+            border: 1px solid #E4E6E9;
+            background-image: url($img-path + "/events/left-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #fff;
+            transition: 500ms;
+        }
+        .closed-filter-btn{
+            transform: rotate(180deg);
+            right: 0;
+        }
+        .closed{
+            display: none;
+            // transition: 300ms;
+        }
+    }
+    .widthZero{
+        width: 0 !important;
+    }
+
+
+}
+
+// events inner
+
+.events-inner{
+    &::before{
+        background-image: url($img-path + "/events/toparea-bg.png");
+    }
+    .news-inner-card{ 
+        .left-news-section{
+            h2{
+                margin-bottom: 23px;
+            }
+            div.date{
+                font-size: 18px;
+                margin-bottom: 22px;
+                margin-top: 0;
+                img{
+                    margin-#{$end-direction}: 15px;
+                }
+            }
+            div.location{
+                font-size: 18px;
+                color: $black-color;
+                font-weight: $w-medium;
+                margin-bottom: 24px;
+                img{
+                    margin-#{$end-direction}: 15px;
+                    vertical-align: text-top;
+                }
+            }
+            div.location-details{
+                margin-bottom: 21px;
+                p{
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: $w-bold;
+                    line-height: 26px;
+                }
+                .label{
+                    color: $orange-color;
+                }
+                .location{
+                    color: $black-color;
+                }
+                .detail{
+                    color: $black-color;
+                    font-weight: $w-medium;
+                }
+            }
+            .more-details{
+                margin-bottom: 40px;
+                p{
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: $w-bold;
+                    line-height: 26px;
+                    color: $black-color;
+                    span{
+                        font-weight: $w-medium;
+                    }
+                    &:first-child{
+                        margin-#{$end-direction}: 45px;
+                    }
+                }
+            }
+            .action-btns{
+                margin-bottom: 50px;
+                .btn-pdf{
+                   height: 55px;
+                   border: 2px solid #DDE2E9;
+                   background-color: #fff;
+                   font-size: 16px;
+                   font-weight: $w-medium;
+                   color: $black-color;
+                   border-radius: 0;
+                   margin-#{$end-direction}: 30px;
+                //    padding: 14px 25px 12px 18px;
+                    padding-#{$start-direction}: 18px;
+                    padding-#{$end-direction}: 25px;
+                   img{
+                    margin-#{$end-direction}: 7px;
+                    vertical-align: middle;
+                   }
+                   &:hover{
+                       color: $red-color;
+                   }
+                   &:last-child{
+                    margin-#{$end-direction}: 0;
+                   }
+                }
+                .btn-red{
+                    height: 55px;
+                    padding: 16px 45px;
+                    border-radius: 0;
+                    font-size: 16px;
+                    font-weight: $w-medium;
+                    img{
+                        margin-#{$start-direction}: 7px;
+                        vertical-align: middle;
+                       }
+                }
+            }
+            .details-h4{
+                font-size: 18px;
+                font-weight: $w-bold;
+                color: #EB412F;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}

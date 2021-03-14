@@ -192,3 +192,12 @@ function gridView() {
   }
 
 }
+
+// Collapsed side bar
+function filterOption() {
+
+  $(".collabse-side-filter").toggleClass("closed")
+  $(".side-filter-btn").toggleClass("closed-filter-btn")
+  $(".list-filter").toggleClass("widthZero")
+
+}

@@ -1,8 +1,8 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "direction-ltr";
+@import "direction-rtl";
 @import "fonts";
 @import "rules";
 @import "custom";
-// @import "custom-moussa";
+@import "custom-moussa";
 @import "media";
