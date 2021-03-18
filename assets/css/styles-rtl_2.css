@@ -16046,6 +16046,263 @@ main styles
   background-image: url("../images//events/slider-right-arrow.svg");
 }
 
+.multimedia::before {
+  background-image: url("../images//multimedia/multimedia-bg.png");
+}
+
+.multimedia .list-card .top-filter .left-filter .form-inline .form-group {
+  position: relative;
+}
+
+.multimedia .list-card .top-filter .left-filter .form-inline .form-group ::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia .list-card .top-filter .left-filter .form-inline .form-group :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia .list-card .top-filter .left-filter .form-inline .form-group ::-ms-input-placeholder {
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia .list-card .top-filter .left-filter .form-inline .form-group ::placeholder {
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia .list-card .top-filter .right-filter ul.nav-pills {
+  margin-left: 20px;
+}
+
+.multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item:first-child .nav-link {
+  border-radius: 4px 0 0 4px;
+}
+
+.multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item:last-child .nav-link {
+  border-radius: 0 4px 4px 0;
+}
+
+.multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
+  background-color: #E8EBEF;
+  color: #848484;
+  height: 38px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0;
+  padding: 10px 15px;
+}
+
+.multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link.active {
+  background-color: #d5313a;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.multimedia .list-card .grid-show {
+  margin-left: 0;
+}
+
+.multimedia .list-card .grid-show .list-item {
+  width: calc(100% / 3 - 15px);
+  height: 291px;
+  overflow: hidden;
+  padding: 0;
+  margin-right: 15px;
+  margin-bottom: 36px;
+  border-top: 0 !important;
+  position: relative;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-image {
+  overflow: hidden;
+  width: 100%;
+  height: 190px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 190px;
+          flex: 0 0 190px;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content {
+  padding: 15px 20px;
+  height: 100px;
+  z-index: 0;
+  background-color: #fff;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1d1d1b;
+  line-height: 28px;
+  margin-bottom: 15px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content .hidden-details {
+  font-size: 16px;
+  color: #5e5e59;
+  line-height: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content .inner-number {
+  font-weight: 500;
+  font-size: 15px;
+  color: #5e5e59;
+  position: absolute;
+  left: 20px;
+  bottom: 22px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content .inner-number img {
+  margin-left: 10px;
+  vertical-align: text-top;
+}
+
+.multimedia .list-card .grid-show .list-item .multimedia-content .inner-number .video-icon {
+  vertical-align: middle;
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-image {
+  z-index: -1;
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-image img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 27, 0.4);
+  z-index: 1;
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-content {
+  margin-top: -103px;
+  height: 204px;
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-content h4 {
+  color: #d5313a;
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-content .hidden-details {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.multimedia .list-card .grid-show .list-item:hover .multimedia-content .inner-number {
+  bottom: 37px;
+}
+
+.multimedia-inner::before {
+  background-image: none !important;
+}
+
+.multimedia-inner .list-card .top-filter .left-filter .form-inline .form-group {
+  position: relative;
+}
+
+.multimedia-inner .list-card .top-filter .left-filter .form-inline .form-group ::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia-inner .list-card .top-filter .left-filter .form-inline .form-group :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia-inner .list-card .top-filter .left-filter .form-inline .form-group ::-ms-input-placeholder {
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia-inner .list-card .top-filter .left-filter .form-inline .form-group ::placeholder {
+  color: rgba(94, 94, 89, 0.26);
+}
+
+.multimedia-inner .list-card .list-with-filter {
+  margin-right: -25px;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media {
+  position: relative;
+  overflow: hidden;
+  height: 525px;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .image-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .image-container img {
+  width: 100%;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .content {
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .content h3 {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: Roboto;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .content p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 17px;
+  line-height: 30px;
+}
+
+.multimedia-inner .list-card .list-with-filter .main-media .content div.count {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
 /*
 this UI is made desktop first.
 */
