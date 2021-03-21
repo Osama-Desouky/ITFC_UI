@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="list-icon" transform="translate(1.441 0.118)">
+    <rect id="Rectangle_11527" data-name="Rectangle 11527" width="17" height="17" transform="translate(-1.441 -0.118)" fill="none"/>
+    <g id="Icon-Set-Filled" transform="translate(-0.947 2.04)">
+      <path id="bullet-list" d="M586.191,220.213h-9a1.2,1.2,0,0,0,0,2.4h9a1.2,1.2,0,0,0,0-2.4Zm0-4.806h-9a1.2,1.2,0,0,0,0,2.4h9a1.2,1.2,0,0,0,0-2.4Zm-9-2.4h9a1.2,1.2,0,0,0,0-2.4h-9a1.2,1.2,0,0,0,0,2.4Zm-4.5,6.609a1.806,1.806,0,1,0,1.688,1.8,1.748,1.748,0,0,0-1.688-1.8Zm0-4.806a1.806,1.806,0,1,0,1.688,1.8,1.748,1.748,0,0,0-1.688-1.8Zm0-4.806a1.806,1.806,0,1,0,1.688,1.8,1.748,1.748,0,0,0-1.688-1.8Z" transform="translate(-571 -210)" fill="#5e5e59" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
