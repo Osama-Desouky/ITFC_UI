@@ -1,0 +1,115 @@
+
+
+// Our Members Section
+
+
+.our-members {
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 67px;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: calc(100vh - 135px);
+      background-image:linear-gradient(to left , rgba(250,250,250,0.1) , rgba(250,250,250,0.9)) , url($img-path + "Our-Members-bg.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+    }
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+    .inner-heading h1 {
+      margin-bottom: 47px;
+    }
+
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+        font-family: Roboto;
+        font-weight: $w-black;
+        color: $black-color;
+        span {
+          color: $red-color;
+        }
+      }
+
+    .our-members-table{
+
+        margin-top: 100px;
+        max-height:100%;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid $border-color-2;
+        box-shadow: 0  3px 45px rgba(0, 0, 0, 0.2);
+
+        table{
+            
+        
+            tbody tr:nth-of-type(odd){
+                background-color: $gray-bg;
+            }
+            thead{
+
+                border-bottom: 1px solid $border-color-2;
+                th{
+                    color: $red-color;
+                    font-weight: $w-bold;
+                }
+            } 
+
+            tbody{
+
+                tr th{
+                color: $black-color;
+                font-weight: $w-medium;
+                border: none;
+
+                }    
+                .sub-total{
+                    background-color: $red-color !important;
+                    color: #ffffff !important;
+                    font-weight: $w-bold !important;
+
+                    th{
+                        color: #ffffff !important;
+                        font-weight: $w-bold !important;
+                    }
+
+                }
+            }
+            .type-label{
+                font-size: 12px;
+                color: #ffffff;
+                padding: 4px 6px ;
+                border-radius: 3px;
+
+                &-1{
+                    background-color: $red-color;
+
+                }
+
+                &-2{
+                    background-color: $secondary-color;
+
+                }
+
+            }
+        }
+        
+
+
+    
+    }
+
+
+  }
+
+ 
