@@ -6,7 +6,7 @@
 .our-members {
     position: relative;
     padding-top: 37px;
-    padding-bottom: 67px;
+    
     &::before {
       content: "";
       position: absolute;
@@ -41,75 +41,121 @@
         }
       }
 
-    .our-members-table{
-
-        margin-top: 100px;
-        max-height:100%;
-        width: 100%;
-        background-color: #ffffff;
-        border: 1px solid $border-color-2;
-        box-shadow: 0  3px 45px rgba(0, 0, 0, 0.2);
-
-        table{
-            
+      .trade-box {
+      
         
-            tbody tr:nth-of-type(odd){
-                background-color: $gray-bg;
-            }
-            thead{
-
-                border-bottom: 1px solid $border-color-2;
-                th{
-                    color: $red-color;
-                    font-weight: $w-bold;
-                }
-            } 
-
-            tbody{
-
-                tr th{
-                color: $black-color;
-                font-weight: $w-medium;
-                border: none;
-
-                }    
-                .sub-total{
-                    background-color: $red-color !important;
-                    color: #ffffff !important;
-                    font-weight: $w-bold !important;
-
-                    th{
-                        color: #ffffff !important;
-                        font-weight: $w-bold !important;
-                    }
-
-                }
-            }
-            .type-label{
-                font-size: 12px;
-                color: #ffffff;
-                padding: 4px 6px ;
-                border-radius: 3px;
-
-                &-1{
-                    background-color: $red-color;
-
-                }
-
-                &-2{
-                    background-color: $secondary-color;
-
-                }
-
-            }
+        .header {
+          padding-top: 0;
+          margin-bottom: 18px;
+          .itfc {
+            color: $extra-bright-orange-color;
+          }
+          p {
+            margin-top: 33px;
+            font-size: 18px;
+            font-weight: $w-bold;
+            color: $black-color;
+          }
         }
-        
+      }
+      #trade-content {
+        &.collapsed {
+          max-height: 450px;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 80px;
+            width: 100%;
+            z-index: 2;
+           ;
+       
+          }
+          .read-more {
+            display: block;
+            &.less {
+              display: none;
+            }
+          }
+        }
+      }
 
 
-    
-    }
 
 
   }
 
- 
+.outb{
+
+}
+.our-members-table{
+
+  margin-top: 100px;
+  max-height:100%;
+  width: 100%;
+  padding:21px;
+  background-color: #ffffff;
+  border: 1px solid $border-color-2;
+  box-shadow: 0  3px 45px rgba(0, 0, 0, 0.2);
+  margin-bottom: 70px;
+  margin-top: 70px;
+
+  table{
+      
+  
+      tbody tr:nth-of-type(odd){
+          background-color: $gray-bg;
+      }
+      thead{
+
+          border-bottom: 1px solid $border-color-2;
+          th{
+              color: $red-color;
+              font-weight: $w-bold;
+          }
+      } 
+
+      tbody{
+
+          tr th{
+          color: $black-color;
+          font-weight: $w-medium;
+          border: none;
+
+          }    
+          .sub-total{
+              background-color: $red-color !important;
+              color: #ffffff !important;
+              font-weight: $w-bold !important;
+
+              th{
+                  color: #ffffff !important;
+                  font-weight: $w-bold !important;
+              }
+
+          }
+      }
+      .type-label{
+          font-size: 12px;
+          color: #ffffff;
+          padding: 4px 6px ;
+          border-radius: 3px;
+
+          &-1{
+              background-color: $red-color;
+
+          }
+
+          &-2{
+              background-color: $secondary-color;
+
+          }
+
+      }
+  }
+  
+
+
+
+}
