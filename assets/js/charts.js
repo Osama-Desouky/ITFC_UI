@@ -211,7 +211,7 @@ $(function () {
           "#FE9E36",
         ],
         borderWidth: 0,
-        hoverBorderWidth: 20,
+        // hoverBorderWidth: 20,
         hoverBorderColor: [
           "rgba(214,48,57,0.2)",
           "rgba(144,66,111,0.2)",
@@ -236,7 +236,7 @@ $(function () {
           "#FE9E36",
         ],
         borderWidth: 0,
-        hoverBorderWidth: 20,
+        // hoverBorderWidth: 20,
         hoverBorderColor: [
           "rgba(214,48,57,0.2)",
           "rgba(144,66,111,0.2)",
