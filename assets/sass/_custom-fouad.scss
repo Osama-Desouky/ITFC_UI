@@ -152,3 +152,255 @@
 
 
 }
+
+
+//Senior Mannagement 
+.senior-management {
+  padding-top: 39px;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url($img-path + "globe-dotted-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &.inner-heading h1{
+    margin-bottom: 40px;
+  }
+
+  .col-lg-3{
+    padding: 0;
+    padding-right: 21px;
+
+  }
+
+  &_member-card {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #0000001A;
+    .img-box {
+      max-height: 289px;
+      overflow: hidden;
+      img {
+       
+        min-width: 100%;
+      }
+    }
+
+    &--content-box {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 19px;
+      padding-left: 13px;
+      h4 {
+        font-size: 20px;
+        font-weight: $w-bold;
+        color: $black-color;
+        margin-bottom: 10px;
+        overflow: hidden;
+        // line-height: 33px; this will be applayed if needed 
+        // height: calc(33px * 2);
+
+        
+      }
+
+      p{
+        font-size: 16px;
+        margin: 0;
+
+      }
+
+
+
+    }
+
+    &:hover{
+      h4{
+        color:$red-color;
+        animation: title-color-change 0.3s ease-out;
+      }
+    }
+  }
+
+  .pager{
+    margin-top: 148px;
+    margin-bottom: 87px;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+//senior manger profile
+
+.senior-manager{
+  padding-top: 40px;
+  background-color: $gray-bg;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom:31px ;
+  min-height: calc(100vh - 135px);
+  &_box{
+    &--img-box{
+      
+  
+
+      img{
+        border: 3px solid #ffffff;
+        max-width:100%;
+        margin-bottom: 18px;
+        
+      }
+
+      &-social{
+        span{
+          display: flex;
+          font-size: 16px;
+          color: $p-color;
+          align-items:center;
+
+
+          a{
+            color: inherit;
+            font-size: 24px;
+            margin: 0 6px;
+            &:hover{
+              color: $red-color;
+              transition: color 0.5s ease-in-out;
+            }
+          }
+
+
+        }
+      }
+    }
+
+    &--content-box{
+      h2{
+        color: $black-color;
+        font-size:25px ;
+        font-weight: $w-bold  ;
+        margin-bottom: 10px;
+      }
+
+      .description{
+        color: $p-color;
+        font-size: 20px;
+        font-weight: $w-medium;
+        margin-bottom: 10px;  
+      }
+      a{
+        color: $red-color;
+        font-size: 16px;
+        font-weight: $w-medium;
+        margin-bottom: 21px;
+      }
+
+      p{
+        color: $p-color;
+        font-size: 18px;
+        font-weight: $w-medium;
+        
+      }
+
+
+
+    }
+    
+
+
+
+  }
+
+
+  &_body-text{
+    padding:50px 0;
+    margin-bottom: 295px;
+
+    p{
+      color: $p-color;
+      font-size: 18px;
+      font-weight: $w-medium;
+    }
+  }
+
+
+ 
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//animations
+
+
+@keyframes title-color-change {
+  from { color: $black-color;}
+  to { color: $red-color;}
+}
+
+
+
