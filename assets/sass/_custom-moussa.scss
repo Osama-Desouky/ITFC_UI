@@ -826,7 +826,135 @@
                     }
                     div.links{
                         a{
+                            margin-#{$end-direction}: 10px;
+                            display: inline-block;
+                            background-color: transparent;
+                            // max-height: 17px;
+                            img{
+                                vertical-align: baseline;
+                            }
+                            &:last-child{
+                            margin-#{$end-direction}: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .media-list{
+            .two-in-row{
+                display: flex;
+                overflow: hidden;
+                margin: 5px -25px 0;
+                .media-item{
+                    width: 607.5px;
+                    width: 50%;
+                    height: 400px;
+                    overflow: hidden;
+                }
+            }
+            .three-in-row{
+                display: flex;
+                overflow: hidden;
+                margin: 5px -25px 0;
+                .media-item{
+                    width: 302.5px;
+                    width: calc(25% - 2.5px);
+                    height: 430px;
+                    overflow: hidden;
+                    &:nth-child(2){
+                        flex-grow: 2;
+                    }
+                }
+            }
+            .one-in-row{
+                display: flex;
+                overflow: hidden;
+                margin: 5px -25px 0;
+                .media-item{
+                    width: 100%;
+                    height: 610px;
+                    overflow: hidden;
+                }
+            }
+            .media-item{
+                margin: 0 2.5px;
+                &:first-child{
+                    margin-#{$start-direction}: 0px;
+                }
+                &:last-child{
+                    margin-#{$end-direction}: 0px;
+                }
 
+                .gallery-box {
+                    position: relative;
+                    overflow: hidden;
+                   
+                    .fancyVid {
+                        &::before{
+                        content: "";
+                        opacity: 1;
+                        background-image:  url($img-path + "/multimedia/play.svg");;
+                        width: 65px;
+                        height: 65px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        display: inline-block;
+                        position: absolute;
+                        left: calc(50% - 30px);
+                        top: calc(50% - 30px);
+                        z-index: 3;
+                        }
+                    }
+                    a{
+                        &::after{
+                            content: "";
+                            transition: 300ms;
+                            width: 100%;
+                            height: 0%;
+                            opacity: 0;
+                        }
+                    }
+                    .media-hidden-content{
+                        position: absolute;
+                        bottom: 15px;
+                        left: 16px;
+                        transform: translateY(100px);
+                        opacity: 0;
+                        transition: 500ms;
+                        h4{
+                            font-size: 18px;
+                            font-weight: $w-bold;
+                            line-height: 28px;
+                            color: #fff;
+                            margin-bottom: 2px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 28px;
+                            color: #fff;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                &:hover{
+                    .gallery-box{
+                        a{
+                            &::after{
+                            content: "";
+                            width: 100%;
+                            height: 92px;
+                            background: linear-gradient(180deg, rgba(241,132,71,0) 0%, rgba(0,0,0,0.700717787114846) 100%);
+                            z-index: 0;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            opacity: 1;
+                            }
+                        }
+                        .media-hidden-content{
+                            transform: translateY(0px);
+                            opacity: 1;
                         }
                     }
                 }
@@ -834,4 +962,19 @@
         }
     }
 
+}
+
+
+
+.fancybox-button--close{
+    background-color: #C9B27A;
+    svg{
+        display: block;
+        filter: brightness(2);
+    }
+}
+.fancybox-caption{
+    background: transparent !important;
+    font-size: 16px;
+    bottom: 15px;
 }
