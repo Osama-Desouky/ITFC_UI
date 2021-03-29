@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="reg-font-size">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-  <title>our stories inner page</title>
+  <title>Publication List</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- fontawesome5 -->
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -11,13 +11,15 @@
   <!--  -->
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-  <!-- fancybox -->
-  <link rel="stylesheet" href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
   <!-- AOS -->
   <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+
   <!-- custom -->
   <link rel="stylesheet" href="../assets/css/styles-ltr.css">
   <link rel="stylesheet" href="../assets/css/styles-ltr_2.css">
+
 </head>
 
 <body>
@@ -468,265 +470,463 @@
   </section>
 <!-- content start -->
 
-<section class="our-stories-inner-section">
+<section class="news-list-section events-list-section publications-list">
   <div class="container">
     <div class="inner-heading">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">ITFC</a></li>
-          <li class="breadcrumb-item"><a href="#">Who We Are</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Our stories</li>
+          <li class="breadcrumb-item"><a href="#">Resource Center</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Publications</li>
         </ol>
       </nav>
-      <h1>Events</h1>
+      <h1>Publications</h1>
     </div>
 
-    <div class="our-stories-inner-section_content-box ">
-      <div class="row">
-        <div class="col-lg-9">
-         <div class="our-stories-inner-section_content-box--left aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
-           <h2>
-            <span>
-              ITFC 
-            </span>
-            Participate in providing water to African countries
-           </h2>
+    <div class="list-card">
 
-           <div class="actions ">
-            <div class="font-btns">
-              <button class="btn" id="font-increase">
-                A+
-              </button>
-              <button class="btn" id="font-decrease">
-                A-
-              </button>
+      <div class="top-filter row " >
+        <div class="left-filter col-lg-8">
+         
+          <form class="form-inline">
+            <div class="form-group mb-2">
+              <label >Search</label>
+              <input type="text" class="form-control search-input" id="search1" placeholder="Search Keyword ..."  aria-describedby="basic-addon2">
+             
+                <span class="search-icon" >
+                  <img src="../assets/images/news/Search.svg" alt="srch">
+                </span>
+             
             </div>
-           </div>
-           <p class="fontSizeWillChange">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-<br>
-<br>
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit 
-           </p>
-
-      
+           
           
-         </div>
-        </div>
-        <div class="col-lg-3 size-changes aos-init aos-animate" data-aos="fade-in" data-aos-delay="50">
-        <div class="our-stories-inner-section_content-box--right">
-          <div class="states">
-            <h4>$257m</h4>
-            <p>Total Financing</p>
-            <hr>
-          </div>
-
-          <div class="states">
-            <h4>05</h4>
-            <p>Countries</p>
-            <hr>
-          </div>
-
-
-          <div class="states">
-            <h4>260,000</h4>
-            <p>Targeted Person</p>
-
-          </div>
-          <div class="states">
-            <h4>105</h4>
-            <p>Sub Projects</p>
-
-          </div>
-
+          </form>
 
         </div>
-
+        <div class="col-lg-4 right-filter">
+          <div class="dropdown">
+            <button class="btn btn-sort dropdown-toggle" type="button" data-toggle="dropdown">
+              Sort
+          </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="active">Date</a></li>
+              <li><a href="#">Name</a></li>
+              <hr>
+              <li><a href="#" class="active">Asc</a></li>
+              <li><a href="#">Desc</a></li>
+            </ul>
+          </div>
+          <div id="btnContainer" class="form-group">
+            <label >Change View</label>
+            <button class="btn listShow active" onclick="listView()">
+              <img src="../assets/images/news/bullet-list.svg" alt="list">
+            </button> 
+            <button class="btn gridShow " onclick="gridView()">
+              <img src="../assets/images/news/grid.svg" alt="grid">
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="col-12">
-          <div class="our-stories-inner-section_content-box--body">
+      <div class="d-flex">
+        <section class="list-filter">
+          <div class="collabse-side-filter">
+            <div class="filter-head">
+              <h4>
+                <img src="../assets/images/events/Filter.svg" alt="">
+                Filter
+              </h4>
+              <span class="clear-all">
+                <a href="#">
+                  Clear All 
+                <span> x</span>
+                </a>
+              </span>
+            </div>
+            <div id="accordion">
 
+              
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link " data-toggle="collapse" href="#category">
+                    Category
+                  </a>
+                </div>
+                <div id="category" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        All (128)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                      Category 01 (22)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        Category 02 (45)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        Category 03 (70)
+                      </label>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
+                    Specific Date Range
+                  </a>
+                </div>
+                <div id="dateRange" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="Start Date">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control" placeholder="End Date">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <button class="btn btn-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            
+              
+
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#language">
+                    Language
+                  </a>
+                </div>
+                <div id="language" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <select class="form-control ">
+                      <option>English</option>
+                      <option>Arabic</option>
+                      <option>Espaniol</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <button class="side-filter-btn" onclick="filterOption()"></button>
+        </section>
+       
+         
+            <section class="list-show list-with-filter  aos-init aos-animate" data-aos="fade-in" data-aos-delay="150" id="gridVSlist">
+
+              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                <div>
+                  <div class="list-img">
+                    <img src="../assets/images/publication/img1.png" alt="">
+                  </div>
+                </div>
+                <div class="publication-content">
+                    <h5>
+                      ITFC 2019 Annual Report
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna…
+                    </p>
+                  <div class="date">
+                    Date : 25 November 2020
+                  </div>
+                  <div class="reports">
+                    <img src="../assets/images/publication/folder-open.svg" alt="">
+                    Annual Reports
+                  </div>
+                  <div class="bottom-div">
+                    <div class="pages-count">
+                      <img src="../assets/images/publication/PDF.svg" alt="">
+                      58 pages
+                    </div>
+                    <div class="links">
+                      <a href="#">
+                        <img src="../assets/images/publication/logo-facebook.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/twitter-square.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/linkedin.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/whatsapp.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/email-outline.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/bx-link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <a href="#?" class="stretched-link"></a> -->
+              </div>
+              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                <div>
+                  <div class="list-img">
+                    <img src="../assets/images/publication/img2.png" alt="">
+                  </div>
+                </div>
+                <div class="publication-content">
+                    <h5>
+                      ITFC 2019 Annual Report
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna…
+                    </p>
+                  <div class="date">
+                    Date : 25 November 2020
+                  </div>
+                  <div class="reports">
+                    <img src="../assets/images/publication/folder-open.svg" alt="">
+                    Annual Reports
+                  </div>
+                  <div class="bottom-div">
+                    <div class="pages-count">
+                      <img src="../assets/images/publication/PDF.svg" alt="">
+                      58 pages
+                    </div>
+                    <div class="links">
+                      <a href="#">
+                        <img src="../assets/images/publication/logo-facebook.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/twitter-square.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/linkedin.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/whatsapp.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/email-outline.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/bx-link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <a href="#?" class="stretched-link"></a> -->
+              </div>
+              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                <div>
+                  <div class="list-img">
+                    <img src="../assets/images/publication/img3.png" alt="">
+                  </div>
+                </div>
+                <div class="publication-content">
+                    <h5>
+                      ITFC 2019 Annual Report
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna…
+                    </p>
+                  <div class="date">
+                    Date : 25 November 2020
+                  </div>
+                  <div class="reports">
+                    <img src="../assets/images/publication/folder-open.svg" alt="">
+                    Annual Reports
+                  </div>
+                  <div class="bottom-div">
+                    <div class="pages-count">
+                      <img src="../assets/images/publication/PDF.svg" alt="">
+                      58 pages
+                    </div>
+                    <div class="links">
+                      <a href="#">
+                        <img src="../assets/images/publication/logo-facebook.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/twitter-square.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/linkedin.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/whatsapp.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/email-outline.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/bx-link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <a href="#?" class="stretched-link"></a> -->
+              </div>
+              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                <div>
+                  <div class="list-img">
+                    <img src="../assets/images/publication/img4.png" alt="">
+                  </div>
+                </div>
+                <div class="publication-content">
+                    <h5>
+                      ITFC 2019 Annual Report
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna…
+                    </p>
+                  <div class="date">
+                    Date : 25 November 2020
+                  </div>
+                  <div class="reports">
+                    <img src="../assets/images/publication/folder-open.svg" alt="">
+                    Annual Reports
+                  </div>
+                  <div class="bottom-div">
+                    <div class="pages-count">
+                      <img src="../assets/images/publication/PDF.svg" alt="">
+                      58 pages
+                    </div>
+                    <div class="links">
+                      <a href="#">
+                        <img src="../assets/images/publication/logo-facebook.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/twitter-square.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/linkedin.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/whatsapp.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/email-outline.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/bx-link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <a href="#?" class="stretched-link"></a> -->
+              </div>
+              <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                <div>
+                  <div class="list-img">
+                    <img src="../assets/images/publication/img5.png" alt="">
+                  </div>
+                </div>
+                <div class="publication-content">
+                    <h5>
+                      ITFC 2019 Annual Report
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna…
+                    </p>
+                  <div class="date">
+                    Date : 25 November 2020
+                  </div>
+                  <div class="reports">
+                    <img src="../assets/images/publication/folder-open.svg" alt="">
+                    Annual Reports
+                  </div>
+                  <div class="bottom-div">
+                    <div class="pages-count">
+                      <img src="../assets/images/publication/PDF.svg" alt="">
+                      58 pages
+                    </div>
+                    <div class="links">
+                      <a href="#">
+                        <img src="../assets/images/publication/logo-facebook.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/twitter-square.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/linkedin.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/whatsapp.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/email-outline.svg" alt="">
+                      </a>
+                      <a href="#">
+                        <img src="../assets/images/publication/bx-link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <a href="#?" class="stretched-link"></a> -->
+              </div>
+
+
+            </section>
           
-          <div id="stories-inner-carousel" class="stories-inner-carousel carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#stories-inner-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#stories-inner-carousel" data-slide-to="1"></li>
-              <li data-target="#stories-inner-carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item video-box">
-                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-              <div class="carousel-item video-box active">
-                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-              <div class="carousel-item video-box">
-                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-            </div>
-            <a class="carousel-control-prev" style="z-index:100;" href="#stories-inner-carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" style="z-index:100;" href="#stories-inner-carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-          <p class="fontSizeWillChange">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            <br>
-            <br>
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit 
-
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            <br>
-            <br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit 
-          </p>
-          </div>
-
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-   
-  </div>
-</section>
-
-<section class="poadcast">
-  <div class="container">
-    <div class="row">
-
-
-      <div class="col-lg-12">
-        <h2>
-          poadcast
-        </h2>
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/846929185&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>    
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="related-items aos-init aos-animate" data-aos="fade-in" data-aos-delay="150">
-  <div class="container">
-    <div class="header">
-      <p class="hashtag">#The leading Trade Solutions Provider</p>
-      <h2>Related</h2>
-    </div>
-    <ul class="nav" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link " id="pills-publications-tab" data-toggle="pill" href="#pills-publications" role="tab" aria-controls="pills-publications" aria-selected="false">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active " id="pills-videos-tab" data-toggle="pill" href="#pills-videos" role="tab" aria-controls="pills-videos" aria-selected="true">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-images-tab" data-toggle="pill" href="#pills-images" role="tab" aria-controls="pills-images" aria-selected="false">Images</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade" id="pills-publications" role="tabpanel" aria-labelledby="pills-publications-tab">
-        <div class="publication-items">
-          <div class="publication-item">
-            <div class="publication-image">
-              <img src="../assets/images/news/pub-1.png" alt="image">
-            </div>
-            <div class="publication-content">
-              <h4>
-                ITFC 2019 Annual Report
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et erat, At vero…
-              </p>
-            </div>
-          </div>
-          <div class="publication-item">
-            <div class="publication-image">
-              <img src="../assets/images/news/pub-2.png" alt="image">
-            </div>
-            <div class="publication-content">
-              <h4>
-                ITFC 2019 Annual Report
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et erat, At vero…
-              </p>
-            </div>
-          </div>
-          <div class="publication-item">
-            <div class="publication-image">
-              <img src="../assets/images/news/pub-3.png" alt="image">
-            </div>
-            <div class="publication-content">
-              <h4>
-                ITFC 2019 Annual Report
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et erat, At vero…
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="tab-pane fade  active show " id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab">
-        <div class="row">
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div class="related-item">
-              <div class="video-box">
-                <img class="img-fluid" src="../assets/images/VideoThumb3.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-              <h4>ITFC 2019 Annual Report</h4>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div class="related-item">
-              <div class="video-box">
-                <img class="img-fluid" src="../assets/images/VideoThumb4.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-              <h4>ITFC 2019 Annual Report</h4>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div class="related-item">
-              <div class="video-box">
-                <img class="img-fluid" src="../assets/images/VideoThumb5.png">
-                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                </a>
-              </div>
-              <h4>ITFC 2019 Annual Report</h4>
-            </div>
-          </div>
+         
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-images" role="tabpanel" aria-labelledby="pills-images-tab">
-        
+    
+<div class="text-center">
+    <div class="pagination-section ">
+      <div >
+        <div class="pagination">
+        <a href="#" class="disabled">
+          <i class="fas fa-caret-left"></i>
+        </a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#">
+          <i class="fas fa-caret-right"></i>
+        </a>
+        </div>
       </div>
     </div>
+    <div class="pageCount">
+      <form class="form-inline">
+        <label class="">Items</label>
+        <select class="form-control ">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+        </select>
+    </form>
+  </div>
+</div>
   </div>
 </section>
-
-
-
 
 <!-- content end -->
   <footer>
@@ -839,20 +1039,34 @@
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <!-- AOS -->
   <script src="../node_modules/aos/dist/aos.js"></script>
-  <!-- fancybox -->
-  <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-
   <!-- inline -->
   <script>
     $(function () {
       AOS.init();
-
     });
-
   </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+<script>
+   $('#datepicker').datepicker({
+      weekStart: 6,
+      // daysOfWeekHighlighted: "6,0",
+      autoclose: true,
+      todayHighlight: true,
+  });
+  // $('#datepicker').datepicker("setDate", new Date());
+  $('#datepicker2').datepicker({
+      weekStart: 6,
+      // daysOfWeekHighlighted: "6,0",
+      autoclose: true,
+      todayHighlight: true,
+  });
+
+</script>
   <!-- custom Js -->
   <script src="../assets/js/custom.js"></script>
-
+  
+  
 </body>
 
 </html>

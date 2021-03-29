@@ -14254,13 +14254,16 @@ main styles
 .our-members-table {
   margin-top: 100px;
   max-height: 100%;
-  width: 100%;
   padding: 21px;
   background-color: #ffffff;
   border: 1px solid #DEE1E5;
   box-shadow: 0 3px 45px rgba(0, 0, 0, 0.2);
   margin-bottom: 70px;
   margin-top: 70px;
+}
+.our-members-table table tr, .our-members-table table th, .our-members-table table td {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .our-members-table table tbody tr:nth-of-type(odd) {
   background-color: #f3f6fb;
@@ -14843,6 +14846,9 @@ main styles
   padding: 30px;
   padding-bottom: 0;
 }
+.our-stories-inner-section_content-box--body .stories-inner-carousel {
+  margin-bottom: 65px;
+}
 .our-stories-inner-section_content-box--body p {
   font-size: 18px;
   color: #5e5e59;
@@ -14858,6 +14864,35 @@ main styles
   font-weight: 700;
   color: #1d1d1b;
   margin-bottom: 15px;
+}
+
+.carousel-indicators li {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  width: 7px !important;
+  height: 7px !important;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0 !important;
+  border: none !important;
+  margin: auto;
+}
+
+.carousel-indicators li.active {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/our-stories/prev.svg") !important;
+  transform: rotate(180deg);
+  height: 40px !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/our-stories/prev.svg") !important;
+  height: 40px !important;
 }
 
 @keyframes title-color-change {
