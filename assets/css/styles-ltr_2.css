@@ -15042,46 +15042,35 @@ main styles
 .publications-list::before {
   background-image: url("../images//publication/toparea-bg.png");
 }
-
 .publications-list .list-card .list-show .list-item {
   height: 225px;
   overflow: hidden;
   padding-bottom: 0;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
   border: 0;
-  -webkit-transition: 700ms;
   transition: 700ms;
 }
-
 .publications-list .list-card .list-show .list-item .list-img {
   width: 285px;
   height: 225px;
 }
-
 .publications-list .list-card .list-show .list-item .list-img img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 500ms;
+  transform: scale(1.1);
   transition: 500ms;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content {
   margin-left: 30px;
   padding-right: 15px;
   padding-top: 23px;
   position: relative;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content h5 {
   font-size: 18px;
   font-weight: 700;
   color: #1d1d1b;
   margin-bottom: 10px;
-  -webkit-transition: 500ms;
   transition: 500ms;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content p {
   font-size: 16px;
   font-weight: 500;
@@ -15091,110 +15080,84 @@ main styles
   height: 46px;
   overflow: hidden;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .date {
   font-size: 14px;
   color: #5e5e59;
   margin-bottom: 15px;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .reports {
   font-size: 14px;
   color: #5e5e59;
   margin-bottom: 15px;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .reports img {
   margin-right: 7px;
   vertical-align: text-top;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .bottom-div .pages-count {
   float: left;
   font-size: 12px;
   color: #5e5e59;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .bottom-div .pages-count img {
   margin-right: 10px;
   vertical-align: middle;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .bottom-div .links {
   float: right;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .bottom-div .links a {
   margin-right: 10px;
 }
-
 .publications-list .list-card .list-show .list-item .publication-content .bottom-div .links a:last-child {
   margin-right: 0px;
 }
-
 .publications-list .list-card .list-show .list-item:hover {
-  -webkit-box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
 }
-
 .publications-list .list-card .list-show .list-item:hover .list-img img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
-
 .publications-list .list-card .list-show .list-item:hover .publication-content h5 {
   text-decoration: underline;
   color: #AE8268;
 }
-
 .publications-list .list-card .grid-show {
   margin-right: 0;
 }
-
 .publications-list .list-card .grid-show .list-item {
   height: 341px;
   overflow: hidden;
   padding-bottom: 0;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
   border: 0 !important;
-  -webkit-transition: 700ms;
   transition: 700ms;
   padding-top: 0;
 }
-
 .publications-list .list-card .grid-show .list-item .list-img {
   width: 100%;
   height: 185px;
 }
-
 .publications-list .list-card .grid-show .list-item .list-img img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   width: 100%;
   height: 100%;
-  -webkit-transition: 500ms;
   transition: 500ms;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content {
   padding: 25px 10px 0;
   position: relative;
   height: 156px;
   background-color: #fff;
-  -webkit-transition: 600ms;
   transition: 600ms;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content h5 {
   font-size: 18px;
   font-weight: 700;
   color: #1d1d1b;
   margin-bottom: 9px;
-  -webkit-transition: 500ms;
   transition: 500ms;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content p {
   font-size: 16px;
   font-weight: 500;
@@ -15204,74 +15167,54 @@ main styles
   height: 46px;
   overflow: hidden;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .date {
   font-size: 14px;
   color: #5e5e59;
   margin-bottom: 13px;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .reports {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: 300ms;
+  transform: translateY(50px);
   transition: 300ms;
   font-size: 14px;
   color: #5e5e59;
   margin-bottom: 15px;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .reports img {
   margin-right: 7px;
   vertical-align: text-top;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: 300ms;
+  transform: translateY(50px);
   transition: 300ms;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .pages-count {
   float: left;
   font-size: 12px;
   color: #5e5e59;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .pages-count img {
   margin-right: 10px;
   vertical-align: middle;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .links {
   float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .links a {
   margin-right: 8px;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .links a img {
   vertical-align: baseline;
 }
-
 .publications-list .list-card .grid-show .list-item .publication-content .bottom-div .links a:last-child {
   margin-right: 0px;
 }
-
 .publications-list .list-card .grid-show .list-item:hover {
-  -webkit-box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 45px rgba(0, 0, 0, 0.1);
 }
-
 .publications-list .list-card .grid-show .list-item:hover .list-img {
   z-index: -1;
 }
-
 .publications-list .list-card .grid-show .list-item:hover .list-img::after {
   content: "";
   position: absolute;
@@ -15281,33 +15224,24 @@ main styles
   left: 0;
   background-color: rgba(29, 29, 27, 0.4);
 }
-
 .publications-list .list-card .grid-show .list-item:hover .list-img img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
-
 .publications-list .list-card .grid-show .list-item:hover .publication-content {
   height: 210px;
-  -webkit-transform: translateY(-54px);
-          transform: translateY(-54px);
+  transform: translateY(-54px);
   padding-top: 16px;
   padding-bottom: 15px;
 }
-
 .publications-list .list-card .grid-show .list-item:hover .publication-content h5 {
   text-decoration: underline;
   color: #AE8268;
 }
-
 .publications-list .list-card .grid-show .list-item:hover .publication-content .reports {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
-
 .publications-list .list-card .grid-show .list-item:hover .publication-content .bottom-div {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 /*
