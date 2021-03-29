@@ -522,18 +522,22 @@
           </div>
 
           <div class="states">
-            <h4>$257m</h4>
-            <p>Total Financing</p>
+            <h4>05</h4>
+            <p>Countries</p>
             <hr>
           </div>
 
 
           <div class="states">
-            <h4>$257m</h4>
-            <p>Total Financing</p>
+            <h4>260,000</h4>
+            <p>Targeted Person</p>
 
           </div>
+          <div class="states">
+            <h4>105</h4>
+            <p>Sub Projects</p>
 
+          </div>
 
 
         </div>
@@ -541,33 +545,40 @@
         </div>
 
         <div class="col-12">
-          <div class="our-stories-inner-section_content-box--body bodymedia">
+          <div class="our-stories-inner-section_content-box--body">
 
-
-
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="video-box">
-                  <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                  <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                  </a>
-                </div>
+          
+          <div id="stories-inner-carousel" class="stories-inner-carousel carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#stories-inner-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#stories-inner-carousel" data-slide-to="1"></li>
+              <li data-target="#stories-inner-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item video-box">
+                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
+                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
+                </a>
               </div>
-              <div class="item">
-                <div class="video-box">
-                  <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                  <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                  </a>
-                </div>
+              <div class="carousel-item video-box active">
+                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
+                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
+                </a>
               </div>
-              <div class="item">
-                <div class="video-box">
-                  <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
-                  <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
-                  </a>
-                </div>
+              <div class="carousel-item video-box">
+                <img class="img-fluid" src="../assets/images/our-stories/video-th.png">
+                <a data-fancybox="" href="https://www.youtube.com/watch?v=rEUpW9jh20g">
+                </a>
               </div>
-              
+            </div>
+            <a class="carousel-control-prev" style="z-index:100;" href="#stories-inner-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" style="z-index:100;" href="#stories-inner-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
 
           <p class="fontSizeWillChange">
@@ -835,63 +846,7 @@
   <script>
     $(function () {
       AOS.init();
-      // body media slider
-      var bodymedia = $('.bodymedia .owl-carousel');
-      bodymedia.owlCarousel({
-        loop: false,
-        margin:30,
-        autoWidth:true,
-        nav:true,
-        dots: true,
-        items:1
-      });
 
-      // organizers Slider
-      // var organizersSlider = $('.organizer .owl-carousel');
-      // organizersSlider.owlCarousel({
-      //   loop: false,
-      //   margin:20,
-      //   autoWidth:true,
-      //   nav:true,
-      //   dots: false,
-      //   responsive: {
-      //     0: {
-      //       items: 1
-      //     },
-      //     768: {
-      //       items: 2
-      //     },
-      //     992: {
-      //       items: 3
-      //     },
-      //     1400: {
-      //       items: 5
-      //     }
-      //   }
-      // });
-      // // sponsors Slider
-      // var sponsorsSlider = $('.sponsors .owl-carousel');
-      // sponsorsSlider.owlCarousel({
-      //   loop: false,
-      //   margin:20,
-      //   autoWidth:true,
-      //   nav:true,
-      //   dots: false,
-      //   responsive: {
-      //     0: {
-      //       items: 1
-      //     },
-      //     768: {
-      //       items: 2
-      //     },
-      //     992: {
-      //       items: 3
-      //     },
-      //     1400: {
-      //       items: 5
-      //     }
-      //   }
-      // });
     });
 
   </script>

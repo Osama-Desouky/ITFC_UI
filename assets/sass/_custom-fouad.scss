@@ -85,8 +85,7 @@
 .our-members-table{
 
   margin-top: 100px;
-  max-height:100%;
-  width: 100%;
+  max-height:100%;;
   padding:21px;
   background-color: #ffffff;
   border: 1px solid $border-color-2;
@@ -95,18 +94,23 @@
   margin-top: 70px;
 
   table{
-      
-  
-      tbody tr:nth-of-type(odd){
-          background-color: $gray-bg;
-      }
-      thead{
+    tr,th,td{
+      white-space: nowrap;
 
-          border-bottom: 1px solid $border-color-2;
-          th{
-              color: $red-color;
-              font-weight: $w-bold;
-          }
+      text-overflow: ellipsis;
+    }      
+
+    tbody tr:nth-of-type(odd){
+        background-color: $gray-bg;
+    }
+    thead{
+
+      border-bottom: 1px solid $border-color-2;
+      th{
+
+        color: $red-color;
+        font-weight: $w-bold;
+      }
       } 
 
       tbody{
@@ -838,6 +842,10 @@
     }
 
     &--body{
+
+      .stories-inner-carousel{
+        margin-bottom:65px ;
+      }
       padding: 30px;
       padding-bottom: 0;      
       p{
@@ -878,14 +886,43 @@ margin-bottom: 108px;
 
 
 
+//custom edits on bootstrap 
 
 
+//bootstrap carousel 
+
+.carousel-indicators li {
+
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  width: 7px !important;
+  height: 7px !important;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0 !important;
+  border: none !important;
+  margin:  auto ;
+}
+
+.carousel-indicators li.active {
+
+  width: 10px !important;
+  height: 10px !important;
+
+}
 
 
+.carousel-control-prev-icon {
+  background-image: url($img-path +"our-stories/prev.svg") !important ;
+  transform: rotate(180deg);
+  height: 40px !important;
+}
 
-
-
-
+.carousel-control-next-icon {
+  background-image:url($img-path +"our-stories/prev.svg") !important;
+  height: 40px !important;
+}
 
 
 
