@@ -654,7 +654,9 @@
                 margin-bottom: 36px;
                 border-top: 0 !important;
                 position: relative;
-               
+                // :nth-child(3n + 0).list-item {
+                //     margin-#{$end-direction}: 0 !important;
+                //   }
                 .multimedia-image{
                     overflow: hidden;
                     width: 100%;
@@ -706,6 +708,9 @@
                         }
                         .video-icon{
                             vertical-align: middle;
+                        }
+                        .podcast-icon{
+                            vertical-align: bottom;
                         }
                     }
                 }
@@ -905,6 +910,22 @@
                         top: calc(50% - 30px);
                         z-index: 3;
                         }
+                    }
+                    .podcast{
+                        &::before{
+                            content: "";
+                            opacity: 1;
+                            background-image:  url($img-path + "/multimedia/podcast-play.svg");
+                            width: 65px;
+                            height: 65px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            display: inline-block;
+                            position: absolute;
+                            left: calc(50% - 30px);
+                            top: calc(50% - 30px);
+                            z-index: 3;
+                            }
                     }
                     a{
                         &::after{

@@ -1383,11 +1383,18 @@
       // organizers Slider
       var organizersSlider = $('.organizer .owl-carousel');
       organizersSlider.owlCarousel({
-        loop: false,
+        loop: true,
         margin:20,
         autoWidth:true,
         nav:true,
         dots: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplaySpeed: 2000,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+
+
         responsive: {
           0: {
             items: 1
@@ -1406,11 +1413,18 @@
       // sponsors Slider
       var sponsorsSlider = $('.sponsors .owl-carousel');
       sponsorsSlider.owlCarousel({
-        loop: false,
+        loop: true,
         margin:20,
         autoWidth:true,
         nav:true,
         dots: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplaySpeed: 2000,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+
+
         responsive: {
           0: {
             items: 1
