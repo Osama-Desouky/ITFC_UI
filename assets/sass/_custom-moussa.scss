@@ -584,7 +584,7 @@
 
 .multimedia{
     &::before{
-        background-image: url($img-path + "/multimedia/multimedia-bg.png");
+        background-image: url($img-path + "/multimedia/multimedia-bg2.png");
     }
     .list-card{
         .top-filter {
@@ -837,6 +837,7 @@
                             // max-height: 17px;
                             img{
                                 vertical-align: baseline;
+                                height: 17px;
                             }
                             &:last-child{
                             margin-#{$end-direction}: 0px;
@@ -912,6 +913,7 @@
                         }
                     }
                     .podcast{
+                        cursor: pointer;
                         &::before{
                             content: "";
                             opacity: 1;
@@ -987,17 +989,24 @@
 
 
 
-.fancybox-button--close{
-    background-color: #C9B27A;
-    svg{
-        display: block;
-        filter: brightness(2);
-    }
-}
+// .fancybox-button--close{
+//     background-color: #C9B27A;
+//     svg{
+//         display: block;
+//         filter: brightness(2);
+//     }
+// }
 .fancybox-caption{
     background: transparent !important;
     font-size: 16px;
     bottom: 15px;
+        .links{
+            a{
+                img{
+                    height: 20px;
+                }
+            }
+        }
 }
 
 .publications-list{
@@ -1226,5 +1235,16 @@
                 }
             }
         }
+    }
+}
+
+.bs-tooltip-right {
+    .arrow{
+        &::before{
+            border-#{$end-direction}-color: rgba($color: #000, $alpha: 0.60);
+        }
+    }
+    .tooltip-inner{
+        background-color: rgba($color: #000, $alpha: 0.60);
     }
 }
