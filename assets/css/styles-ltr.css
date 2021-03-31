@@ -11758,6 +11758,23 @@ main styles
     .trade-related-projects .owl-carousel .item {
       width: 100%; }
 
+.padding {
+  padding: 3rem; }
+
+.owl-carousel .item {
+  margin: 3px; }
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.owl-carousel .item {
+  margin: 3px; }
+
+.owl-carousel {
+  margin-bottom: 15px; }
+
 .carousel-indicators li {
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
