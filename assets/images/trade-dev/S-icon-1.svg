@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="S-icon-1" transform="translate(-40.591 -194.033)">
+    <rect id="base" width="75" height="75" transform="translate(40.591 194.033)" fill="none"/>
+    <circle id="Ellipse_11726" data-name="Ellipse 11726" cx="17.5" cy="17.5" r="17.5" transform="translate(40.591 234.033)" fill="#1d1d1b" opacity="0.08"/>
+    <g id="flag" transform="translate(-1.347 -0.496)">
+      <path id="Path_51472" data-name="Path 51472" d="M55.63,244.522s10.329-4.234,20.257-3.742,12.034,5.564,20.457,5.317a18.663,18.663,0,0,0,13.237-6.3v-32.1s-8.775,5.81-18.853,5.515-11.332-5.515-19.454-5.515-15.644,5.515-15.644,5.515Z" transform="translate(-1.296 -0.428)" fill="none" stroke="#d5313a" stroke-width="3"/>
+      <path id="Path_51473" data-name="Path 51473" d="M55.63,207.692v55.342" transform="translate(-1.296 -0.428)" fill="none" stroke="#d5313a" stroke-linecap="round" stroke-width="3"/>
+      <circle id="Ellipse_11727" data-name="Ellipse 11727" cx="3.743" cy="3.743" r="3.743" transform="translate(50.591 201.033)" fill="#d5313a"/>
+    </g>
+  </g>
+</svg>

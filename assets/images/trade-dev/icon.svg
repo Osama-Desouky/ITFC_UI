@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.799" height="71.799" viewBox="0 0 71.799 71.799">
+  <g id="icon" transform="translate(5.325 4.763)">
+    <g id="Group_23749" data-name="Group 23749" transform="translate(-5.325 -4.763)">
+      <g id="Group_23748" data-name="Group 23748" transform="translate(0 0)">
+        <circle id="Ellipse_11710" data-name="Ellipse 11710" cx="35.899" cy="35.899" r="35.899" fill="#fff"/>
+        <circle id="Ellipse_11724" data-name="Ellipse 11724" cx="13.897" cy="13.897" r="13.897" transform="translate(0 20.111)" fill="#5e5e59" opacity="0.11"/>
+        <g id="Group_24093" data-name="Group 24093" transform="translate(7.363 4.015)">
+          <g id="Group_24088" data-name="Group 24088" transform="translate(0 15.193)">
+            <g id="Group_24087" data-name="Group 24087" transform="translate(0)">
+              <path id="Path_51475" data-name="Path 51475" d="M62.787,182.43H60.515V149.439a2.788,2.788,0,0,0-2.785-2.785H52.652a2.788,2.788,0,0,0-2.785,2.785V182.43H44.1V164.386a2.788,2.788,0,0,0-2.785-2.785H36.234a2.788,2.788,0,0,0-2.785,2.785V182.43H27.68v-9.345A2.788,2.788,0,0,0,24.9,170.3H19.816a2.788,2.788,0,0,0-2.785,2.785v9.345H14.637a1.036,1.036,0,1,0,0,2.072h48.15a1.036,1.036,0,1,0,0-2.072Zm-37.179,0H19.1v-9.345a.714.714,0,0,1,.713-.713h5.079a.714.714,0,0,1,.713.713v9.345Zm16.418,0h-6.5V164.386a.714.714,0,0,1,.713-.713h5.079a.714.714,0,0,1,.713.713Zm16.418,0h-6.5V149.439a.714.714,0,0,1,.713-.713H57.73a.714.714,0,0,1,.713.713Z" transform="translate(-13.601 -146.654)" fill="#d5313a"/>
+            </g>
+          </g>
+          <g id="Group_24090" data-name="Group 24090" transform="translate(8.883)">
+            <g id="Group_24089" data-name="Group 24089">
+              <path id="Path_51476" data-name="Path 51476" d="M137.375,1.089A1.032,1.032,0,0,0,136.288,0l-.05,0h-6.267a1.036,1.036,0,1,0,0,2.072h3.87L123.6,12.313l-3.862-3.862a1.036,1.036,0,0,0-1.465,0L99.65,27.074a1.036,1.036,0,0,0,1.465,1.465l17.891-17.891,3.862,3.862a1.036,1.036,0,0,0,1.465,0L135.306,3.537v3.5a1.036,1.036,0,0,0,2.072,0V1.14C137.378,1.123,137.376,1.106,137.375,1.089Z" transform="translate(-99.346)" fill="#d5313a"/>
+            </g>
+          </g>
+          <g id="Group_24092" data-name="Group 24092" transform="translate(5.391 30.385)">
+            <g id="Group_24091" data-name="Group 24091">
+              <circle id="Ellipse_11728" data-name="Ellipse 11728" cx="1.036" cy="1.036" r="1.036" fill="#d5313a"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
