@@ -10078,7 +10078,7 @@ ul.fixed-social {
   border-top: 4px solid #c9b27a; }
 
 .list-with-filter.grid-show :nth-child(3n + 0).list-item {
-  margin-right: 0; }
+  margin-right: 0 !important; }
 
 .list-with-filter.grid-show .list-item {
   height: 346px;
@@ -11757,23 +11757,6 @@ main styles
     width: 100%; }
     .trade-related-projects .owl-carousel .item {
       width: 100%; }
-
-.padding {
-  padding: 3rem; }
-
-.owl-carousel .item {
-  margin: 3px; }
-
-.owl-carousel .item img {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.owl-carousel .item {
-  margin: 3px; }
-
-.owl-carousel {
-  margin-bottom: 15px; }
 
 .carousel-indicators li {
   -webkit-box-sizing: border-box !important;

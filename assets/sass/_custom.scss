@@ -3155,7 +3155,7 @@ ul.fixed-social {
     border-top: 4px solid $secondary-color;
   }
   :nth-child(3n + 0).list-item {
-    margin-#{$end-direction}: 0;
+    margin-#{$end-direction}: 0 !important;
   }
   .list-item {
     height: 346px;
