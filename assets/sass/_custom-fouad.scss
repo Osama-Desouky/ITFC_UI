@@ -876,6 +876,842 @@ margin-bottom: 108px;
 
 
 
+//trade development section
+
+.trade-dev {
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 67px;
+  height: calc(100vh - 135px);
+  background-image: url($img-path + "trade-dev/bg.png");
+      background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  &::before {
+    content: "";
+
+    
+    
+
+    opacity: 0.9;
+
+
+  }
+
+  .trade-header{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 5px solid $red-color;
+    padding:40px 26px ;
+    top: 100%;
+    h1{
+      font-family: "roboto",sans-serif;
+      font-weight: $w-black;
+      margin-bottom: 7px;
+      text-align: left;
+    }
+    p{
+      color: #fff;
+      font-size: 18px;
+      font-weight: $w-bold;
+      margin-bottom: 30px;
+      text-align: left;
+
+    }
+
+    a.btn{
+      background-color: $red-color;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: $w-bold;
+      padding: 12px 46px ;
+      font-family: "Roboto",sans-serif;
+
+    }
+
+
+  }
+
+
+
+
+}
+
+.trade-dev-contnt{
+  height: 100px;
+  position: relative;
+}
+
+
+.trade-dev-contnt{
+  height: 100%  ;
+  padding-top: 60px;
+  margin-bottom: 58px;
+
+  p{
+    font-size: 20px;
+    font-weight: $w-medium;
+    margin-bottom: 69px;
+  }
+  
+
+  .trade-insights{
+    width: 100%;
+
+    &-card{
+      height: 100%;
+      background-color: #fff;
+      text-align: center;
+      padding: 25px 15px 35px 15px;
+      box-shadow: 0px 3px  45px hsla(0, 0%, 0%, 0.05);
+      
+
+      img{
+        height: 75px;
+        width: 75px;
+        
+
+      }
+
+      .nump{
+        display: block;
+
+        font-size: 55px;
+        font-weight: $w-black;
+        font-family: "Roboto",sans-serif;
+        &-1{
+          color: $yellow-color;
+        }
+
+        &-2{
+          color: $red-color;
+        }
+
+        &-3{
+          color: $primary-color;
+        }
+
+        &-4{
+          color: $extra-bright-orange-color;
+        }
+
+        
+
+      }
+
+      h3{
+        font-size: 30px;
+        font-weight: $w-black;
+        color: $black-color;
+        font-family: "Roboto",sans-serif;
+        margin-bottom: 10px;
+      }
+
+      p{
+        color: $p-color;
+        font-size: 16px;
+        font-weight: $w-medium;
+        margin-bottom: 20px;
+      }
+
+      a.btn{
+        color: #fff;
+        font-size: 16px;
+        font-weight: $w-medium;
+        padding:11px 25px ;
+
+        &-1{
+          background-color: $yellow-color;
+        }
+
+        &-2{
+          background-color: $red-color;
+        }
+
+        &-3{
+          background-color: $primary-color;
+        }
+
+        &-4{
+          background-color: $extra-bright-orange-color;
+        }
+
+        &:hover{
+          opacity: 0.8;
+          transition: 0.5s ease-in-out;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
+.trade-dev-programs{
+  height: 100%;
+  margin-bottom: 80px;
+  h2{
+   font-weight: $w-bold;
+   font-size: 40px;
+   font-family: "Roboto",sans-serif;
+   color: $p-color;
+   margin-bottom: 48px; 
+  }
+  .load-more-btn{
+    margin-top: 82px;
+    .btn-grey{
+
+      background-color: #D5D7DB;
+      color: #888;
+      font-size: 16px;
+      font-weight: $w-medium;
+      padding:  12px 35px;
+      &:hover{
+        background-color:rgba(213, 215, 219,0.6) ;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+  &_content{
+    height: 100%;
+
+    &.bg{
+      &-1,&-4{
+        background-color: #fff;
+      }
+
+      &-2{
+        background-color:#D4CEC0;
+      }
+
+      &-3{
+        background-color:$red-color;
+        h3{
+          color: #fff;
+     
+        }
+
+        p{
+          color: #fff;
+        }
+      }
+    }
+    
+
+
+    
+
+   
+    &--box {
+      padding-left: 65px;
+      padding-right: 50px;
+   
+      
+      margin: auto 0  ;
+ 
+      h3{
+        font-size: 25px;
+        font-weight: $w-bold;
+        color: $black-color;
+        margin-bottom: 15px;
+      }
+
+      p{
+        font-size: 16px;
+        font-weight: $w-medium;
+      }
+
+      .btn{
+ 
+
+      }
+      .btn-w{
+        color: #fff;
+        border:1.5px solid #fff;
+      }
+
+    }
+
+
+    &--img{
+      img{
+        height: 445px;
+        min-width: 100%;
+      }
+    }
+
+
+
+
+  }
+}
+
+
+//trade development project inner page
+
+.trade-dev-inner {
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 67px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 135px);
+    background-image:linear-gradient(to left, rgba(255,255,255,0.1) , rgba(255,255,255,0.9)), url($img-path + "trade-dev/inner-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+  }
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+  .inner-heading h1 {
+    margin-bottom: 47px;
+  }
+}
+
+
+.trade-dev-inner-box {
+  background-color: rgba(255, 255, 255,0.85);
+  position: relative  ;
+
+  .header {
+    padding: 22px 30px;
+
+    margin-bottom: 30px;
+    h2{
+      font-size: 30px;
+      font-weight: $w-bold;
+      color: $black-color;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-top: 0px;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: $w-medium;
+      line-height: 30px;
+    }
+  }
+
+
+  .trade-dev-inner-carousel-box{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    p.trade-dev-inner-p{
+      padding: 25px 44px 33px 44px;
+      margin-bottom: 0;
+      font-size: 18px;
+
+      color: $p-color;
+      text-align: center;
+
+    }
+
+    .trade-dev-inner-carousel{
+      position: relative;
+      min-width: 100%;
+      margin-bottom: 60px;
+      .carousel-indicators{
+        position: absolute;
+        bottom: 50px;
+        
+      }
+      .img-box{
+        min-width: 100%;
+        position: relative;
+        img{
+          min-width: 100%;
+          
+        }
+        p{
+          height: 10px;
+          max-height: 20px;
+          font-size: 16px;
+          color: $p-color;
+          text-align: right;
+          height: 100%;
+          line-height: 20px;
+          margin-top:15px;
+          span{
+            width: 16px;
+            height: 1px;
+            border-top: 1px solid $p-color;
+            display: inline-block;
+            margin:  5px ;
+           
+          }
+          
+        }
+       
+      }
+    }
+  }
+
+}
+
+.trade-dev-inner-sme {
+  background-color: #EEEEEE;
+  min-height: 100%;
+  height: 750px;
+
+  margin-bottom: 60px;
+  margin-top: 15px;
+
+  padding-top:113px ;
+  padding-bottom:73px ;
+}
+
+.sm-box{
+  height: 100%;
+  .img-box{
+    height: 100%;
+  }
+}
+.sme-item{
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  .sme-item-header {
+    margin-bottom: 10px;
+    h5 {
+      button {
+        padding: 0;
+        display: block;
+        width: 100%;
+        position: relative;
+        text-align: $start-direction;
+        color: $red-color;
+        font-size: 30px;
+        font-weight: $w-black;
+        font-family: Roboto;
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          outline: none;
+          text-decoration: none;
+          box-shadow: none;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 36px;
+          height: 18px;
+          background-image: url($img-path + "up-red-arrow.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          #{$end-direction}: 0;
+          top: 26px;
+          transition: 0.3s;
+        }
+        &.collapsed {
+          &::after {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+    }
+  }
+  .sme-item-body {
+    font-size: 18px;
+    font-weight: $w-medium;
+    line-height: 36px;
+    color: $black-color;
+    padding-bottom: 30px;
+
+    p{
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+    
+    ul{
+      li{
+        font-size: 18px;
+        font-weight: $w-medium;
+        color: $black-color;
+        
+        &:not(:last-child){
+          margin-bottom: 30px !important;
+        }
+
+      } 
+      &.li-orderd{
+        list-style:none !important;
+        padding-left:0 ;
+        margin-bottom: 0;
+        li{position: relative;
+          .span{
+            margin-right: 18px;
+            position: relative;
+            box-sizing: border-box;
+            display: inline-block;
+            border: 2px solid $red-color;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+
+            &::after{
+              content: "1";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              
+            }
+
+            &-2{
+              &::after{
+                content: "2";
+               
+                
+              }
+
+              
+            }
+
+            &-3{
+              &::after{
+                content: "3";
+               
+                
+              }
+
+              
+            }
+
+            &-4{
+              &::after{
+                content: "4";
+               
+                
+              }
+
+              
+            }
+
+            &-5{
+              &::after{
+                content: "5";
+               
+                
+              }
+
+              
+            }
+          }
+        }
+      }
+
+      &.li-un-orderd{
+       list-style-image: url($img-path + "trade-dev/pullet.svg");
+       padding-left:18px ;
+        margin-bottom: 0;
+        width: 100%;
+        position: relative;
+       li{
+        width: 100%;
+
+
+        &:not(:last-child){
+          margin-bottom: 30px !important;
+        }
+
+       }
+      }
+
+    }
+  }
+}
+
+
+.trade-dev-stories{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+  &-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+      div{
+        display: inline-block;
+        border-bottom: 1px solid #DADEE4;
+        width: 100%;
+        
+        
+      }
+      h2{
+        padding:0 20px;
+        color:$red-color;
+        font-size: 30px;
+        font-weight: $w-bold;
+
+
+
+      }
+
+
+  }
+
+  .cards{
+
+    .img-box{
+      width: 285px;
+      height: 193px;
+      position: relative;
+      margin-bottom: 16px;
+      img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+
+      }
+      .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    h3{
+      color: $black-color;
+      font-size: 16px;
+      font-weight: $w-bold;
+      font-family: "Roboto",sans-serif;
+      margin-bottom: 15px;
+
+    }
+    a,a:active,a:hover,a:visited {
+      color: $black-color;
+    }
+    .main-card{
+      .img-box{
+        width: 600px;
+        height: 407px;
+        position: relative;
+        margin-bottom: 16px;
+        img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+
+
+        }
+
+        .overlay{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+      }
+
+        h3{
+
+          font-size: 20px;
+
+
+        }
+
+        p{
+
+          font-size: 16px;
+          font-weight: $w-medium;
+          color:$p-color;
+
+        }
+        
+      
+    }
+
+    .small-card{
+      .img-box{
+
+        img{
+          
+        }
+
+        .overlay{
+
+        }
+
+        h3{
+
+        }
+
+        p{
+
+
+        }
+        
+      }
+    }
+
+
+  }
+
+
+}
+
+
+.trade-dev-impact{
+  margin-bottom: 76px;
+  &-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+      div{
+        display: inline-block;
+        border-bottom: 1px solid #DADEE4;
+        width: 100%;
+
+      }
+      h2{
+        
+        color:$red-color;
+        font-size: 30px;
+        font-weight: $w-bold;
+        width: 100%;
+        white-space: nowrap;
+        padding:0 20px ;
+
+      }
+
+
+  }
+  .box-contnet{
+    
+    .inner-title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+
+      img{
+        width: 70px;
+        height: 70px;
+
+
+      }
+
+      h3{
+        
+        font-size: 20px;
+        font-weight: $w-bold;
+        color: $black-color !important;
+
+
+      }
+    }
+
+    p{
+      font-size: 18px;
+      font-weight: $w-medium;
+      color: #1D1D1B;
+      line-height: 30px;
+    }
+  }
+
+  .box-img{
+    height: 450px;
+    width: 495px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+
+}
+
+
+.trade-related-projects{
+
+  padding: 0 40px;
+  width: 100%;
+  height: 400px;
+
+  h3{
+    text-align: left;
+    font-size: 40px;
+    font-weight: black;
+    color: $black-color;
+    font-family: "Roboto",sans-serif;
+  }
+
+  .owl-carousel{
+    width: 100%;
+
+    .item{
+      width: 100%;
+
+    }
+  }
+
+
+}
+
+.padding {
+  padding: 3rem
+}
+
+.owl-carousel .item {
+  margin: 3px
+}
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto
+}
+
+.owl-carousel .item {
+  margin: 3px
+}
+
+.owl-carousel {
+  margin-bottom: 15px
+}
+
+
+
+
+
+
 
 
 
@@ -902,7 +1738,7 @@ margin-bottom: 108px;
   border-radius: 50%;
   padding: 0 !important;
   border: none !important;
-  margin:  auto ;
+  margin:auto 3px;
 }
 
 .carousel-indicators li.active {
