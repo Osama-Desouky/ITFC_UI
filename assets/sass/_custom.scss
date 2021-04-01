@@ -4009,3 +4009,17 @@ main styles
     }
   }
 }
+
+
+
+// left side social links tooltips styles 
+.bs-tooltip-right {
+  .arrow{
+      &::before{
+          border-#{$end-direction}-color: rgba($color: #000, $alpha: 0.60);
+      }
+  }
+  .tooltip-inner{
+      background-color: rgba($color: #000, $alpha: 0.60);
+  }
+}

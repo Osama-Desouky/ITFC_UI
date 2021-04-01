@@ -16075,6 +16075,14 @@ main styles
   display: none;
 }
 
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-left-color: rgba(0, 0, 0, 0.6);
+}
+
+.bs-tooltip-right .tooltip-inner, .bs-tooltip-auto[x-placement^="right"] .tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 /*
 this UI is made desktop first.
 */
