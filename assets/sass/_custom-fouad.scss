@@ -1722,52 +1722,193 @@ margin-bottom: 108px;
 }
 
 
+
 .trade-related-projects{
+  padding-bottom: 60px;
+  height: 100%;
+  padding:0 60px;
 
-  padding: 0 40px;
-  width: 100%;
-  height: 400px;
+  min-height: auto;
+  padding-bottom: 60px;
+  background-color: #F3F6FB;
 
-  h3{
-    text-align: left;
-    font-size: 40px;
-    font-weight: black;
-    color: $black-color;
-    font-family: "Roboto",sans-serif;
+
+
+  // speakers slider section
+  .trade-related-carousel{
+      padding-top: 75px;
+      
+      position: relative;
+
+      h3{
+          color: $black-color;
+          font-size: 40px;
+          font-weight: $w-black;
+          margin-bottom: 40px;
+      }
+      .owl-carousel{
+          .owl-stage-outer{
+              width: 1230px;
+              margin: 0 auto;
+          }
+          .item{
+              .main-sec{
+                  position: relative;
+                  height: 417px;
+                  width: 390px;
+                  background-color: #ffffff;
+                  .slider-image{
+                      overflow: hidden;
+                      width: 390  px;
+                      height: 210px;
+                      img{
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                      }
+                  }
+                  .slider-content{
+                      padding:19px 25px 29px 25px;
+                      margin-top: 10px;
+                      display: flex;
+                      flex-direction: column;
+                      .slider-row{
+                        &:not(:last-child){
+                          margin-bottom: 15px;
+                          margin-left: 0;
+                          padding-left:0 ;
+                        }
+                        display: flex;
+                        align-items: center;
+                        
+
+
+                        .span{
+                          margin-right: 10px;
+                          color: $black-color;
+                          font-size: 16px;
+                          font-weight:$w-medium;
+                          text-transform: capitalize ;
+                          &-red{
+                            color: $red-color;
+                          }
+
+                          &-active{
+                            color: #FE9E36 ;
+                          }
+
+                          &-completed{
+                            color:$light-green-color;
+                          }
+                        }
+                        img{
+                          height: 16px;
+                          width: 16px;
+                          display: inline;
+                          margin-right:10px ;
+                        }
+                      }
+                      h4{
+                          font-size: 20px;
+                          font-weight: $w-bold;
+                          line-height: 19px;
+                          color: $black-color;
+                          margin-bottom: 20px;
+                          height: 19px;
+                          overflow: hidden;
+                      }
+                      p{  
+                        display: flex;
+                        flex-direction: row;
+                          font-size: 16px;
+                          font-weight: $w-medium;
+
+                          color: $p-color;
+                          margin: 0 5px;
+
+
+                          img{
+                            height: 16px;
+                          }
+
+                          span{
+                            display: flex;
+                            align-items: center;
+                            
+                            font-size: 16px;
+                            font-weight: $w-medium;
+                            line-height: 19px;
+                            color: $p-color;
+
+                          }
+                      }
+                  }
+
+              }
+          }
+          .owl-nav{
+              position: absolute;
+              width: 100%;
+              top: 35%;
+              margin: 0;
+              button{
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+                  border: 1px solid #DED4D0;
+                  position: absolute;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  transition: 200ms;
+                  background-color: #fff;
+                  margin: 0;
+                  &:hover{
+                      background-color: #fff;
+                  }
+                  span{
+                      display: none;
+                  }
+              }
+              .owl-prev{
+                  left: -68px ; // button width + 20px padding
+                  
+                  background-image: url($img-path + "/events/slider-left-arrow.svg");
+              }
+              .owl-next{
+                  right: -68px ; // button width + 20px padding
+                  background-image: url($img-path + "/events/slider-right-arrow.svg");
+
+              }
+          }
+
+          .owl-dots{
+            margin-top:50px ;
+            margin-bottom: 50px;
+
+            .owl-dot {
+              span{
+                background-color: #AE8268;
+                opacity: 1;
+              }
+
+            }
+            .owl-dot.active {
+                opacity: 0.5;
+                span{
+                  width: 10px;
+                  height: 10px;
+                }
+        
+            }
+
+          }
+          
+      }
   }
 
-  .owl-carousel{
-    width: 100%;
-
-    .item{
-      width: 100%;
-
-    }
-  }
 
 
-}
-
-.padding {
-  padding: 3rem
-}
-
-.owl-carousel .item {
-  margin: 3px
-}
-
-.owl-carousel .item img {
-  display: block;
-  width: 100%;
-  height: auto
-}
-
-.owl-carousel .item {
-  margin: 3px
-}
-
-.owl-carousel {
-  margin-bottom: 15px
+  
 }
 
 
@@ -1775,7 +1916,12 @@ margin-bottom: 108px;
 
 
 
+//custom edits on owl carousel {on related projects on the trade development program page }
 
+
+
+
+ 
 
 
 
@@ -1822,6 +1968,7 @@ margin-bottom: 108px;
   background-image:url($img-path +"our-stories/prev.svg") !important;
   height: 40px !important;
 }
+
 
 
 
