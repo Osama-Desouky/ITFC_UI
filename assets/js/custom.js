@@ -201,3 +201,9 @@ function filterOption() {
   $(".list-filter").toggleClass("widthZero")
 
 }
+
+// tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
