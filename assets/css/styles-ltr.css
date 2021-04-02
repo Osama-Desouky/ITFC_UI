@@ -15932,44 +15932,154 @@ main styles
 }
 
 .trade-related-projects {
-  padding: 0 40px;
-  width: 100%;
-  height: 400px;
+  padding-bottom: 60px;
+  height: 100%;
+  padding: 0 60px;
+  min-height: auto;
+  padding-bottom: 60px;
+  background-color: #F3F6FB;
 }
-.trade-related-projects h3 {
-  text-align: left;
-  font-size: 40px;
-  font-weight: black;
+.trade-related-projects .trade-related-carousel {
+  padding-top: 75px;
+  position: relative;
+}
+.trade-related-projects .trade-related-carousel h3 {
   color: #1d1d1b;
-  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
 }
-.trade-related-projects .owl-carousel {
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-stage-outer {
+  width: 1230px;
+  margin: 0 auto;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec {
+  position: relative;
+  height: 417px;
+  width: 390px;
+  background-color: #ffffff;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-image {
+  overflow: hidden;
+  width: 390 px;
+  height: 210px;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.trade-related-projects .owl-carousel .item {
-  width: 100%;
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content {
+  padding: 19px 25px 29px 25px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
-
-.padding {
-  padding: 3rem;
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row {
+  display: flex;
+  align-items: center;
 }
-
-.owl-carousel .item {
-  margin: 3px;
-}
-
-.owl-carousel .item img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.owl-carousel .item {
-  margin: 3px;
-}
-
-.owl-carousel {
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row:not(:last-child) {
   margin-bottom: 15px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row .span {
+  margin-right: 10px;
+  color: #1d1d1b;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row .span-red {
+  color: #d5313a;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row .span-active {
+  color: #FE9E36;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row .span-completed {
+  color: #2CB43A;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content .slider-row img {
+  height: 16px;
+  width: 16px;
+  display: inline;
+  margin-right: 10px;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #1d1d1b;
+  margin-bottom: 20px;
+  height: 19px;
+  overflow: hidden;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content p {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5e5e59;
+  margin: 0 5px;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content p img {
+  height: 16px;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content p span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #5e5e59;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  margin: 0;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #DED4D0;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 200ms;
+  background-color: #fff;
+  margin: 0;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button:hover {
+  background-color: #fff;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button span {
+  display: none;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav .owl-prev {
+  left: -68px;
+  background-image: url("../images//events/slider-left-arrow.svg");
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-nav .owl-next {
+  right: -68px;
+  background-image: url("../images//events/slider-right-arrow.svg");
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-dots {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-dots .owl-dot span {
+  background-color: #AE8268;
+  opacity: 1;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-dots .owl-dot.active {
+  opacity: 0.5;
+}
+.trade-related-projects .trade-related-carousel .owl-carousel .owl-dots .owl-dot.active span {
+  width: 10px;
+  height: 10px;
 }
 
 .carousel-indicators li {
