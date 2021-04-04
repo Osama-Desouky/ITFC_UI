@@ -3676,12 +3676,12 @@ main styles
       align-items: center;
       justify-content: center;
       label {
-        margin-bottom: 0;
-        margin-#{$end-direction}: 13px;
-        font-size: 16px;
-        line-height: 20px;
-        color: #434343;
-        font-weight: $w-medium;
+          margin-bottom: 0;
+          margin-#{$end-direction}: 13px;
+          font-size: 16px;
+          line-height: 20px;
+          color: #434343;
+          font-weight: $w-medium;
       }
     }
   }
