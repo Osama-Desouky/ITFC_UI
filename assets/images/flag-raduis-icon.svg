@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="flag-raduis-icon" transform="translate(5.325 4.763)">
+    <g id="Group_23749" data-name="Group 23749" transform="translate(-5 -4.763)">
+      <g id="Group_23748" data-name="Group 23748" transform="translate(0 0)">
+        <circle id="Ellipse_11710" data-name="Ellipse 11710" cx="31" cy="31" r="31" transform="translate(-0.325)" fill="#edeff9"/>
+        <g id="flag" transform="translate(15.823 15.735)">
+          <g id="Group_23749-2" data-name="Group 23749" transform="translate(-0.001 -0.002)">
+            <path id="Path_46871" data-name="Path 46871" d="M0,0H29.706V29.706H0Z" transform="translate(0.001 0.827)" fill="none"/>
+            <g id="Group_23748-2" data-name="Group 23748" transform="translate(0 0)">
+              <path id="Path_6558" data-name="Path 6558" d="M19.505,4.642c-2.85,0-5.413-1.857-9.394-1.857a12.872,12.872,0,0,0-4.684.88A2.786,2.786,0,1,0,1.393,5.2V28.778a.927.927,0,0,0,.927.929H3.25a.927.927,0,0,0,.929-.927v-6.5A15.967,15.967,0,0,1,11.6,20.63c2.85,0,5.413,1.857,9.394,1.857a13.48,13.48,0,0,0,7.458-2.32,2.782,2.782,0,0,0,1.259-2.33V5.568a2.784,2.784,0,0,0-3.882-2.56,16.594,16.594,0,0,1-6.319,1.634Zm7.417,13.2A10.912,10.912,0,0,1,20.981,19.7c-3.477,0-5.918-1.857-9.394-1.857a19.9,19.9,0,0,0-7.417,1.393V7.428a10.914,10.914,0,0,1,5.941-1.857c3.477,0,5.918,1.857,9.394,1.857a19.838,19.838,0,0,0,7.417-1.857Z" transform="translate(0.001 0.002)" fill="#d5313a"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

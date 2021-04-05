@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="phone-raduis-icon" transform="translate(5.325 4.763)">
+    <g id="Group_23749" data-name="Group 23749" transform="translate(-5 -4.763)">
+      <g id="Group_23748" data-name="Group 23748" transform="translate(0 0)">
+        <circle id="Ellipse_11710" data-name="Ellipse 11710" cx="31" cy="31" r="31" transform="translate(-0.325)" fill="#edeff9"/>
+        <g id="flag" transform="translate(15.823 15.735)">
+          <path id="phone-call" d="M17.487,5.753a5.942,5.942,0,0,1,4.694,4.694M17.487,1a10.7,10.7,0,0,1,9.448,9.436m-1.188,9.483v3.565a2.377,2.377,0,0,1-2.591,2.377A23.518,23.518,0,0,1,12.9,22.212a23.173,23.173,0,0,1-7.13-7.13,23.518,23.518,0,0,1-3.648-10.3A2.377,2.377,0,0,1,4.486,2.188H8.052a2.377,2.377,0,0,1,2.377,2.044,15.259,15.259,0,0,0,.832,3.339,2.377,2.377,0,0,1-.535,2.507L9.216,11.588a19.014,19.014,0,0,0,7.13,7.13l1.509-1.509a2.377,2.377,0,0,1,2.507-.535,15.259,15.259,0,0,0,3.339.832,2.377,2.377,0,0,1,2.044,2.412Z" transform="translate(0.329 1.829)" fill="none" stroke="#d5313a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

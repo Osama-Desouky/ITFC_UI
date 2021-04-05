@@ -113,3 +113,13 @@ ol {
 .float-right {
   float: #{$start-direction} !important;
 }
+.px-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.pr-0{
+  padding-#{$end-direction}: 0 !important;
+}
+.pl-0{
+  padding-#{$start-direction}: 0 !important;
+}
