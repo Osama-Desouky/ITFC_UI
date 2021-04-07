@@ -11565,26 +11565,26 @@ ol li {
 .main-navbar .search-box {
   position: absolute;
   top: 25px;
-  width: 600px;
+  width: 315px;
   right: 0;
-  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 99;
-  border-radius: 15px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
 .main-navbar .search-box .search-btn {
   position: absolute;
   top: 12px;
-  left: 0;
+  left: 5px;
   background: none;
   border: none;
 }
 
 .main-navbar .search-box input[type="text"] {
-  padding-left: 30px;
+  padding-left: 35px;
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -11597,6 +11597,7 @@ ol li {
   position: absolute;
   top: 14px;
   right: 10px;
+  color: #1d1d1b;
 }
 
 .main-navbar.fixed {

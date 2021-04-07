@@ -11565,26 +11565,26 @@ ol li {
 .main-navbar .search-box {
   position: absolute;
   top: 25px;
-  width: 600px;
+  width: 315px;
   right: 0;
-  -webkit-box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
   display: none;
   z-index: 99;
-  border-radius: 15px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
 .main-navbar .search-box .search-btn {
   position: absolute;
   top: 12px;
-  left: 0;
+  left: 5px;
   background: none;
   border: none;
 }
 
 .main-navbar .search-box input[type="text"] {
-  padding-left: 30px;
+  padding-left: 35px;
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -11597,6 +11597,7 @@ ol li {
   position: absolute;
   top: 14px;
   right: 10px;
+  color: #1d1d1b;
 }
 
 .main-navbar.fixed {
@@ -16781,20 +16782,33 @@ main styles
   margin-bottom: 40px;
 }
 
-.senior-management .col-lg-3 {
+.senior-management .row {
+  margin: 0;
+}
+
+.senior-management .row .col-lg-3 {
   padding: 0;
-  padding-right: 21px;
+  margin-right: 15px;
+  /* width: calc(100% / 4 - 11.5px); */
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(25% - 11.5px);
+          flex: 0 0 calc(25% - 11.5px);
+}
+
+.senior-management .row .col-lg-3:nth-child(4n + 0) {
+  margin-right: 0;
 }
 
 .senior-management_member-card {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
+  padding: 3px 3px 0;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 15px #0000001A;
-          box-shadow: 0px 0px 15px #0000001A;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .senior-management_member-card .img-box {
-  max-height: 289px;
+  max-height: 298px;
   overflow: hidden;
 }
 
@@ -16816,26 +16830,31 @@ main styles
           justify-content: center;
   padding-top: 15px;
   padding-bottom: 19px;
-  padding-left: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .senior-management_member-card--content-box h4 {
   font-size: 20px;
   font-weight: 700;
   color: #1d1d1b;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   overflow: hidden;
+  line-height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .senior-management_member-card--content-box p {
   font-size: 16px;
   margin: 0;
+  color: #848484;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .senior-management_member-card:hover h4 {
   color: #d5313a;
-  -webkit-animation: title-color-change 0.3s ease-out;
-          animation: title-color-change 0.3s ease-out;
 }
 
 .senior-management .pager {
@@ -16854,6 +16873,27 @@ main styles
   min-height: calc(100vh - 135px);
 }
 
+.senior-manager .row {
+  margin: 0;
+}
+
+.senior-manager .col-lg-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36.92%;
+          flex: 0 0 36.92%;
+  max-width: 36.92%;
+  padding: 0;
+  margin-right: 3.3%;
+}
+
+.senior-manager .col-lg-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 59.76%;
+          flex: 0 0 59.76%;
+  max-width: 59.76%;
+  padding: 0;
+}
+
 .senior-manager_box--img-box img {
   border: 3px solid #ffffff;
   max-width: 100%;
@@ -16869,12 +16909,22 @@ main styles
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 500;
 }
 
 .senior-manager_box--img-box-social span a {
   color: inherit;
   font-size: 24px;
-  margin: 0 6px;
+  margin: 0 8px;
+  display: inherit;
+}
+
+.senior-manager_box--img-box-social span a:first-child {
+  margin-left: 16px;
+}
+
+.senior-manager_box--img-box-social span a:last-child {
+  margin-right: 0;
 }
 
 .senior-manager_box--img-box-social span a:hover {
@@ -16895,19 +16945,21 @@ main styles
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+  margin-top: 0 !important;
 }
 
 .senior-manager_box--content-box a {
   color: #d5313a;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 21px;
 }
 
 .senior-manager_box--content-box p {
   color: #5e5e59;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 21px;
+  margin-bottom: 0;
 }
 
 .senior-manager_body-text {

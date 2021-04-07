@@ -157,22 +157,22 @@
   .search-box {
     position: absolute;
     top: 25px;
-    width: 600px;
+    width: 315px;
     #{$end-direction}: 0;
-    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
     display: none;
     z-index: 99;
-    border-radius: 15px;
+    border-radius: 0px;
     overflow: hidden;
     .search-btn {
       position: absolute;
       top: 12px;
-      #{$start-direction}: 0;
+      #{$start-direction}: 5px;
       background: none;
       border: none;
     }
     input[type="text"] {
-      padding-#{$start-direction}: 30px;
+      padding-#{$start-direction}: 35px;
       padding-#{$end-direction}: 20px;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -184,6 +184,7 @@
       position: absolute;
       top: 14px;
       #{$end-direction}: 10px;
+      color: $black-color;
     }
   }
   &.fixed {
