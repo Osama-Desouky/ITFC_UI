@@ -2700,3 +2700,31 @@ margin-bottom: 108px;
 
 
 
+
+
+// media
+
+
+
+@include media-breakpoint-down(md) {
+
+  //board members
+  .board-members{
+    .main-member-card , .member-card{
+      .img-box{
+          height: 100%;
+      }
+
+      .content-box h4{
+        height:100% ;
+      }
+    }
+
+
+  }
+
+
+
+
+
+}
