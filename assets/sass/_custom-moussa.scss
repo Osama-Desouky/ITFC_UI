@@ -1514,11 +1514,11 @@
                 float: left;
                 margin-#{$start-direction}:6px ;
                 margin-#{$end-direction}: 6px;
-                // .mid-img{
-                //     img{
-                        
-                //     }
-                // }
+                .mid-img{
+                    img{
+                        max-width: 100%;        
+                    }
+                }
                 &::before{
                    display: none;
                 }
@@ -1653,5 +1653,230 @@
     }
     .tooltip-inner{
         background-color: rgba($color: #000, $alpha: 0.60);
+    }
+}
+
+
+
+
+// meeeeeeeeeeeeeedia
+
+// Medium devices (tablets, less than 992px)
+// @media (max-width :992px) {
+    @include media-breakpoint-down(md){
+    .SDG-section{
+        .list-card{
+          .sdg-top-content{
+              font-size: 30px;
+              h3{
+                  font-size: 30px;
+                  margin-bottom: 10px;
+                  line-height: 35px;
+              }
+              .sdg-details{
+                  margin-bottom: 85px;
+                  h4{
+                      font-size: 16px;
+                  }
+                  p{
+                      font-size: 16px;
+                      line-height: 30px;
+                  }
+              }
+          }
+          .sort{
+            margin-bottom: 15px;
+          }
+          .sdg-list{
+              .sdg-item{
+                  width: calc(100% / 3 - 4.5px);
+                  &.item3{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item8{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item4{
+                    margin-#{$end-direction}: 6px;
+                  }
+                  &.item6{
+                    margin-#{$end-direction}: 6px;
+                  }
+                }
+                .mid-item{
+                    width: 100%;
+                }
+          }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .SDG-section{
+        .list-card{
+          .sdg-top-content{
+              h3{
+                  font-size: 26px;
+              }
+              .sdg-details{
+                margin-bottom: 30px;
+                  h4{
+                      font-size: 14px;
+                  }
+                  p{
+                    font-size: 14px;
+                    line-height: 24px;
+                  }
+              }
+          }
+        //   .sort{
+        //     margin-bottom: 15px;
+        //   }
+          .sdg-list{
+              .sdg-item{
+                  width: calc(100% / 2 - 4.5px);
+                  &.item2{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item4{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item7{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item9{
+                    margin-#{$end-direction}: 0px;
+                  }
+                  &.item3{
+                    margin-#{$end-direction}: 6px;
+                  }
+                  &.item8{
+                    margin-#{$end-direction}: 6px;
+                  }
+                }
+                .mid-item{
+                    width: 100%;
+                }
+          }
+        }
+        .sdg-popup{
+            .modal-dialog{
+                top: inherit;
+              .modal-content{
+                .close-popup{
+                  width: 30px;
+                  height: 30px;
+                  right: 15px;
+                  top: 12px;
+                }
+                .modal-body{
+                  div.popup-content{
+                    padding: 43px 15px 15px 20px;
+                    h4{
+                        font-size: 18px;
+                    }
+                    div.icon-with-title{
+                        margin: 20px 0;
+                        padding-#{$end-direction}: 15px;
+                        img{
+                            margin-#{$end-direction}: 10px;
+                        }
+                        h3{
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                  }
+                }
+                .modal-footer{
+                    padding: 15px 0px 40px 0px;
+                    margin: 0 15px 0 20px;
+                    h3{
+                        font-size: 22px;
+                        font-weight: $w-bold;
+                        color: $red-color;
+                        line-height: 27px;
+                        margin: 0;
+                        margin-bottom: 25px;
+                    }
+                    ul{
+                        padding: 0;
+    
+                        li{
+                            font-size: 14px;
+                            line-height: 18px;
+                            margin-bottom: 10px;
+                            &::before {
+                                content: "-";
+                                margin-#{$end-direction}: 5px;
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+    }
+    
+}
+
+@include media-breakpoint-down(xs) {
+    .SDG-section{
+        .list-card{
+          .sdg-top-content{
+            padding: 15px;
+              h3{
+                  font-size: 18px;
+                  line-height: 28px;
+              }
+              .sdg-details{
+                margin-bottom: 30px;
+                  h4{
+                      font-size: 14px;
+                      line-height: 24px;
+                  }
+                  p{
+                    font-size: 13px;
+                    line-height: 20px;
+                  }
+              }
+          }
+          .sort{
+            form{
+                select{
+                    font-size: 13px;
+                    background-position-y: 12px;
+                    width: 75px !important;
+                    height: 32px;
+                }
+            }
+          }
+          .sdg-list{
+              .sdg-item{
+                  width: 100%;
+                  margin:  0 0 6px;
+                  background-size: cover;
+                }
+                
+          }
+        }
+
+    }
+    ul.fixed-social{
+        position: absolute;
+        top: 140px;
+        display: flex;
+        li{
+            margin-#{$end-direction}:3px;
+            width: 30px;
+            height: 30px;
+        }
     }
 }
