@@ -3512,9 +3512,9 @@ main styles
     left: 0;
     top: 0;
     width: 100%;
-    height: calc(100vh - 135px);
+    height: 100%;
     background-image: url($img-path + "projects-bg.png");
-    background-position: $end-direction center;
+    background-position: calc(100% + 40px) center;
     background-repeat: no-repeat;
     background-size: auto 100%;
     opacity: 0.9;
