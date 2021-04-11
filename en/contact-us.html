@@ -485,8 +485,8 @@
                     <div class="header-content">
                       <h2>All our contact information for our <br> <span>Regional Hubs</span></h2>
                       <p> You can send us a message through the 
-                          <a href="#contact-form">Contact Form </a> 
-                          below in this page.
+                          <a href="#contact-form" id="scrollToForm">Contact Form </a> 
+                          below in <br> this page.
                       </p>
                     </div>
                   </div>
@@ -497,7 +497,7 @@
             <div class="row">
 
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -545,7 +545,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -593,7 +593,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -640,7 +640,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -688,7 +688,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -735,7 +735,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -782,7 +782,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -829,7 +829,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-38">
                     <div class="hub-items">
 
                         <div class="img-box">
@@ -905,21 +905,21 @@
                         <label for="category">Category<span>*</span></label>
                         <select  name="category" id="category" class="form-control" place-holder="Select Category">
 
-                            <option class="place" value="" disabled selected hidden>Select Regional Hub</option>
-                          <option>optin 1</option>
-                          <option>optin 1</option>
-                          <option>optin 1</option>
-                          <option>optin 1</option>
+                            <option class="place" value="" disabled selected hidden>Select Category</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
                         </select>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="regionalhub">Regionalhub Hub <span>*</span></label>
+                        <label for="regionalhub">Regional Hub <span>*</span></label>
                         <select name="regionalhub" id="regionalhub" class="form-control">
-                            <option value="" disabled selected hidden>Select Category</option>
-                          <option>optin 1</option>
-                          <option>optin 1</option>
-                          <option>optin 1</option>
+                            <option value="" disabled selected hidden>Select Regional Hub</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 4</option>
                         </select>
                     </div>
                 </div>
@@ -934,7 +934,7 @@
 
                 <div class="form-group">
                     <label for="message">Message <span>*</span></label>
-                    <textarea name="message" class="form-control" id="message" rows="4"></textarea>
+                    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Message ..."></textarea>
                   </div>
                 <div class="form-row justify-content-center">
                     <button type="submit" class="btn btn-red">submit</button>
@@ -1109,6 +1109,32 @@
 
     });
 
+
+      // animation when click 
+
+// handle links with @href started with '#' only
+    $('#scrollToForm').click(function (e) {
+
+// target element id
+var id = $(this).attr('href');
+
+// target element
+var $id = $(id);
+if ($id.length === 0) {
+    return;
+}
+
+// prevent standard hash navigation (avoid blinking in IE)
+e.preventDefault();
+
+// top position relative to the document
+var pos = $id.offset().top;
+
+// animated top scrolling
+$('body, html').animate({scrollTop: pos  - 175 }, 'slow');
+
+
+});
   </script>
   <!-- custom Js -->
   <script src="../assets/js/custom.js"></script>
