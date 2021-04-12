@@ -2097,12 +2097,12 @@ margin-bottom: 108px;
     height: 822px;
     width: 100%;
     z-index: -1;
-    background-color: #f6faff;
+    background-color: #ebf2ff;
     background-image: url($img-path + "glossary/toparea-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
-    mix-blend-mode: multiply;
+    background-size: cover;
+    background-position: right top;
+    
   }
 
   .inner-heading {
@@ -2150,14 +2150,17 @@ margin-bottom: 108px;
   
     .form-group {
       position: relative;
+      width: 100%;
+
     }
   
     input {
       border-radius: 0;
       border: 2px solid #e0e3e5;
       color: $p-color;
-      padding-#{$end-direction}: 30px;
-      width: 230px;
+      // padding-#{$end-direction}: 30px;
+      padding:0 15px;
+      width: 100%;
       height: 42px;
     }
     .search-icon {
@@ -2742,6 +2745,11 @@ margin-bottom: 108px;
 // media
 
 
+@include media-breakpoint-down(sm){
+  .glossary-inner .glossary-inner-content-box .content-card{
+    padding-left:0 ;
+  }
+}
 
 @include media-breakpoint-down(md) {
 
@@ -2758,6 +2766,48 @@ margin-bottom: 108px;
     }
 
 
+  }
+
+ //glossary
+ .glossary{
+   padding-bottom:24px ;
+ }
+  .glossary-inner {
+    margin-bottom: 48px;
+    .filter {
+      margin-bottom: 24px;
+      .left-filter{
+        margin-bottom: 12px;
+        padding: 0 6px  ;
+
+      }
+      .left-filter {
+        .links{
+          flex-wrap: wrap;
+        }
+      }
+      .right-filter {
+        justify-content: flex-start;
+        
+      }
+    }
+    .glossary-inner-content-box{
+      .content-card{
+        &-item{
+            margin-bottom: 15px;
+
+
+  
+          .related{
+            .re{
+                max-width: 140px;
+                display: block; 
+                margin-bottom: 10px;       
+            }
+          }
+        }
+      }
+    }
   }
 
 
