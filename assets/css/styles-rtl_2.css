@@ -18618,6 +18618,13 @@ main styles
   .SDG-section .list-card .sdg-list .sdg-item {
     width: calc(100% / 3 - 4.5px);
   }
+  .SDG-section .list-card .sdg-list .sdg-item .goal {
+    font-size: 18px;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden div p {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
   .SDG-section .list-card .sdg-list .sdg-item.item1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -18744,6 +18751,7 @@ main styles
   }
   .SDG-section .list-card .sdg-list .mid-item {
     width: 100%;
+    height: 350px;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
@@ -18836,18 +18844,6 @@ main styles
     width: 100%;
     margin: 0 0 6px;
     background-size: cover;
-  }
-  ul.fixed-social {
-    position: absolute;
-    top: 140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  ul.fixed-social li {
-    margin-left: 3px;
-    width: 30px;
-    height: 30px;
   }
 }
 
