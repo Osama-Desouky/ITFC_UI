@@ -1260,7 +1260,7 @@
                 }
             }
             .sdg-details{
-                height: 210px;
+                height: 209px;
                 overflow: hidden;
                 margin-bottom: 75px;
                 h4{
@@ -1688,23 +1688,47 @@
             margin-bottom: 15px;
           }
           .sdg-list{
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
               .sdg-item{
                   width: calc(100% / 3 - 4.5px);
+                  &.item1{
+                    order: 1;
+                  }
+                  &.item2{
+                    order: 2;
+                  }
                   &.item3{
                     margin-#{$end-direction}: 0px;
-                  }
-                  &.item8{
-                    margin-#{$end-direction}: 0px;
+                    order: 3;
                   }
                   &.item4{
                     margin-#{$end-direction}: 6px;
+                    order: 4;
+                  }
+                  &.item5{
+                    order: 5;
                   }
                   &.item6{
-                    margin-#{$end-direction}: 6px;
+                    // margin-#{$end-direction}: 6px;
+                    order: 6;
+                  }
+                  &.item7{
+                    order: 8;
+                  }
+                  &.item8{
+                    // margin-#{$end-direction}: 0px;
+                    order: 9;
+                  }
+                  &.item9{
+                    margin-#{$end-direction}: 0px;
+                    order: 10;
                   }
                 }
                 .mid-item{
                     width: 100%;
+                    order: 7;
                 }
           }
         }
@@ -1735,27 +1759,43 @@
           .sdg-list{
               .sdg-item{
                   width: calc(100% / 2 - 4.5px);
+                  &.item1{
+                    order: 1;
+                  }
                   &.item2{
                     margin-#{$end-direction}: 0px;
+                    order: 2;
+                  }
+                  &.item3{
+                    order: 3;
+                    margin-#{$end-direction}: 6px;
                   }
                   &.item4{
                     margin-#{$end-direction}: 0px;
+                    order: 4;
+                  }
+                  &.item5{
+                    order: 6;
+                  }
+                  &.item6{
+                    order: 7;
                   }
                   &.item7{
-                    margin-#{$end-direction}: 0px;
-                  }
-                  &.item9{
-                    margin-#{$end-direction}: 0px;
-                  }
-                  &.item3{
                     margin-#{$end-direction}: 6px;
+                    order: 8;
                   }
                   &.item8{
+                      margin-#{$end-direction}: 0px;
+                      order: 9;
+                  }
+                  &.item9{
                     margin-#{$end-direction}: 6px;
+                    order: 10;
                   }
                 }
                 .mid-item{
                     width: 100%;
+                    order: 5;
                 }
           }
         }

@@ -18133,7 +18133,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-top-content .sdg-details {
-  height: 210px;
+  height: 209px;
   overflow: hidden;
   margin-bottom: 75px;
 }
@@ -18606,23 +18606,71 @@ main styles
   .SDG-section .list-card .sort {
     margin-bottom: 15px;
   }
+  .SDG-section .list-card .sdg-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
   .SDG-section .list-card .sdg-list .sdg-item {
     width: calc(100% / 3 - 4.5px);
   }
+  .SDG-section .list-card .sdg-list .sdg-item.item1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   .SDG-section .list-card .sdg-list .sdg-item.item3 {
     margin-right: 0px;
-  }
-  .SDG-section .list-card .sdg-list .sdg-item.item8 {
-    margin-right: 0px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item4 {
     margin-right: 6px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item6 {
-    margin-right: 6px;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item7 {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item8 {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item9 {
+    margin-right: 0px;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
   .SDG-section .list-card .sdg-list .mid-item {
     width: 100%;
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
   }
 }
 
@@ -18643,26 +18691,62 @@ main styles
   .SDG-section .list-card .sdg-list .sdg-item {
     width: calc(100% / 2 - 4.5px);
   }
+  .SDG-section .list-card .sdg-list .sdg-item.item1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .SDG-section .list-card .sdg-list .sdg-item.item2 {
     margin-right: 0px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item3 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-right: 6px;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item4 {
     margin-right: 0px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item5 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item6 {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item7 {
-    margin-right: 0px;
-  }
-  .SDG-section .list-card .sdg-list .sdg-item.item9 {
-    margin-right: 0px;
-  }
-  .SDG-section .list-card .sdg-list .sdg-item.item3 {
     margin-right: 6px;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item8 {
+    margin-right: 0px;
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .SDG-section .list-card .sdg-list .sdg-item.item9 {
     margin-right: 6px;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
   .SDG-section .list-card .sdg-list .mid-item {
     width: 100%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .SDG-section .sdg-popup .modal-dialog {
     top: inherit;
