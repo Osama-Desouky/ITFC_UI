@@ -11298,6 +11298,9 @@ main styles
 .senior-management {
   padding-top: 39px;
   position: relative; }
+  .senior-management a {
+    display: block;
+    width: 100%; }
   .senior-management::after {
     content: "";
     background-image: url("../images/globe-dotted-bg.svg");
@@ -11315,13 +11318,6 @@ main styles
     margin-bottom: 40px; }
   .senior-management .row {
     margin: 0; }
-    .senior-management .row .col-lg-3 {
-      padding: 0;
-      margin-right: 15px;
-      /* width: calc(100% / 4 - 11.5px); */
-      flex: 0 0 calc(25% - 11.5px); }
-      .senior-management .row .col-lg-3:nth-child(4n + 0) {
-        margin-right: 0; }
   .senior-management_member-card {
     margin-bottom: 55px;
     padding: 3px 3px 0;
@@ -12928,6 +12924,12 @@ label {
       justify-content: space-around; } }
 
 @media (max-width: 767.98px) {
+  .senior-management_member-card .img-box {
+    max-height: 290px !important;
+    object-fit: cover; }
+  .senior-management_member-card .img-box img {
+    min-width: 100%;
+    height: 100%; }
   .glossary-inner .glossary-inner-content-box .content-card {
     padding-left: 0; }
   .publications-list .list-card .widthZero {
@@ -12977,6 +12979,9 @@ label {
     height: 100% !important; } }
 
 @media (max-width: 991.98px) {
+  .senior-management_member-card .img-box {
+    height: 100%;
+    max-height: 400px; }
   .trade-dev .trade-header {
     height: 100%;
     position: relative;
