@@ -12895,15 +12895,69 @@ main styles
   background-image: url("../images/our-stories/prev.svg") !important;
   height: 40px !important; }
 
+label {
+  white-space: nowrap !important; }
+
+.publications-list .list-card .list-show .list-item .list-img img {
+  height: 100%; }
+
 @keyframes title-color-change {
   from {
     color: #1d1d1b; }
   to {
     color: #d5313a; } }
 
+@media (max-width: 575.98px) {
+  .publications-list .list-card .list-show .list-item .publication-content .bottom-div {
+    display: flex;
+    flex-direction: column; }
+    .publications-list .list-card .list-show .list-item .publication-content .bottom-div .links {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; } }
+
 @media (max-width: 767.98px) {
   .glossary-inner .glossary-inner-content-box .content-card {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .publications-list .list-card .widthZero {
+    margin-bottom: 12px !important; }
+  .publications-list .list-card .list-show {
+    margin-left: 0; }
+    .publications-list .list-card .list-show .list-filter {
+      margin-bottom: 12px !important; }
+      .publications-list .list-card .list-show .list-filter .widthZero {
+        margin-bottom: 24px !important; }
+    .publications-list .list-card .list-show .list-item {
+      display: flex;
+      flex-direction: column;
+      height: 100% !important; }
+      .publications-list .list-card .list-show .list-item .list-img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 450px;
+        object-fit: cover;
+        object-position: center; }
+        .publications-list .list-card .list-show .list-item .list-img img {
+          width: 100% !important;
+          height: 100% !important;
+          max-width: 450px !important; }
+      .publications-list .list-card .list-show .list-item .publication-content {
+        margin-left: 0 !important;
+        padding: 12px !important; }
+  .publications-list .list-card .grid-show .list-item {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important; }
+    .publications-list .list-card .grid-show .list-item .list-img {
+      height: 100%; }
+    .publications-list .list-card .grid-show .list-item img {
+      position: relative; }
+    .publications-list .list-card .grid-show .list-item:hover .publication-content {
+      background-color: #fff;
+      max-height: 250px !important; }
+  .publications-list .list-card .grid-show .list-item:hover .list-img::after {
+    max-height: 200px; } }
 
 @media (max-width: 991.98px) {
   .board-members .main-member-card .img-box, .board-members .member-card .img-box {
@@ -12928,7 +12982,120 @@ main styles
       .glossary-inner .glossary-inner-content-box .content-card-item .related .re {
         max-width: 140px;
         display: block;
-        margin-bottom: 10px; } }
+        margin-bottom: 10px; }
+  .publications-list .list-filter {
+    margin-bottom: 12px; }
+    .publications-list .list-filter .widthZero {
+      margin-bottom: 24px !important; }
+  .publications-list .list-card {
+    padding: 23px 30px; }
+  .publications-list .top-filter .search-icon img {
+    vertical-align: initial; }
+  .publications-list .top-filter .right-filter #btnContainer button.active img {
+    filter: brightness(500%); }
+  .publications-list .top-filter .right-filter .dropdown {
+    display: inline-block; }
+    .publications-list .top-filter .right-filter .dropdown .btn-sort {
+      width: 107px;
+      height: 38px;
+      border: 2px solid #e0e3e5;
+      border-radius: 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: #5e5e59;
+      box-shadow: none; }
+      .publications-list .top-filter .right-filter .dropdown .btn-sort::after {
+        background-image: url("../images/news/down-arrow.svg");
+        border: 0;
+        width: 13px;
+        height: 7px;
+        position: absolute;
+        right: 10px;
+        top: 15px; }
+      .publications-list .top-filter .right-filter .dropdown .btn-sort::before {
+        content: "";
+        background-image: url("../images/news/sort-icon.svg");
+        position: absolute;
+        width: 24px;
+        height: 15px;
+        left: 8px;
+        top: 12px; }
+    .publications-list .top-filter .right-filter .dropdown ul.dropdown-menu li a {
+      display: block;
+      padding: 8px 10px 10px 45px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #5e5e59;
+      position: relative;
+      transition: 200ms; }
+      .publications-list .top-filter .right-filter .dropdown ul.dropdown-menu li a:hover {
+        background-color: #eeeeee; }
+      .publications-list .top-filter .right-filter .dropdown ul.dropdown-menu li a.active::before {
+        content: "";
+        background-image: url("../images/news/check-sort.svg");
+        position: absolute;
+        width: 12px;
+        height: 13px;
+        left: 16px;
+        top: 10px;
+        background-repeat: no-repeat; }
+    .publications-list .top-filter .right-filter .dropdown ul.dropdown-menu hr {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .publications-list .d-flex {
+    flex-direction: column; }
+  .publications-list .list-show {
+    margin-top: 12px !important;
+    margin-left: 0; }
+    .publications-list .list-show .list-item {
+      height: 100%;
+      margin-top: 24px; }
+      .publications-list .list-show .list-item .publication-content {
+        margin: 0 !important;
+        padding: 24px 12px; }
+      .publications-list .list-show .list-item .list-img {
+        width: 100%;
+        height: 100%;
+        max-width: 390px;
+        max-height: 248px;
+        overflow: hidden; }
+      .publications-list .list-show .list-item .list-content .actions {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+  .publications-list .grid-show {
+    margin-top: 33px;
+    margin: 0 !important;
+    box-sizing: border-box !important; }
+    .publications-list .grid-show .list-item {
+      width: 49% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      margin-top: 12px !important;
+      margin-bottom: 17px;
+      flex-direction: column;
+      transition: 500ms; }
+      .publications-list .grid-show .list-item .list-img {
+        width: 389px;
+        height: 224px;
+        overflow: hidden; }
+        .publications-list .grid-show .list-item .list-img img {
+          max-width: 100%;
+          height: 100%;
+          transform: scale(1.2);
+          transition: 1s; }
+      .publications-list .grid-show .list-item .list-content {
+        padding: 28px 32px 0;
+        position: relative; }
+        .publications-list .grid-show .list-item .list-content .date {
+          color: #ed4c21;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 23px; }
+          .publications-list .grid-show .list-item .list-content .date img {
+            margin-right: 8px;
+            vertical-align: text-top;
+            display: inline-block; } }
 
 /*
 this UI is made desktop first.
