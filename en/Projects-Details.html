@@ -744,18 +744,58 @@
           <ul id='carousel-custom-dots' class='owl-dots'>
             <li class='owl-dot'>
               <div class="img-box"><img src="../assets/images/res-slider-img-1.png" alt="" srcset=""></div>
+              <div class="owl-spinner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+                  <g id="Ellipse_189" data-name="Ellipse 189" fill="none" stroke="#ED4C21" stroke-width="5">
+                    <circle cx="46" cy="46" r="46" stroke="none"></circle>
+                    <circle cx="46" cy="46" r="43.5" fill="none"></circle>
+                  </g>
+                </svg>
+              </div>
             </li>
             <li class='owl-dot'>
               <div class="img-box"><img src="../assets/images/res-slider-img-2.png" alt="" srcset=""></div>
+              <div class="owl-spinner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+                  <g id="Ellipse_189" data-name="Ellipse 189" fill="none" stroke="#ED4C21" stroke-width="5">
+                    <circle cx="46" cy="46" r="46" stroke="none"></circle>
+                    <circle cx="46" cy="46" r="43.5" fill="none"></circle>
+                  </g>
+                </svg>
+              </div>
             </li>
             <li class='owl-dot'>
               <div class="img-box"><img src="../assets/images/res-slider-img-3.png" alt="" srcset=""></div>
+              <div class="owl-spinner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+                  <g id="Ellipse_189" data-name="Ellipse 189" fill="none" stroke="#ED4C21" stroke-width="5">
+                    <circle cx="46" cy="46" r="46" stroke="none"></circle>
+                    <circle cx="46" cy="46" r="43.5" fill="none"></circle>
+                  </g>
+                </svg>
+              </div>
             </li>
             <li class='owl-dot'>
               <div class="img-box"><img src="../assets/images/res-slider-img-4.png" alt="" srcset=""></div>
+              <div class="owl-spinner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+                  <g id="Ellipse_189" data-name="Ellipse 189" fill="none" stroke="#ED4C21" stroke-width="5">
+                    <circle cx="46" cy="46" r="46" stroke="none"></circle>
+                    <circle cx="46" cy="46" r="43.5" fill="none"></circle>
+                  </g>
+                </svg>
+              </div>
             </li>
             <li class='owl-dot'>
               <div class="img-box"><img src="../assets/images/res-slider-img-5.png" alt="" srcset=""></div>
+              <div class="owl-spinner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+                  <g id="Ellipse_189" data-name="Ellipse 189" fill="none" stroke="#ED4C21" stroke-width="5">
+                    <circle cx="46" cy="46" r="46" stroke="none"></circle>
+                    <circle cx="46" cy="46" r="43.5" fill="none"></circle>
+                  </g>
+                </svg>
+              </div>
             </li>
           </ul>
         </div>
@@ -917,8 +957,8 @@
           <li>Kingdom of Saudi Arabia</li>
           <li><span class="label">Tel:</span> <span class="num">+966 12 646 8337</span></li>
           <li><span class="label">Fax:</span> <span class="num">+966 12 637 1064</span></li>
-          <li><span class="label">E-mail:</span> <a href="mailto:ITFC@itfc-idb.org"
-              class="mail">ITFC@itfc-idb.org</a></li>
+          <li><span class="label">E-mail:</span> <a href="mailto:ITFC@itfc-idb.org" class="mail">ITFC@itfc-idb.org</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -1042,23 +1082,23 @@
       AOS.init();
       var resumeSlider = $('.resume-slider .owl-carousel');
       resumeSlider.owlCarousel({
-        loop: false,
+        loop: true,
         nav: false,
         items: 1,
         animateOut: 'fadeOut',
         dotsContainer: '#carousel-custom-dots',
-        // autoplay: true,
-        // autoplayTimeout:7500
+        autoplay: true,
+        autoplayTimeout:5000
       });
       $('.resume-slider .owl-dot').click(function () {
         resumeSlider.trigger('to.owl.carousel', [$(this).index(), 300]);
       });
-    
+
       var relImgSlider = $('.related-imgs-slider .owl-carousel');
       relImgSlider.owlCarousel({
         loop: true,
         nav: false,
-        margin:22,
+        margin: 22,
         dotsContainer: '#rel-img-custom-dots',
         responsive: {
           0: {
