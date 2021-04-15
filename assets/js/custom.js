@@ -54,21 +54,21 @@ $(function () {
         $("body").css({ "padding-top": "0px" });
       }
     }
-    if (scroll >= calculateOffset(".in-focus"))
+    if (scroll >= calculateOffset(".in-focus")-400)
       $("#navFocus").addClass("active");
     else $("#navFocus").removeClass("active");
 
-    if (scroll >= calculateOffset(".latest-news"))
+    if (scroll >= calculateOffset(".latest-news")-400)
       $("#navNews").addClass("active");
     else $("#navNews").removeClass("active");
-    if (scroll >= calculateOffset(".upcoming-events"))
+    if (scroll >= calculateOffset(".upcoming-events")-500)
       $("#navEvents").addClass("active");
     else $("#navEvents").removeClass("active");
-    if (scroll >= calculateOffset(".publications"))
+    if (scroll >= calculateOffset(".publications")-500)
       $("#navPublications").addClass("active");
     else $("#navPublications").removeClass("active");
     if (
-      scroll >= calculateOffset(".our-group") ||
+      scroll >= calculateOffset(".our-group")-600 ||
       $(window).scrollTop() + $(window).height() == $(document).height()
     )
       $("#navISDB").addClass("active");
