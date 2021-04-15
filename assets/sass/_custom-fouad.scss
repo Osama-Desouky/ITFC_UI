@@ -279,17 +279,17 @@
   .row{
     margin: 0;
   }
-  .col-lg-4{
-    flex: 0 0 36.92%;
-    max-width: 36.92%;
-    padding: 0;
-    margin-right: 3.3%;
-  }
-  .col-lg-8{
-    flex: 0 0 59.76%;
-    max-width: 59.76%;
-    padding: 0;
-  }
+  // .col-lg-4{
+  //   flex: 0 0 36.92%;
+  //   max-width: 36.92%;
+  //   padding: 0;
+  //   margin-right: 3.3%;
+  // }
+  // .col-lg-8{
+  //   flex: 0 0 59.76%;
+  //   max-width: 59.76%;
+  //   padding: 0;
+  // }
   &_box{
     &--img-box{
       
@@ -375,7 +375,7 @@
 
   &_body-text{
     padding:50px 0;
-    margin-bottom: 295px;
+    margin-bottom: 48px;
 
     p{
       color: $p-color;
@@ -1716,12 +1716,13 @@ margin-bottom: 108px;
   }
 
   .cards{
-
+    width: 100%;
     .img-box{
-      width: 285px;
+      width: 100%;
       height: 193px;
       position: relative;
       margin-bottom: 16px;
+      overflow: hidden;
       img{
         width: 100%;
         height: 100%;
@@ -1729,7 +1730,8 @@ margin-bottom: 108px;
         z-index: 1;
         top: 0;
         left: 0;
-
+        object-fit: cover;
+        object-position: center;
 
       }
       .overlay{
@@ -1754,11 +1756,14 @@ margin-bottom: 108px;
       color: $black-color;
     }
     .main-card{
+      width: 100%;
       .img-box{
-        width: 600px;
+        width: 100%;
+
         height: 407px;
         position: relative;
         margin-bottom: 16px;
+        overflow: hidden;
         img{
           width: 100%;
           height: 100%;
@@ -1766,7 +1771,8 @@ margin-bottom: 108px;
           z-index: 1;
           top: 0;
           left: 0;
-
+          object-fit: cover;
+          object-position: center;
 
         }
 
@@ -1832,6 +1838,7 @@ margin-bottom: 108px;
 
 .trade-dev-impact{
   margin-bottom: 76px;
+  width: 100%;
   &-title{
     display: flex;
     justify-content: center;
@@ -1891,6 +1898,8 @@ margin-bottom: 108px;
   .box-img{
     height: 450px;
     width: 495px;
+    max-width: 100%;
+    
     img{
       width: 100%;
       height: 100%;
@@ -2770,6 +2779,18 @@ label{
 
 @include media-breakpoint-down(xs){
 
+    // our stories
+
+    .our-stories-section .list-card .list-show .list-item{
+    
+      width: calc( 100% - 3px) !important;
+  
+      
+    }
+
+
+
+
   .publications-list .list-card .list-show .list-item .publication-content .bottom-div{
     display: flex;
 
@@ -2787,128 +2808,7 @@ label{
 }
 
 
-@include media-breakpoint-down(sm){
 
-  .senior-management_member-card .img-box{
-    
-    max-height: 290px !important;
-    object-fit: cover;
-
-  }
-  .senior-management_member-card .img-box img {
-    min-width: 100%;
-    height: 100%;
-}
-
-
-
-  .glossary-inner .glossary-inner-content-box .content-card{
-    padding-left:0 ;
-  }
-
-
-
-  .publications-list .list-card{
-    
-    .widthZero{
-      margin-bottom: 12px !important;
-    }
-    // padding: 12px 18px ;
-    .list-show {
-      margin-left: 0;
-      .list-filter{ 
-
-        margin-bottom: 12px !important;
-
-        .widthZero{
-          margin-bottom: 24px !important;
-        }
-      }
-      .list-item{
-        display: flex;
-        flex-direction: column;
-        height: 100% !important;
-        
-   
-        .list-img{
-          width: 100% !important;
-          height: 100% !important;
-         max-width: 450px;
-         object-fit: cover;
-         object-position: center;
-          img{
-            width: 100% !important;
-            height: 100% !important;
-            max-width: 450px !important;
-           
-   
-          }
-        
-        }
-   
-        .publication-content{
-         margin-left: 0 !important;
-         padding: 12px !important;
-        }
-     }
-    }
-
-  }
-
-
-  .publications-list .list-card .grid-show .list-item{
-    width: 100% !important;
-    height: 100% !important;
-    max-height: 100% !important;
-    .list-img{
-      height: 100%;
-    }
-
-    img{
-      position: relative;
-    }
-
-    &:hover{
-      .publication-content{
-      // height: 100% !important;
-      background-color: #fff;
-      max-height: 250px !important;
-
-      }
-    }
-
-    
-  }
-  
-  .publications-list .list-card .grid-show .list-item:hover .list-img::after{
-    max-height: 200px;
-  }
-
-
-
-  //trade dev
-
-  .trade-dev-programs h2{
-    font-size: 34px;
-  }
-
-  .trade-dev-programs_content--box h3{
-    font-size: 21px;
-  }
-
-
-  .trade-dev-programs_content--img img{
-    max-height: 300px !important;
-    height: 100% !important;
-  }
-
-
-
-
-
-
-
-}
 
 @include media-breakpoint-down(md) {
 
@@ -2922,8 +2822,106 @@ label{
   }
 
 
+  //our stories
 
 
+  #btnContainer{
+    display: none !important;
+  }
+
+  .list-card{
+    .left-filter{
+
+      form{
+        display: flex;
+        justify-content: space-between !important;
+      }
+
+      
+    }
+  }
+  .list-card .top-filter .left-filter .dropdown{
+    margin-right:0 ;
+    margin-bottom: 12px;
+  }
+
+
+  .our-stories-section .list-card .top-filter .right-filter{
+    justify-content: start;
+  }
+  //list show
+  .our-stories-section .list-card .list-show .list-item{
+    display: inline-flex;
+    // width: 389px;
+    width: calc(50% - 3px) !important;
+    height: 100%;
+    margin: 0;
+    // margin-bottom: 17px;
+    flex-direction: column;
+
+    overflow: hidden;
+    padding-bottom:12px ;
+    border: none;
+    
+  }
+
+  .our-stories-section .list-card .list-show .list-item .link-rel div{
+    height: 100%;
+    width: 100%;
+    
+    .list-img{
+      height: 100% !important;
+      width: 100% !important;
+      img{
+        width: 100%;
+        height: 100% ;
+      }
+    }
+
+  }
+
+  .our-stories-section .list-card .list-show .list-item .link-rel {
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+}
+
+.our-stories-section .list-card .list-show .list-item .list-img{
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow: hidden;
+  img{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+}
+
+.our-stories-section .list-card .list-show .list-item .list-content{
+  margin-left: 0;
+  padding: 3px;
+  h5{
+    font-size: 21px;
+
+  }
+}
+
+//grid show
+
+.our-stories-section .list-card .grid-show .list-item{
+
+  width: calc(50% - 3px) !important;
+  
+}
+
+.our-stories-section .list-card .grid-show .list-item .list-content {
+  padding: 12px;
+  padding-bottom: 0;
+  
+}
 
   //trade development 
 
@@ -3031,7 +3029,28 @@ label{
   }
 
   }
-  //our stories
+
+
+
+
+
+
+  // trade dev inners 
+
+  .trade-dev-inner-sme{
+    height: 100%;
+
+
+  }
+
+  .trade-dev-impact .box-img {
+    height: 350px;
+    width: 495px;
+    max-width: 100%;
+    margin-bottom: 12px;
+
+
+}
 
 
 
@@ -3103,6 +3122,28 @@ label{
 
 
   .publications-list {
+    .right-filter{
+      justify-content: flex-start !important;
+    }
+    .list-card .left-filter{
+
+      width: 100%;
+
+      .form-group{
+       
+        display: flex;
+        align-items:center ;
+
+        label{
+          margin-bottom:0 ;
+
+        }
+
+      }
+
+
+    }
+
 
     .list-filter{
       margin-bottom: 12px;
@@ -3211,6 +3252,230 @@ label{
 
 
 
+
+
+
+}
+
+
+
+
+
+
+@include media-breakpoint-down(sm){
+
+
+  // our stories
+
+  #btnContainer{
+    display: none !important ;
+  }
+  .our-stories-section .list-card .top-filter .right-filter{
+    flex-direction: row !important;
+    justify-content:flex-start;
+
+    margin-top: 12px;
+  }
+
+  .our-stories-section .list-card .top-filter .left-filter .dropdown{
+    width: 100%; 
+    margin-bottom: 6px;
+    .btn{
+      width: 100% !important;
+
+    }
+   }
+
+
+  // list show
+  .our-stories-section .list-card .list-show .list-item {
+    display: inline-flex;
+    width: calc(100%) !important;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 12px;
+    border: none;
+    border: 1px solid #F3F6FB;
+
+    margin-bottom: 12px;
+}
+
+// grid show
+
+.our-stories-section .list-card .grid-show .list-item{
+
+  width: calc(100% - 3px) !important;
+  
+}
+
+
+
+//senior mang
+
+  .senior-management_member-card .img-box{
+    
+    max-height: 290px !important;
+    object-fit: cover;
+
+  }
+  .senior-management_member-card .img-box img {
+    min-width: 100%;
+    height: 100%;
+}
+
+
+
+  .glossary-inner .glossary-inner-content-box .content-card{
+    padding-left:0 ;
+  }
+
+
+
+  //publications 
+
+    .publications-list {
+
+    .right-filter{
+      justify-content: flex-start !important;
+    }
+    .list-card .left-filter{
+
+      width: 100%;
+
+      .form-group{
+        width: 100%;
+        display: flex;
+        align-items:center ;
+
+        label{
+          margin-bottom:0 ;
+
+        }
+
+      }
+
+
+    }
+  }
+
+
+
+  .publications-list .list-card{
+    
+    .widthZero{
+      margin-bottom: 12px !important;
+    }
+    // padding: 12px 18px ;
+    .list-show {
+      margin-left: 0;
+      .list-filter{ 
+
+        margin-bottom: 12px !important;
+
+        .widthZero{
+          margin-bottom: 24px !important;
+        }
+      }
+      .list-item{
+        display: flex;
+        flex-direction: column;
+        height: 100% !important;
+        
+   
+        .list-img{
+          width: 100% !important;
+          height: 100% !important;
+         max-width: 450px;
+         object-fit: cover;
+         object-position: center;
+          img{
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 450px !important;
+           
+   
+          }
+        
+        }
+   
+        .publication-content{
+         margin-left: 0 !important;
+         padding: 12px !important;
+        }
+     }
+    }
+
+  }
+
+
+  .publications-list .list-card .grid-show .list-item{
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    .list-img{
+      height: 100%;
+    }
+
+    img{
+      position: relative;
+    }
+
+    &:hover{
+      .publication-content{
+      // height: 100% !important;
+      background-color: #fff;
+      max-height: 250px !important;
+
+      }
+    }
+
+    
+  }
+  
+  .publications-list .list-card .grid-show .list-item:hover .list-img::after{
+    max-height: 200px;
+  }
+
+
+
+  //trade dev
+
+  .trade-dev-programs h2{
+    font-size: 34px;
+  }
+
+  .trade-dev-programs_content--box h3{
+    font-size: 21px;
+  }
+
+
+  .trade-dev-programs_content--img img{
+    max-height: 300px !important;
+    height: 100% !important;
+  }
+  .trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec{
+    width: 300px;
+  }
+
+  .trade-related-projects {
+    overflow: hidden;
+    padding: 60px 6px;
+ 
+}
+
+
+//trade dev inner
+
+.trade-dev-impact{
+  .container{
+    .row{
+      flex-direction: column-reverse;
+    }
+  }
+
+}
 
 
 
