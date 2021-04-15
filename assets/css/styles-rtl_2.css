@@ -14523,11 +14523,16 @@ ul.fixed-social li:hover a img {
           transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .list-show .list-item .list-content {
   margin-right: 30px;
   position: relative;
+  width: 100%;
 }
 
 .list-show .list-item .list-content .date {
@@ -14658,6 +14663,10 @@ ul.fixed-social li:hover a img {
           transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .grid-show .list-item .list-content {
@@ -17695,6 +17704,11 @@ main styles
   height: 525px;
 }
 
+.multimedia-inner .list-card .list-with-filter .main-media .image-container {
+  width: 100%;
+  height: 100%;
+}
+
 .multimedia-inner .list-card .list-with-filter .main-media .image-container::after {
   content: "";
   position: absolute;
@@ -17707,6 +17721,9 @@ main styles
 
 .multimedia-inner .list-card .list-with-filter .main-media .image-container img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .multimedia-inner .list-card .list-with-filter .main-media .content {

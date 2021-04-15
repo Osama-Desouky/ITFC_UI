@@ -2621,11 +2621,15 @@ ul.fixed-social {
         max-width: 100%;
         transform: scale(1.2);
         transition: 1s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
     .list-content {
       margin-#{$start-direction}: 30px;
       position: relative;
+      width: 100%;
       .date {
         color: $orange-color;
         font-size: 14px;
@@ -2742,6 +2746,9 @@ ul.fixed-social {
         max-width: 100%;
         transform: scale(1.2);
         transition: 1s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
     .list-content {

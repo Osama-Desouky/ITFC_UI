@@ -799,6 +799,8 @@
                 overflow: hidden;
                 height: 525px;
                 .image-container{
+                    width: 100%;
+                    height: 100%;
                     &::after{
                         content: "";
                         position: absolute;
@@ -810,6 +812,8 @@
                     }
                     img{
                         width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                 }
                 .content{
