@@ -11368,15 +11368,6 @@ main styles
   min-height: calc(100vh - 135px); }
   .senior-manager .row {
     margin: 0; }
-  .senior-manager .col-lg-4 {
-    flex: 0 0 36.92%;
-    max-width: 36.92%;
-    padding: 0;
-    margin-right: 3.3%; }
-  .senior-manager .col-lg-8 {
-    flex: 0 0 59.76%;
-    max-width: 59.76%;
-    padding: 0; }
   .senior-manager_box--img-box img {
     border: 3px solid #ffffff;
     max-width: 100%;
@@ -11422,7 +11413,7 @@ main styles
     margin-bottom: 0; }
   .senior-manager_body-text {
     padding: 50px 0;
-    margin-bottom: 295px; }
+    margin-bottom: 48px; }
     .senior-manager_body-text p {
       color: #5e5e59;
       font-size: 18px;
@@ -12289,63 +12280,74 @@ main styles
       color: #d5313a;
       font-size: 30px;
       font-weight: 700; }
-  .trade-dev-stories .cards .img-box {
-    width: 285px;
-    height: 193px;
-    position: relative;
-    margin-bottom: 16px; }
-    .trade-dev-stories .cards .img-box img {
+  .trade-dev-stories .cards {
+    width: 100%; }
+    .trade-dev-stories .cards .img-box {
       width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0; }
-    .trade-dev-stories .cards .img-box .overlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 2;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.3); }
-  .trade-dev-stories .cards h3 {
-    color: #1d1d1b;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Roboto",sans-serif;
-    margin-bottom: 15px; }
-  .trade-dev-stories .cards a, .trade-dev-stories .cards a:active, .trade-dev-stories .cards a:hover, .trade-dev-stories .cards a:visited {
-    color: #1d1d1b; }
-  .trade-dev-stories .cards .main-card .img-box {
-    width: 600px;
-    height: 407px;
-    position: relative;
-    margin-bottom: 16px; }
-    .trade-dev-stories .cards .main-card .img-box img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0; }
-    .trade-dev-stories .cards .main-card .img-box .overlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 2;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.3); }
-  .trade-dev-stories .cards .main-card h3 {
-    font-size: 20px; }
-  .trade-dev-stories .cards .main-card p {
-    font-size: 16px;
-    font-weight: 500;
-    color: #5e5e59; }
+      height: 193px;
+      position: relative;
+      margin-bottom: 16px;
+      overflow: hidden; }
+      .trade-dev-stories .cards .img-box img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center; }
+      .trade-dev-stories .cards .img-box .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3); }
+    .trade-dev-stories .cards h3 {
+      color: #1d1d1b;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "Roboto",sans-serif;
+      margin-bottom: 15px; }
+    .trade-dev-stories .cards a, .trade-dev-stories .cards a:active, .trade-dev-stories .cards a:hover, .trade-dev-stories .cards a:visited {
+      color: #1d1d1b; }
+    .trade-dev-stories .cards .main-card {
+      width: 100%; }
+      .trade-dev-stories .cards .main-card .img-box {
+        width: 100%;
+        height: 407px;
+        position: relative;
+        margin-bottom: 16px;
+        overflow: hidden; }
+        .trade-dev-stories .cards .main-card .img-box img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          object-position: center; }
+        .trade-dev-stories .cards .main-card .img-box .overlay {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.3); }
+      .trade-dev-stories .cards .main-card h3 {
+        font-size: 20px; }
+      .trade-dev-stories .cards .main-card p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #5e5e59; }
 
 .trade-dev-impact {
-  margin-bottom: 76px; }
+  margin-bottom: 76px;
+  width: 100%; }
   .trade-dev-impact-title {
     display: flex;
     justify-content: center;
@@ -12380,7 +12382,8 @@ main styles
     line-height: 30px; }
   .trade-dev-impact .box-img {
     height: 450px;
-    width: 495px; }
+    width: 495px;
+    max-width: 100%; }
     .trade-dev-impact .box-img img {
       width: 100%;
       height: 100%; }
@@ -12914,6 +12917,8 @@ label {
     color: #d5313a; } }
 
 @media (max-width: 575.98px) {
+  .our-stories-section .list-card .list-show .list-item {
+    width: calc( 100% - 3px) !important; }
   .publications-list .list-card .list-show .list-item .publication-content .bottom-div {
     display: flex;
     flex-direction: column; }
@@ -12923,65 +12928,61 @@ label {
       flex-direction: row;
       justify-content: space-around; } }
 
-@media (max-width: 767.98px) {
-  .senior-management_member-card .img-box {
-    max-height: 290px !important;
-    object-fit: cover; }
-  .senior-management_member-card .img-box img {
-    min-width: 100%;
-    height: 100%; }
-  .glossary-inner .glossary-inner-content-box .content-card {
-    padding-left: 0; }
-  .publications-list .list-card .widthZero {
-    margin-bottom: 12px !important; }
-  .publications-list .list-card .list-show {
-    margin-left: 0; }
-    .publications-list .list-card .list-show .list-filter {
-      margin-bottom: 12px !important; }
-      .publications-list .list-card .list-show .list-filter .widthZero {
-        margin-bottom: 24px !important; }
-    .publications-list .list-card .list-show .list-item {
-      display: flex;
-      flex-direction: column;
-      height: 100% !important; }
-      .publications-list .list-card .list-show .list-item .list-img {
-        width: 100% !important;
-        height: 100% !important;
-        max-width: 450px;
-        object-fit: cover;
-        object-position: center; }
-        .publications-list .list-card .list-show .list-item .list-img img {
-          width: 100% !important;
-          height: 100% !important;
-          max-width: 450px !important; }
-      .publications-list .list-card .list-show .list-item .publication-content {
-        margin-left: 0 !important;
-        padding: 12px !important; }
-  .publications-list .list-card .grid-show .list-item {
-    width: 100% !important;
-    height: 100% !important;
-    max-height: 100% !important; }
-    .publications-list .list-card .grid-show .list-item .list-img {
-      height: 100%; }
-    .publications-list .list-card .grid-show .list-item img {
-      position: relative; }
-    .publications-list .list-card .grid-show .list-item:hover .publication-content {
-      background-color: #fff;
-      max-height: 250px !important; }
-  .publications-list .list-card .grid-show .list-item:hover .list-img::after {
-    max-height: 200px; }
-  .trade-dev-programs h2 {
-    font-size: 34px; }
-  .trade-dev-programs_content--box h3 {
-    font-size: 21px; }
-  .trade-dev-programs_content--img img {
-    max-height: 300px !important;
-    height: 100% !important; } }
-
 @media (max-width: 991.98px) {
   .senior-management_member-card .img-box {
     height: 100%;
     max-height: 400px; }
+  #btnContainer {
+    display: none !important; }
+  .list-card .left-filter form {
+    display: flex;
+    justify-content: space-between !important; }
+  .list-card .top-filter .left-filter .dropdown {
+    margin-right: 0;
+    margin-bottom: 12px; }
+  .our-stories-section .list-card .top-filter .right-filter {
+    justify-content: start; }
+  .our-stories-section .list-card .list-show .list-item {
+    display: inline-flex;
+    width: calc(50% - 3px) !important;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 12px;
+    border: none; }
+  .our-stories-section .list-card .list-show .list-item .link-rel div {
+    height: 100%;
+    width: 100%; }
+    .our-stories-section .list-card .list-show .list-item .link-rel div .list-img {
+      height: 100% !important;
+      width: 100% !important; }
+      .our-stories-section .list-card .list-show .list-item .link-rel div .list-img img {
+        width: 100%;
+        height: 100%; }
+  .our-stories-section .list-card .list-show .list-item .link-rel {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */ }
+  .our-stories-section .list-card .list-show .list-item .list-img {
+    width: 100%;
+    height: 100%;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden; }
+    .our-stories-section .list-card .list-show .list-item .list-img img {
+      max-width: 100%;
+      overflow: hidden; }
+  .our-stories-section .list-card .list-show .list-item .list-content {
+    margin-left: 0;
+    padding: 3px; }
+    .our-stories-section .list-card .list-show .list-item .list-content h5 {
+      font-size: 21px; }
+  .our-stories-section .list-card .grid-show .list-item {
+    width: calc(50% - 3px) !important; }
+  .our-stories-section .list-card .grid-show .list-item .list-content {
+    padding: 12px;
+    padding-bottom: 0; }
   .trade-dev .trade-header {
     height: 100%;
     position: relative;
@@ -13034,6 +13035,13 @@ label {
     margin-right: -15px;
     margin-left: -15px;
     flex-direction: column-reverse !important; }
+  .trade-dev-inner-sme {
+    height: 100%; }
+  .trade-dev-impact .box-img {
+    height: 350px;
+    width: 495px;
+    max-width: 100%;
+    margin-bottom: 12px; }
   .board-members .main-member-card .img-box, .board-members .member-card .img-box {
     height: 100%; }
   .board-members .main-member-card .content-box h4, .board-members .member-card .content-box h4 {
@@ -13057,6 +13065,15 @@ label {
         max-width: 140px;
         display: block;
         margin-bottom: 10px; }
+  .publications-list .right-filter {
+    justify-content: flex-start !important; }
+  .publications-list .list-card .left-filter {
+    width: 100%; }
+    .publications-list .list-card .left-filter .form-group {
+      display: flex;
+      align-items: center; }
+      .publications-list .list-card .left-filter .form-group label {
+        margin-bottom: 0; }
   .publications-list .list-filter {
     margin-bottom: 12px; }
     .publications-list .list-filter .widthZero {
@@ -13115,6 +13132,102 @@ label {
             margin-right: 8px;
             vertical-align: text-top;
             display: inline-block; } }
+
+@media (max-width: 767.98px) {
+  #btnContainer {
+    display: none !important; }
+  .our-stories-section .list-card .top-filter .right-filter {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    margin-top: 12px; }
+  .our-stories-section .list-card .top-filter .left-filter .dropdown {
+    width: 100%;
+    margin-bottom: 6px; }
+    .our-stories-section .list-card .top-filter .left-filter .dropdown .btn {
+      width: 100% !important; }
+  .our-stories-section .list-card .list-show .list-item {
+    display: inline-flex;
+    width: calc(100%) !important;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 12px;
+    border: none;
+    border: 1px solid #F3F6FB;
+    margin-bottom: 12px; }
+  .our-stories-section .list-card .grid-show .list-item {
+    width: calc(100% - 3px) !important; }
+  .senior-management_member-card .img-box {
+    max-height: 290px !important;
+    object-fit: cover; }
+  .senior-management_member-card .img-box img {
+    min-width: 100%;
+    height: 100%; }
+  .glossary-inner .glossary-inner-content-box .content-card {
+    padding-left: 0; }
+  .publications-list .right-filter {
+    justify-content: flex-start !important; }
+  .publications-list .list-card .left-filter {
+    width: 100%; }
+    .publications-list .list-card .left-filter .form-group {
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      .publications-list .list-card .left-filter .form-group label {
+        margin-bottom: 0; }
+  .publications-list .list-card .widthZero {
+    margin-bottom: 12px !important; }
+  .publications-list .list-card .list-show {
+    margin-left: 0; }
+    .publications-list .list-card .list-show .list-filter {
+      margin-bottom: 12px !important; }
+      .publications-list .list-card .list-show .list-filter .widthZero {
+        margin-bottom: 24px !important; }
+    .publications-list .list-card .list-show .list-item {
+      display: flex;
+      flex-direction: column;
+      height: 100% !important; }
+      .publications-list .list-card .list-show .list-item .list-img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 450px;
+        object-fit: cover;
+        object-position: center; }
+        .publications-list .list-card .list-show .list-item .list-img img {
+          width: 100% !important;
+          height: 100% !important;
+          max-width: 450px !important; }
+      .publications-list .list-card .list-show .list-item .publication-content {
+        margin-left: 0 !important;
+        padding: 12px !important; }
+  .publications-list .list-card .grid-show .list-item {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important; }
+    .publications-list .list-card .grid-show .list-item .list-img {
+      height: 100%; }
+    .publications-list .list-card .grid-show .list-item img {
+      position: relative; }
+    .publications-list .list-card .grid-show .list-item:hover .publication-content {
+      background-color: #fff;
+      max-height: 250px !important; }
+  .publications-list .list-card .grid-show .list-item:hover .list-img::after {
+    max-height: 200px; }
+  .trade-dev-programs h2 {
+    font-size: 34px; }
+  .trade-dev-programs_content--box h3 {
+    font-size: 21px; }
+  .trade-dev-programs_content--img img {
+    max-height: 300px !important;
+    height: 100% !important; }
+  .trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec {
+    width: 300px; }
+  .trade-related-projects {
+    overflow: hidden;
+    padding: 60px 6px; }
+  .trade-dev-impact .container .row {
+    flex-direction: column-reverse; } }
 
 /*
 this UI is made desktop first.
