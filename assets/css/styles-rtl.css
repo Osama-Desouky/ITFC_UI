@@ -12657,6 +12657,10 @@ a.show-all:hover {
           filter: grayscale(100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pub-card .content-box h5 {
@@ -17035,6 +17039,9 @@ this UI is made desktop first.
     right: 15px;
   }
   .in-focus .slider-wrapper .owl-carousel::before {
+    display: none;
+  }
+  .fixed-social {
     display: none;
   }
 }

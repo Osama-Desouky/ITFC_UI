@@ -12657,6 +12657,10 @@ a.show-all:hover {
           filter: grayscale(100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pub-card .content-box h5 {
@@ -17521,7 +17525,10 @@ main styles
 }
 
 .our-stories-section .list-card .list-show .list-item .list-img img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 1s;
@@ -20162,6 +20169,9 @@ this UI is made desktop first.
     left: 15px;
   }
   .in-focus .slider-wrapper .owl-carousel::before {
+    display: none;
+  }
+  .fixed-social {
     display: none;
   }
 }

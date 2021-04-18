@@ -1030,6 +1030,8 @@
     }
     .list-card{
         .list-show{
+            display: grid;
+            word-break: break-word;
             .list-item{
                 height: 225px;
                 overflow: hidden;
