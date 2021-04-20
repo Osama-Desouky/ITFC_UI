@@ -133,6 +133,191 @@ this UI is made desktop first.
       margin-bottom: 20px;
     }
   }
+  .navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Mobile_Menu' data-name='Mobile Menu' xmlns='http://www.w3.org/2000/svg' width='24' height='16' viewBox='0 0 24 16'%3e%3crect id='Rectangle_11754' data-name='Rectangle 11754' width='24' height='2' fill='%23d5313a'/%3e%3crect id='Rectangle_11755' data-name='Rectangle 11755' width='24' height='2' transform='translate(0 7)' fill='%23d5313a'/%3e%3crect id='Rectangle_11756' data-name='Rectangle 11756' width='24' height='2' transform='translate(0 14)' fill='%23d5313a'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+  }
+  .main-navbar {
+    #navbarSupportedContent {
+      top: 100px;
+    }
+  }
+  .navbar-brand {
+      padding-top: 0 !important;
+      img{
+        width: 155px;
+      }
+   }
+   .navbar-toggler {
+    top: 50px !important;
+  }
+
+  footer{
+    .copySection{
+      order: 2;
+      .copy{
+        margin-bottom: 30px;
+        margin-top: 25px;
+        text-align: center;
+      }
+    }
+    .links{
+      ul{
+        justify-content: center;
+      }
+    }
+  }
+
+  /*
+  --------index--------
+  */
+  // latest news navigation
+
+  .latest-news{
+    .owl-carousel {
+      .owl-nav{
+        top: calc(100% - 45px);
+        left: 50%;
+        right: auto;
+        button{
+          &.owl-next{
+          right: -50px;
+          }
+          &.disabled {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .upcoming-events{
+    .owl-carousel {
+      .owl-nav{
+        top: calc(100% - 45px);
+        left: 50%;
+        right: auto;
+        button{
+          &.owl-next{
+          right: -50px;
+          }
+          &.disabled {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+
+///////////////////////////
+
+  // main slider
+  .main-header {
+    height: 500px ;
+    .slider-wrapper {
+      .owl-carousel {
+        .item {
+          .caption {
+            top: 105px;
+            h2{
+              font-size: 30px;
+              line-height: 35px;
+              .text-bg{
+                &::before{
+                  #{$start-direction}: -3px;
+                  top: 1px;
+                  width: calc(100% + 8px);
+                  height: 35px;
+                }
+              }
+            }
+            p{
+              font-size: 16px;
+              line-height: 24px;
+              margin-bottom: 40px;
+            }
+            .learn-more{
+              font-size: 16px;
+              padding: 7px 12px;
+             
+            }
+          }
+        }
+      }
+    }
+  }
+  // main index page styles 
+
+  .heading{
+    h2{
+      font-size: 25px;
+      line-height: inherit;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  // in-focus
+  .in-focus{
+    .focus-card{ 
+      h4{
+        font-size: 20px;
+        line-height: 24px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  // 
+  .upcoming-events{
+    .event-card{
+      .content{
+        font-size: 16px;
+        line-height: 24px;
+        .end-date{
+          img{
+            margin-#{$end-direction}: 10px;
+          }
+        }
+      }
+    }
+  }
+  // publications
+  .publications{
+    &::before{
+      height: 1090px;
+    }
+    h2{
+      font-size: 22px;
+      text-align: center;
+      line-height: inherit;
+      margin-bottom: 23px;
+    }
+    .pub-card{
+      height: 370px;
+    }
+    .actions{
+      justify-content: center;
+    }
+  }
+  // our-group
+  .our-group {
+    .heading{
+      margin-bottom: 0;
+    }
+    .col{
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+    .logo-box{
+      width: 100%;
+    }
+  } 
+  ///////////////////////////////////
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -156,11 +341,15 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     #{$start-direction}: calc((100vw - 540px + 30px) / 2);
     bottom: 20px;
+    .scroll-down{
+      display: none;
+    }
   }
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 40px;
   }
   .navigator {
+    display: none;
     li {
       ::after {
         bottom: 9px;
@@ -175,10 +364,36 @@ this UI is made desktop first.
 // Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
   .main-navbar .nav-wrapper .top-nav {
-    display: none;
+    .navbar-nav{
+      .nav-item{
+        display: none;
+        &:nth-of-type(4){
+          display: block;
+          position: absolute;
+          right: 65px;
+          top: 32px;
+          a.lang{
+            line-height: 24px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
   .main-header .slider-wrapper .social {
     #{$end-direction}: 15px;
+    bottom: 10px;
+    top: auto;
+    display: flex;
+    margin-bottom: 0;
+    li{
+      margin-bottom: 0;
+      font-size: 20px;
+      margin-#{$end-direction}: 5px;
+      &:last-of-type{
+      margin-#{$end-direction}: 0;
+      }
+    }
   }
   .main-header .slider-wrapper .actions {
     #{$start-direction}: 15px;
@@ -189,4 +404,257 @@ this UI is made desktop first.
   .fixed-social{
     display: none;
   }
+
+/*
+-------------------- header -------------------
+*/
+  .main-navbar {
+    min-height: 95px;
+    #navbarSupportedContent {
+      top: 94px;
+      > .navbar-nav {
+        > .nav-item {
+          width: 100%;
+          #navbarDropdown{
+            width: 100%;
+            padding: 20px 15px;
+            // padding-#{$start-direction}: 15px;
+            font-size: 14px;
+            &::before{
+              width: 35%;
+              #{$start-direction}: 15px;
+            }
+            &::after{
+              #{$end-direction}: 16px;
+              position: absolute;
+              top: 27px;
+            }
+          }
+          &.d-block{
+            .form-group{
+              margin-bottom: 0;
+              padding: 0 15px;
+              .form-control{
+                border: 1px solid #D6DADF;
+                border-radius: 0;
+                font-size: 14px;
+                font-weight: $w-medium;
+                padding-#{$end-direction}: 26px;
+              }
+              .btn{
+                position: absolute;
+                top: -2px;
+                #{$end-direction}: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-brand {
+     padding: 0;
+     img{
+       width: 142px;
+     }
+    }
+    .navbar-toggler {
+      #{$end-direction}: 0px;
+      top: 30px !important;
+      border-radius: 2px;
+      width: 44px;
+      height: 36px;
+      padding: 0;
+    }
+    // .nav-wrapper {
+    //   flex-grow: 1;
+    //   width: auto;
+    //   align-self: flex-start;
+    //   margin-top: 20px;
+    //   .top-nav {
+    //     margin-top: 0;
+    //     .nav-item {
+    //       margin-#{$start-direction}: auto;
+    //     }
+    //   }
+    // }
+  }
+  .navbar .dropdown-menu {
+    padding-top: 20px !important;
+    border-top: 0 !important;
+    &.show {
+      text-align: #{$start-direction};
+      background-color: #F3F6FB !important;
+      box-shadow: none !important;
+    }
+    ul.nav {
+      // border-bottom: 1px solid #DFDFDF;
+      .nav-item{
+        .nav-link{
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+    h6{
+      margin-bottom: 7px !important
+    }
+    p{
+      font-size: 13px !important;
+      line-height: 24px !important;
+    }
+  }
+  .pl-30 {
+    padding-#{$start-direction}: 15px !important;
+}
+/*
+------------------------- footer------------------------
+*/
+footer {
+  .subscription{
+    label {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  .form-group{
+    .form-control{
+      padding-#{$end-direction}: 125px;
+    }
+    button[type="submit"]{
+      width: 120px;
+    }
+    }
+  }
+  hr{
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .copySection{
+    order: 2;
+    background-color: #F3F6FB;
+    .copy{
+      margin-bottom: 30px;
+      margin-top: 25px;
+    }
+  }
+  .links{
+    ul{
+      display: block;
+      li{
+        display: inline-block;
+        a{
+          line-height: inherit;
+        }
+        &::after{
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+/* ----- index ------- */
+
+// main slider
+  .main-header {
+    height: 455px ;
+    .slider-wrapper {
+      .owl-carousel {
+        .item {
+          .caption {
+            top: 105px;
+            h2{
+              font-size: 27px;
+              line-height: 35px;
+              .text-bg{
+                &::before{
+                  #{$start-direction}: -3px;
+                  top: 1px;
+                  width: calc(100% + 8px);
+                  height: 35px;
+                }
+              }
+            }
+            p{
+              font-size: 14px;
+              line-height: 18px;
+              margin-bottom: 38px;
+            }
+            .learn-more{
+              font-size: 14px;
+              padding: 4px 10px;
+              &::after{
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // main index page styles 
+  a.show-all{
+    display: none;
+  }
+  .heading{
+    h2{
+      font-size: 22px;
+      line-height: inherit;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  // in-focus
+  .in-focus{
+    .focus-card{ 
+      h4{
+        font-size: 20px;
+        line-height: 24px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  // 
+  .upcoming-events{
+    .event-card{
+      .content{
+        font-size: 16px;
+        line-height: 24px;
+        .end-date{
+          img{
+            margin-#{$end-direction}: 10px;
+          }
+        }
+      }
+    }
+  }
+  // publications
+  .publications{
+    &::before{
+      height: 1090px;
+    }
+    h2{
+      font-size: 22px;
+      text-align: center;
+      line-height: inherit;
+      margin-bottom: 23px;
+    }
+    .pub-card{
+      height: 370px;
+    }
+    .actions{
+      justify-content: center;
+    }
+  }
+  // our-group
+  .our-group {
+    .heading{
+      margin-bottom: 0;
+    }
+    .col{
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+  } 
 }

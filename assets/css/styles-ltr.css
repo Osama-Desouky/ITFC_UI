@@ -20126,6 +20126,139 @@ this UI is made desktop first.
   .hub-card .img-box {
     margin-bottom: 20px;
   }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Mobile_Menu' data-name='Mobile Menu' xmlns='http://www.w3.org/2000/svg' width='24' height='16' viewBox='0 0 24 16'%3e%3crect id='Rectangle_11754' data-name='Rectangle 11754' width='24' height='2' fill='%23d5313a'/%3e%3crect id='Rectangle_11755' data-name='Rectangle 11755' width='24' height='2' transform='translate(0 7)' fill='%23d5313a'/%3e%3crect id='Rectangle_11756' data-name='Rectangle 11756' width='24' height='2' transform='translate(0 14)' fill='%23d5313a'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+  }
+  .main-navbar #navbarSupportedContent {
+    top: 100px;
+  }
+  .navbar-brand {
+    padding-top: 0 !important;
+  }
+  .navbar-brand img {
+    width: 155px;
+  }
+  .navbar-toggler {
+    top: 50px !important;
+  }
+  footer .copySection {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer .copySection .copy {
+    margin-bottom: 30px;
+    margin-top: 25px;
+    text-align: center;
+  }
+  footer .links ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*
+  --------index--------
+  */
+  .latest-news .owl-carousel .owl-nav {
+    top: calc(100% - 45px);
+    left: 50%;
+    right: auto;
+  }
+  .latest-news .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .latest-news .owl-carousel .owl-nav button.disabled {
+    display: inline-block;
+  }
+  .upcoming-events .owl-carousel .owl-nav {
+    top: calc(100% - 45px);
+    left: 50%;
+    right: auto;
+  }
+  .upcoming-events .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .upcoming-events .owl-carousel .owl-nav button.disabled {
+    display: inline-block;
+  }
+  .main-header {
+    height: 500px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption {
+    top: 105px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption h2 .text-bg::before {
+    left: -3px;
+    top: 1px;
+    width: calc(100% + 8px);
+    height: 35px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption .learn-more {
+    font-size: 16px;
+    padding: 7px 12px;
+  }
+  .heading h2 {
+    font-size: 25px;
+    line-height: inherit;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .in-focus .focus-card h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .in-focus .focus-card p {
+    font-size: 14px;
+  }
+  .upcoming-events .event-card .content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .upcoming-events .event-card .content .end-date img {
+    margin-right: 10px;
+  }
+  .publications::before {
+    height: 1090px;
+  }
+  .publications h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: inherit;
+    margin-bottom: 23px;
+  }
+  .publications .pub-card {
+    height: 370px;
+  }
+  .publications .actions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-group .heading {
+    margin-bottom: 0;
+  }
+  .our-group .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .our-group .logo-box {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -20147,8 +20280,14 @@ this UI is made desktop first.
     left: calc((100vw - 540px + 30px) / 2);
     bottom: 20px;
   }
+  .main-header .slider-wrapper .actions .scroll-down {
+    display: none;
+  }
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 40px;
+  }
+  .navigator {
+    display: none;
   }
   .navigator li ::after {
     bottom: 9px;
@@ -20159,11 +20298,35 @@ this UI is made desktop first.
 }
 
 @media (max-width: 575.98px) {
-  .main-navbar .nav-wrapper .top-nav {
+  .main-navbar .nav-wrapper .top-nav .navbar-nav .nav-item {
     display: none;
+  }
+  .main-navbar .nav-wrapper .top-nav .navbar-nav .nav-item:nth-of-type(4) {
+    display: block;
+    position: absolute;
+    right: 65px;
+    top: 32px;
+  }
+  .main-navbar .nav-wrapper .top-nav .navbar-nav .nav-item:nth-of-type(4) a.lang {
+    line-height: 24px;
+    font-size: 16px;
   }
   .main-header .slider-wrapper .social {
     right: 15px;
+    bottom: 10px;
+    top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .main-header .slider-wrapper .social li {
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .main-header .slider-wrapper .social li:last-of-type {
+    margin-right: 0;
   }
   .main-header .slider-wrapper .actions {
     left: 15px;
@@ -20173,6 +20336,204 @@ this UI is made desktop first.
   }
   .fixed-social {
     display: none;
+  }
+  /*
+-------------------- header -------------------
+*/
+  .main-navbar {
+    min-height: 95px;
+  }
+  .main-navbar #navbarSupportedContent {
+    top: 94px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
+    width: 100%;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item #navbarDropdown {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item #navbarDropdown::before {
+    width: 35%;
+    left: 15px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item #navbarDropdown::after {
+    right: 16px;
+    position: absolute;
+    top: 27px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.d-block .form-group {
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.d-block .form-group .form-control {
+    border: 1px solid #D6DADF;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 26px;
+  }
+  .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item.d-block .form-group .btn {
+    position: absolute;
+    top: -2px;
+    right: 10px;
+  }
+  .main-navbar .navbar-brand {
+    padding: 0;
+  }
+  .main-navbar .navbar-brand img {
+    width: 142px;
+  }
+  .main-navbar .navbar-toggler {
+    right: 0px;
+    top: 30px !important;
+    border-radius: 2px;
+    width: 44px;
+    height: 36px;
+    padding: 0;
+  }
+  .navbar .dropdown-menu {
+    padding-top: 20px !important;
+    border-top: 0 !important;
+  }
+  .navbar .dropdown-menu.show {
+    text-align: left;
+    background-color: #F3F6FB !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .navbar .dropdown-menu ul.nav .nav-item .nav-link {
+    font-size: 14px;
+    line-height: 36px;
+  }
+  .navbar .dropdown-menu h6 {
+    margin-bottom: 7px !important;
+  }
+  .navbar .dropdown-menu p {
+    font-size: 13px !important;
+    line-height: 24px !important;
+  }
+  .pl-30 {
+    padding-left: 15px !important;
+  }
+  /*
+------------------------- footer------------------------
+*/
+  footer .subscription label {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  footer .subscription .form-group .form-control {
+    padding-right: 125px;
+  }
+  footer .subscription .form-group button[type="submit"] {
+    width: 120px;
+  }
+  footer hr {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  footer .copySection {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background-color: #F3F6FB;
+  }
+  footer .copySection .copy {
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
+  footer .links ul {
+    display: block;
+  }
+  footer .links ul li {
+    display: inline-block;
+  }
+  footer .links ul li a {
+    line-height: inherit;
+  }
+  footer .links ul li::after {
+    top: 1px;
+  }
+  /* ----- index ------- */
+  .main-header {
+    height: 455px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption {
+    top: 105px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption h2 .text-bg::before {
+    left: -3px;
+    top: 1px;
+    width: calc(100% + 8px);
+    height: 35px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 38px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption .learn-more {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+  .main-header .slider-wrapper .owl-carousel .item .caption .learn-more::after {
+    margin-left: 0px;
+  }
+  a.show-all {
+    display: none;
+  }
+  .heading h2 {
+    font-size: 22px;
+    line-height: inherit;
+  }
+  .heading p {
+    font-size: 14px;
+  }
+  .in-focus .focus-card h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .in-focus .focus-card p {
+    font-size: 14px;
+  }
+  .upcoming-events .event-card .content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .upcoming-events .event-card .content .end-date img {
+    margin-right: 10px;
+  }
+  .publications::before {
+    height: 1090px;
+  }
+  .publications h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: inherit;
+    margin-bottom: 23px;
+  }
+  .publications .pub-card {
+    height: 370px;
+  }
+  .publications .actions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-group .heading {
+    margin-bottom: 0;
+  }
+  .our-group .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 /*# sourceMappingURL=styles-ltr.css.map */
