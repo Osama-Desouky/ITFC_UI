@@ -207,3 +207,13 @@ function filterOption() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+$( document ).ready(function() {
+  console.log( "ready!" );
+  if ($(window).width() <= 992) {
+    if ($("#gridVSlist").hasClass("list-show")) {
+      $("#gridVSlist").removeClass("list-show").addClass("grid-show");
+    }
+  }
+});
+ 
