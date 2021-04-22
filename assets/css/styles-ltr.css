@@ -12994,11 +12994,33 @@ button.scroll-up:hover {
   padding-top: 40px;
   background-image: url("../images/toparea-bg-about.png");
   background-color: #f3f6fb;
-  height: calc(100vh - 135px);
+  height: auto;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 20px;
+}
+
+.about-itfc .trade-box {
+  padding: 0;
+  background-color: transparent !important;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.about-itfc .trade-box #trade-content {
+  position: initial;
+}
+
+.about-itfc .trade-box #trade-content a.read-more {
+  bottom: 15px;
+}
+
+.about-itfc .trade-box #trade-content.collapsed::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#eff5ff));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #eff5ff 100%);
+  width: 70%;
 }
 
 .about-itfc .header {
@@ -14020,6 +14042,10 @@ button.scroll-up:hover {
 .hub-card .img-box img {
   min-width: 100%;
   min-height: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hub-card .content-box {
@@ -20063,6 +20089,54 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     left: calc((100vw - 960px + 30px) / 2);
   }
+  .inner-heading ol.breadcrumb {
+    margin-bottom: 20px;
+  }
+  .inner-heading h1 {
+    font-size: 40px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+  .about-itfc div.header {
+    margin-bottom: 30px;
+  }
+  .about-itfc div.header .itfc {
+    font-size: 55px;
+  }
+  .about-itfc div.header .desc {
+    font-size: 35px;
+  }
+  .about-itfc p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    max-width: 650px;
+  }
+  .about-itfc .trade-box #trade-content.collapsed {
+    max-height: 275px;
+  }
+  .vision .vision-box ul li h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .vision .vision-box ul li p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .in-numbers .header {
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+  .single-media .header h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+  .single-media .header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .single-media .video-box {
+    height: 550px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -20143,6 +20217,14 @@ this UI is made desktop first.
   }
   .navbar-toggler {
     top: 50px !important;
+  }
+  .inner-heading ol.breadcrumb {
+    margin-bottom: 20px;
+  }
+  .inner-heading h1 {
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 30px !important;
   }
   footer .copySection {
     -webkit-box-ordinal-group: 3;
@@ -20258,6 +20340,130 @@ this UI is made desktop first.
   }
   .our-group .logo-box {
     width: 100%;
+  }
+  .about-itfc {
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .about-itfc div.header {
+    margin-bottom: 25px;
+  }
+  .about-itfc div.header .itfc {
+    font-size: 35px;
+  }
+  .about-itfc div.header .desc {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .about-itfc p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    max-width: 470px;
+  }
+  .vision {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .vision .vision-box {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .vision .vision-box ul li h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .vision .vision-box ul li p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-right: 41px;
+  }
+  .in-numbers {
+    padding-top: 50px;
+  }
+  .in-numbers .header {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .in-numbers .owl-carousel {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .in-numbers .owl-nav {
+    display: none;
+  }
+  .single-media {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .single-media .header {
+    margin-bottom: 16px;
+  }
+  .single-media .header h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .single-media .header p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .single-media .video-box {
+    height: 350px;
+  }
+  .single-media cite {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 24px;
+  }
+  /*
+  -------- regional hubs --------
+  */
+  .main-hub {
+    background-position: 500px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .main-hub .hub-content h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+  .main-hub .hub-content p {
+    margin-bottom: 20px;
+  }
+  .regional-hubs {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .regional-hubs .header {
+    margin-bottom: 20px;
+  }
+  .regional-hubs .header h2 {
+    margin-bottom: 0px;
+    font-size: 22px;
+  }
+  .regional-hubs .hub-card .img-box {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .regional-hubs .hub-card .content-box h3 {
+    margin-bottom: 20px !important;
+    font-size: 20px;
+  }
+  .regional-hubs .hub-card .content-box ul li .title {
+    font-size: 16px;
+  }
+  .regional-hubs .hub-card .content-box ul li .value {
+    font-size: 16px;
+  }
+  .regional-hubs .hub-card .content-box ul li ul li:first-child {
+    margin-right: 30px;
+  }
+  .regional-hubs .hub-card .content-box ul li.horizontal .title {
+    margin-bottom: 10px;
   }
 }
 
@@ -20456,6 +20662,33 @@ this UI is made desktop first.
   footer .links ul li::after {
     top: 1px;
   }
+  /*
+---------- main breadcrumb -------
+*/
+  .inner-heading ol.breadcrumb {
+    margin-bottom: 16px;
+  }
+  .inner-heading ol.breadcrumb li.breadcrumb-item {
+    font-size: 14px;
+  }
+  .inner-heading h1 {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  /*
+  top-social-share
+  */
+  .top-social-share {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 30px !important;
+  }
+  .top-social-share li {
+    margin-right: 13px;
+    margin-right: 2%;
+  }
   /* ----- index ------- */
   .main-header {
     height: 455px;
@@ -20534,6 +20767,152 @@ this UI is made desktop first.
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
+  }
+  .about-itfc {
+    height: auto;
+    padding-bottom: 0;
+    background-image: url("../images/what-is-itfc-xs.svg");
+  }
+  .about-itfc div.header {
+    margin-bottom: 25px;
+  }
+  .about-itfc div.header .itfc {
+    font-size: 35px;
+  }
+  .about-itfc div.header .desc {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .about-itfc p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .about-itfc .trade-box #trade-content.collapsed::after {
+    width: 110%;
+  }
+  .about-itfc .trade-box #trade-content.collapsed {
+    max-height: 285px;
+  }
+  .vision {
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  .vision .vision-box {
+    padding-top: 52px;
+    padding-bottom: 0px;
+  }
+  .vision .vision-box ul li h2 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .vision .vision-box ul li p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 41px;
+  }
+  .in-numbers {
+    background-image: url("../images/in-numbers-xs.svg");
+    background-position: center 75px;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  .in-numbers .header {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+  .in-numbers .owl-carousel {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .in-numbers .owl-nav {
+    top: calc(100% + 15px);
+    left: 50%;
+    right: auto;
+    position: absolute;
+    z-index: 99;
+    display: block;
+  }
+  .in-numbers .owl-nav button {
+    display: inline-block !important;
+    width: 48px;
+    height: 48px;
+    background-color: #fff !important;
+    border: 1px solid #ded4d0 !important;
+    border-radius: 50% !important;
+    position: absolute;
+  }
+  .in-numbers .owl-nav button span {
+    display: none;
+  }
+  .in-numbers .owl-nav button.owl-next {
+    background: url("../images/next-sm-arrow.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+  .in-numbers .owl-nav button.owl-prev {
+    background: url("../images/prev-sm-arrow.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    margin-left: 15px;
+    left: -70px;
+  }
+  .single-media {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .single-media .header {
+    margin-bottom: 16px;
+  }
+  .single-media .header h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .single-media .header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .single-media .video-box {
+    height: 237px;
+  }
+  .single-media cite {
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 22px;
+  }
+  /*
+  -------- regional hubs --------
+  */
+  .main-hub {
+    background-position: 250px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .main-hub .hub-content h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .main-hub .hub-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .main-hub .hub-content h4 {
+    font-size: 18px;
+    line-height: inherit;
+  }
+  .main-hub .hub-content ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .regional-hubs .hub-card {
+    padding: 15px 15px 30px;
+  }
+  .regional-hubs .hub-card .img-box {
+    width: 202px;
+    height: 160px;
   }
 }
 /*# sourceMappingURL=styles-ltr.css.map */
