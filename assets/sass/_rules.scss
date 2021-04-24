@@ -1,11 +1,10 @@
 body {
-  font-family: $font-en;
+  @include getFont('primary',$direction);
   color: $color-default;
   direction: $direction;
   text-align: $start-direction;
 }
 html[dir="rtl"] body {
-  font-family: $font-ar;
 }
 *,
 *:focus,
@@ -27,7 +26,7 @@ h4 {
   color: $color-default;
 }
 label{
-  font-family: Roboto;
+  @include getFont('secondary',$direction);
   font-size: 18px;
   font-weight: $w-bold;
    color: $black-color;
@@ -64,7 +63,7 @@ label{
   margin-top: 30px !important;
 }
 .ml-30 {
-  margin-left: 30px !important;
+  margin-#{$start-direction}: 30px !important;
 }
 .mt-70 {
   margin-top: 70px !important;
@@ -114,8 +113,8 @@ ol {
   float: #{$start-direction} !important;
 }
 .px-0{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-#{$start-direction}: 0 !important;
+  padding-#{$end-direction}: 0 !important;
 }
 .pr-0{
   padding-#{$end-direction}: 0 !important;

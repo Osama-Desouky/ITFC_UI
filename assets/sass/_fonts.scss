@@ -1,15 +1,13 @@
 // montserrat
 @font-face {
   font-family: "montserrat";
-  src:
-   url($font-path + "Montserrat-Regular.woff") format("woff"),
+  src: url($font-path + "Montserrat-Regular.woff") format("woff"),
     url($font-path + "Montserrat-Regular.ttf");
   font-weight: $w-normal;
 }
 @font-face {
   font-family: "montserrat";
-  src:
-   url($font-path + "Montserrat-Medium.woff") format("woff"),
+  src: url($font-path + "Montserrat-Medium.woff") format("woff"),
     url($font-path + "Montserrat-Medium.ttf");
   font-weight: $w-medium;
   //medium
@@ -38,36 +36,34 @@
 // DINNextLT
 @font-face {
   font-family: "DINNextLT";
-  src: url($font-path + "DINNEXTLTARABIC-LIGHT.ttf");
+  src: url($font-path + "DIN-Next-LT-Arabic-Light.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Light.ttf");
   font-weight: $w-light;
 }
 @font-face {
   font-family: "DINNextLT";
-  src: url($font-path + "DINNextLTArabic-Regular.ttf");
+  src: url($font-path + "DIN-Next-LT-Arabic-Regular.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Regular.ttf");
   font-weight: $w-normal;
 }
 @font-face {
   font-family: "DINNextLT";
-  src: url($font-path + "DINNextLTArabic-Medium.ttf");
+  src: url($font-path + "DIN-Next-LT-Arabic-Regular.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Regular.ttf");
   font-weight: $w-medium;
-  //medium
-}
-@font-face {
-  font-family: "DINNextLT";
-  src: url($font-path + "DINNextLTArabic-Heavy.ttf");
-  font-weight: $w-semi-bold;
-  // semi bold
 }
 
 @font-face {
   font-family: "DINNextLT";
-  src: url($font-path + "DINNextLTArabic-Bold.ttf");
+  src: url($font-path + "DIN-Next-LT-Arabic-Bold.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Bold.ttf");
   font-weight: $w-bold;
 }
 @font-face {
   font-family: "DINNextLT";
-  src: url($font-path + "DINNextLTArabic-Black.ttf");
-  font-weight: $black;
+  src: url($font-path + "DIN-Next-LT-Arabic-Black.woff") format("woff"),
+    url($font-path + "DIN-Next-LT-Arabic-Black.ttf");
+  font-weight: $w-black;
 }
 // Roboto
 @font-face {

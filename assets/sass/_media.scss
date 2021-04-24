@@ -8,7 +8,7 @@ this UI is made desktop first.
 }
 @media (max-width: 1399.97px) {
   .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
   }
   .main-header .slider-wrapper .owl-carousel .item .caption {
     top: 65px;
@@ -41,8 +41,8 @@ this UI is made desktop first.
 
   .navbar .dropdown-menu {
     width: 100%;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     /*  height of nav-item  */
     top: 135px;
     display: block;
@@ -157,7 +157,7 @@ this UI is made desktop first.
     #navbarSupportedContent {
       position: absolute;
       width: 100%;
-      left: 0;
+      #{$start-direction}: 0;
       background: #fff;
       top: 135px;
       z-index: 99;
@@ -262,11 +262,11 @@ this UI is made desktop first.
     .owl-carousel {
       .owl-nav{
         top: calc(100% - 45px);
-        left: 50%;
-        right: auto;
+        #{$start-direction}: 50%;
+        #{$end-direction}: auto;
         button{
           &.owl-next{
-          right: -50px;
+          #{$end-direction}: -50px;
           }
           &.disabled {
             display: inline-block;
@@ -280,11 +280,11 @@ this UI is made desktop first.
     .owl-carousel {
       .owl-nav{
         top: calc(100% - 45px);
-        left: 50%;
-        right: auto;
+        #{$start-direction}: 50%;
+        #{$end-direction}: auto;
         button{
           &.owl-next{
-          right: -50px;
+          #{$end-direction}: -50px;
           }
           &.disabled {
             display: inline-block;
@@ -538,7 +538,7 @@ this UI is made desktop first.
               font-size: 16px;
             }
             ul li:first-child {
-              margin-right: 30px;
+              margin-#{$end-direction}: 30px;
            }
           }
           li.horizontal {
@@ -603,7 +603,7 @@ this UI is made desktop first.
         &:nth-of-type(4){
           display: block;
           position: absolute;
-          right: 65px;
+          #{$end-direction}: 65px;
           top: 32px;
           a.lang{
             line-height: 24px;
@@ -846,7 +846,7 @@ footer {
               font-size: 14px;
               padding: 4px 10px;
               &::after{
-                margin-left: 0px;
+                margin-#{$start-direction}: 0px;
               }
             }
           }
@@ -988,8 +988,8 @@ footer {
     }
     .owl-nav{
       top: calc(100% + 15px);
-      left: 50%;
-      right: auto;
+      #{$start-direction}: 50%;
+      #{$end-direction}: auto;
       position: absolute;
       z-index: 99;
       display: block;
@@ -1010,14 +1010,14 @@ footer {
           background: url($img-path + "next-sm-arrow.svg") !important;
           background-repeat: no-repeat !important;
           background-position: center center !important;
-          // margin-left: 15px;
+          // margin-#{$start-direction}: 15px;
           // #{$end-direction}: -70px;
         }
         &.owl-prev {
           background: url($img-path + "prev-sm-arrow.svg") !important;
           background-repeat: no-repeat !important;
           background-position: center center !important;
-          margin-left: 15px;
+          margin-#{$start-direction}: 15px;
           #{$start-direction}: -70px;
         }
       }

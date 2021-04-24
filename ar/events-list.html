@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>الصفحة الداخلية</title>
+  <title>قائمة الأحداث</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- fontawesome5 -->
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
   <!-- AOS -->
   <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
-  <!-- fancybox -->
-  <link rel="stylesheet" href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+
   <!-- custom -->
   <link rel="stylesheet" href="../assets/css/styles-rtl.css">
-  <!-- media Query -->
-  <link rel="stylesheet" href="../assets/css/media-mmousa.css">
+  <link rel="stylesheet" href="../assets/css/styles-rtl_2.css">
 
 </head>
 
@@ -39,7 +39,7 @@
                 <a class="nav-link" href="#">اتصل بنا</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">قائمة المصطلحات</a>
+                <a class="nav-link" href="#">المصطلحات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">وظائف</a>
@@ -73,7 +73,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
-                  من نحن
+                   من نحن
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <div class="container">
@@ -466,152 +466,466 @@
       </nav>
     </div>
   </section>
-  <!-- content start -->
-  <section class="board-members">
-    <div class="container">
-      <div class="inner-heading">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">ITFC</a></li>
-            <li class="breadcrumb-item"><a href="#"> من نحن</a></li>
-            <li class="breadcrumb-item active" aria-current="page">أعضاء مجلس الإدارة</li>
-          </ol>
-        </nav>
-        <h1>أعضاء <span>مجلس الإدارة</span></h1>
+<!-- content start -->
+
+<section class="news-list-section events-list-section">
+  <div class="container">
+    <div class="inner-heading">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">ITFC</a></li>
+          <li class="breadcrumb-item"><a href="#">الأخبار و الأحداث</a></li>
+          <li class="breadcrumb-item active" aria-current="page">الأحداث</li>
+        </ol>
+      </nav>
+      <h1>الأحداث</h1>
+    </div>
+
+    <div class="list-card">
+
+      <div class="top-filter row " >
+        <div class="left-filter col-lg-8">
+         
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#Upcoming">الأحداث القادمة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#Past">الأحداث الماضية</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-4 right-filter">
+          <div class="dropdown">
+            <button class="btn btn-sort dropdown-toggle" type="button" data-toggle="dropdown">
+              فرز
+          </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="active">تاريخ</a></li>
+              <li><a href="#">اسم</a></li>
+              <hr>
+              <li><a href="#" class="active">تصاعدي</a></li>
+              <li><a href="#">تنازلي</a></li>
+            </ul>
+          </div>
+          <div id="btnContainer" class="form-group">
+            <label >تغيير العرض</label>
+            <button class="btn listShow active" onclick="listView()">
+              <img src="../assets/images/news/bullet-list.svg" alt="list">
+            </button> 
+            <button class="btn gridShow " onclick="gridView()">
+              <img src="../assets/images/news/grid.svg" alt="grid">
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="main-member-card">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 ">
-                <div class="img-box">
-                  <img src="../assets/images/Mem-photo01.png" alt="">
+
+      <div class="d-flex">
+        <section class="list-filter">
+          <div class="collabse-side-filter">
+            <div class="filter-head">
+              <h4>
+                <img src="../assets/images/events/منقي.svg" alt="">
+                منقي
+              </h4>
+              <span class="clear-all">
+                <a href="#">
+                  امسح الكل
+                <span> x</span>
+                </a>
+              </span>
+            </div>
+            <div id="accordion">
+
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="card-link" data-toggle="collapse" href="#country">
+                    دولة
+                  </a>
+                </div>
+                <div id="country" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <select class="form-control ">
+                      <option>المملكة العربية السعودية</option>
+                      <option>الولايات المتحدة الأمريكية</option>
+                      <option>الإمارات العربية المتحدة</option>
+                      <option>مصر</option>
+                      <option>المملكة المتحدة</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
-                <div class="content-box">
-                  <h2>حضرة. دكتور. بندر الحجار</h2>
-                  <span>رئيس مجلس الإدارة والرئيس التنفيذى</span>
-                  <p>لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني.</p>
+            
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
+                   تحديد نطاق التاريخ
+                  </a>
+                </div>
+                <div id="dateRange" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="بداية تاريخ">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <div class="form-group">
+                      <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control" placeholder="نهاية تاريخ">
+                      <span class="calender-icon">
+                        <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                      </span>
+                    </div>
+                    <button class="btn btn-apply">
+                      تطبيق
+                    </button>
+                  </div>
                 </div>
               </div>
+            
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link " data-toggle="collapse" href="#category">
+                    فئة
+                  </a>
+                </div>
+                <div id="category" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        الجميع (128)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                      فئة 01 (22)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        فئة 02 (45)
+                      </label>
+                    </div>
+                    <div class="custom-control custom-checkbox ">
+                      <input type="checkbox" class="custom-control-input" id="customControlInline">
+                      <label class="custom-control-label " for="customControlInline">
+                        فئة 03 (70)
+                      </label>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="collapsed-item">
+                <div class="collapsed-item-head">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#language">
+                    الجميع
+                  </a>
+                </div>
+                <div id="language" class="collapse" data-parent="#accordion">
+                  <div class="collapsed-item-content">
+                    <select class="form-control ">
+                      <option>الإنجليزية</option>
+                      <option>العربية</option>
+                      <option>الاسبانية</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            
             </div>
           </div>
+          <button class="side-filter-btn" onclick="filterOption()"></button>
+        </section>
+       
+         
+            <section class="list-show list-with-filter  aos-init aos-animate" data-aos="fade-in" data-aos-delay="150" id="gridVSlist">
+              <div class="tab-content">
+                  <!-- tab 1 -->
+                  <div class="tab-pane active" id="Upcoming">
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            فبراير
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                            وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                          </h4>
+                          <p>
+                            لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص،
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                             ينتهي في 10 فبراير
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              رياض, المملكة العربية السعودية
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            فبراير
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                          وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                          </h4>
+                          <p>
+                          لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              ينتهي 10 فبراير
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              رياض, المملكة العربية السعودية
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            فبراير
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                          وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                          </h4>
+                          <p>
+                          لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              ينتهي 10 فبراير
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              رياض, المملكة العربية السعودية
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            فبراير
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                          وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                          </h4>
+                          <p>
+                          لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              ينتهي 10 فبراير
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              رياض, المملكة العربية السعودية
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                      <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                        <div class="date-card">
+                          <div class="day">
+                            06
+                          </div>
+                          <div class="month">
+                            فبراير
+                          </div>
+                          <div class="year">
+                            2021
+                          </div>
+                        </div>
+                        <div class="event-card-content">
+                          <h4>
+                          وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                          </h4>
+                          <p>
+                          لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                          </p>
+                          <div class="bottom-content">
+                            <div class="end-date">
+                              <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                              ينتهي 10 فبراير
+                            </div>
+                            <div class="location">
+                              <img src="../assets/images/events/Location.svg" alt="location">
+                              رياض, المملكة العربية السعودية
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                      </div>
+
+                    </div>
+
+                  <!-- tab 2 -->
+                  <div class="tab-pane" id="Past">
+                    <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                      <div class="date-card">
+                        <div class="day">
+                        10
+                        </div>
+                        <div class="month">
+                          فبراير
+                        </div>
+                        <div class="year">
+                          2021
+                        </div>
+                      </div>
+                      <div class="event-card-content">
+                        <h4>
+                       مرحبًا ، هذه علامة التبويب "الماضي"
+                        </h4>
+                        <p>
+                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                        </p>
+                        <div class="bottom-content">
+                          <div class="end-date">
+                            <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                            ينتهي 10 فبراير
+                          </div>
+                          <div class="location">
+                            <img src="../assets/images/events/Location.svg" alt="location">
+                            رياض, المملكة العربية السعودية
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="stretched-link"></a>
+                    </div>
+
+                    <div class="list-item aos-init aos-animate" data-aos="fade-in" data-aos-delay="100">
+                      <div class="date-card">
+                        <div class="day">
+                          06
+                        </div>
+                        <div class="month">
+                          فبراير
+                        </div>
+                        <div class="year">
+                          2021
+                        </div>
+                      </div>
+                      <div class="event-card-content">
+                        <h4>
+                        وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                        </h4>
+                        <p>
+                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة ب
+                        </p>
+                        <div class="bottom-content">
+                          <div class="end-date">
+                            <img src="../assets/images/events/calendar-dates.svg" alt="calender">
+                            ينتهي 10 فبراير
+                          </div>
+                          <div class="location">
+                            <img src="../assets/images/events/Location.svg" alt="location">
+                            رياض, المملكة العربية السعودية
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="stretched-link"></a>
+                    </div>
+
+                  </div>
+
+
+            </section>
+          
+         
         </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo02.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. در. حامد بين سليمان أل بزي</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo03.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. أحمد الغانم</h4>
-              <span>المجموعة د</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo04.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. ساد الشهراني</h4>
-              <span>المملكة العربية السعودية</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo05.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. أحمد جفري عبد رحمن</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo06.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. فراس عبدالرحمن أل خليفة </h4>
-              <span>المجموعة ج</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo07.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. در. سيد برفيز عباس</h4>
-              <span>المجموعة أ</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo08.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. محمد رزة رزيبر</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo09.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. فراس عبدالرحمن أل خليفة</h4>
-              <span>المجموعة ج</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo10.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. در. سيد برفيز عباس</h4>
-              <span>المجموعة أ</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo11.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. محمد رزة رزيبر</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
+      </div>
+    
+<div class="text-center">
+    <div class="pagination-section ">
+      <div >
+        <div class="pagination">
+        <a href="#" class="disabled">
+          <i class="fas fa-caret-left"></i>
+        </a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#">
+          <i class="fas fa-caret-right"></i>
+        </a>
         </div>
       </div>
     </div>
-  </section>
-  <!-- content end -->
+    <div class="pageCount">
+      <form class="form-inline">
+        <label class="">العناصر</label>
+        <select class="form-control ">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+        </select>
+    </form>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- content end -->
   <footer>
     <div class="container">
       <div class="row">
@@ -722,17 +1036,34 @@
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <!-- AOS -->
   <script src="../node_modules/aos/dist/aos.js"></script>
-  <!-- fancybox -->
-  <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
   <!-- inline -->
   <script>
     $(function () {
       AOS.init();
     });
   </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+<script>
+   $('#datepicker').datepicker({
+      weekStart: 6,
+      // daysOfWeekHighlighted: "6,0",
+      autoclose: true,
+      todayHighlight: true,
+  });
+  // $('#datepicker').datepicker("setDate", new تاريخ());
+  $('#datepicker2').datepicker({
+      weekStart: 6,
+      // daysOfWeekHighlighted: "6,0",
+      autoclose: true,
+      todayHighlight: true,
+  });
+
+</script>
   <!-- custom Js -->
   <script src="../assets/js/custom.js"></script>
-
+  
+  
 </body>
 
 </html>

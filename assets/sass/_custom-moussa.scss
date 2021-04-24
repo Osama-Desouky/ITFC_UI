@@ -27,7 +27,7 @@
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
    
-    left: -23px;
+    #{$start-direction}: -23px;
     background-size: 12px 13px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' viewBox='0 0 24 18'%3E%3Cpath id='Path' d='M0,9.766,8.219,18,24,2.234,21.734,0,8.219,13.5,2.234,7.516Z' fill='%23365029'/%3E%3C/svg%3E%0A");
 }
@@ -71,7 +71,7 @@
             width: 18px;
             height: 18px;
             position: absolute;
-            right: -18px;
+            #{$end-direction}: -18px;
             top: 0;
             border: 1px solid #E4E6E9;
             background-image: url($img-path + "/events/left-arrow.svg");
@@ -82,7 +82,7 @@
         }
         .closed-filter-btn{
             transform: rotate(180deg);
-            right: 0;
+            #{$end-direction}: 0;
         }
         .closed{
             display: none;
@@ -279,7 +279,7 @@
                 height: 2px;
                 background-color: #DDE1E6;
                 position: absolute;
-                left: 30px;
+                #{$start-direction}: 30px;
                 bottom: 0;
             }
             h3{
@@ -336,7 +336,7 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                            left: 0;
+                            #{$start-direction}: 0;
                             top: 0;
                             opacity: 0;
                             transition: 500ms;
@@ -399,11 +399,11 @@
                         }
                     }
                     .owl-prev{
-                        left: 0;
+                        #{$start-direction}: 0;
                         background-image: url($img-path + "/events/slider-left-arrow.svg");
                     }
                     .owl-next{
-                        right: 0;
+                        #{$end-direction}: 0;
                         background-image: url($img-path + "/events/slider-right-arrow.svg");
 
                     }
@@ -423,7 +423,7 @@
                 height: 2px;
                 background-color: #DDE1E6;
                 position: absolute;
-                left: 30px;
+                #{$start-direction}: 30px;
                 bottom: 0;
             }
 
@@ -495,11 +495,11 @@
                         }
                     }
                     .owl-prev{
-                        left: 0;
+                        #{$start-direction}: 0;
                         background-image: url($img-path + "/events/slider-left-arrow.svg");
                     }
                     .owl-next{
-                        right: 0;
+                        #{$end-direction}: 0;
                         background-image: url($img-path + "/events/slider-right-arrow.svg");
 
                     }
@@ -579,11 +579,11 @@
                         }
                     }
                     .owl-prev{
-                        left: 0;
+                        #{$start-direction}: 0;
                         background-image: url($img-path + "/events/slider-left-arrow.svg");
                     }
                     .owl-next{
-                        right: 0;
+                        #{$end-direction}: 0;
                         background-image: url($img-path + "/events/slider-right-arrow.svg");
 
                     }
@@ -621,7 +621,7 @@
             }
             .right-filter{
                 ul.nav-pills{
-                    margin-left: 20px;
+                    margin-#{$start-direction}: 20px;
                     // border-radius: 4px;
 
                     .nav-item{
@@ -661,7 +661,7 @@
                 height: 291px;
                 overflow: hidden;
                 padding: 0;
-                margin-right: 15px;
+                margin-#{$end-direction}: 15px;
                 margin-bottom: 36px;
                 border-top: 0 !important;
                 position: relative;
@@ -710,7 +710,7 @@
                         font-size: 15px;
                         color: $p-color;
                         position: absolute;
-                        left: 20px;
+                        #{$start-direction}: 20px;
                         bottom: 22px;
                         transition: 500ms;
                         img{
@@ -737,7 +737,7 @@
                             width: 100%;
                             height: 100%;
                             top: 0;
-                            left: 0;
+                            #{$start-direction}: 0;
                             background-color: rgba($color: #1D1D1B, $alpha: 0.40);
                             z-index: 1;
                         }
@@ -793,7 +793,7 @@
             }
         }
         .list-with-filter{
-            margin-right: -25px;
+            margin-#{$end-direction}: -25px;
             .main-media{
                 position: relative;
                 overflow: hidden;
@@ -807,7 +807,7 @@
                         width: 100%;
                         height: 100%;
                         top: 0;
-                        left: 0;
+                        #{$start-direction}: 0;
                         background-color: rgba($color: #000, $alpha: 0.30);;
                     }
                     img{
@@ -825,14 +825,14 @@
                     h3{
                         font-size: 45px;
                         font-weight: $w-black;
-                        font-family: Roboto;
+                        @include getFont('secondary',$direction);
                         color: #fff;
                         margin-bottom: 35px;
                     }
                     p{
                         font-size: 16px;
                         // font-weight: $w-black;
-                        // font-family: Roboto;
+                        // @include getFont('secondary',$direction);
                         color: #fff;
                         margin-bottom: 17px;
                         line-height: 30px;
@@ -922,7 +922,7 @@
                         background-position: center;
                         display: inline-block;
                         position: absolute;
-                        left: calc(50% - 30px);
+                        #{$start-direction}: calc(50% - 30px);
                         top: calc(50% - 30px);
                         z-index: 3;
                         }
@@ -939,7 +939,7 @@
                             background-position: center;
                             display: inline-block;
                             position: absolute;
-                            left: calc(50% - 30px);
+                            #{$start-direction}: calc(50% - 30px);
                             top: calc(50% - 30px);
                             z-index: 3;
                             }
@@ -956,7 +956,7 @@
                     .media-hidden-content{
                         position: absolute;
                         bottom: 15px;
-                        left: 16px;
+                        #{$start-direction}: 16px;
                         transform: translateY(100px);
                         opacity: 0;
                         transition: 500ms;
@@ -986,7 +986,7 @@
                             z-index: 0;
                             position: absolute;
                             bottom: 0;
-                            left: 0;
+                            #{$start-direction}: 0;
                             opacity: 1;
                             }
                         }
@@ -1224,7 +1224,7 @@
                             width: 100%;
                             height: 100%;
                             top: 0;
-                            left: 0;
+                            #{$start-direction}: 0;
                             background-color: rgba($color: $black-color, $alpha: 0.40);
                             // z-index: 1;
                         }
@@ -1268,7 +1268,7 @@
             h3{
                 font-size: 40px;
                 font-weight: $w-black;
-                font-family: Roboto;
+                @include getFont('secondary',$direction);
                 line-height: 52px;
                 color: $black-color;
                 margin-bottom: 25px;
@@ -1349,7 +1349,7 @@
                 &::before{
                     content: "";
                     position: absolute;
-                    left: 0;
+                    #{$start-direction}: 0;
                     top: 0;
                     width: 100%;
                     height: 100%;
@@ -1358,7 +1358,7 @@
                     transition: 700ms;
                 }
                 .number{
-                    font-family: Roboto;
+                    @include getFont('secondary',$direction);
                     font-weight: $w-bold;
                     font-size: 60px;
                     line-height: 80px;
@@ -1367,7 +1367,7 @@
                     
                 }
                 .goal-number{
-                    font-family: Roboto;
+                    @include getFont('secondary',$direction);
                     font-weight: $w-medium;
                     font-size: 14px;
                     line-height: 18px;
@@ -1377,7 +1377,7 @@
 
                 }
                 .goal{
-                    font-family: Roboto;
+                    @include getFont('secondary',$direction);
                     font-weight: $w-bold;
                     font-size: 20px;
                     line-height: 18px;
@@ -1400,7 +1400,7 @@
                         max-height: 157px;
                         overflow: hidden;
                         p{
-                            font-family: Roboto;
+                            @include getFont('secondary',$direction);
                             font-weight: $w-medium;
                             font-size: 16px;
                             line-height: 18px;
@@ -1566,7 +1566,7 @@
               justify-content: center;
               border-radius: 21px;
               position: absolute;
-              right: 20px;
+              #{$end-direction}: 20px;
               top: 20px;
             }
             .modal-body{
@@ -1574,7 +1574,7 @@
               div.popup-content{
                 padding: 68px 45px 30px 27px;
                 h5{
-                    font-family: Roboto;
+                    @include getFont('secondary',$direction);
                     font-weight: $w-medium;
                     font-size: 14px;
                     color: $dark-red-color;
@@ -1583,7 +1583,7 @@
                     text-transform: uppercase;
                 }
                 h4{
-                    font-family: Roboto;
+                    @include getFont('secondary',$direction);
                     font-weight: $w-bold;
                     font-size: 20px;
                     color: $black-color;
@@ -1601,7 +1601,7 @@
                     }
                     h3{
 
-                        font-family: Roboto;
+                        @include getFont('secondary',$direction);
                         font-weight: $w-black;
                         font-size: 35px;
                         color: $black-color;
@@ -1639,7 +1639,7 @@
                     list-style: none;
 
                     li{
-                        font-family: Roboto;
+                        @include getFont('secondary',$direction);
                         font-weight: $w-medium;
                         font-size: 16px;
                         color: $black-color;
@@ -1835,7 +1835,7 @@
                 .close-popup{
                   width: 30px;
                   height: 30px;
-                  right: 15px;
+                  #{$end-direction}: 15px;
                   top: 12px;
                 }
                 .modal-body{
@@ -1948,4 +1948,8 @@
     //         height: 30px;
     //     }
     // }
+}
+
+html[dir="rtl"] {
+
 }
