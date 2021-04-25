@@ -1012,7 +1012,7 @@
       padding: 0 20px;
       position: absolute;
       top: 50%;
-      #{$start-direction}: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
     }
@@ -1490,7 +1490,7 @@
               content: "1";
               position: absolute;
               top: 50%;
-              #{$start-direction}: 50%;
+              left: 50%;
               transform: translate(-50%, -50%);
             }
 
@@ -3033,5 +3033,12 @@ html[dir="rtl"] {
   .glossary::before,
   .glossary-inner .glossary-inner-content-box .content-card-item p a img {
     transform: rotateY(180deg);
+  }
+  .our-members h2{
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .poadcast .pcast-player .pcast-player-controls{
+    flex-direction: row-reverse;
   }
 }

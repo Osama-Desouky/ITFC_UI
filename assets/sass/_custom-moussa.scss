@@ -1071,7 +1071,7 @@
           }
           .bottom-div {
             .pages-count {
-              float: left;
+              float: $start-direction;
               img {
                 margin-#{$end-direction}: 10px;
                 vertical-align: middle;
@@ -1173,7 +1173,7 @@
             transform: translateY(50px);
             transition: 300ms;
             .pages-count {
-              float: left;
+              float: $start-direction;
               img {
                 margin-#{$end-direction}: 10px;
                 vertical-align: middle;
@@ -1319,7 +1319,7 @@
         margin-#{$start-direction}: 0;
         margin-#{$end-direction}: 6px;
         transition: 600ms ease-in-out;
-        float: left;
+        float: $start-direction;
 
         // &:nth-child(1n + 0){
         //     margin-#{$start-direction}:0 ;
@@ -1351,7 +1351,7 @@
           font-weight: $w-medium;
           font-size: 14px;
           line-height: 18px;
-          text-align: left;
+          text-align: $start-direction;
           color: #fff;
           opacity: 0.75;
         }
@@ -1360,7 +1360,7 @@
           font-weight: $w-bold;
           font-size: 20px;
           line-height: 18px;
-          text-align: left;
+          text-align: $start-direction;
           color: #fff;
         }
         .item-img {
@@ -1382,7 +1382,7 @@
               font-weight: $w-medium;
               font-size: 16px;
               line-height: 18px;
-              text-align: left;
+              text-align: $start-direction;
               color: #fff;
             }
           }
@@ -1505,7 +1505,7 @@
         align-items: center;
         height: 453px;
         width: calc(50% - 9px);
-        float: left;
+        float: $start-direction;
         margin-#{$start-direction}: 6px;
         margin-#{$end-direction}: 6px;
         .mid-img {
@@ -1529,7 +1529,7 @@
       max-width: 890px;
       .modal-content {
         position: relative;
-        text-align: left;
+        text-align: $start-direction;
         border: 0;
         box-shadow: 0 3px 80px rgba($color: #2d3236, $alpha: 0.16);
         border-radius: 16px;

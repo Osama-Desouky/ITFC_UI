@@ -10255,6 +10255,10 @@ button:focus {
   outline: none;
 }
 
+.nav {
+  padding: 0;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -10833,7 +10837,7 @@ ol li {
   display: block;
   background-image: url("../images/right-side-angel.svg"), url("../images/left-side-angel.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center left, center right;
+  background-position: center right, center left;
   background-size: contain, contain;
   position: absolute;
   width: calc(100% + (27px * 2));
@@ -11707,14 +11711,28 @@ button.scroll-up:hover {
 
 .about-itfc {
   padding-top: 40px;
-  background-image: url("../images/toparea-bg-about.png");
-  background-color: #f3f6fb;
   height: auto;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding-bottom: 20px;
+  position: relative;
+  background-color: #f3f6fb;
+}
+.about-itfc::before {
+  content: "";
+  background-image: url("../images/toparea-bg-about.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+.about-itfc > * {
+  position: relative;
+  z-index: 1;
 }
 .about-itfc .trade-box {
   padding: 0;
@@ -11773,26 +11791,46 @@ button.scroll-up:hover {
 }
 
 .vision {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  position: relative;
+}
+.vision::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
   background-image: url("../images/mission-vision-bg.png");
   background-color: #c9b27a;
   background-size: cover;
   background-position: center center;
-  padding-top: 95px;
-  padding-bottom: 120px;
 }
 
 .vision-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/vision-box-bg.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding-top: 115px;
   padding-bottom: 115px;
   max-width: 1060px;
   margin: auto;
+  position: relative;
+}
+.vision-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-image: url("../images/vision-box-bg.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .vision-box ul {
   padding: 0px;
@@ -12149,13 +12187,23 @@ button.scroll-up:hover {
 }
 
 .itfc-globe {
-  background-image: url("../images/globe-bg.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
-  background-color: #e9e9e9;
+  position: relative;
   height: calc(100vh);
   overflow: hidden;
+}
+.itfc-globe::before {
+  content: "";
+  background-image: url("../images/globe-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 .itfc-globe > .container {
   display: flex;
@@ -13313,12 +13361,25 @@ ul.fixed-social li:hover a img {
   margin-bottom: 21px;
 }
 .news-inner-section .size-changes .card-1 ul {
-  list-style-image: url("../images/news/list-style.svg");
-  padding-right: 14px;
+  list-style: none;
+  padding-right: 0;
   margin-bottom: 6px;
 }
 .news-inner-section .size-changes .card-1 ul li {
+  position: relative;
   margin-bottom: 16px;
+  padding-right: 14px;
+}
+.news-inner-section .size-changes .card-1 ul li::before {
+  content: "";
+  width: 8px;
+  height: 24px;
+  background-image: url("../images/news/list-style.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .news-inner-section .size-changes .card-1 ul li a {
   font-size: 16px;
@@ -13876,6 +13937,7 @@ main styles
   padding-top: 37px;
   padding-bottom: 67px;
   background-color: #EBF2FF;
+  overflow: hidden;
 }
 .projects-highlight::before {
   content: "";
@@ -13884,9 +13946,9 @@ main styles
   right: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100vh);
   background-image: url("../images/projects-bg.png");
-  background-position: calc(100% + 40px) center;
+  background-position: calc(100% + 40px) top;
   background-repeat: no-repeat;
   background-size: auto 100%;
   opacity: 0.9;
@@ -14369,10 +14431,24 @@ main styles
 
 .project-basic-details {
   padding-top: 39px;
+  position: relative;
+}
+.project-basic-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   background-image: url("../images/farm-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.project-basic-details > * {
+  position: relative;
+  z-index: 1;
 }
 .project-basic-details h1 {
   margin-bottom: 40px;
@@ -14860,8 +14936,32 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after,
 html[dir=rtl] .events-list-section::before,
 html[dir=rtl] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img,
 html[dir=rtl] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img,
-html[dir=rtl] .events-inner::before {
+html[dir=rtl] .events-inner::before,
+html[dir=rtl] .main-header .slider-wrapper .actions .prev-arrow,
+html[dir=rtl] .main-header .slider-wrapper .actions .next-arrow,
+html[dir=rtl] .main-header .slider-wrapper .owl-carousel .item .caption .learn-more::after,
+html[dir=rtl] .in-focus .slider-wrapper .actions .navigations a,
+html[dir=rtl] .latest-news .owl-carousel .owl-nav button,
+html[dir=rtl] .news-card > .actions .read-more::after,
+html[dir=rtl] a.show-all::after,
+html[dir=rtl] .upcoming-events .owl-carousel .owl-nav button,
+html[dir=rtl] .publications .actions .navigations a,
+html[dir=rtl] .events-list-section .list-filter .side-filter-btn,
+html[dir=rtl] .news-inner-section .size-changes .card-1 ul li::before,
+html[dir=rtl] .list-item .list-content .actions .read-more::after,
+html[dir=rtl] .project-basic-details::before,
+html[dir=rtl] .resume-slider .item .content-box::before,
+html[dir=rtl] .related-imgs-slider .slider-wrapper .actions .navigations a,
+html[dir=rtl] .SDG-section::before,
+html[dir=rtl] .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden .more-info img,
+html[dir=rtl] .trade-box .img-box::after,
+html[dir=rtl] .itfc-globe::before,
+html[dir=rtl] .trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button,
+html[dir=rtl] .about-itfc::before, html[dir=rtl] .vision-box::before, html[dir=rtl] .vision::before {
   transform: rotateY(180deg);
+}
+html[dir=rtl] .events-list-section .list-filter .closed-filter-btn {
+  transform: none;
 }
 html[dir=rtl] .news-inner-section .news-inner-card .left-news-section div.date img {
   vertical-align: baseline;
@@ -14886,6 +14986,51 @@ html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content select {
 html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon {
   top: 7px;
   height: 26px;
+}
+html[dir=rtl] .heading h2 {
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+html[dir=rtl] .main-header .slider-wrapper .owl-carousel .item .caption .text-bg::before {
+  bottom: 0;
+  height: 60px;
+  top: auto;
+}
+html[dir=rtl] .pageCount select,
+html[dir=rtl] .SDG-section .list-card .sort form select {
+  background-position-x: 8%;
+}
+html[dir=rtl] .list-item .list-content .actions .read-more::before {
+  bottom: -6px;
+}
+html[dir=rtl] .projects-highlight::before {
+  background-position: -40px top;
+}
+html[dir=rtl] .nice-select::after {
+  left: 12px;
+  right: auto;
+}
+html[dir=rtl] .nice-select .list {
+  left: auto;
+  right: 0;
+}
+html[dir=rtl] .custom-list ol li::before {
+  line-height: 24px;
+}
+html[dir=rtl] .trade-dev-impact .box-contnet .inner-title img {
+  margin-left: 10px;
+}
+html[dir=rtl] .trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content h4 {
+  line-height: 30px;
+  height: 30px;
+}
+html[dir=rtl] .num-card h2 {
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+html[dir=rtl] .single-media .header h2 {
+  line-height: 55px;
+  margin-bottom: 25px;
 }
 
 .our-members {
@@ -15739,7 +15884,7 @@ html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content .form-group .
   padding: 0 20px;
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -16157,7 +16302,7 @@ html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content .form-group .
   content: "1";
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .sme-item .sme-item-body ul.li-orderd li .span-2::after {
@@ -17451,6 +17596,13 @@ html[dir=rtl] .glossary-inner .glossary-inner-content-box .content-card-item p a
 html[dir=rtl] .glossary::before,
 html[dir=rtl] .glossary-inner .glossary-inner-content-box .content-card-item p a img {
   transform: rotateY(180deg);
+}
+html[dir=rtl] .our-members h2 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+html[dir=rtl] .poadcast .pcast-player .pcast-player-controls {
+  flex-direction: row-reverse;
 }
 
 /*

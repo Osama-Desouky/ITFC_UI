@@ -1070,7 +1070,8 @@
         animateOut: 'fadeOut',
         dotsContainer: '#carousel-custom-dots',
         autoplay: true,
-        autoplayTimeout: 5000
+        autoplayTimeout: 5000,
+        rtl:true,
       });
       $('.resume-slider .owl-dot').click(function () {
         resumeSlider.trigger('to.owl.carousel', [$(this).index(), 300]);
@@ -1082,6 +1083,7 @@
         nav: false,
         margin: 22,
         dotsContainer: '#rel-img-custom-dots',
+        rtl:true,
         responsive: {
           0: {
             items: 1
