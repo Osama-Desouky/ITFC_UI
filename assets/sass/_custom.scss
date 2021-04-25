@@ -21,8 +21,11 @@
     .row {
       width: 100%;
     }
+    .nav{
+      padding: 0;
+    }
     h6 {
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       color: $black-color;
       font-size: 18px;
       font-weight: $w-bold;
@@ -270,7 +273,7 @@
           transition: all 2s;
           transform: translateY(50px);
           h2 {
-            @include getFont('secondary',$direction);
+            @include getFont("secondary", $direction);
             font-weight: $w-black;
             font-size: 50px;
             line-height: 55px;
@@ -438,7 +441,7 @@
         background-image: url($img-path + "right-side-angel.svg"),
           url($img-path + "left-side-angel.svg");
         background-repeat: no-repeat, no-repeat;
-        background-position: center right, center left;
+        background-position: center $end-direction, center $start-direction;
         background-size: contain, contain;
         position: absolute;
         width: calc(100% + (27px * 2));
@@ -527,7 +530,7 @@
   }
   h4 {
     color: $black-color;
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 24px;
     line-height: 29px;
     font-weight: $w-bold;
@@ -591,7 +594,7 @@
     font-size: 40px;
     font-weight: $w-black;
     line-height: 50px;
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     color: $black-color;
     text-align: center;
     margin-bottom: 5px;
@@ -722,7 +725,7 @@
       font-size: 18px;
       font-weight: $w-bold;
       line-height: 30px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       margin-bottom: 10px;
       height: calc(30px * 2);
       overflow: hidden;
@@ -897,7 +900,7 @@ a.show-all {
       font-size: 40px;
       font-weight: $w-bold;
       color: $orange-color;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       line-height: 45px;
       width: 55px;
       text-align: center;
@@ -1009,7 +1012,7 @@ a.show-all {
     background-position: 20% center;
   }
   h2 {
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 40px;
     font-weight: $w-black;
     color: #fff;
@@ -1080,7 +1083,7 @@ a.show-all {
       font-size: 20px;
       font-weight: $w-bold;
       line-height: 30px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       margin-bottom: 10px;
       transition: 0.3s;
     }
@@ -1393,7 +1396,7 @@ button.scroll-up {
     span.itfc {
       display: flex;
       align-items: center;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 75px;
       font-weight: $w-black;
       line-height: calc(52px * 2);
@@ -1411,7 +1414,7 @@ button.scroll-up {
     }
     span.desc {
       display: flex;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 40px;
       font-weight: $w-black;
       line-height: 52px;
@@ -1439,7 +1442,7 @@ button.scroll-up {
   align-items: center;
   justify-content: center;
   background-image: url($img-path + "vision-box-bg.png");
-  background-position: right top;
+  background-position: $end-direction top;
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 115px;
@@ -1453,7 +1456,7 @@ button.scroll-up {
     li {
       margin-bottom: 25px;
       h2 {
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-size: 60px;
         font-weight: $w-black;
         line-height: 80px;
@@ -1504,7 +1507,7 @@ button.scroll-up {
     }
   }
   h1 {
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 45px;
     font-weight: $w-black;
     line-height: 55px;
@@ -1524,7 +1527,7 @@ button.scroll-up {
   .header {
     font-size: 60px;
     font-weight: $w-black;
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     text-align: center;
     color: $black-color;
     margin-bottom: 50px;
@@ -1589,7 +1592,7 @@ button.scroll-up {
   padding: 24px 15px 0;
   overflow: hidden;
   h2 {
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 50px;
     font-weight: $w-black;
     line-height: 56px;
@@ -1627,7 +1630,7 @@ button.scroll-up {
     margin-bottom: 66px;
     text-align: center;
     h2 {
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 55px;
       line-height: 73px;
       font-weight: $w-black;
@@ -1646,7 +1649,7 @@ button.scroll-up {
   }
   cite {
     display: block;
-    text-align: right;
+    text-align: $end-direction;
     color: $p-color;
     font-size: 16px;
     font-weight: $w-normal;
@@ -1731,7 +1734,7 @@ button.scroll-up {
     span {
       font-size: 55px;
       line-height: 60px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-weight: $w-black;
       &.itfc {
         color: $red-color;
@@ -1817,7 +1820,7 @@ button.scroll-up {
 .itfc-globe {
   background-image: url($img-path + "globe-bg.svg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: $start-direction center;
   background-size: auto 100%;
   background-color: #e9e9e9;
   height: calc(100vh);
@@ -1854,7 +1857,7 @@ button.scroll-up {
         color: $red-color;
         font-size: 45px;
         font-weight: $w-black;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         &:hover {
           text-decoration: none;
         }
@@ -1899,7 +1902,7 @@ button.scroll-up {
     text-align: center;
     margin-bottom: 52px;
     span {
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 55px;
       font-weight: $w-black;
       line-height: 60px;
@@ -1938,7 +1941,7 @@ button.scroll-up {
     }
     h2 {
       font-size: 40px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       line-height: 48px;
       font-weight: $w-black;
       color: $black-color;
@@ -1992,7 +1995,7 @@ button.scroll-up {
   margin-bottom: 15px;
   h4 {
     margin-top: 15px;
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 20px;
     font-weight: $w-bold;
     line-height: 30px;
@@ -2046,7 +2049,7 @@ button.scroll-up {
     content: "";
     background-image: url($img-path + "globe-dotted-bg.svg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: $end-direction top;
     background-size: auto;
     opacity: 0.4;
     top: 0;
@@ -2074,7 +2077,7 @@ button.scroll-up {
     flex-direction: column;
     justify-content: center;
     h2 {
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 40px;
       font-weight: $w-black;
       line-height: 52px;
@@ -2140,7 +2143,7 @@ button.scroll-up {
   background-color: $gray-bg;
   background-image: url($img-path + "right-globe-bg.svg");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: $end-direction top;
   background-size: auto 100%;
   .inner-heading {
     h1 {
@@ -2150,7 +2153,7 @@ button.scroll-up {
   .hub-content {
     h2 {
       margin-bottom: 32px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 40px;
       font-weight: $w-black;
       line-height: 52px;
@@ -2202,7 +2205,7 @@ button.scroll-up {
     margin-bottom: 34px;
     h2 {
       margin-bottom: 15px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 40px;
       font-weight: $w-bold;
       line-height: 42px;
@@ -2360,7 +2363,7 @@ ul.fixed-social {
     }
     h2 {
       font-size: 40px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       line-height: 48px;
       font-weight: $w-black;
       color: $black-color;
@@ -2402,7 +2405,7 @@ ul.fixed-social {
   margin-bottom: 15px;
   h4 {
     margin-top: 15px;
-    @include getFont('secondary',$direction);
+    @include getFont("secondary", $direction);
     font-size: 20px;
     font-weight: $w-bold;
     line-height: 30px;
@@ -2684,7 +2687,7 @@ ul.fixed-social {
         font-size: 18px;
         font-weight: $w-bold;
         line-height: 29px;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         margin-bottom: 12px;
         height: 56px;
         overflow: hidden;
@@ -2807,7 +2810,7 @@ ul.fixed-social {
         font-size: 18px;
         font-weight: $w-bold;
         line-height: 29px;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         margin-bottom: 15px;
         height: 55px;
         overflow: hidden;
@@ -2923,7 +2926,7 @@ ul.fixed-social {
       h2 {
         font-size: 40px;
         line-height: 48px;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-weight: $w-black;
         color: $black-color;
         span {
@@ -2945,7 +2948,7 @@ ul.fixed-social {
       }
       .font-btns {
         // display: inline-block;
-        float: right;
+        float: $end-direction;
         button {
           width: 35px;
           height: 31px;
@@ -3127,7 +3130,7 @@ ul.fixed-social {
       }
     }
     span.clear-all {
-      float: right;
+      float: $end-direction;
 
       a {
         font-size: 12px;
@@ -3241,7 +3244,7 @@ ul.fixed-social {
       align-items: center;
       flex-direction: column;
       .day {
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-size: 40px;
         font-weight: $w-bold;
         color: $orange-color;
@@ -3352,7 +3355,7 @@ ul.fixed-social {
       margin-#{$start-direction}: 17px;
       margin-bottom: 17px;
       .day {
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-size: 40px;
         font-weight: $w-bold;
         color: $orange-color;
@@ -3483,7 +3486,7 @@ main styles
     display: inline-block;
     a {
       color: #5e5e59;
-      float: left;
+      float: $start-direction;
       padding: 8px 16px;
       text-decoration: none;
       background-color: #f2f2f2;
@@ -3521,7 +3524,7 @@ main styles
 }
 
 .pageCount {
-  float: right;
+  float: $end-direction;
   label {
     font-size: 16px;
     font-weight: $w-medium;
@@ -3605,7 +3608,7 @@ main styles
           font-size: 20px;
           line-height: 30px;
           font-weight: $w-bold;
-          @include getFont('secondary',$direction);
+          @include getFont("secondary", $direction);
           color: $black-color;
           margin-bottom: 13px;
           transition: 500ms;
@@ -4685,5 +4688,23 @@ main styles
 }
 // RTL
 html[dir="rtl"] {
-
+  .main-navbar .top-nav .nav-item .nav-link.lang {
+    line-height: 18px;
+  }
+  .main-navbar
+    #navbarSupportedContent
+    > .navbar-nav
+    > .nav-item
+    > .nav-link.dropdown-toggle::after {
+    vertical-align: baseline;
+  }
+  .inner-heading ol.breadcrumb li.breadcrumb-item {
+    line-height: 14px;
+  }
+  .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-item::before {
+    margin: 5px 13px 5px 4px;
+  }
+  .subscription .form-group button[type=submit]::after{
+    transform: rotateY(180deg);
+  }
 }

@@ -15,6 +15,12 @@ button:focus {
 a:hover {
   text-decoration: none;
 }
+.dropdown-menu{
+  text-align: $start-direction;
+}
+.dropdown-toggle::after{
+  margin-#{$start-direction}: 0.255em;
+}
 p {
   font-size: 15px;
   color: #48494c;

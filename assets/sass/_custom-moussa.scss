@@ -229,7 +229,7 @@
                 border-color: #90426F;
                 h4{
                     img{
-                        float: right;
+                        float: $end-direction;
                         vertical-align: text-top;
                     }
                 }
@@ -1097,7 +1097,7 @@
                             color: $p-color;
                         }
                         .links{
-                            float: right;
+                            float: $end-direction;
                             a{
                                 margin-#{$end-direction}:10px ;
                                 &:last-child{
@@ -1199,7 +1199,7 @@
                             color: $p-color;
                         }
                         .links{
-                            float: right;
+                            float: $end-direction;
                             display: flex;
                             a{
                                 margin-#{$end-direction}:8px ;

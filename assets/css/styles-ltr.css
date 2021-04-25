@@ -10259,6 +10259,14 @@ a:hover {
   text-decoration: none;
 }
 
+.dropdown-menu {
+  text-align: left;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.255em;
+}
+
 p {
   font-size: 15px;
   color: #48494c;
@@ -10416,6 +10424,9 @@ ol li {
 }
 .main-navbar .navbar .dropdown-menu .row {
   width: 100%;
+}
+.main-navbar .navbar .dropdown-menu .nav {
+  padding: 0;
 }
 .main-navbar .navbar .dropdown-menu h6 {
   font-family: "Roboto";
@@ -14824,6 +14835,22 @@ main styles
     stroke-dashoffset: 0;
   }
 }
+html[dir=rtl] .main-navbar .top-nav .nav-item .nav-link.lang {
+  line-height: 18px;
+}
+html[dir=rtl] .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after {
+  vertical-align: baseline;
+}
+html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item {
+  line-height: 14px;
+}
+html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-item::before {
+  margin: 5px 13px 5px 4px;
+}
+html[dir=rtl] .subscription .form-group button[type=submit]::after {
+  transform: rotateY(180deg);
+}
+
 .our-members {
   position: relative;
   padding-top: 37px;
