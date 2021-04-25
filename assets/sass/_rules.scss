@@ -1,5 +1,5 @@
 body {
-  @include getFont('primary',$direction);
+  @include getFont("primary", $direction);
   color: $color-default;
   direction: $direction;
   text-align: $start-direction;
@@ -15,10 +15,10 @@ button:focus {
 a:hover {
   text-decoration: none;
 }
-.dropdown-menu{
+.dropdown-menu {
   text-align: $start-direction;
 }
-.dropdown-toggle::after{
+.dropdown-toggle::after {
   margin-#{$start-direction}: 0.255em;
 }
 p {
@@ -31,12 +31,12 @@ h4 {
   font-weight: bold;
   color: $color-default;
 }
-label{
-  @include getFont('secondary',$direction);
+label {
+  @include getFont("secondary", $direction);
   font-size: 18px;
   font-weight: $w-bold;
-   color: $black-color;
-   line-height: 28px;
+  color: $black-color;
+  line-height: 28px;
 }
 .primary-color {
   color: $primary-color;
@@ -77,10 +77,10 @@ label{
 .mt-50 {
   margin-top: 50px !important;
 }
-.pl-15{
+.pl-15 {
   padding-#{$start-direction}: 15px !important;
 }
-.pl-30{
+.pl-30 {
   padding-#{$start-direction}: 30px !important;
 }
 .strong {
@@ -107,24 +107,31 @@ ol {
   }
 }
 .text-left {
-  text-align: #{$end-direction} !important;
+  text-align: $end-direction !important;
 }
 .text-right {
-  text-align: #{$start-direction} !important;
+  text-align: $start-direction !important;
 }
 .float-left {
-  float: #{$end-direction} !important;
+  float: $end-direction !important;
 }
 .float-right {
-  float: #{$start-direction} !important;
+  float: $start-direction !important;
 }
-.px-0{
+.custom-control-label::before,
+.custom-control-label::after {
+  #{$start-direction}: -1.5rem;
+}
+.custom-control {
+  padding-#{$start-direction}: 1.5rem;
+}
+.px-0 {
   padding-#{$start-direction}: 0 !important;
   padding-#{$end-direction}: 0 !important;
 }
-.pr-0{
+.pr-0 {
   padding-#{$end-direction}: 0 !important;
 }
-.pl-0{
+.pl-0 {
   padding-#{$start-direction}: 0 !important;
 }

@@ -10389,6 +10389,15 @@ ol li {
   float: left !important;
 }
 
+.custom-control-label::before,
+.custom-control-label::after {
+  left: -1.5rem;
+}
+
+.custom-control {
+  padding-left: 1.5rem;
+}
+
 .px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -10540,7 +10549,7 @@ ol li {
   padding: 0;
 }
 .main-navbar .top-nav .nav-item .nav-link.lang {
-  font-family: "DINNextLT";
+  font-family: "montserrat";
   line-height: 10px;
 }
 .main-navbar .top-nav .nav-item .nav-link.search-toggle {
@@ -12908,7 +12917,7 @@ ul.fixed-social li:hover a img {
 .top-filter .right-filter .dropdown ul.dropdown-menu li a:hover {
   background-color: #eeeeee;
 }
-.top-filter .right-filter .dropdown ul.dropdown-menu li a.active::before {
+.top-filter .right-filter .dropdown ul.dropdown-menu li a.active:before {
   content: "";
   background-image: url("../images/news/check-sort.svg");
   position: absolute;
@@ -14850,6 +14859,36 @@ html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-it
 html[dir=rtl] .subscription .form-group button[type=submit]::after {
   transform: rotateY(180deg);
 }
+html[dir=rtl] .news-inner-section .news-inner-card .left-news-section div.date img {
+  vertical-align: baseline;
+}
+html[dir=rtl] .events-inner .news-inner-card .left-news-section div.location img {
+  vertical-align: bottom;
+}
+html[dir=rtl] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] .top-filter .right-filter .dropdown ul.dropdown-menu li a {
+  padding: 8px 45px 10px 10px;
+}
+html[dir=rtl] .list-with-filter.list-show .list-item .event-card-content p {
+  line-height: 28px;
+  height: calc(28px * 2);
+  margin-bottom: 10px;
+}
+html[dir=rtl] .list-with-filter.list-show .list-item .event-card-content .bottom-content div img {
+  vertical-align: sub;
+}
+html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content select {
+  background-position-x: 3%;
+}
+html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon {
+  top: 7px;
+  height: 26px;
+}
 
 .our-members {
   position: relative;
@@ -15735,7 +15774,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   top: 100%;
 }
 .trade-dev .trade-header h1 {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 900;
   margin-bottom: 7px;
   text-align: left;
@@ -15754,7 +15793,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   font-size: 22px;
   font-weight: 700;
   padding: 12px 46px;
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
 }
 
 .trade-dev-contnt {
@@ -15790,7 +15829,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   display: block;
   font-size: 55px;
   font-weight: 900;
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
 }
 .trade-dev-contnt .trade-insights-card .nump-1 {
   color: #b29f56;
@@ -15808,7 +15847,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   font-size: 30px;
   font-weight: 900;
   color: #1d1d1b;
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
   margin-bottom: 10px;
 }
 .trade-dev-contnt .trade-insights-card p {
@@ -15847,7 +15886,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
 .trade-dev-programs h2 {
   font-weight: 700;
   font-size: 40px;
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
   color: #5e5e59;
   margin-bottom: 48px;
 }
@@ -16204,7 +16243,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   color: #1d1d1b;
   font-size: 16px;
   font-weight: 700;
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
   margin-bottom: 15px;
 }
 .trade-dev-stories .cards a,
@@ -16567,7 +16606,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   padding-left: 17px;
 }
 .glossary-inner .glossary-inner-content-box .content-card h2 {
-  font-family: "$secondary-font-en", sans-serif;
+  font-family: "Roboto";
   font-size: 30px;
   color: #d5313a;
   font-weight: 700;
@@ -16795,7 +16834,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
 }
 .main-contact-us .main-contact-form label {
   margin-bottom: 10px;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-size: 16px;
   color: #1d1d1b;
   font-weight: 500;
@@ -17405,6 +17444,10 @@ label {
     flex-direction: column-reverse;
   }
 }
+html[dir=rtl] .main-contact-us .main-contact-form .form-group select {
+  background-position-x: 3%;
+}
+
 /*
 this UI is made desktop first.
 */

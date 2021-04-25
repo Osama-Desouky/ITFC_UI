@@ -148,7 +148,7 @@
         font-weight: $w-medium;
         padding: 0;
         &.lang {
-          font-family: $primary-font-ar;
+          @include getFont("primary", $direction);
           line-height: 10px;
         }
         &.search-toggle {
@@ -2512,7 +2512,7 @@ ul.fixed-social {
     font-weight: $w-medium;
     margin-#{$end-direction}: 15px;
     color: $p-color;
-    font-family: "montserrat";
+    @include getFont("primary", $direction);
   }
   input {
     border-radius: 0;
@@ -2609,7 +2609,7 @@ ul.fixed-social {
               background-color: #eeeeee;
             }
             &.active {
-              &::before {
+              &:before {
                 content: "";
                 background-image: url($img-path + "news/check-sort.svg");
                 position: absolute;
@@ -3530,7 +3530,7 @@ main styles
     font-weight: $w-medium;
     margin-#{$end-direction}: 15px;
     color: $p-color;
-    font-family: "montserrat";
+    @include getFont("primary", $direction);
   }
   select {
     border-radius: 0;
@@ -3962,7 +3962,7 @@ main styles
   .custom-control-label {
     font-size: 15px;
     font-weight: $w-medium;
-    font-family: "montserrat";
+    @include getFont("primary", $direction);
     line-height: 28px;
     padding-#{$start-direction}: 5px;
     color: $p-color;
@@ -4706,5 +4706,36 @@ html[dir="rtl"] {
   }
   .subscription .form-group button[type=submit]::after{
     transform: rotateY(180deg);
+  }
+  .news-inner-section .news-inner-card .left-news-section div.date img{
+    vertical-align: baseline;
+  }
+  .events-inner .news-inner-card .left-news-section div.location img
+  {
+    vertical-align: bottom;
+  }
+  .events-inner .news-inner-card .left-news-section .action-btns .btn-red img{
+    transform: rotateY(180deg);
+  }
+  .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img{
+    transform: rotateY(180deg);
+  }
+  .top-filter .right-filter .dropdown ul.dropdown-menu li a{
+    padding: 8px 45px 10px 10px;
+  }
+  .list-with-filter.list-show .list-item .event-card-content p{
+    line-height: 28px;
+    height: calc(28px * 2);
+    margin-bottom: 10px;
+  }
+  .list-with-filter.list-show .list-item .event-card-content .bottom-content div img{
+    vertical-align: sub;
+  }
+  .list-filter .collapsed-item .collapsed-item-content select{
+    background-position-x: 3%;
+  }
+  .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon{
+    top: 7px;
+    height: 26px;
   }
 }

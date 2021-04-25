@@ -394,7 +394,7 @@
         font-weight: $w-medium;
         margin-#{$end-direction}: 15px;
         color: $p-color;
-        font-family: "montserrat";
+        @include getFont("primary", $direction);
       }
       .left-filter {
         .dropdown {
@@ -463,7 +463,7 @@
                 .custom-control-label {
                   font-size: 15px;
                   font-weight: 500;
-                  font-family: "montserrat";
+                  @include getFont("primary", $direction);
                   line-height: 28px;
                   padding-#{$start-direction}: 5px;
                   color: #5e5e59;
@@ -1050,7 +1050,7 @@
     padding: 40px 26px;
     top: 100%;
     h1 {
-      font-family: "roboto", sans-serif;
+      @include getFont("secondary", $direction);
       font-weight: $w-black;
       margin-bottom: 7px;
       text-align: $start-direction;
@@ -1070,7 +1070,7 @@
       font-size: 22px;
       font-weight: $w-bold;
       padding: 12px 46px;
-      font-family: "$secondary-font-en", sans-serif;
+      @include getFont("secondary", $direction);
     }
   }
 }
@@ -1111,7 +1111,7 @@
 
         font-size: 55px;
         font-weight: $w-black;
-        font-family: "$secondary-font-en", sans-serif;
+        @include getFont("secondary", $direction);
         &-1 {
           color: $yellow-color;
         }
@@ -1133,7 +1133,7 @@
         font-size: 30px;
         font-weight: $w-black;
         color: $black-color;
-        font-family: "$secondary-font-en", sans-serif;
+        @include getFont("secondary", $direction);
         margin-bottom: 10px;
       }
 
@@ -1181,7 +1181,7 @@
   h2 {
     font-weight: $w-bold;
     font-size: 40px;
-    font-family: "$secondary-font-en", sans-serif;
+    @include getFont("secondary", $direction);
     color: $p-color;
     margin-bottom: 48px;
   }
@@ -1593,7 +1593,7 @@
       color: $black-color;
       font-size: 16px;
       font-weight: $w-bold;
-      font-family: "$secondary-font-en", sans-serif;
+      @include getFont("secondary", $direction);
       margin-bottom: 15px;
     }
     a,
@@ -2024,7 +2024,7 @@
       padding-#{$start-direction}: 17px;
 
       h2 {
-        font-family: "$secondary-font-en", sans-serif;
+        @include getFont("secondary", $direction);
         font-size: 30px;
         color: $red-color;
         font-weight: $w-bold;
@@ -2277,7 +2277,7 @@
 
     label {
       margin-bottom: 10px;
-      font-family: "Montserrat";
+      @include getFont("primary", $direction);
       font-size: 16px;
       color: $black-color;
       font-weight: $w-medium;
@@ -3020,5 +3020,11 @@ label {
         flex-direction: column-reverse;
       }
     }
+  }
+}
+// RTL
+html[dir="rtl"] {
+  .main-contact-us .main-contact-form .form-group select{
+    background-position-x: 3%;
   }
 }

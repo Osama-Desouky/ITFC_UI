@@ -10389,6 +10389,15 @@ ol li {
   float: left !important;
 }
 
+.custom-control-label::before,
+.custom-control-label::after {
+  left: -1.5rem;
+}
+
+.custom-control {
+  padding-left: 1.5rem;
+}
+
 .px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -10540,7 +10549,7 @@ ol li {
   padding: 0;
 }
 .main-navbar .top-nav .nav-item .nav-link.lang {
-  font-family: "DINNextLT";
+  font-family: "montserrat";
   line-height: 10px;
 }
 .main-navbar .top-nav .nav-item .nav-link.search-toggle {
@@ -12908,7 +12917,7 @@ ul.fixed-social li:hover a img {
 .top-filter .right-filter .dropdown ul.dropdown-menu li a:hover {
   background-color: #eeeeee;
 }
-.top-filter .right-filter .dropdown ul.dropdown-menu li a.active::before {
+.top-filter .right-filter .dropdown ul.dropdown-menu li a.active:before {
   content: "";
   background-image: url("../images/news/check-sort.svg");
   position: absolute;
@@ -14850,6 +14859,36 @@ html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-it
 html[dir=rtl] .subscription .form-group button[type=submit]::after {
   transform: rotateY(180deg);
 }
+html[dir=rtl] .news-inner-section .news-inner-card .left-news-section div.date img {
+  vertical-align: baseline;
+}
+html[dir=rtl] .events-inner .news-inner-card .left-news-section div.location img {
+  vertical-align: bottom;
+}
+html[dir=rtl] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img {
+  transform: rotateY(180deg);
+}
+html[dir=rtl] .top-filter .right-filter .dropdown ul.dropdown-menu li a {
+  padding: 8px 45px 10px 10px;
+}
+html[dir=rtl] .list-with-filter.list-show .list-item .event-card-content p {
+  line-height: 28px;
+  height: calc(28px * 2);
+  margin-bottom: 10px;
+}
+html[dir=rtl] .list-with-filter.list-show .list-item .event-card-content .bottom-content div img {
+  vertical-align: sub;
+}
+html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content select {
+  background-position-x: 3%;
+}
+html[dir=rtl] .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon {
+  top: 7px;
+  height: 26px;
+}
 
 .custom-control {
   margin-bottom: 5px;
@@ -14866,7 +14905,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   width: 18px;
   height: 18px;
   border-radius: 0;
-  border: 2px solid #E0E3E5;
+  border: 2px solid #e0e3e5;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -14894,7 +14933,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   padding: 10px 15px;
   color: #5e5e59;
   background-color: #fff;
-  border: 1px solid #E8EBEF;
+  border: 1px solid #e8ebef;
   font-size: 16px;
   height: 40px;
   font-weight: 500;
@@ -14917,7 +14956,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   position: absolute;
   right: -18px;
   top: 0;
-  border: 1px solid #E4E6E9;
+  border: 1px solid #e4e6e9;
   background-image: url("../images//events/left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -15016,7 +15055,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
 }
 .events-inner .news-inner-card .left-news-section .action-btns .btn-pdf {
   height: 55px;
-  border: 2px solid #DDE2E9;
+  border: 2px solid #dde2e9;
   background-color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -15048,17 +15087,17 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   vertical-align: middle;
 }
 .events-inner .news-inner-card .left-news-section .action-btns .btn-red:hover {
-  background-color: #EB3F48;
-  border-color: #EB3F48;
+  background-color: #eb3f48;
+  border-color: #eb3f48;
 }
 .events-inner .news-inner-card .left-news-section .details-h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #EB412F;
+  color: #eb412f;
   margin-bottom: 18px;
 }
 .events-inner .news-inner-card .size-changes .card-1 {
-  border-color: #90426F;
+  border-color: #90426f;
 }
 .events-inner .news-inner-card .size-changes .card-1 h4 img {
   float: right;
@@ -15102,7 +15141,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   content: "";
   width: calc(100% - 60px);
   height: 2px;
-  background-color: #DDE1E6;
+  background-color: #dde1e6;
   position: absolute;
   left: 30px;
   bottom: 0;
@@ -15189,7 +15228,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   margin-left: 0;
 }
 .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec:hover {
-  border: 1px solid #E1E4E9;
+  border: 1px solid #e1e4e9;
 }
 .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec:hover .detailed-hidden {
   opacity: 1;
@@ -15204,7 +15243,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -15235,7 +15274,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   content: "";
   width: calc(100% - 60px);
   height: 2px;
-  background-color: #DDE1E6;
+  background-color: #dde1e6;
   position: absolute;
   left: 30px;
   bottom: 0;
@@ -15287,7 +15326,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -15361,7 +15400,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -15411,7 +15450,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   border-radius: 0 4px 4px 0;
 }
 .multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
-  background-color: #E8EBEF;
+  background-color: #e8ebef;
   color: #848484;
   height: 38px;
   font-size: 14px;
@@ -16090,7 +16129,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 0;
-  font-family: Montserrat;
+  font-family: "montserrat";
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -16104,57 +16143,57 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
   background-image: url("../images//sdg/img1.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item1:hover::before {
-  background-color: #E5233D;
+  background-color: #e5233d;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item2 {
   background-image: url("../images//sdg/img2.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item2:hover::before {
-  background-color: #DDA83A;
+  background-color: #dda83a;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item3 {
   background-image: url("../images//sdg/img3.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item3:hover::before {
-  background-color: #4C9F38;
+  background-color: #4c9f38;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item4 {
   background-image: url("../images//sdg/img4.png");
   margin-right: 0px;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item4:hover::before {
-  background-color: #C5192D;
+  background-color: #c5192d;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item5 {
   background-image: url("../images//sdg/img5.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item5:hover::before {
-  background-color: #FCC30B;
+  background-color: #fcc30b;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item6 {
   background-image: url("../images//sdg/img6.png");
   margin-right: 0px;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item6:hover::before {
-  background-color: #A21942;
+  background-color: #a21942;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item7 {
   background-image: url("../images//sdg/img7.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item7:hover::before {
-  background-color: #FD6925;
+  background-color: #fd6925;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item8 {
   background-image: url("../images//sdg/img8.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item8:hover::before {
-  background-color: #DD1367;
+  background-color: #dd1367;
 }
 .SDG-section .list-card .sdg-list .sdg-item.item9 {
   background-image: url("../images//sdg/img9.png");
 }
 .SDG-section .list-card .sdg-list .sdg-item.item9:hover::before {
-  background-color: #19486A;
+  background-color: #19486a;
 }
 .SDG-section .list-card .sdg-list .sdg-item:hover {
   background-image: none;
@@ -16263,7 +16302,7 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
 }
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-footer {
   padding: 30px 15px 43px 0px;
-  border-top: 1px solid #DBDEE5;
+  border-top: 1px solid #dbdee5;
   justify-content: start;
   flex-direction: column;
   align-items: baseline;
@@ -16521,6 +16560,18 @@ html[dir=rtl] .subscription .form-group button[type=submit]::after {
     background-size: cover;
   }
 }
+html[dir=rtl] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec {
+  height: 290px;
+}
+html[dir=rtl] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec .slider-content > h4 {
+  line-height: 22px;
+  height: 22px;
+}
+html[dir=rtl] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec .slider-content > p {
+  line-height: 22px;
+  height: 22px;
+}
+
 /*
 this UI is made desktop first.
 */
