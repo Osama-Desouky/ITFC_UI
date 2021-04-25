@@ -21,7 +21,7 @@
     .row {
       width: 100%;
     }
-    .nav{
+    .nav {
       padding: 0;
     }
     h6 {
@@ -4704,37 +4704,50 @@ html[dir="rtl"] {
   .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-item::before {
     margin: 5px 13px 5px 4px;
   }
-  .subscription .form-group button[type=submit]::after{
+  .subscription .form-group button[type="submit"]::after,
+  .events-list-section::before,
+  .events-inner .news-inner-card .left-news-section .action-btns .btn-red img,
+  .news-inner-section
+    .size-changes
+    .card-1
+    .sign-up
+    .form-group
+    button[type="submit"]
+    img,
+  .events-inner::before {
     transform: rotateY(180deg);
   }
-  .news-inner-section .news-inner-card .left-news-section div.date img{
+  .news-inner-section .news-inner-card .left-news-section div.date img {
     vertical-align: baseline;
   }
-  .events-inner .news-inner-card .left-news-section div.location img
-  {
+  .events-inner .news-inner-card .left-news-section div.location img {
     vertical-align: bottom;
   }
-  .events-inner .news-inner-card .left-news-section .action-btns .btn-red img{
-    transform: rotateY(180deg);
-  }
-  .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img{
-    transform: rotateY(180deg);
-  }
-  .top-filter .right-filter .dropdown ul.dropdown-menu li a{
+
+  .top-filter .right-filter .dropdown ul.dropdown-menu li a {
     padding: 8px 45px 10px 10px;
   }
-  .list-with-filter.list-show .list-item .event-card-content p{
+  .list-with-filter.list-show .list-item .event-card-content p {
     line-height: 28px;
     height: calc(28px * 2);
     margin-bottom: 10px;
   }
-  .list-with-filter.list-show .list-item .event-card-content .bottom-content div img{
+  .list-with-filter.list-show
+    .list-item
+    .event-card-content
+    .bottom-content
+    div
+    img {
     vertical-align: sub;
   }
-  .list-filter .collapsed-item .collapsed-item-content select{
+  .list-filter .collapsed-item .collapsed-item-content select {
     background-position-x: 3%;
   }
-  .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon{
+  .list-filter
+    .collapsed-item
+    .collapsed-item-content
+    .form-group
+    .calender-icon {
     top: 7px;
     height: 26px;
   }

@@ -14856,7 +14856,11 @@ html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item {
 html[dir=rtl] .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-item::before {
   margin: 5px 13px 5px 4px;
 }
-html[dir=rtl] .subscription .form-group button[type=submit]::after {
+html[dir=rtl] .subscription .form-group button[type=submit]::after,
+html[dir=rtl] .events-list-section::before,
+html[dir=rtl] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img,
+html[dir=rtl] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img,
+html[dir=rtl] .events-inner::before {
   transform: rotateY(180deg);
 }
 html[dir=rtl] .news-inner-section .news-inner-card .left-news-section div.date img {
@@ -14864,12 +14868,6 @@ html[dir=rtl] .news-inner-section .news-inner-card .left-news-section div.date i
 }
 html[dir=rtl] .events-inner .news-inner-card .left-news-section div.location img {
   vertical-align: bottom;
-}
-html[dir=rtl] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img {
-  transform: rotateY(180deg);
-}
-html[dir=rtl] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type=submit] img {
-  transform: rotateY(180deg);
 }
 html[dir=rtl] .top-filter .right-filter .dropdown ul.dropdown-menu li a {
   padding: 8px 45px 10px 10px;
@@ -17446,6 +17444,13 @@ label {
 }
 html[dir=rtl] .main-contact-us .main-contact-form .form-group select {
   background-position-x: 3%;
+}
+html[dir=rtl] .glossary-inner .glossary-inner-content-box .content-card-item p a img {
+  vertical-align: middle;
+}
+html[dir=rtl] .glossary::before,
+html[dir=rtl] .glossary-inner .glossary-inner-content-box .content-card-item p a img {
+  transform: rotateY(180deg);
 }
 
 /*

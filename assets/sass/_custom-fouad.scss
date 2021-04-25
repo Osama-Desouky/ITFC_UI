@@ -643,7 +643,7 @@
             font-size: 25px;
             font-weight: $w-bold;
             line-height: 29px;
-            @include getFont('secondary',$direction);
+            @include getFont("secondary", $direction);
             margin-bottom: 12px;
             overflow: hidden;
             transition: 500ms;
@@ -714,7 +714,7 @@
             font-size: 18px;
             font-weight: $w-bold;
             line-height: 29px;
-            @include getFont('secondary',$direction);
+            @include getFont("secondary", $direction);
             margin-bottom: 15px;
             height: 55px;
             overflow: hidden;
@@ -805,7 +805,7 @@
       h2 {
         font-size: 40px;
         line-height: 48px;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-weight: $w-black;
         color: $black-color;
         span {
@@ -1414,7 +1414,7 @@
         color: $red-color;
         font-size: 30px;
         font-weight: $w-black;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         &:hover {
           text-decoration: none;
         }
@@ -2122,7 +2122,7 @@
       margin-bottom: 56px;
       h2 {
         margin-bottom: 32px;
-        @include getFont('secondary',$direction);
+        @include getFont("secondary", $direction);
         font-size: 40px;
         font-weight: $w-black;
         line-height: 52px;
@@ -2192,7 +2192,7 @@
     margin-bottom: 56px;
     h2 {
       margin-bottom: 20px;
-      @include getFont('secondary',$direction);
+      @include getFont("secondary", $direction);
       font-size: 40px;
       font-weight: $w-black;
       line-height: 52px;
@@ -3024,7 +3024,14 @@ label {
 }
 // RTL
 html[dir="rtl"] {
-  .main-contact-us .main-contact-form .form-group select{
+  .main-contact-us .main-contact-form .form-group select {
     background-position-x: 3%;
+  }
+  .glossary-inner .glossary-inner-content-box .content-card-item p a img{
+    vertical-align: middle;
+  }
+  .glossary::before,
+  .glossary-inner .glossary-inner-content-box .content-card-item p a img {
+    transform: rotateY(180deg);
   }
 }
