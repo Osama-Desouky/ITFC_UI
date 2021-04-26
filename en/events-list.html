@@ -499,6 +499,147 @@
 
         </div>
         <div class="col-lg-4 right-filter">
+
+
+          <div id="filterAccordion" class=" d-block d-lg-none">
+
+            <div class="collapsed-item parent">
+              <div class="collapsed-item-head">
+                <a class="card-link" data-toggle="collapse" href="#filter">
+                  <img class="filter-img" src="../assets/images/events/Filter.svg" alt="filter">
+                  Filter
+                  <img class="filter-arrow" src="../assets/images/filter-down.svg" alt="arrow">
+                </a>
+              </div>
+              <div id="filter" class="collapse" data-parent="#filterAccordion">
+                <div class="collapsed-item-content">
+                  <div class="list-filter">
+                    <div class="collabse-side-filter">
+                      <div class="filter-head">
+                        <!-- <h4>
+                          <img src="../assets/images/events/Filter.svg" alt="">
+                          Filter
+                        </h4> -->
+                        <span class="clear-all">
+                          <a href="#">
+                            Clear All
+                            <span> x</span>
+                          </a>
+                        </span>
+                      </div>
+                     
+                      <div id="accordion">
+
+                        <div class="collapsed-item">
+                          <div class="collapsed-item-head">
+                            <a class="card-link" data-toggle="collapse" href="#country">
+                              Country
+                            </a>
+                          </div>
+                          <div id="country" class="collapse" data-parent="#accordion">
+                            <div class="collapsed-item-content">
+                              <select class="form-control ">
+                                <option>KSA</option>
+                                <option>USA</option>
+                                <option>UAE</option>
+                                <option>Egypt</option>
+                                <option>United Kingdom</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="collapsed-item">
+                          <div class="collapsed-item-head">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
+                              Specific Date Range
+                            </a>
+                          </div>
+                          <div id="dateRange" class="collapse" data-parent="#accordion">
+                            <div class="collapsed-item-content">
+                              <div class="form-group">
+                                <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="Start Date">
+                                <span class="calender-icon">
+                                  <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                                </span>
+                              </div>
+                              <div class="form-group">
+                                <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control" placeholder="End Date">
+                                <span class="calender-icon">
+                                  <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                                </span>
+                              </div>
+                              <button class="btn btn-apply">
+                                Apply
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="collapsed-item">
+                          <div class="collapsed-item-head">
+                            <a class="collapsed card-link " data-toggle="collapse" href="#category">
+                              Category
+                            </a>
+                          </div>
+                          <div id="category" class="collapse" data-parent="#accordion">
+                            <div class="collapsed-item-content">
+                              <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label " for="customControlInline">
+                                  All (128)
+                                </label>
+                              </div>
+                              <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label " for="customControlInline">
+                                Category 01 (22)
+                                </label>
+                              </div>
+                              <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label " for="customControlInline">
+                                  Category 02 (45)
+                                </label>
+                              </div>
+                              <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                <label class="custom-control-label " for="customControlInline">
+                                  Category 03 (70)
+                                </label>
+                              </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="collapsed-item">
+                          <div class="collapsed-item-head">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#language">
+                              Language
+                            </a>
+                          </div>
+                          <div id="language" class="collapse" data-parent="#accordion">
+                            <div class="collapsed-item-content">
+                              <select class="form-control ">
+                                <option>English</option>
+                                <option>Arabic</option>
+                                <option>Espaniol</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                      
+                    </div>
+                    <!-- <button class="side-filter-btn" onclick="filterOption()"></button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="dropdown">
             <button class="btn btn-sort dropdown-toggle" type="button" data-toggle="dropdown">
               Sort

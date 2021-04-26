@@ -14945,8 +14945,8 @@ ul.fixed-social li:hover a img {
   background-position: center;
   display: inline-block;
   position: absolute;
-  left: calc(50% - 10px);
-  top: calc(50% - 10px);
+  left: calc(50% - 32px);
+  top: calc(50% - 32px);
   z-index: 3;
 }
 
@@ -15595,6 +15595,10 @@ main styles
           transform: scale(1.2);
   -webkit-transition: 500ms;
   transition: 500ms;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .related-items .publication-items .publication-item .publication-content h4 {
@@ -16902,6 +16906,38 @@ this UI is made desktop first.
   .main-header .slider-wrapper .actions {
     right: calc((100vw - 1140px + 30px) / 2);
   }
+  .news-list-section .grid-show .list-item {
+    width: calc(100% / 2 - 3px);
+    border: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    border-radius: 0 0 5px 5px;
+    height: auto;
+  }
+  .news-list-section .grid-show .list-item .list-img {
+    width: 100%;
+    height: 250px;
+  }
+  .news-list-section .grid-show .list-item .list-content {
+    padding: 20px 10px 0;
+  }
+  .events-list-section .list-with-filter.list-show .list-item {
+    height: auto;
+  }
+  .events-list-section .list-with-filter.list-show .list-item .event-card-content p {
+    height: auto;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .multimedia .list-card .list-with-filter.grid-show :nth-child(3n + 0).list-item {
+    margin-left: 10px !important;
+  }
+  .multimedia .list-card .list-with-filter.grid-show :nth-child(2n + 0).list-item {
+    margin-left: 0 !important;
+  }
+  .multimedia .list-card .list-with-filter.grid-show .list-item {
+    width: calc(100% / 2 - 10px);
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -16967,6 +17003,31 @@ this UI is made desktop first.
     line-height: 24px;
     margin-bottom: 35px;
   }
+  /*
+  --------index--------
+  */
+  .latest-news .owl-carousel .owl-nav {
+    top: calc(100% - 45px);
+    left: 50%;
+    right: auto;
+  }
+  .latest-news .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .latest-news .owl-carousel .owl-nav button.disabled {
+    display: inline-block;
+  }
+  .upcoming-events .owl-carousel .owl-nav {
+    top: calc(100% - 45px);
+    left: 50%;
+    right: auto;
+  }
+  .upcoming-events .owl-carousel .owl-nav button.owl-next {
+    right: -50px;
+  }
+  .upcoming-events .owl-carousel .owl-nav button.disabled {
+    display: inline-block;
+  }
   .about-itfc div.header {
     margin-bottom: 30px;
   }
@@ -17006,6 +17067,194 @@ this UI is made desktop first.
   }
   .single-media .video-box {
     height: 550px;
+  }
+  .left-filter, .right-filter {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .related-items .publication-items .publication-item {
+    width: 100%;
+    height: auto;
+    margin: 0 5px;
+    margin-bottom: 20px;
+  }
+  .related-items .publication-items .publication-item .publication-image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  /*
+  ------- projects list --------
+  */
+  .projects-highlight::before {
+    background-position: calc(100% + 180px) 0;
+    background-size: contain;
+  }
+  .projects-highlight .trade-box {
+    padding-left: 390px;
+  }
+  .projects-highlight .trade-box .header span {
+    font-size: 45px;
+  }
+  .projects-management .list-show .custom-grid .project-item {
+    min-height: 245px;
+    height: auto !important;
+  }
+  .projects-management .list-show .custom-grid .project-item .img-box {
+    width: 285px;
+    height: 268px !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 285px;
+            flex: 0 0 285px;
+  }
+  .projects-management .list-show .custom-grid .project-item .img-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projects-management .list-show .custom-grid .project-item .content {
+    padding: 10px 15px !important;
+    word-break: break-word;
+  }
+  .projects-management .list-show .custom-grid .project-item .content h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .projects-management .list-show .custom-grid .project-item .content ul.status {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-management .list-show .custom-grid .project-item .content ul.status li {
+    margin-bottom: 5px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+  .projects-management .list-show .custom-grid .project-item .content .details {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  .projects-management .list-show .custom-grid .project-item .content .inline-list h6 {
+    margin-bottom: 5px;
+  }
+  .projects-management .list-show .custom-grid .project-item .content .inline-list p {
+    font-size: 15px;
+  }
+  /*
+------- events inner --------
+*/
+  .events-inner .news-inner-card .speakers .owl-carousel .owl-stage-outer, .events-inner .news-inner-card .organizer .owl-carousel .owl-stage-outer, .events-inner .news-inner-card .sponsors .owl-carousel .owl-stage-outer {
+    width: auto;
+  }
+  .events-inner .news-inner-card .speakers .owl-carousel .owl-nav, .events-inner .news-inner-card .organizer .owl-carousel .owl-nav, .events-inner .news-inner-card .sponsors .owl-carousel .owl-nav {
+    top: calc(100% + 15px);
+    right: 50%;
+    left: auto;
+    width: auto;
+  }
+  .events-inner .news-inner-card .speakers .owl-carousel .owl-nav button.owl-next, .events-inner .news-inner-card .organizer .owl-carousel .owl-nav button.owl-next, .events-inner .news-inner-card .sponsors .owl-carousel .owl-nav button.owl-next {
+    left: -50px;
+  }
+  .events-inner .news-inner-card .speakers .owl-carousel .owl-nav button.owl-prev, .events-inner .news-inner-card .organizer .owl-carousel .owl-nav button.owl-prev, .events-inner .news-inner-card .sponsors .owl-carousel .owl-nav button.owl-prev {
+    right: -70px;
+  }
+  .events-inner .news-inner-card .speakers .owl-carousel .owl-nav button.disabled, .events-inner .news-inner-card .organizer .owl-carousel .owl-nav button.disabled, .events-inner .news-inner-card .sponsors .owl-carousel .owl-nav button.disabled {
+    display: inline-block;
+  }
+  /*
+--------- projects inner ---------
+*/
+  .project-tabs {
+    min-height: 600px;
+  }
+  .project-tabs #project-tab {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .project-tabs #project-tab .nav-item .nav-link {
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .project-tabs .tab-content .title {
+    font-size: 25px;
+  }
+  .project-tabs .tab-content .title img {
+    margin-right: 15px;
+    vertical-align: bottom;
+    width: 40px;
+  }
+  .project-tabs .tab-content .content {
+    padding-right: 62px;
+    padding-left: 35px;
+  }
+  .project-tabs .tab-content .content #trade-content p {
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .project-tabs .tab-content .content .custom-list {
+    margin-top: 20px;
+  }
+  .project-tabs .tab-content .content .custom-list ol li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .project-tabs .tab-content .content .custom-list ol li::before {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 12px;
+  }
+  .project-tabs .tab-content .content .custom-list ul li {
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .project-tabs .tab-content .content p {
+    font-size: 16px;
+  }
+  .resume-slider .owl-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .resume-slider .owl-dots li {
+    margin: 0 10px !important;
+  }
+  .resume-slider .owl-item .item .content-box {
+    padding-right: 60px;
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+  .resume-slider .owl-item .item .content-box::before {
+    background-size: 50px;
+  }
+  .resume-slider .owl-item .item .content-box h3 {
+    font-size: 20px;
+    line-height: 30px;
+    height: calc(30px * 3);
+    margin-bottom: 10px;
+  }
+  .resume-slider .owl-item .item .content-box p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .resume-slider .owl-item .item .content-box .additional-data .title {
+    font-size: 16px;
+  }
+  .resume-slider .owl-item .item .content-box .additional-data .value {
+    font-size: 16px;
   }
 }
 
@@ -17335,6 +17584,354 @@ this UI is made desktop first.
   .regional-hubs .hub-card .content-box ul li.horizontal .title {
     margin-bottom: 10px;
   }
+  .list-filter {
+    display: none;
+  }
+  .dropdown .list-filter {
+    display: block;
+  }
+  .related-items h2 {
+    font-size: 30px !important;
+  }
+  .related-items .publication-items {
+    display: block;
+  }
+  .related-items .publication-items .publication-item {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .related-items .publication-items .publication-item .publication-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  /*
+  -------------- news inner page ---------------
+  */
+  .news-inner-section .size-changes {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-right: 15px;
+  }
+  .news-inner-section .news-inner-card {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+  .news-inner-section .news-inner-card .left-news-section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .news-inner-section .news-inner-card .left-news-section h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .news-inner-section .news-inner-card .left-news-section p {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .news-inner-section .news-inner-card p.details {
+    line-height: 30px;
+    padding: 25px 20px 0;
+  }
+  .news-list-section .top-filter .left-filter form {
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
+  }
+  .news-list-section .top-filter .left-filter label {
+    display: none;
+  }
+  .news-list-section .top-filter .left-filter .form-group {
+    max-width: 45%;
+  }
+  .news-list-section .top-filter .left-filter .form-group .form-control {
+    width: 100%;
+  }
+  .news-list-section .grid-show .list-item {
+    width: 100%;
+    height: auto;
+  }
+  .news-list-section .grid-show .list-item .list-img {
+    width: 100%;
+    height: 250px;
+  }
+  .news-list-section .grid-show .list-item .list-content {
+    padding: 20px 10px 0;
+  }
+  .list-with-filter {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  /*
+---------- events inner ---------------
+*/
+  .events-inner .news-inner-card .more-details {
+    margin-bottom: 20px !important;
+  }
+  .events-inner .news-inner-card .action-btns {
+    margin-bottom: 30px !important;
+  }
+  .events-inner .news-inner-card .action-btns .btn {
+    font-size: 14px !important;
+    margin-left: 15px !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+  .events-inner .news-inner-card .action-btns .btn:last-child {
+    margin-left: 0 !important;
+  }
+  .events-inner .news-inner-card .action-btns .btn.btn-pdf img {
+    width: 20px !important;
+    margin-left: 5px !important;
+  }
+  .events-inner .news-inner-card .gallery-box {
+    margin-bottom: 30px;
+  }
+  .events-inner .news-inner-card .speakers {
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+  .events-inner .news-inner-card .speakers h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .events-inner .news-inner-card .organizer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .events-inner .news-inner-card .organizer h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .events-inner .news-inner-card .sponsors {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .events-inner .news-inner-card .sponsors h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  /*
+  ---------------- filter for small screens ---------------
+  */
+  #filterAccordion .collapsed-item.parent {
+    width: auto;
+    height: 40px;
+    padding: 0 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #F3F6FB;
+    border: 1px solid #CFD3D8;
+    margin-left: 20px;
+  }
+  #filterAccordion .collapsed-item.parent .collapsed-item-head a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1d1d1b;
+  }
+  #filterAccordion .collapsed-item.parent .collapsed-item-head a .filter-img {
+    margin-left: 10px;
+  }
+  #filterAccordion .collapsed-item.parent .collapsed-item-head a .filter-arrow {
+    margin-right: 30px;
+  }
+  #filterAccordion .collapsed-item.parent #filter {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 100%;
+  }
+  #filterAccordion .collapsed-item.parent #filter .list-filter {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0;
+    position: relative;
+    display: table;
+  }
+  #filterAccordion .collapsed-item.parent #filter .list-filter .filter-head {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  #filterAccordion .collapsed-item.parent #filter .list-filter .collapsed-item-content .form-group input:first-child {
+    width: 100%;
+  }
+  /*
+  ------- projects list --------
+  */
+  .projects-highlight::before {
+    background-position: center top;
+    background-size: 855px;
+  }
+  .projects-highlight .trade-box {
+    padding-left: 0;
+    padding-top: 510px;
+  }
+  .projects-highlight .trade-box .header span {
+    font-size: 35px;
+  }
+  .projects-highlight .trade-box .header p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .projects-highlight .trade-box #trade-content > p {
+    margin-bottom: 36px;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .projects-management {
+    padding-top: 40px;
+  }
+  .projects-management .flat-nav .nav-item {
+    margin-left: 21px;
+  }
+  .projects-management .flat-nav .nav-item:last-child {
+    margin-left: 0px;
+  }
+  .projects-management .flat-nav .nav-item .nav-link {
+    padding: 10px 6px;
+  }
+  .projects-management .tab-content .tab-pane.statistics {
+    padding-top: 20px;
+  }
+  .projects-management .total-status {
+    margin-bottom: 35px;
+  }
+  .projects-management .total-status .status {
+    margin-left: 40px;
+  }
+  .projects-management .total-status .status span {
+    font-size: 16px;
+  }
+  .projects-management .total-status .status span img {
+    margin-left: 9px;
+  }
+  .projects-management .grid-show .project-item .content h4 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    height: calc(24px * 2) !important;
+    margin-bottom: 15px !important;
+  }
+  .multimedia-inner .main-media .content h3 {
+    font-size: 35px !important;
+    margin-bottom: 20px !important;
+  }
+  .multimedia-inner .main-media .content p {
+    line-height: 24px !important;
+  }
+  .multimedia .list-card .top-filter .right-filter {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .multimedia .list-card .top-filter .right-filter #filterAccordion {
+    margin-bottom: 5px;
+  }
+  /*
+--------- projects inner ---------
+*/
+  .project-tabs > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-tabs #project-tab .nav-item .nav-link {
+    padding-top: 15px;
+    padding-bottom: 11px;
+  }
+  .project-tabs .tab-content {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .project-tabs .tab-content .title {
+    font-size: 25px;
+  }
+  .project-tabs .tab-content .title img {
+    margin-right: 15px;
+    vertical-align: bottom;
+    width: 40px;
+  }
+  .project-tabs .tab-content .content {
+    padding-right: 62px;
+    padding-left: 35px;
+  }
+  .project-tabs .tab-content .content #trade-content p {
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .project-tabs .tab-content .content .custom-list {
+    margin-top: 20px;
+  }
+  .project-tabs .tab-content .content .custom-list ol li {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .project-tabs .tab-content .content .custom-list ol li::before {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 12px;
+  }
+  .project-tabs .tab-content .content .custom-list ul li {
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .project-tabs .tab-content .content p {
+    font-size: 14px;
+  }
+  .contact-info > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact-info .title {
+    font-size: 25px;
+  }
+  .contact-info .title img {
+    margin-right: 15px;
+    vertical-align: bottom;
+    width: 40px;
+  }
+  .contact-info .content {
+    padding-right: 62px;
+    padding-left: 35px;
+  }
+  .contact-info .content ul li {
+    font-size: 16px;
+  }
+  .related-imgs-slider .slider-wrapper .actions .navigations {
+    display: none !important;
+  }
+  .project-basic-details .basic-card h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+  .project-basic-details .basic-card .title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .project-basic-details .basic-card .value {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -17371,6 +17968,67 @@ this UI is made desktop first.
   .navigator li a {
     font-size: 0 !important;
   }
+  /*
+  --------------- multimedia-inner ---------------
+  */
+  .multimedia-inner .main-media .content h3 {
+    font-size: 25px !important;
+  }
+  .multimedia-inner .main-media .content p {
+    font-size: 14px !important;
+    margin-bottom: 12px;
+  }
+  .multimedia-inner .main-media .content .content div.count {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+  .multimedia-inner .media-list .two-in-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .multimedia-inner .media-list .three-in-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .multimedia-inner .media-list .one-in-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .multimedia-inner .media-list .media-item {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px !important;
+  }
+  .multimedia-inner .media-list .media-item .gallery-box a img {
+    width: 100% !important;
+    height: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*
+  ------------ multimedia -------------
+  */
+  .multimedia .list-card .list-with-filter.grid-show :nth-child(3n + 0).list-item {
+    margin-left: 0 !important;
+  }
+  .multimedia .list-card .list-with-filter.grid-show .list-item {
+    width: calc(100%);
+    margin-left: 0;
+  }
+  /*
+--------- projects inner ---------
+*/
 }
 
 @media (max-width: 575.98px) {
@@ -17554,6 +18212,9 @@ this UI is made desktop first.
     right: auto !important;
     top: auto !important;
     margin-bottom: 30px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .top-social-share li {
     margin-left: 13px;
@@ -17783,6 +18444,246 @@ this UI is made desktop first.
   .regional-hubs .hub-card .img-box {
     width: 202px;
     height: 160px;
+  }
+  /*related items*/
+  .related-items ul.nav {
+    margin-bottom: 30px;
+  }
+  .related-items ul.nav .nav-item .nav-link {
+    padding: 17px 15px;
+  }
+  .related-items .publication-items {
+    padding: 0;
+  }
+  /*
+  -------------- news inner page ---------------
+  */
+  .news-inner-section .size-changes .card-1 {
+    margin-bottom: 20px;
+  }
+  .news-inner-section .size-changes .card-1 h4 {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+  .news-inner-section .size-changes .card-1 ul li {
+    margin-bottom: 10px;
+  }
+  .news-inner-section .size-changes .card-1 ul li a {
+    font-size: 14px;
+  }
+  .news-inner-section .news-inner-card {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+  .news-inner-section .news-inner-card .left-news-section {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .news-inner-section .news-inner-card .left-news-section h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .news-inner-section .news-inner-card .left-news-section div.date {
+    font-size: 11px;
+  }
+  .news-inner-section .news-inner-card .left-news-section p {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .news-inner-section .news-inner-card .left-news-section div.gallery-box a {
+    height: 250px;
+  }
+  .news-inner-section .news-inner-card p.details {
+    line-height: 24px;
+    padding: 25px 20px 0;
+  }
+  .reg-font-size .fontSizeWillChange {
+    font-size: 14px;
+  }
+  .large-font-size .fontSizeWillChange {
+    font-size: 16px !important;
+  }
+  .Xlarge-font-size .fontSizeWillChange {
+    font-size: 18px !important;
+  }
+  .XXlarge-font-size .fontSizeWillChange {
+    font-size: 20px !important;
+  }
+  /*news-list*/
+  .news-list-section .list-card {
+    padding: 20px 15px;
+  }
+  .news-list-section .top-filter .left-filter .form-group {
+    max-width: 100%;
+    width: 100%;
+  }
+  .news-list-section .top-filter .left-filter .form-group .form-control {
+    width: 100%;
+  }
+  .news-list-section .top-filter::after {
+    right: 0;
+    width: 100%;
+  }
+  .events-list-section .top-filter .left-filter .nav.nav-pills .nav-item .nav-link {
+    padding: 10px 9px;
+    font-size: 14px;
+  }
+  /* ---- pagination ---- */
+  .pagination-section .pagination a {
+    padding: 5px;
+    font-size: 14px;
+    margin: 0 2px;
+    width: 32px;
+    height: 32px;
+  }
+  .pageCount label {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  .pageCount select {
+    width: auto !important;
+    height: 32px;
+    padding: 4px;
+    padding-left: 15px;
+    font-size: 14px;
+    background-size: 11px;
+    background-position-x: 90%;
+    background-position-y: 12px;
+  }
+  /*
+  ------- projects list --------
+  */
+  .projects-highlight {
+    padding-top: 28px;
+  }
+  .projects-highlight::before {
+    background-image: url("../images/projects-xs-bg.svg");
+    background-position: center top;
+    background-size: inherit;
+  }
+  .projects-highlight .trade-box {
+    padding-top: 340px;
+  }
+  .projects-highlight .trade-box .header span {
+    font-size: 22px;
+  }
+  .projects-management .total-status {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .projects-management .total-status .status {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .projects-management .white-card {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .projects-management .white-card h5 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .projects-management .white-card h6 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .projects-management .white-card .end-title {
+    font-size: 16px;
+  }
+  .projects-management .white-card .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects-management .white-card .filter .form-group label {
+    font-size: 14px;
+  }
+  .projects-management .white-card .filter .form-group .nice-select {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 5px;
+  }
+  .projects-management .white-card .filter .form-group .nice-select::after {
+    left: 3px;
+  }
+  #chartjs-percentage {
+    width: auto;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  #chartjs-percentage div {
+    font-size: 21px !important;
+  }
+  #chartjs-percentage-white {
+    margin-top: 10px;
+  }
+  #chartjs-percentage-white div {
+    font-size: 21px;
+  }
+  /*
+---------- events inner ---------------
+*/
+  .events-inner .news-inner-card .action-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .events-inner .news-inner-card .action-btns .btn {
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+  }
+  /*
+  -------------- multimedia ----------
+  */
+  .multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
+    padding: 10px 7px;
+  }
+}
+
+@media (max-width: 449.97px) {
+  .events-inner .speakers .owl-carousel .owl-item .main-sec {
+    height: 330px !important;
+    width: 100% !important;
+  }
+  .events-inner .speakers .owl-carousel .owl-item .main-sec .slider-image {
+    width: 100% !important;
+    height: 275px !important;
+  }
+  .events-inner .speakers .owl-carousel .owl-item .main-sec .slider-image img {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+  .events-inner .organizer .owl-carousel .owl-item .main-sec, .events-inner .sponsors .owl-carousel .owl-item .main-sec {
+    width: 100% !important;
+  }
+  #filterAccordion .parent .collapsed-item-head a .filter-img {
+    margin-left: 5px !important;
+  }
+  #filterAccordion .parent .collapsed-item-head a .filter-arrow {
+    margin-right: 5px !important;
+  }
+}
+
+@media (max-width: 369.97px) {
+  .multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+  .multimedia .list-card .grid-show .list-item .multimedia-content h4 {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=styles-rtl.css.map */

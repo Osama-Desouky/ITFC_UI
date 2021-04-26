@@ -2995,8 +2995,8 @@ ul.fixed-social {
             background-position: center;
             display: inline-block;
             position: absolute;
-            left: calc(50% - 10px);
-            top: calc(50% - 10px);
+            left: calc(50% - 32px);
+            top: calc(50% - 32px);
             z-index: 3;
           }
           &::after {
@@ -3583,6 +3583,9 @@ main styles
           filter: grayscale(100%);
           transform: scale(1.2);
           transition: 500ms;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         // &::after{
         //   content: "";

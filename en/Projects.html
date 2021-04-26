@@ -496,6 +496,43 @@
                 |
                 Projects Highlight
               </span>
+              <ul class="fixed-social d-flex d-sm-none top-social-share">
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/export-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/twitter-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/FB-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/Linkedin-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/whatsapp-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/mail-icon.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/printer-icon.svg" alt="">
+                  </a>
+                </li>
+              </ul>
               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo…</p>
             </div>
@@ -987,6 +1024,331 @@
             <div class="list-show list-with-filter" id="gridVSlist">
               <div class="top-filter">
                 <div class="right-filter">
+
+                  <div id="filterAccordion" class=" d-block d-lg-none">
+
+                    <div class="collapsed-item parent">
+                      <div class="collapsed-item-head">
+                        <a class="card-link" data-toggle="collapse" href="#filter">
+                          <img class="filter-img" src="../assets/images/events/Filter.svg" alt="filter">
+                          Filter
+                          <img class="filter-arrow" src="../assets/images/filter-down.svg" alt="arrow">
+                        </a>
+                      </div>
+                      <div id="filter" class="collapse" data-parent="#filterAccordion">
+                        <div class="collapsed-item-content">
+                          <div class="list-filter">
+                            <div class="collabse-side-filter">
+                              <div class="filter-head">
+                                <!-- <h4>
+                                  <img src="../assets/images/events/Filter.svg" alt="">
+                                  Filter
+                                </h4> -->
+                                <span class="clear-all">
+                                  <a href="#">
+                                    Clear All
+                                    <span> x</span>
+                                  </a>
+                                </span>
+                              </div>
+                              <div id="accordion">
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#Region">
+                                      Region
+                                    </a>
+                                  </div>
+                                  <div id="Region" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="region_1">
+                                        <label class="custom-control-label " for="region_1">
+                                          Africa (128)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="region_2">
+                                        <label class="custom-control-label " for="region_2">
+                                          Asia & Middle East (22)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="region_3">
+                                        <label class="custom-control-label " for="region_3">
+                                          Europe (45)
+                                        </label>
+                                      </div>
+              
+              
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#project_status">
+                                      Project Status
+                                    </a>
+                                  </div>
+                                  <div id="project_status" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_status_1">
+                                        <label class="custom-control-label " for="project_status_1">
+                                          All (128)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_status_2">
+                                        <label class="custom-control-label " for="project_status_2">
+                                          Active (22)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_status_3">
+                                        <label class="custom-control-label " for="project_status_3">
+                                          Completed (45)
+                                        </label>
+                                      </div>
+              
+              
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#country">
+                                      Country
+                                    </a>
+                                  </div>
+                                  <div id="country" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <form class="form-group filter-box">
+                                        <input type="text" class="form-control" placeholder="Search ...">
+                                        <input type="submit" value="">
+                                      </form>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_1">
+                                        <label class="custom-control-label " for="country_1">
+                                          Saudi Arabia (85)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_2" checked>
+                                        <label class="custom-control-label " for="country_2">
+                                          Egypt (56)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_3" checked>
+                                        <label class="custom-control-label " for="country_3">
+                                          Syria (32)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_4">
+                                        <label class="custom-control-label " for="country_4">
+                                          Iraq (36)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_5" checked>
+                                        <label class="custom-control-label " for="country_5">
+                                          Lebanon (22)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_6">
+                                        <label class="custom-control-label " for="country_6">
+                                          Morocco (16)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="country_7">
+                                        <label class="custom-control-label " for="country_7">
+                                          Gambia (12)
+                                        </label>
+                                      </div>
+              
+              
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#project_type">
+                                      Project Type
+                                    </a>
+                                  </div>
+                                  <div id="project_type" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_type_1" checked>
+                                        <label class="custom-control-label " for="project_type_1">
+                                          Technical Assistance (85)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_type_2">
+                                        <label class="custom-control-label " for="project_type_2">
+                                          Advisory (12)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_type_3" checked>
+                                        <label class="custom-control-label " for="project_type_3">
+                                          Trade Development (16)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_type_4" checked>
+                                        <label class="custom-control-label " for="project_type_4">
+                                          Business Development
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="project_type_5">
+                                        <label class="custom-control-label " for="project_type_5">
+                                          Trade Finance (32)
+                                        </label>
+                                      </div>
+              
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#theme">
+                                      Theme
+                                    </a>
+                                  </div>
+                                  <div id="theme" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="theme_1">
+                                        <label class="custom-control-label " for="theme_1">
+                                          Private Sector Development
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="theme_2">
+                                        <label class="custom-control-label " for="theme_2">
+                                          Urban & Rural Development
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="theme_3">
+                                        <label class="custom-control-label " for="theme_3">
+                                          Climate Change
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="theme_4">
+                                        <label class="custom-control-label " for="theme_4">
+                                          Financial Crisis
+                                        </label>
+                                      </div>
+              
+                                    </div>
+                                  </div>
+                                </div>
+              
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link " data-toggle="collapse" href="#sector">
+                                      Sector
+                                    </a>
+                                  </div>
+                                  <div id="sector" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_1">
+                                        <label class="custom-control-label " for="sector_1">
+                                          Agriculture (25)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_2">
+                                        <label class="custom-control-label " for="sector_2">
+                                          Education (103)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_3">
+                                        <label class="custom-control-label " for="sector_3">
+                                          Energy (63)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_4">
+                                        <label class="custom-control-label " for="sector_4">
+                                          Environment (23)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_5">
+                                        <label class="custom-control-label " for="sector_5">
+                                          Health (78)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_6">
+                                        <label class="custom-control-label " for="sector_6">
+                                          Infrastructure (12)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_7">
+                                        <label class="custom-control-label " for="sector_7">
+                                          Transportation (87)
+                                        </label>
+                                      </div>
+                                      <div class="custom-control custom-checkbox ">
+                                        <input type="checkbox" class="custom-control-input" id="sector_8">
+                                        <label class="custom-control-label " for="sector_8">
+                                          Water Supply (41)
+                                        </label>
+                                      </div>
+              
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="collapsed-item">
+                                  <div class="collapsed-item-head">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#dateRange">
+                                      Duration
+                                    </a>
+                                  </div>
+                                  <div id="dateRange" class="collapse" data-parent="#accordion">
+                                    <div class="collapsed-item-content">
+                                      <div class="form-group">
+                                        <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control"
+                                          placeholder="Start Date">
+                                        <span class="calender-icon">
+                                          <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                                        </span>
+                                      </div>
+                                      <div class="form-group">
+                                        <input data-date-format="dd/mm/yyyy" id="datepicker2" class="form-control"
+                                          placeholder="End Date">
+                                        <span class="calender-icon">
+                                          <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                                        </span>
+                                      </div>
+                                      <button class="btn btn-apply">
+                                        Apply
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <button class="side-filter-btn" onclick="filterOption()"></button> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="dropdown">
                     <button class="btn btn-sort dropdown-toggle" type="button" data-toggle="dropdown">
                       Sort
