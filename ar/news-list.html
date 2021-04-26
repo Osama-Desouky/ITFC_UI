@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>الصفحة الداخلية</title>
+  <title>قائمة الأخبار</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- fontawesome5 -->
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -13,13 +13,12 @@
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
   <!-- AOS -->
   <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
-  <!-- fancybox -->
-  <link rel="stylesheet" href="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css"
+    rel="stylesheet" />
+
   <!-- custom -->
   <link rel="stylesheet" href="../assets/css/styles-rtl.css">
-  <!-- media Query -->
-  <link rel="stylesheet" href="../assets/css/media-mmousa.css">
-
 </head>
 
 <body>
@@ -39,7 +38,7 @@
                 <a class="nav-link" href="#">اتصل بنا</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">قائمة المصطلحات</a>
+                <a class="nav-link" href="#">المصطلحات</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">وظائف</a>
@@ -83,7 +82,8 @@
                           <img style="align-self: flex-start;" src="../assets/images/logo-art.svg" alt="" srcset="">
                           <div class="col">
                             <h6>ما هو الـ ITFC</h6>
-                            <p>المؤسسة الدولية الإسلامية لتمويل التجارة (ITFC) هي عضو في مجموعة البنك الإسلامي للتنمية (IsDB). تم تأسيسها بهدف أساسي هو النهوض بالتجارة ..</p>
+                            <p>المؤسسة الدولية الإسلامية لتمويل التجارة (ITFC) هي عضو في مجموعة البنك الإسلامي للتنمية
+                              (IsDB). تم تأسيسها بهدف أساسي هو النهوض بالتجارة ..</p>
                           </div>
                         </div>
                       </div>
@@ -467,150 +467,296 @@
     </div>
   </section>
   <!-- content start -->
-  <section class="board-members">
+
+  <section class="news-list-section">
     <div class="container">
       <div class="inner-heading">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">ITFC</a></li>
-            <li class="breadcrumb-item"><a href="#"> من نحن</a></li>
-            <li class="breadcrumb-item active" aria-current="page">أعضاء مجلس الإدارة</li>
+            <li class="breadcrumb-item"><a href="#">الأخبار و الأحداث</a></li>
+            <li class="breadcrumb-item active" aria-current="page">أخبار</li>
           </ol>
         </nav>
-        <h1>أعضاء <span>مجلس الإدارة</span></h1>
+        <h1>أخبار</h1>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="main-member-card">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 ">
-                <div class="img-box">
-                  <img src="../assets/images/Mem-photo01.png" alt="">
-                </div>
+
+      <div class="list-card">
+
+        <div class="top-filter row">
+          <div class="left-filter col-lg-8">
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <label>ابحث</label>
+                <input type="text" class="form-control search-input" id="search1" placeholder="كلمة البحث ..."
+                  aria-describedby="basic-addon2">
+
+                <span class="search-icon">
+                  <img src="../assets/images/news/Search.svg" alt="srch">
+                </span>
+
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
-                <div class="content-box">
-                  <h2>حضرة. دكتور. بندر الحجار</h2>
-                  <span>رئيس مجلس الإدارة والرئيس التنفيذى</span>
-                  <p>لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني.</p>
-                </div>
+              <div class="form-group mx-sm-3 mb-2">
+                <input data-date-format="dd/mm/yyyy" id="datepicker" class="form-control" placeholder="نطاق التاريخ">
+                <span class="search-icon">
+                  <img src="../assets/images/news/calendar-dates.svg" alt="calendar">
+                </span>
+              </div>
+
+            </form>
+          </div>
+          <div class="col-lg-4 right-filter">
+            <div class="dropdown">
+              <button class="btn btn-sort dropdown-toggle" type="button" data-toggle="dropdown">
+                فرز
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="active">تاريخ</a></li>
+                <li><a href="#">اسم</a></li>
+                <hr>
+                <li><a href="#" class="active">تصاعدي</a></li>
+                <li><a href="#">تنازلي</a></li>
+              </ul>
+            </div>
+            <div id="btnContainer" class="form-group">
+              <label>تغيير العرض</label>
+              <button class="btn listShow active" onclick="listView()">
+                <img src="../assets/images/news/bullet-list.svg" alt="list">
+              </button>
+              <button class="btn gridShow " onclick="gridView()">
+                <img src="../assets/images/news/grid.svg" alt="grid">
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <section class="list-show " id="gridVSlist">
+
+          <div class="list-item " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/1.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo02.png" alt="">
+
+          <div class="list-item " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/2.png" alt="">
+              </div>
             </div>
-            <div class="content-box">
-              <h4>هون. در. حامد بين سليمان أل بزي</h4>
-              <span>IsDB</span>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item  " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/3.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item  " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/4.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item  " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/5.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item  " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/1.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item  " data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+            <div>
+              <div class="list-img">
+                <img src="../assets/images/news/2.png" alt="">
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="date">
+                <img src="../assets/images/calendar-dates.svg" alt="">
+                الأحد 25 ديسمبر 2020
+              </div>
+              <h5>
+                يحافظ المركز الدولي لكرة القدم على تصنيف Moody's A1 مع نظرة مستقبلية مستقرة lorem ipsum carrots ،
+              </h5>
+              <p>
+                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة
+                مجهولة ب
+              </p>
+              <div class="actions">
+                <a href="javascript:;" class="read-more">
+                  اقرأ أكثر
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="text-center">
+        <div class="pagination-section ">
+          <div>
+            <div class="pagination">
+              <a href="#" class="disabled">
+                <i class="fas fa-caret-right"></i>
+              </a>
+              <a href="#">1</a>
+              <a href="#" class="active">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">...</a>
+              <a href="#">
+                <i class="fas fa-caret-left"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo03.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. أحمد الغانم</h4>
-              <span>المجموعة د</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo04.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. ساد الشهراني</h4>
-              <span>المملكة العربية السعودية</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo05.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. أحمد جفري عبد رحمن</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo06.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. فراس عبدالرحمن أل خليفة </h4>
-              <span>المجموعة ج</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo07.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. در. سيد برفيز عباس</h4>
-              <span>المجموعة أ</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo08.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. محمد رزة رزيبر</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo09.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. فراس عبدالرحمن أل خليفة</h4>
-              <span>المجموعة ج</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo10.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4> هون. در. سيد برفيز عباس</h4>
-              <span>المجموعة أ</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-          <div class="member-card">
-            <div class="img-box">
-              <img src="../assets/images/mem-photo11.png" alt="">
-            </div>
-            <div class="content-box">
-              <h4>هون. محمد رزة رزيبر</h4>
-              <span>IsDB</span>
-            </div>
-          </div>
+        <div class="pageCount">
+          <form class="form-inline">
+            <label class="">العناصر</label>
+            <select class="form-control ">
+              <option>10</option>
+              <option>25</option>
+              <option>50</option>
+            </select>
+          </form>
         </div>
       </div>
     </div>
   </section>
+
   <!-- content end -->
   <footer>
     <div class="container">
@@ -722,16 +868,27 @@
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <!-- AOS -->
   <script src="../node_modules/aos/dist/aos.js"></script>
-  <!-- fancybox -->
-  <script src="../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
   <!-- inline -->
   <script>
     $(function () {
       AOS.init();
     });
   </script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $('#datepicker').datepicker({
+      weekStart: 6,
+      // daysOfWeekHighlighted: "6,0",
+      autoclose: true,
+      todayHighlight: true,
+    });
+  // $('#datepicker').datepicker("setDate", new تاريخ());
+  </script>
   <!-- custom Js -->
   <script src="../assets/js/custom.js"></script>
+
 
 </body>
 

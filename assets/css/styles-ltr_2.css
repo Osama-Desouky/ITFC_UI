@@ -11163,38 +11163,32 @@ a.text-red:hover, a.text-red:focus {
 
 @font-face {
   font-family: "DINNextLT";
-  src: url("../fonts/DINNEXTLTARABIC-LIGHT.ttf");
+  src: url("../fonts/DIN-Next-LT-Arabic-Light.woff") format("woff"), url("../fonts/DIN-Next-LT-Arabic-Light.ttf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "DINNextLT";
-  src: url("../fonts/DINNextLTArabic-Regular.ttf");
+  src: url("../fonts/DIN-Next-LT-Arabic-Regular.woff") format("woff"), url("../fonts/DIN-Next-LT-Arabic-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "DINNextLT";
-  src: url("../fonts/DINNextLTArabic-Medium.ttf");
+  src: url("../fonts/DIN-Next-LT-Arabic-Regular.woff") format("woff"), url("../fonts/DIN-Next-LT-Arabic-Regular.ttf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "DINNextLT";
-  src: url("../fonts/DINNextLTArabic-Heavy.ttf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "DINNextLT";
-  src: url("../fonts/DINNextLTArabic-Bold.ttf");
+  src: url("../fonts/DIN-Next-LT-Arabic-Bold.woff") format("woff"), url("../fonts/DIN-Next-LT-Arabic-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "DINNextLT";
-  src: url("../fonts/DINNextLTArabic-Black.ttf");
-  font-weight: #000;
+  src: url("../fonts/DIN-Next-LT-Arabic-Black.woff") format("woff"), url("../fonts/DIN-Next-LT-Arabic-Black.ttf");
+  font-weight: 900;
 }
 
 @font-face {
@@ -11228,10 +11222,6 @@ body {
   text-align: left;
 }
 
-html[dir="rtl"] body {
-  font-family: "DINNextLT";
-}
-
 *,
 *:focus,
 *:active,
@@ -11239,8 +11229,20 @@ button:focus {
   outline: none;
 }
 
+.nav {
+  padding: 0;
+}
+
 a:hover {
   text-decoration: none;
+}
+
+.dropdown-menu {
+  text-align: left;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.255em;
 }
 
 p {
@@ -11256,7 +11258,7 @@ h4 {
 }
 
 label {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 700;
   color: #1d1d1b;
@@ -11367,6 +11369,15 @@ ol li {
   float: left !important;
 }
 
+.custom-control-label::before,
+.custom-control-label::after {
+  left: -1.5rem;
+}
+
+.custom-control {
+  padding-left: 1.5rem;
+}
+
 .px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -11410,8 +11421,12 @@ ol li {
   width: 100%;
 }
 
+.main-navbar .navbar .dropdown-menu .nav {
+  padding: 0;
+}
+
 .main-navbar .navbar .dropdown-menu h6 {
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #1d1d1b;
   font-size: 18px;
   font-weight: 700;
@@ -11554,7 +11569,7 @@ ol li {
 }
 
 .main-navbar .top-nav .nav-item .nav-link.lang {
-  font-family: "DINNextLT";
+  font-family: "montserrat";
   line-height: 10px;
 }
 
@@ -11710,7 +11725,7 @@ ol li {
 }
 
 .main-header .slider-wrapper .owl-carousel .item .caption h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 900;
   font-size: 50px;
   line-height: 55px;
@@ -12019,7 +12034,7 @@ ol li {
 
 .focus-card h4 {
   color: #1d1d1b;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
@@ -12086,7 +12101,7 @@ ol li {
   font-size: 40px;
   font-weight: 900;
   line-height: 50px;
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #1d1d1b;
   text-align: center;
   margin-bottom: 5px;
@@ -12242,7 +12257,7 @@ ol li {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-bottom: 10px;
   height: calc(30px * 2);
   overflow: hidden;
@@ -12443,7 +12458,7 @@ a.show-all:hover {
   font-size: 40px;
   font-weight: 700;
   color: #ed4c21;
-  font-family: Roboto;
+  font-family: "Roboto";
   line-height: 45px;
   width: 55px;
   text-align: center;
@@ -12570,7 +12585,7 @@ a.show-all:hover {
 }
 
 .publications h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 900;
   color: #fff;
@@ -12668,7 +12683,7 @@ a.show-all:hover {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-bottom: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -12992,14 +13007,30 @@ button.scroll-up:hover {
 
 .about-itfc {
   padding-top: 40px;
-  background-image: url("../images/toparea-bg-about.png");
-  background-color: #f3f6fb;
   height: auto;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding-bottom: 20px;
+  position: relative;
+  background-color: #f3f6fb;
+}
+
+.about-itfc::before {
+  content: "";
+  background-image: url("../images/toparea-bg-about.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.about-itfc > * {
+  position: relative;
+  z-index: 1;
 }
 
 .about-itfc .trade-box {
@@ -13040,7 +13071,7 @@ button.scroll-up:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 75px;
   font-weight: 900;
   line-height: calc(52px * 2);
@@ -13064,7 +13095,7 @@ button.scroll-up:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 900;
   line-height: 52px;
@@ -13080,12 +13111,23 @@ button.scroll-up:hover {
 }
 
 .vision {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.vision::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
   background-image: url("../images/mission-vision-bg.png");
   background-color: #c9b27a;
   background-size: cover;
   background-position: center center;
-  padding-top: 95px;
-  padding-bottom: 120px;
 }
 
 .vision-box {
@@ -13098,14 +13140,25 @@ button.scroll-up:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../images/vision-box-bg.png");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding-top: 115px;
   padding-bottom: 115px;
   max-width: 1060px;
   margin: auto;
+  position: relative;
+}
+
+.vision-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-image: url("../images/vision-box-bg.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .vision-box ul {
@@ -13119,7 +13172,7 @@ button.scroll-up:hover {
 }
 
 .vision-box ul li h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 60px;
   font-weight: 900;
   line-height: 80px;
@@ -13169,7 +13222,7 @@ button.scroll-up:hover {
 }
 
 .inner-heading h1 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 45px;
   font-weight: 900;
   line-height: 55px;
@@ -13193,7 +13246,7 @@ button.scroll-up:hover {
 .in-numbers .header {
   font-size: 60px;
   font-weight: 900;
-  font-family: Roboto;
+  font-family: "Roboto";
   text-align: center;
   color: #1d1d1b;
   margin-bottom: 50px;
@@ -13279,7 +13332,7 @@ button.scroll-up:hover {
 }
 
 .num-card h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 50px;
   font-weight: 900;
   line-height: 56px;
@@ -13325,7 +13378,7 @@ button.scroll-up:hover {
 }
 
 .single-media .header h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 55px;
   line-height: 73px;
   font-weight: 900;
@@ -13444,7 +13497,7 @@ button.scroll-up:hover {
 .trade-box .header span {
   font-size: 55px;
   line-height: 60px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 900;
 }
 
@@ -13537,13 +13590,24 @@ button.scroll-up:hover {
 }
 
 .itfc-globe {
+  position: relative;
+  height: calc(100vh);
+  overflow: hidden;
+}
+
+.itfc-globe::before {
+  content: "";
   background-image: url("../images/globe-bg.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto 100%;
   background-color: #e9e9e9;
-  height: calc(100vh);
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .itfc-globe > .container {
@@ -13593,7 +13657,7 @@ button.scroll-up:hover {
   color: #d5313a;
   font-size: 45px;
   font-weight: 900;
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 .globe-item .globe-item-header h5 button:hover {
@@ -13646,7 +13710,7 @@ button.scroll-up:hover {
 }
 
 .single-media-2 .header span {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 55px;
   font-weight: 900;
   line-height: 60px;
@@ -13693,7 +13757,7 @@ button.scroll-up:hover {
 
 .related-items .header h2 {
   font-size: 40px;
-  font-family: Roboto;
+  font-family: "Roboto";
   line-height: 48px;
   font-weight: 900;
   color: #1d1d1b;
@@ -13754,7 +13818,7 @@ button.scroll-up:hover {
 
 .related-item h4 {
   margin-top: 15px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -13854,7 +13918,7 @@ button.scroll-up:hover {
 }
 
 .main-member-card .content-box h2 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 900;
   line-height: 52px;
@@ -13943,7 +14007,7 @@ button.scroll-up:hover {
 
 .main-hub .hub-content h2 {
   margin-bottom: 32px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 900;
   line-height: 52px;
@@ -14006,7 +14070,7 @@ button.scroll-up:hover {
 
 .regional-hubs .header h2 {
   margin-bottom: 15px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 700;
   line-height: 42px;
@@ -14199,7 +14263,7 @@ ul.fixed-social li:hover a img {
 
 .related-items .header h2 {
   font-size: 40px;
-  font-family: Roboto;
+  font-family: "Roboto";
   line-height: 48px;
   font-weight: 900;
   color: #1d1d1b;
@@ -14248,7 +14312,7 @@ ul.fixed-social li:hover a img {
 
 .related-item h4 {
   margin-top: 15px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -14480,7 +14544,7 @@ ul.fixed-social li:hover a img {
   background-color: #eeeeee;
 }
 
-.top-filter .right-filter .dropdown ul.dropdown-menu li a.active::before {
+.top-filter .right-filter .dropdown ul.dropdown-menu li a.active:before {
   content: "";
   background-image: url("../images/news/check-sort.svg");
   position: absolute;
@@ -14589,7 +14653,7 @@ ul.fixed-social li:hover a img {
   font-size: 18px;
   font-weight: 700;
   line-height: 29px;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-bottom: 12px;
   height: 56px;
   overflow: hidden;
@@ -14727,7 +14791,7 @@ ul.fixed-social li:hover a img {
   font-size: 18px;
   font-weight: 700;
   line-height: 29px;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-bottom: 15px;
   height: 55px;
   overflow: hidden;
@@ -14850,7 +14914,7 @@ ul.fixed-social li:hover a img {
 .news-inner-section .news-inner-card .left-news-section h2 {
   font-size: 40px;
   line-height: 48px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 900;
   color: #1d1d1b;
 }
@@ -14946,7 +15010,7 @@ ul.fixed-social li:hover a img {
   display: inline-block;
   position: absolute;
   left: calc(50% - 32px);
-  top: calc(50% - 32px);
+  top: calc(50% - 10px);
   z-index: 3;
 }
 
@@ -14989,13 +15053,27 @@ ul.fixed-social li:hover a img {
 }
 
 .news-inner-section .size-changes .card-1 ul {
-  list-style-image: url("../images/news/list-style.svg");
-  padding-left: 14px;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 6px;
 }
 
 .news-inner-section .size-changes .card-1 ul li {
+  position: relative;
   margin-bottom: 16px;
+  padding-left: 14px;
+}
+
+.news-inner-section .size-changes .card-1 ul li::before {
+  content: "";
+  width: 8px;
+  height: 24px;
+  background-image: url("../images/news/list-style.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .news-inner-section .size-changes .card-1 ul li a {
@@ -15215,7 +15293,7 @@ ul.fixed-social li:hover a img {
 }
 
 .list-with-filter.list-show .list-item .date-card .day {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 700;
   color: #ed4c21;
@@ -15332,7 +15410,7 @@ ul.fixed-social li:hover a img {
 }
 
 .list-with-filter.grid-show .list-item .date-card .day {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 40px;
   font-weight: 700;
   color: #ed4c21;
@@ -15605,7 +15683,7 @@ main styles
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #1d1d1b;
   margin-bottom: 13px;
   -webkit-transition: 500ms;
@@ -15670,6 +15748,7 @@ main styles
   padding-top: 37px;
   padding-bottom: 67px;
   background-color: #EBF2FF;
+  overflow: hidden;
 }
 
 .projects-highlight::before {
@@ -15679,9 +15758,9 @@ main styles
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100vh);
   background-image: url("../images/projects-bg.png");
-  background-position: calc(100% + 40px) center;
+  background-position: calc(100% + 40px) top;
   background-repeat: no-repeat;
   background-size: auto 100%;
   opacity: 0.9;
@@ -16299,10 +16378,26 @@ main styles
 
 .project-basic-details {
   padding-top: 39px;
+  position: relative;
+}
+
+.project-basic-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   background-image: url("../images/farm-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-basic-details > * {
+  position: relative;
+  z-index: 1;
 }
 
 .project-basic-details h1 {
@@ -16884,6 +16979,144 @@ main styles
   }
 }
 
+html[dir="rtl"] .main-navbar .top-nav .nav-item .nav-link.lang {
+  line-height: 18px;
+}
+
+html[dir="rtl"] .main-navbar #navbarSupportedContent > .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after {
+  vertical-align: baseline;
+}
+
+html[dir="rtl"] .inner-heading ol.breadcrumb li.breadcrumb-item {
+  line-height: 14px;
+}
+
+html[dir="rtl"] .inner-heading ol.breadcrumb li.breadcrumb-item + li.breadcrumb-item::before {
+  margin: 5px 13px 5px 4px;
+}
+
+html[dir="rtl"] .subscription .form-group button[type="submit"]::after,
+html[dir="rtl"] .events-list-section::before,
+html[dir="rtl"] .events-inner .news-inner-card .left-news-section .action-btns .btn-red img,
+html[dir="rtl"] .news-inner-section .size-changes .card-1 .sign-up .form-group button[type="submit"] img,
+html[dir="rtl"] .events-inner::before,
+html[dir="rtl"] .main-header .slider-wrapper .actions .prev-arrow,
+html[dir="rtl"] .main-header .slider-wrapper .actions .next-arrow,
+html[dir="rtl"] .main-header .slider-wrapper .owl-carousel .item .caption .learn-more::after,
+html[dir="rtl"] .in-focus .slider-wrapper .actions .navigations a,
+html[dir="rtl"] .latest-news .owl-carousel .owl-nav button,
+html[dir="rtl"] .news-card > .actions .read-more::after,
+html[dir="rtl"] a.show-all::after,
+html[dir="rtl"] .upcoming-events .owl-carousel .owl-nav button,
+html[dir="rtl"] .publications .actions .navigations a,
+html[dir="rtl"] .events-list-section .list-filter .side-filter-btn,
+html[dir="rtl"] .news-inner-section .size-changes .card-1 ul li::before,
+html[dir="rtl"] .list-item .list-content .actions .read-more::after,
+html[dir="rtl"] .project-basic-details::before,
+html[dir="rtl"] .resume-slider .item .content-box::before,
+html[dir="rtl"] .related-imgs-slider .slider-wrapper .actions .navigations a,
+html[dir="rtl"] .SDG-section::before,
+html[dir="rtl"] .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden .more-info img,
+html[dir="rtl"] .trade-box .img-box::after,
+html[dir="rtl"] .itfc-globe::before,
+html[dir="rtl"] .trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button, html[dir="rtl"] .about-itfc::before, html[dir="rtl"] .vision-box::before, html[dir="rtl"] .vision::before {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+html[dir="rtl"] .events-list-section .list-filter .closed-filter-btn {
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[dir="rtl"] .news-inner-section .news-inner-card .left-news-section div.date img {
+  vertical-align: baseline;
+}
+
+html[dir="rtl"] .events-inner .news-inner-card .left-news-section div.location img {
+  vertical-align: bottom;
+}
+
+html[dir="rtl"] .top-filter .right-filter .dropdown ul.dropdown-menu li a {
+  padding: 8px 45px 10px 10px;
+}
+
+html[dir="rtl"] .list-with-filter.list-show .list-item .event-card-content p {
+  line-height: 28px;
+  height: calc(28px * 2);
+  margin-bottom: 10px;
+}
+
+html[dir="rtl"] .list-with-filter.list-show .list-item .event-card-content .bottom-content div img {
+  vertical-align: sub;
+}
+
+html[dir="rtl"] .list-filter .collapsed-item .collapsed-item-content select {
+  background-position-x: 3%;
+}
+
+html[dir="rtl"] .list-filter .collapsed-item .collapsed-item-content .form-group .calender-icon {
+  top: 7px;
+  height: 26px;
+}
+
+html[dir="rtl"] .heading h2 {
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+html[dir="rtl"] .main-header .slider-wrapper .owl-carousel .item .caption .text-bg::before {
+  bottom: 0;
+  height: 60px;
+  top: auto;
+}
+
+html[dir="rtl"] .pageCount select,
+html[dir="rtl"] .SDG-section .list-card .sort form select {
+  background-position-x: 8%;
+}
+
+html[dir="rtl"] .list-item .list-content .actions .read-more::before {
+  bottom: -6px;
+}
+
+html[dir="rtl"] .projects-highlight::before {
+  background-position: -40px top;
+}
+
+html[dir="rtl"] .nice-select::after {
+  left: 12px;
+  right: auto;
+}
+
+html[dir="rtl"] .nice-select .list {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .custom-list ol li::before {
+  line-height: 24px;
+}
+
+html[dir="rtl"] .trade-dev-impact .box-contnet .inner-title img {
+  margin-left: 10px;
+}
+
+html[dir="rtl"] .trade-related-projects .trade-related-carousel .owl-carousel .item .main-sec .slider-content h4 {
+  line-height: 30px;
+  height: 30px;
+}
+
+html[dir="rtl"] .num-card h2 {
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+html[dir="rtl"] .single-media .header h2 {
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
 .custom-control {
   margin-bottom: 5px;
 }
@@ -16901,7 +17134,7 @@ main styles
   width: 18px;
   height: 18px;
   border-radius: 0;
-  border: 2px solid #E0E3E5;
+  border: 2px solid #e0e3e5;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -16932,7 +17165,7 @@ main styles
   padding: 10px 15px;
   color: #5e5e59;
   background-color: #fff;
-  border: 1px solid #E8EBEF;
+  border: 1px solid #e8ebef;
   font-size: 16px;
   height: 40px;
   font-weight: 500;
@@ -16960,7 +17193,7 @@ main styles
   position: absolute;
   right: -18px;
   top: 0;
-  border: 1px solid #E4E6E9;
+  border: 1px solid #e4e6e9;
   background-image: url("../images//events/left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -17085,7 +17318,7 @@ main styles
 
 .events-inner .news-inner-card .left-news-section .action-btns .btn-pdf {
   height: 55px;
-  border: 2px solid #DDE2E9;
+  border: 2px solid #dde2e9;
   background-color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -17123,19 +17356,19 @@ main styles
 }
 
 .events-inner .news-inner-card .left-news-section .action-btns .btn-red:hover {
-  background-color: #EB3F48;
-  border-color: #EB3F48;
+  background-color: #eb3f48;
+  border-color: #eb3f48;
 }
 
 .events-inner .news-inner-card .left-news-section .details-h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #EB412F;
+  color: #eb412f;
   margin-bottom: 18px;
 }
 
 .events-inner .news-inner-card .size-changes .card-1 {
-  border-color: #90426F;
+  border-color: #90426f;
 }
 
 .events-inner .news-inner-card .size-changes .card-1 h4 img {
@@ -17188,7 +17421,7 @@ main styles
   content: "";
   width: calc(100% - 60px);
   height: 2px;
-  background-color: #DDE1E6;
+  background-color: #dde1e6;
   position: absolute;
   left: 30px;
   bottom: 0;
@@ -17291,7 +17524,7 @@ main styles
 }
 
 .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec:hover {
-  border: 1px solid #E1E4E9;
+  border: 1px solid #e1e4e9;
 }
 
 .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec:hover .detailed-hidden {
@@ -17309,7 +17542,7 @@ main styles
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -17347,7 +17580,7 @@ main styles
   content: "";
   width: calc(100% - 60px);
   height: 2px;
-  background-color: #DDE1E6;
+  background-color: #dde1e6;
   position: absolute;
   left: 30px;
   bottom: 0;
@@ -17409,7 +17642,7 @@ main styles
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -17499,7 +17732,7 @@ main styles
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #DED4D0;
+  border: 1px solid #ded4d0;
   position: absolute;
   background-position: center center;
   background-repeat: no-repeat;
@@ -17566,7 +17799,7 @@ main styles
 }
 
 .multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
-  background-color: #E8EBEF;
+  background-color: #e8ebef;
   color: #848484;
   height: 38px;
   font-size: 14px;
@@ -17776,7 +18009,7 @@ main styles
 .multimedia-inner .list-card .list-with-filter .main-media .content h3 {
   font-size: 45px;
   font-weight: 900;
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #fff;
   margin-bottom: 35px;
 }
@@ -18270,7 +18503,7 @@ main styles
 .SDG-section .list-card .sdg-top-content h3 {
   font-size: 40px;
   font-weight: 900;
-  font-family: Roboto;
+  font-family: "Roboto";
   line-height: 52px;
   color: #1d1d1b;
   margin-bottom: 25px;
@@ -18370,7 +18603,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item .number {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 60px;
   line-height: 80px;
@@ -18379,7 +18612,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item .goal-number {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -18389,7 +18622,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item .goal {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   line-height: 18px;
@@ -18423,7 +18656,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden div p {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -18437,7 +18670,7 @@ main styles
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 0;
-  font-family: Montserrat;
+  font-family: "montserrat";
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -18456,7 +18689,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item1:hover::before {
-  background-color: #E5233D;
+  background-color: #e5233d;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item2 {
@@ -18464,7 +18697,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item2:hover::before {
-  background-color: #DDA83A;
+  background-color: #dda83a;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item3 {
@@ -18472,7 +18705,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item3:hover::before {
-  background-color: #4C9F38;
+  background-color: #4c9f38;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item4 {
@@ -18481,7 +18714,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item4:hover::before {
-  background-color: #C5192D;
+  background-color: #c5192d;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item5 {
@@ -18489,7 +18722,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item5:hover::before {
-  background-color: #FCC30B;
+  background-color: #fcc30b;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item6 {
@@ -18498,7 +18731,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item6:hover::before {
-  background-color: #A21942;
+  background-color: #a21942;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item7 {
@@ -18506,7 +18739,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item7:hover::before {
-  background-color: #FD6925;
+  background-color: #fd6925;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item8 {
@@ -18514,7 +18747,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item8:hover::before {
-  background-color: #DD1367;
+  background-color: #dd1367;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item9 {
@@ -18522,7 +18755,7 @@ main styles
 }
 
 .SDG-section .list-card .sdg-list .sdg-item.item9:hover::before {
-  background-color: #19486A;
+  background-color: #19486a;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item:hover {
@@ -18621,7 +18854,7 @@ main styles
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-body div.popup-content h5 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   color: #cd2233;
@@ -18631,7 +18864,7 @@ main styles
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-body div.popup-content h4 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   color: #1d1d1b;
@@ -18659,7 +18892,7 @@ main styles
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-body div.popup-content div.icon-with-title h3 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 900;
   font-size: 35px;
   color: #1d1d1b;
@@ -18677,7 +18910,7 @@ main styles
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-footer {
   padding: 30px 15px 43px 0px;
-  border-top: 1px solid #DBDEE5;
+  border-top: 1px solid #dbdee5;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -18707,7 +18940,7 @@ main styles
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-footer ul li {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   color: #1d1d1b;
@@ -18993,6 +19226,20 @@ main styles
     margin: 0 0 6px;
     background-size: cover;
   }
+}
+
+html[dir="rtl"] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec {
+  height: 290px;
+}
+
+html[dir="rtl"] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec .slider-content > h4 {
+  line-height: 22px;
+  height: 22px;
+}
+
+html[dir="rtl"] .events-inner .news-inner-card .speakers .owl-carousel .item .main-sec .slider-content > p {
+  line-height: 22px;
+  height: 22px;
 }
 
 /*
@@ -20000,6 +20247,9 @@ this UI is made desktop first.
     vertical-align: middle;
     line-height: 24px;
     font-size: 12px;
+  }
+  .project-tabs .tab-content .content .custom-list ol li ul li:first-child {
+    margin-right: 30px;
   }
   .project-tabs .tab-content .content .custom-list ul li {
     padding: 0;

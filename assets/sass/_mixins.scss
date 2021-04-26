@@ -1,0 +1,16 @@
+
+@mixin getFont($type, $direction) {
+  @if $direction == "rtl" {
+    @if $type == "primary" {
+      font-family: $primary-font-ar;
+    } @else if $type == "secondary" {
+      font-family: $secondary-font-ar;
+    }
+  } @else {
+    @if $type == "primary" {
+      font-family: $primary-font-en;
+    } @else if $type == "secondary" {
+      font-family: $secondary-font-en;
+    }
+  }
+}
