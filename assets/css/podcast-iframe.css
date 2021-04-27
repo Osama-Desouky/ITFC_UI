@@ -129,4 +129,22 @@ body a:hover, body a:focus, body a:active {
 .d-none {
   display: none !important;
 }
+
+@media (max-width: 1399.97px) {
+  .pocast-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1399.97px) and (max-width: 667.97px) {
+  body {
+    padding-top: 50px;
+  }
+  .pocast-content {
+    height: 350px;
+  }
+  .pocast-content .wave-img {
+    bottom: 70px;
+  }
+}
 /*# sourceMappingURL=podcast-iframe.css.map */

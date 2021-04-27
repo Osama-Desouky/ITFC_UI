@@ -71,6 +71,39 @@ this UI is made desktop first.
       }
     }
   }
+  .fancybox-slide--iframe .fancybox-content{
+    background: transparent;
+  }
+
+
+  /* contact us */
+
+  .hub-cards {
+    .hub-items{
+      .content-box{
+        h2 {
+              font-size: 18px;
+              margin-bottom: 10px;
+          }
+        p {
+          font-size: 14px;
+        }
+        .contact-info{
+          ul{
+            li{
+              font-size: 14px;
+              span{
+                font-size: 16px;
+              }
+              a{
+                font-size: 16px
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
@@ -473,6 +506,39 @@ this UI is made desktop first.
     }
   }
 }
+
+
+ /* board-members  */
+ .main-contact-us::before{
+  background-position: 500px;
+}
+
+
+/* Syndication */
+.itfc-trade{
+  .trade-box{
+    .header {
+      padding-top: 5px;
+      padding-#{$end-direction}: 10px;
+      margin-bottom: 15px;
+      span {
+        font-size: 35px;
+        line-height: 30px
+      }
+      p {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+  #trade-content > p {
+    margin-bottom: 15px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    }
+  }
 }
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
@@ -1301,6 +1367,146 @@ this UI is made desktop first.
     }
   }
 }
+
+ /* board Members page */
+.board-members{
+  .main-member-card{
+    .img-box{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .content-box{
+      h2 {
+        font-size: 25px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .member-card {
+    margin-bottom: 15px;
+    .img-box{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .content-box{
+      padding: 0 7px;
+      padding-top: 12px;
+      padding-bottom: 10px;
+      h4{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+      }
+      span{
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+
+
+
+.main-contact-us-heading {
+  margin-bottom: 25px;
+  h2 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.main-contact-us {
+  .contact-form {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    h2 {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  }
+  .main-contact-form{
+    label {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .btn {
+      margin-top: 25px;
+      font-size: 14px;
+      padding: 10px 30px;
+    }
+
+  }
+}
+
+.hub-cards .mb-38 {
+  margin-bottom: 15px;
+}
+
+/* Syndication */
+.itfc-globe {
+  &::before{
+
+    background-position: -340px;
+  }
+}
+.globe-item {
+  .globe-item-header {
+    h5 {
+      button{
+        font-size: 32px;
+      }
+    }
+  }
+  .globe-item-body {
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 25px;
+  }
+}
+
+.single-media-2 {
+  .header {
+    margin-bottom: 25px;
+    span{
+      font-size: 35px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-top: 10px;
+    }
+  }
+  .video-box {
+    height: 450px;
+  }
+}
+
 }
 
 
@@ -1413,16 +1619,169 @@ this UI is made desktop first.
     }
   }
 
-  /*
---------- projects inner ---------
-*/
-// .contact-info{
-//   > .container {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-  
-// }
+/* board-members  */
+.board-members {
+  .main-member-card {
+    margin-bottom: 25px;
+    .content-box{
+      h2{
+        margin-top: 15px;
+      }
+    }
+  }
+}
+.related-items{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .header{
+    h2 {
+      font-size: 25px;
+      line-height: 24px;
+    }
+  }
+  ul.nav{
+    margin-bottom: 30px;
+    li{
+      a{
+        padding: 20px 30px 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  h4 {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+
+
+ /* contact us */
+ .main-contact-us {
+  .inner-heading{
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  .main-contact-form{
+    .form-control{
+      height: auto;
+    }
+    .form-group {
+       input{
+        padding: 3px 12px !important;
+       }
+       select{
+        padding: 3px 12px !important;
+        background-position-y: 15px;
+       }
+    }
+  }
+ }
+ .hub-cards{
+  .hub-items{
+    height: auto;
+    .img-box{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .content-box{
+      padding-bottom: 10px;
+      h2 {
+        font-size: 16px;
+      }
+      .reach-us {
+        margin-bottom: 5px;
+      }
+      .contact-info{
+        p {
+          margin-bottom: 5px;
+        }
+        ul{
+          li{
+            span {
+              font-size: 14px;
+            }
+            a{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+ }
+
+ .main-contact-us-heading {
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+ }
+
+
+.itfc-trade {
+  .trade-box {
+    .header {
+      padding-right: 0px;
+      span {
+        font-size: 25px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    #trade-content > p {
+      margin-bottom: 15px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+}
+
+.globe-item {
+  .globe-item-header{
+    h5{
+      button {
+        font-size: 25px;
+        &::after{
+          top: 15px;
+        }
+      }
+    }
+  }
+  .globe-item-body {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.single-media-2 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .header {
+    span {
+      font-size: 25px;
+      line-height: 24px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
 
 }
 
@@ -1579,6 +1938,7 @@ footer {
     label {
       font-size: 16px;
       margin-bottom: 15px;
+      white-space: break-spaces !important;
   }
   .form-group{
     .form-control{
@@ -2196,6 +2556,24 @@ footer {
       }
     }
   }
+
+  /* Syndication */
+
+  .trade-box .img-box {
+    height: 280px;
+}
+.itfc-trade {
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 25px;
+}
+.itfc-trade .inner-heading h1 {
+    margin-bottom: 25px;
+}
+.trade-box {
+    padding: 24px 17px;
+}
+
 }
 
 
