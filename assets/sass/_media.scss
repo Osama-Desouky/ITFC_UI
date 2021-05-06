@@ -2545,7 +2545,10 @@ footer {
     .list-card{
       .top-filter{
         .right-filter{
+          justify-content: flex-end;
           ul.nav-pills{
+            margin-#{$start-direction}:15px ;
+            margin-top: 5px;
             .nav-item {
               .nav-link{
                 padding: 10px 7px;

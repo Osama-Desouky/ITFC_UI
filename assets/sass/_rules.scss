@@ -3,6 +3,7 @@ body {
   color: $color-default;
   direction: $direction;
   text-align: $start-direction;
+  word-break: break-word !important;
 }
 html[dir="rtl"] body {
 }

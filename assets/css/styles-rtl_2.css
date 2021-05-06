@@ -11220,6 +11220,7 @@ body {
   color: #949486;
   direction: rtl;
   text-align: right;
+  word-break: break-word !important;
 }
 
 *,
@@ -13681,7 +13682,7 @@ button.scroll-up:hover {
   background-position: center center;
   background-size: contain;
   left: 0;
-  top: 26px;
+  top: 45%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -13899,8 +13900,10 @@ button.scroll-up:hover {
 }
 
 .main-member-card .img-box img {
-  min-height: 100%;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-member-card .content-box {
@@ -13952,8 +13955,10 @@ button.scroll-up:hover {
 }
 
 .member-card .img-box img {
-  min-height: 100%;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .member-card .content-box {
@@ -13993,7 +13998,7 @@ button.scroll-up:hover {
 
 .main-hub {
   padding-top: 39px;
-  height: calc(100vh - 135px);
+  height: 100%;
   background-color: #f3f6fb;
   background-image: url("../images/right-globe-bg.svg");
   background-repeat: no-repeat;
@@ -14101,6 +14106,10 @@ button.scroll-up:hover {
       -ms-grid-row-align: center;
       align-self: center;
   overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  margin-right: 15px;
 }
 
 .hub-card .img-box img {
@@ -15299,6 +15308,7 @@ ul.fixed-social li:hover a img {
   color: #ed4c21;
   line-height: 45px;
   padding-bottom: 3px;
+  word-break: initial;
 }
 
 .list-with-filter.list-show .list-item .date-card .month {
@@ -16182,12 +16192,14 @@ main styles
 }
 
 .project-item .img-box img {
-  min-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-item .content {
@@ -16277,6 +16289,23 @@ main styles
   font-weight: 500;
 }
 
+.project-item .content .total-amount h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1d1d1b;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.project-item .content .total-amount p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #d5313a;
+  display: inline-block;
+}
+
 .project-item:hover {
   -webkit-box-shadow: 0 3px 45px rgba(45, 50, 54, 0.12);
           box-shadow: 0 3px 45px rgba(45, 50, 54, 0.12);
@@ -16312,7 +16341,7 @@ main styles
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 245px;
+  height: 275px;
   overflow: hidden;
 }
 
@@ -16330,13 +16359,13 @@ main styles
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 395px;
+  height: 420px;
   overflow: hidden;
 }
 
 .project-list #gridVSlist.grid-show .project-item .img-box {
   min-width: 100%;
-  min-height: 210px;
+  height: 210px;
 }
 
 .project-list #gridVSlist.grid-show .project-item .content h4 {
@@ -18632,6 +18661,15 @@ html[dir="rtl"] .single-media .header h2 {
 
 .SDG-section .list-card .sdg-list .sdg-item .item-img {
   margin-right: 2px;
+  width: 130px;
+  height: 130px;
+}
+
+.SDG-section .list-card .sdg-list .sdg-item .item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden {
@@ -18651,6 +18689,12 @@ html[dir="rtl"] .single-media .header h2 {
 
 .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden div {
   margin-top: 20px;
+  font-family: "DINNextLT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #fff;
   max-height: 157px;
   overflow: hidden;
 }
@@ -18889,6 +18933,10 @@ html[dir="rtl"] .single-media .header h2 {
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-body div.popup-content div.icon-with-title img {
   margin-left: 20px;
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-body div.popup-content div.icon-with-title h3 {
@@ -18922,6 +18970,9 @@ html[dir="rtl"] .single-media .header h2 {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin: 0 31px;
+  font-size: 15px;
+  color: #48494c;
+  line-height: 30px;
 }
 
 .SDG-section .sdg-popup .modal-dialog .modal-content .modal-footer h3 {
@@ -18997,7 +19048,8 @@ html[dir="rtl"] .single-media .header h2 {
             flex-flow: row wrap;
   }
   .SDG-section .list-card .sdg-list .sdg-item {
-    width: calc(100% / 3 - 4.5px);
+    width: calc(100% / 3 - 4.5px) !important;
+    margin-left: 4.5px;
   }
   .SDG-section .list-card .sdg-list .sdg-item .goal {
     font-size: 18px;
@@ -19077,7 +19129,7 @@ html[dir="rtl"] .single-media .header h2 {
     line-height: 24px;
   }
   .SDG-section .list-card .sdg-list .sdg-item {
-    width: calc(100% / 2 - 4.5px);
+    width: calc(100% / 2 - 4.5px) !important;
   }
   .SDG-section .list-card .sdg-list .sdg-item.item1 {
     -webkit-box-ordinal-group: 2;
@@ -19222,7 +19274,7 @@ html[dir="rtl"] .single-media .header h2 {
     height: 32px;
   }
   .SDG-section .list-card .sdg-list .sdg-item {
-    width: 100%;
+    width: 100% !important;
     margin: 0 0 6px;
     background-size: cover;
   }
@@ -21273,6 +21325,15 @@ this UI is made desktop first.
   /*
   -------------- multimedia ----------
   */
+  .multimedia .list-card .top-filter .right-filter {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .multimedia .list-card .top-filter .right-filter ul.nav-pills {
+    margin-right: 15px;
+    margin-top: 5px;
+  }
   .multimedia .list-card .top-filter .right-filter ul.nav-pills .nav-item .nav-link {
     padding: 10px 7px;
   }
