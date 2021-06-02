@@ -1317,6 +1317,8 @@ button.scroll-up {
       background-color: $biege-color;
       margin-#{$end-direction}: 10px;
       transition: 0.3s;
+      position: relative;
+      z-index: 1;
     }
     ::after {
       content: "";
@@ -1334,8 +1336,7 @@ button.scroll-up {
       }
     }
     &.active {
-      ::before,
-      ::after {
+      ::before {
         background-color: $dark-orange-color;
       }
       a {
@@ -1446,7 +1447,7 @@ button.scroll-up {
   padding-top: 95px;
   padding-bottom: 120px;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1469,7 +1470,7 @@ button.scroll-up {
   max-width: 1060px;
   margin: auto;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -4174,8 +4175,8 @@ main styles
         font-weight: $w-medium;
       }
     }
-    .total-amount{
-      h6{
+    .total-amount {
+      h6 {
         font-size: 16px;
         font-weight: $w-bold;
         line-height: 24px;
@@ -4839,11 +4840,10 @@ html[dir="rtl"] {
   .SDG-section .list-card .sdg-list .sdg-item .sdg-hidden .more-info img,
   .trade-box .img-box::after,
   .itfc-globe::before,
-  .trade-related-projects
-    .trade-related-carousel
-    .owl-carousel
-    .owl-nav
-    button ,.about-itfc::before,.vision-box::before,.vision::before{
+  .trade-related-projects .trade-related-carousel .owl-carousel .owl-nav button,
+  .about-itfc::before,
+  .vision-box::before,
+  .vision::before {
     transform: rotateY(180deg);
   }
   .events-list-section .list-filter .closed-filter-btn {
@@ -4926,11 +4926,11 @@ html[dir="rtl"] {
     line-height: 30px;
     height: 30px;
   }
-  .num-card h2{
+  .num-card h2 {
     line-height: 46px;
     margin-bottom: 40px;
   }
-  .single-media .header h2{
+  .single-media .header h2 {
     line-height: 55px;
     margin-bottom: 25px;
   }
