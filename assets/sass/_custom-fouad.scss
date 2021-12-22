@@ -3051,3 +3051,177 @@ html[dir="rtl"] {
     flex-direction: row-reverse;
   }
 }
+
+
+// adding style to Treasury Dealing page
+ 
+.TreasuryDealing {
+  // background-color: red;
+  &::before {
+    content: "";
+    // background-image:  linear-gradient(rgba(240,244,252,0), rgba(240,244,252,0)) , url(../images/TreasuryDealing/bgSection.jpg);
+    background-image:  linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)) , url(../images/TreasuryDealing/bgSection.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .trade-box {
+    .img-box2 {
+      height: 387px;
+      margin-bottom: 48px;
+      padding: 0;
+      .img-wrapper {
+        padding-top: 0;
+        background-color: #76b3cf;
+
+      }
+      &::after {
+        content: none;
+      }
+    }
+    .header {
+      padding: 0;
+      margin-bottom: 0;
+      .headingTitle {
+        font-size: 40px;
+        line-height: 60px;
+        font-family: "Roboto";
+        font-weight: 900;
+        color: $black-color;
+        span {
+          color: #EF7E25;
+          font-size: 40px;
+        }
+      }
+      p {
+        color: $black-color;
+        margin-top: 10px;
+        line-height: 2;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.customAccordion {
+  .card {
+    border: unset;
+    margin-bottom: 24px;
+    background-color: #F8F8F8;
+    .card-header {
+      padding: 0;
+      background-color: #F8F8F8;
+      border: unset;
+      h2 {
+        button {
+          font-size: 24px;
+          font-family: "montserrat";
+          color: #EF7E25;
+          font-weight: $w-bold;
+          padding: 26px 24px;
+          text-align: $start-direction;
+          text-decoration: unset;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            background-image: url(../images/TreasuryDealing/arrowD.svg);
+            filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg) brightness(95%) contrast(96%);
+            background-repeat: no-repeat;
+            #{$end-direction}: 24px;
+            transition: .4s;
+            top: 38px;
+            transform: rotate(180deg);
+          }
+          &:focus {
+            box-shadow: unset;
+          }
+          &.collapsed {
+            color: #000000;
+            &::after {
+              filter:blur(0);
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+    }
+    .card-body {
+      padding-top: 10px;
+      padding-bottom: 8px;
+      .imgBox {
+        img {
+
+        }
+      }
+      .textBox {
+        h2 {
+          color: #000000;
+          font-size: 20px;
+          font-weight: $w-semi-bold;
+          font-family: "montserrat";
+        }
+        ul {
+          padding-#{$start-direction}: 25px;
+          li {
+            p {
+              color: #646464;
+              font-weight: 400;
+              font-family: "montserrat";
+              font-size: 14px;
+              margin-bottom: 12px;
+            }
+            &::marker {
+              color:#EF7E25
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.TreasuryProducts {
+      background-color: #F3F6FB;
+      padding: 48px 0;
+      margin-bottom: 120px;
+      h2 {
+        font-size: 35px;
+        font-family: "montserrat";
+        color: #000000;
+        font-weight: $w-bold;
+        text-align: center;
+        margin-bottom: 56px;
+      }
+      .col-md-12 {
+        p {
+          font-size: 16px;
+          font-family: "montserrat";
+          color: #000000;
+          font-weight: $w-semi-bold;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+      }
+    .TPbox {
+      margin-bottom: 20px;
+     .TPicon {
+       img {
+        max-width: 100%;
+       }
+     } 
+     .TPtext {
+       p {
+         color: #707070;
+         font-weight: 500;
+         font-family: "montserrat";
+         font-size: 18px;
+         margin-bottom: 0px;
+         margin-top: 7px;
+       }
+     }
+    }
+}
+

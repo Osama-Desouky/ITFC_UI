@@ -1,0 +1,11 @@
+<svg id="money-3" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="vuesax_outline_money-3" data-name="vuesax/outline/money-3">
+    <g id="money-3-2" data-name="money-3">
+      <path id="Vector" d="M26.25,30.833H9.583C3.5,30.833,0,27.333,0,21.25V9.583C0,3.5,3.5,0,9.583,0H26.25c6.083,0,9.583,3.5,9.583,9.583V21.25C35.833,27.333,32.333,30.833,26.25,30.833ZM9.583,2.5C4.817,2.5,2.5,4.817,2.5,9.583V21.25c0,4.767,2.317,7.083,7.083,7.083H26.25c4.767,0,7.083-2.317,7.083-7.083V9.583c0-4.767-2.317-7.083-7.083-7.083Z" transform="translate(2.083 4.583)" fill="#ef7e25"/>
+      <path id="Vector-2" data-name="Vector" d="M6.25,12.5A6.25,6.25,0,1,1,12.5,6.25,6.252,6.252,0,0,1,6.25,12.5Zm0-10A3.75,3.75,0,1,0,10,6.25,3.756,3.756,0,0,0,6.25,2.5Z" transform="translate(13.75 13.75)" fill="#ef7e25"/>
+      <path id="Vector-3" data-name="Vector" d="M6.25,2.5h-5A1.259,1.259,0,0,1,0,1.25,1.259,1.259,0,0,1,1.25,0h5A1.259,1.259,0,0,1,7.5,1.25,1.259,1.259,0,0,1,6.25,2.5Z" transform="translate(25.417 10.417)" fill="#ef7e25"/>
+      <path id="Vector-4" data-name="Vector" d="M6.25,2.5h-5A1.259,1.259,0,0,1,0,1.25,1.259,1.259,0,0,1,1.25,0h5A1.259,1.259,0,0,1,7.5,1.25,1.259,1.259,0,0,1,6.25,2.5Z" transform="translate(7.083 27.083)" fill="#ef7e25"/>
+      <path id="Vector-5" data-name="Vector" d="M0,0H40V40H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

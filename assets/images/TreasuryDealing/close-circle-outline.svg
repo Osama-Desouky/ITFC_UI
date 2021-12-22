@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="close-circle-outline" transform="translate(12 12)">
+    <g id="close-circle-outline-2" data-name="close-circle-outline" transform="translate(-12 -12)">
+      <g id="close-circle">
+        <rect id="Rectangle_11621" data-name="Rectangle 11621" width="40" height="40" fill="#ef7e25" opacity="0"/>
+        <path id="Path_48947" data-name="Path 48947" d="M18.667,2A16.667,16.667,0,1,0,35.333,18.667,16.667,16.667,0,0,0,18.667,2Zm0,30A13.333,13.333,0,1,1,32,18.667,13.333,13.333,0,0,1,18.667,32Z" transform="translate(1.333 1.333)" fill="#ef7e25"/>
+        <path id="Path_48948" data-name="Path 48948" d="M18.521,9.487a1.667,1.667,0,0,0-2.367,0L14,11.654l-2.15-2.167a1.673,1.673,0,0,0-2.367,2.367L11.654,14l-2.167,2.15a1.673,1.673,0,1,0,2.367,2.367L14,16.354l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367L16.354,14l2.167-2.15a1.667,1.667,0,0,0,0-2.367Z" transform="translate(5.996 5.996)" fill="#ef7e25"/>
+      </g>
+    </g>
+  </g>
+</svg>
