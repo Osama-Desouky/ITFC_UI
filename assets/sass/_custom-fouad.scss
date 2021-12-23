@@ -3125,8 +3125,8 @@ html[dir="rtl"] {
           &::after {
             content: '';
             position: absolute;
-            width: 30px;
-            height: 20px;
+            width: 25px;
+            height: 13px;
             background-image: url(../images/TreasuryDealing/arrowD.svg);
             filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg) brightness(95%) contrast(96%);
             background-repeat: no-repeat;
@@ -3205,7 +3205,7 @@ html[dir="rtl"] {
           margin-bottom: 0px;
         }
       }
-    .TPbox {
+    .TPbox { 
       margin-bottom: 20px;
      .TPicon {
        img {
