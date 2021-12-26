@@ -1,245 +1,468 @@
+.MurabahaCalss::before,
 .TreasuryDealing::before {
-    content: "";
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/TreasuryDealing/bgSection.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/TreasuryDealing/bgSection.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .TreasuryDealing .trade-box .img-box2 {
-    height: 387px;
-    margin-bottom: 48px;
-    padding: 0;
-  }
-  
-  .TreasuryDealing .trade-box .img-box2 .img-wrapper {
-    padding-top: 0;
-    background-color: #76b3cf;
-  }
-  
-  .TreasuryDealing .trade-box .img-box2::after {
-    content: none;
-  }
-  
-  .TreasuryDealing .trade-box .header {
-    padding: 0;
-    margin-bottom: 0;
-  }
-  
-  .TreasuryDealing .trade-box .header .headingTitle {
-    font-size: 40px;
-    line-height: 60px;
-    font-family: "Roboto";
-    font-weight: 900;
-    color: #1d1d1b;
-  }
-  
-  .TreasuryDealing .trade-box .header .headingTitle span {
-    color: #EF7E25;
-    font-size: 40px;
-  }
-  
-  .TreasuryDealing .trade-box .header p {
-    color: #1d1d1b;
-    margin-top: 10px;
-    line-height: 2;
-    font-size: 18px;
-  }
-  
-  .customAccordion .card {
-    border: unset;
-    margin-bottom: 24px;
-    background-color: #F8F8F8;
-  }
-  
-  .customAccordion .card .card-header {
-    padding: 0;
-    background-color: #F8F8F8;
-    border: unset;
-  }
-  
-  .customAccordion .card .card-header h2 button {
-    font-size: 24px;
-    font-family: "montserrat";
-    color: #EF7E25;
-    font-weight: 700;
-    padding: 26px 24px;
-    text-align: left;
-    text-decoration: unset;
-    position: relative;
-  }
-  
-  .customAccordion .card .card-header h2 button::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 13px;
-    background-image: url(../images/TreasuryDealing/arrowD.svg);
-    -webkit-filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg) brightness(95%) contrast(96%);
-            filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg) brightness(95%) contrast(96%);
-    background-repeat: no-repeat;
-    right: 24px;
-    -webkit-transition: .4s;
-    transition: .4s;
-    top: 38px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  
-  .customAccordion .card .card-header h2 button:focus {
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-  }
-  
-  .customAccordion .card .card-header h2 button.collapsed {
-    color: #000000;
-  }
-  
-  .customAccordion .card .card-header h2 button.collapsed::after {
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  
-  .customAccordion .card .card-body {
-    padding-top: 10px;
-    padding-bottom: 8px;
-  }
-  
-  .customAccordion .card .card-body .textBox h2 {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "montserrat";
-  }
-  
-  .customAccordion .card .card-body .textBox ul {
-    padding-left: 25px;
-  }
-  
-  .customAccordion .card .card-body .textBox ul li p {
-    color: #646464;
-    font-weight: 400;
-    font-family: "montserrat";
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-  
-  .customAccordion .card .card-body .textBox ul li::marker {
-    color: #EF7E25;
-  }
-  
-  .TreasuryProducts {
-    background-color: #F3F6FB;
-    padding: 48px 0;
-    margin-bottom: 120px;
-  }
-  
-  .TreasuryProducts h2 {
-    font-size: 35px;
-    font-family: "montserrat";
-    color: #000000;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 56px;
-  }
-  
-  .TreasuryProducts .col-md-12 p {
+  content: "";
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
+    url(../images/TreasuryDealing/bgSection.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/TreasuryDealing/bgSection.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MurabahaCalss::before {
+  background-image: url(../images/NewMurabaha/BGMurabaha.svg.jpg);
+}
+.MurabahaCalss .trade-box .img-box2,
+.TreasuryDealing .trade-box .img-box2 {
+  height: 387px;
+  margin-bottom: 48px;
+  padding: 0;
+}
+.MurabahaCalss .trade-box .img-box2 .img-wrapper,
+.TreasuryDealing .trade-box .img-box2 .img-wrapper {
+  padding-top: 0;
+  background-color: #76b3cf;
+}
+.MurabahaCalss .trade-box .img-box2::after,
+.TreasuryDealing .trade-box .img-box2::after {
+  content: none;
+}
+.MurabahaCalss .trade-box .header,
+.TreasuryDealing .trade-box .header {
+  padding: 0;
+  margin-bottom: 0;
+}
+.MurabahaCalss .trade-box .header .headingTitle,
+.TreasuryDealing .trade-box .header .headingTitle {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #1d1d1b;
+}
+.MurabahaCalss .trade-box .header .headingTitle span,
+.TreasuryDealing .trade-box .header .headingTitle span {
+  color: #ef7e25;
+  font-size: 40px;
+}
+.MurabahaCalss .trade-box .header p,
+.TreasuryDealing .trade-box .header p {
+  color: #1d1d1b;
+  margin-top: 10px;
+  line-height: 2;
+  font-size: 18px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.MurabahaCalss .trade-box .img-box2 {
+  margin-bottom: 64px;
+}
+.MurabahaCalss .trade-box .header > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-height: 84px;
+}
+.MurabahaCalss .trade-box .header > span img {
+  max-width: 100%;
+}
+.MurabahaCalss .trade-box .row:not(:first-of-type):nth-of-type(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.MurabahaCalss .trade-box .row:not(:first-of-type) .headingTitle {
+  font-size: 35px;
+  font-weight: 500;
+}
+.customAccordion .card {
+  border: unset;
+  margin-bottom: 24px;
+  background-color: #f8f8f8;
+}
+
+.customAccordion .card .card-header {
+  padding: 0;
+  background-color: #f8f8f8;
+  border: unset;
+}
+
+.customAccordion .card .card-header h2 button {
+  font-size: 24px;
+  font-family: "montserrat";
+  color: #ef7e25;
+  font-weight: 700;
+  padding: 26px 24px;
+  text-align: left;
+  text-decoration: unset;
+  position: relative;
+}
+
+.customAccordion .card .card-header h2 button::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 13px;
+  background-image: url(../images/TreasuryDealing/arrowD.svg);
+  -webkit-filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg)
+    brightness(95%) contrast(96%);
+  filter: invert(52%) sepia(90%) saturate(592%) hue-rotate(342deg)
+    brightness(95%) contrast(96%);
+  background-repeat: no-repeat;
+  right: 24px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  top: 38px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.customAccordion .card .card-header h2 button:focus {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+
+.customAccordion .card .card-header h2 button.collapsed {
+  color: #000000;
+}
+
+.customAccordion .card .card-header h2 button.collapsed::after {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.customAccordion .card .card-body {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.customAccordion .card .card-body .textBox h2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "montserrat";
+}
+
+.customAccordion .card .card-body .textBox ul {
+  padding-left: 25px;
+}
+
+.customAccordion .card .card-body .textBox ul li p {
+  color: #646464;
+  font-weight: 400;
+  font-family: "montserrat";
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.customAccordion .card .card-body .textBox ul li::marker {
+  color: #ef7e25;
+}
+
+.TreasuryProducts {
+  background-color: #f3f6fb;
+  padding: 48px 0;
+  margin-bottom: 120px;
+}
+
+.TreasuryProducts h2 {
+  font-size: 35px;
+  font-family: "montserrat";
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.TreasuryProducts .col-md-12 p {
+  font-size: 16px;
+  font-family: "montserrat";
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.TreasuryProducts .TPbox {
+  margin-bottom: 20px;
+}
+
+.TreasuryProducts .TPbox .TPicon img {
+  max-width: 100%;
+}
+
+.TreasuryProducts .TPbox .TPtext p {
+  color: #707070;
+  font-weight: 500;
+  font-family: "montserrat";
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 7px;
+}
+
+/* start Murabaha Financing  */
+.MurabahaFinancing .trade-box,
+.MurabahaFinancing {
+  padding-bottom: 0;
+}
+.MurabahaCalss.MurabahaFinancing .trade-box .img-box2 {
+  margin-bottom: 0;
+}
+.MurabahaCalss.MurabahaFinancing .trade-box .header span {
+  color: #D5313A ;
+}
+.project-tabs.MurabahaFinancing {
+  padding-top: 48px;
+}
+
+.project-tabs.MurabahaFinancing .rounded-tabs {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.project-tabs.MurabahaFinancing .rounded-tabs li.nav-item a.nav-link.active {
+  color: #d5313a;
+}
+.project-tabs.MurabahaFinancing .tab-content .content {
+  padding-left: 115px;
+}
+.project-tabs.MurabahaFinancing .tab-content .content .custom-list {
+  margin-top: 20px;
+} 
+.project-tabs.MurabahaFinancing .tab-content .content .custom-list .titleTabs {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1d1d1b;
+  margin-bottom: 20px;
+}
+.project-tabs.MurabahaFinancing .custom-list ul li {
+  color: #707070;
     font-size: 16px;
-    font-family: "montserrat";
-    color: #000000;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 0px;
+}
+.project-tabs.MurabahaFinancing .custom-list ul li::before {
+  width: 8px;
+  height: 8px;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.project-tabs.MurabahaFinancing .tab-content > .fade {
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all .4s !important;
+  -o-transition: all .4s !important;
+  transition: all .4s !important;
+}
+.project-tabs.MurabahaFinancing .tab-content > .show {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+
+}
+/* End Murabaha Financing */
+
+/* Start Our Partners */
+.itfc-trade.Partnerships::before {
+  background-image: url(../images/NewOurPartners/sectionBG2.jpg);
+}
+.Partnerships .inner-heading h1 span {
+  color: #cd2233;
+}
+.Partnerships .trade-box {
+  padding: 0;
+  background-color: transparent;
+}
+.Partnerships  .header  {
+  padding-top: 20px;
+}
+.Partnerships .header .headingTitle span,
+.Partnerships .header .headingTitle {
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #1d1d1b;
+}
+.Partnerships .header .headingTitle span {
+  color: #cd2233;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+.Partnerships .trade-box .header p {
+  margin-top: 48px;
+  font-size: 18px;
+  color: #1D1D1B;
+}
+.Partnerships .trade-box .header p span{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FE9E36;
+}
+
+.PartnershipsB {
+  padding-bottom:120px
+}
+.PartnershipsB .PRbox{
+  height: 100%;
+}
+.PartnershipsB .col-md-6 {
+  margin-bottom: 24px;
+}
+.PartnershipsB .PRbox .PRlogo {
+  height: 180px;
+  background-color: #F3F6FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.PartnershipsB .PRbox .PRlogo img {}
+.PartnershipsB .PRtext  {
+  /* max-height: 125px; */
+    overflow: hidden;
+    height: calc(100% - 180px);
+    border: 1px solid #F3F6FB;
+    min-height: 125px;
+}
+.PartnershipsB .PRtext p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #000000;
+  padding: 24px;
+  margin: 0;
+}
+
+
+/* End Our Partners */
+
+/* media */
+@media (min-width: 1440px) {
+  .TreasuryProducts .container {
+    max-width: 1314px;
   }
-  
-  .TreasuryProducts .TPbox {
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .customAccordion .textBox {
+    margin-left: 23px;
+  }
+  .TreasuryProducts .TPbox .TPtext p {
+    font-size: 16px;
+  }
+  .TreasuryProducts .TPbox .TPtext p br {
+    display: none;
+  }
+  .project-tabs.MurabahaFinancing .tab-content .content {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .MurabahaCalss .trade-box .img-box2,
+  .TreasuryDealing .trade-box .img-box2 {
+    height: auto;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+  .MurabahaCalss .trade-box .header p,
+  .TreasuryDealing .trade-box .header p {
+    margin-bottom: 35px;
+    line-height: 24px;
+    font-size: 16px;
+    height: auto;
+  }
+  .MurabahaCalss .trade-box .row:not(:first-of-type) .headingTitle {
+    font-size: 25px;
+    margin: 5px 0 13px 0;
+  }
+  .MurabahaCalss .trade-box .header > span img {
+    max-width: 70%;
+  }
+  .MurabahaCalss .trade-box .header .headingTitle,
+  .TreasuryDealing .trade-box .header .headingTitle {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .MurabahaCalss .trade-box .header .headingTitle span,
+  .TreasuryDealing .trade-box .header .headingTitle span {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .customAccordion .card .card-body .imgBox {
+    text-align: center;
     margin-bottom: 20px;
   }
-  
-  .TreasuryProducts .TPbox .TPicon img {
-    max-width: 100%;
+  .customAccordion .card .card-header h2 button {
+    font-size: 20px;
+    padding-right: 55px;
   }
-  
-  .TreasuryProducts .TPbox .TPtext p {
-    color: #707070;
-    font-weight: 500;
-    font-family: "montserrat";
-    font-size: 18px;
-    margin-bottom: 0px;
-    margin-top: 7px;
+  .TreasuryProducts {
+    margin-bottom: 60px;
+  }
+  .TreasuryProducts .col-md-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .TreasuryProducts .emptyBox {
+    display: none;
+  }
+  .TreasuryProducts .TPtext p br {
+    display: none;
+  }
+  .TreasuryProducts .col-md-12 p {
+    margin-top: 20px;
   }
 
-
-
-
-
-
-
-
-
-  /* media */
-  @media (min-width: 1440px) {
-    .TreasuryProducts .container {
-      max-width: 1314px;
-    }
+  /* Start Murabaha Financing */
+  .MurabahaFinancing .headingTitle {
+    margin-top: 20px;
   }
-  
-  @media (min-width: 768px) and (max-width: 1000px) {
-    .customAccordion .textBox {
-      margin-left: 23px;
-    }
-    .TreasuryProducts .TPbox .TPtext p {
-      font-size: 16px;
-    }
-    .TreasuryProducts .TPbox .TPtext p br {
-      display: none;
-    }
+  .project-tabs.MurabahaFinancing {
+    padding-top: 0px;
   }
-  
-  @media (max-width: 767px) {
-    .TreasuryDealing .trade-box .img-box2 {
-      height: auto;
-      margin-bottom: 25px;
-      padding: 0;
-    }
-    .TreasuryDealing .trade-box .header p {
-      margin-bottom: 35px;
-    }
-    .TreasuryDealing .trade-box .header .headingTitle {
-      font-size: 25px;
-      line-height: 24px;
-    }
-    .TreasuryDealing .trade-box .header .headingTitle span {
-      font-size: 25px;
-      line-height: 24px;
-    }
-    .customAccordion .card .card-body .imgBox {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .customAccordion .card .card-header h2 button {
-      font-size: 20px;
-      padding-right: 55px;
-    }
-    .TreasuryProducts {
-      margin-bottom: 60px;
-    }
-    .TreasuryProducts .col-md-2 {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 50%;
-              flex: 0 0 50%;
-      max-width: 50%;
-    }
-    .TreasuryProducts .emptyBox {
-      display: none;
-    }
-    .TreasuryProducts .TPtext p br {
-      display: none;
-    }
-    .TreasuryProducts .col-md-12 p {
-      margin-top: 20px;
-    }
+  .project-tabs.MurabahaFinancing .tab-content .content {
+    padding-left: 62px;
   }
+  .project-tabs.MurabahaFinancing .rounded-tabs {
+    -webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;
+  }
+  /* End Murabaha Financing */
+
+  /* Start Our Partners */
+  .Partnerships .header .headingTitle span, .Partnerships .header .headingTitle {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .Partnerships .trade-box .header p {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .Partnerships .trade-box .header p span {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  /* end Our Partners */
+}
