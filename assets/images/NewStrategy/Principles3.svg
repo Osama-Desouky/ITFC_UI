@@ -1,0 +1,14 @@
+<svg id="Principles3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="44.854" viewBox="0 0 58 44.854">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11673" data-name="Rectangle 11673" width="58" height="44.853" fill="#ef7e25" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_43" data-name="Mask Group 43" clip-path="url(#clip-path)">
+    <g id="Group_24203" data-name="Group 24203" transform="translate(5479.446 7205.158)">
+      <path id="Path_49221" data-name="Path 49221" d="M126.634,85.383H100.388a3.761,3.761,0,0,0-3.63,3.86v18.443a3.745,3.745,0,0,0,3.63,3.86h26.246a3.745,3.745,0,0,0,3.63-3.86V89.194a3.745,3.745,0,0,0-3.63-3.811Zm0,16.744-3.761-4.24-8.38,8.4L109,100.411l-7.852,8.166-1.815-1.98,9.684-10.078,5.543,5.922,6.6-6.6L117.4,91.6l9.584.3Z" transform="translate(-5563.973 -7282.607)" fill="#c2b263"/>
+      <path id="Path_49222" data-name="Path 49222" d="M107.989,86.66V83.443h-5.51V86.66H99.444v1.848h11.58V86.66Z" transform="translate(-5555.671 -7288.602)" fill="#c2b263"/>
+      <path id="Path_49223" data-name="Path 49223" d="M130.295,92.47H96.758v2.425H107.5l-2.9,5.51h3.1l2.887-5.51h6.071l2.9,5.51h3.085l-2.887-5.51h10.541Z" transform="translate(-5563.972 -7260.709)" fill="#c2b263"/>
+    </g>
+  </g>
+</svg>

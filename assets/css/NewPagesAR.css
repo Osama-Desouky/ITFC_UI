@@ -17,6 +17,7 @@
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
+  height: 530px;
 }
 .MurabahaCalss .trade-box .img-box .img-wrapper img {
   transform: scaleX(-1);
@@ -220,6 +221,9 @@
 .MurabahaFinancing {
   padding-bottom: 0;
 }
+.MurabahaCalss:not(.MurabahaFinancing) .trade-box .row:first-of-type {
+    padding-bottom: 140px;
+  }
 .MurabahaCalss.MurabahaFinancing .trade-box .img-box2 {
   margin-bottom: 0;
 }
@@ -359,6 +363,196 @@
 
 /* End Our Partners */
 
+/* Start Strategy page */
+.StrategyClass {
+    padding-bottom: 0;
+  }
+  .StrategyClass .trade-box,
+  .StrategyClass .trade-box .img-box2 {
+    margin-bottom:0px;
+    padding-bottom: 0;
+  }
+  .StrategyClass::before {
+    background-image: url(../images/NewStrategy/StrategyBG.jpg);
+  }
+  .StrategyClass .headingTitle span,
+  .StrategyClass .inner-heading h1 span {
+    color: #D5313A !important;
+  }
+  .StrategyWrapper {
+    padding:100px 0 40px;
+  }
+  .StrategyWrapper .headSection {
+    text-align: center;
+  }
+  .StrategyWrapper .headSection h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .StrategyObjectives .headSection h2 {
+    color:#EF7E25
+  }
+  .StrategyWrapper .headSection p{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 36px;
+  }
+  .StrategyWrapper .StrategyBox {
+    padding: 12px;
+    transition: .4s;
+    height: 270px;
+    overflow: hidden;
+  }
+  
+  .StrategyWrapper .StrategyBox .SIcon img{
+    max-width: 60px;
+    transition: .4s;
+  }
+  .StrategyWrapper .StrategyBox .SText {
+  
+  }
+  .StrategyWrapper .StrategyBox .SText .STitle {
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 12px 0;
+    color: #000000;
+    font-weight: 600;
+  }
+  .StrategyWrapper .StrategyBox .SText .hiddenP {
+    font-size: 14px;
+    line-height: 20px;
+    color: #707070;
+    transition: .4s;
+    margin-bottom: 0;
+    height:45px;
+      overflow: hidden;
+  }
+  .StrategyWrapper .StrategyBox:hover{
+    -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  }
+  .StrategyWrapper .StrategyBox:hover .SIcon img {
+    max-width: 40px;
+  }
+  .StrategyWrapper .StrategyBox:hover .SText .hiddenP {
+    height: 220px;
+  }
+  .StrategyPillars {
+    background-color: #F3F6FB;
+  }
+  .StrategyPillars .StrategyBox {
+    height: 250px;
+    transition: .4s;
+  }
+  .StrategyWrapper .headSection h2 {
+    color: #AD5480;
+  }
+  .StrategyPillars .StrategyBox:hover {
+    background-color: #fff;
+   
+  }
+  .StrategyPillars .StrategyBox:hover .SText .hiddenP {
+    height: 135px;
+  }
+  .StrategyPrinciples .headSection h2{
+    color: #C2B263;
+  }
+  .StrategyPrinciples .StrategyBox {
+    margin-bottom: 40px;
+    height: 200px;
+  }
+  .StrategyPrinciples .StrategyBox:hover .SText .hiddenP {
+    height: 82px;
+  }
+  .Critical{
+    background-color: #F3F6FB;
+  }
+  .Critical .headSection h2 {
+    color: #C2005D;
+  }
+  .Critical .headSection p {
+    margin-bottom: 55px;
+  }  
+  .Critical .CrBox {
+    text-align: center;
+  }
+  .Critical .icon img  {
+    max-width: 80px;
+    margin-bottom: 27px;
+  }
+  .Critical .text p  {
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    min-height: 44px;
+  }
+  .BeyondStatus {
+    padding: 130px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background:-webkit-gradient(linear, left bottom, left top, from(rgba(153, 43, 49, 0.9)), to(rgba(153, 43, 49, 0.9))), url(../images/NewStrategy/BeyondBG.jpg); background:-o-linear-gradient(bottom, rgba(153, 43, 49, 0.9), rgba(153, 43, 49, 0.9)), url(../images/NewStrategy/BeyondBG.jpg); background:linear-gradient(0deg, rgba(153, 43, 49, 0.9), rgba(153, 43, 49, 0.9)), url(../images/NewStrategy/BeyondBG.jpg);
+  }
+  .BeyondStatus .leftBS,
+  .BeyondStatus .rightBS{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .BeyondStatus .leftBS {
+    border-left: 4px solid #fff;
+  }
+  .BeyondStatus .leftBS p {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 43px;
+  }
+  .BeyondStatus .leftBS p span {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 600;
+    display: block;
+  }
+  
+  .BeyondStatus .rightBS p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 36px;
+    padding: 50px 0;
+  }
+  .COVIDImpact {
+    padding: 100px 0;
+  }
+  .COVIDImpact .boxCI img {
+    float: right;
+    max-width: 600px;
+    margin-left: 30px;
+  }
+  .COVIDImpact .boxCI h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #D5313A;
+    margin-bottom: 24px;
+    padding-top: 15px;
+  }
+  .COVIDImpact .boxCI p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #48494C;
+    line-height: 36px;
+  }
+  /* end Strategy page */
+  
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
@@ -379,6 +573,28 @@
   .project-tabs.MurabahaFinancing .tab-content .content {
     padding-right: 90px;
   }
+   /* start Strategy page */
+   .StrategyWrapper .col-md-3,
+   .StrategyWrapper .col-md-4 {
+     -webkit-box-flex: 0;
+     -ms-flex: 0 0 50%;
+     flex: 0 0 50%;
+     max-width: 50%;
+   }
+   .StrategyPrinciples .col-md-2 {
+     display: none;
+     }
+     .COVIDImpact .boxCI img {
+       max-width: 340px;
+       margin-left: 20px;
+   }
+   .BeyondStatus .leftBS p {
+     font-size: 33px;
+   }
+   .MurabahaCalss:not(.MurabahaFinancing) .trade-box .row:first-of-type {
+    padding-bottom: 40px;
+  }
+   /* end Strategy page */
 }
 
 @media (max-width: 767px) {
@@ -438,7 +654,9 @@
   .TreasuryProducts .col-md-12 p {
     margin-top: 20px;
   }
-
+  .MurabahaCalss:not(.MurabahaFinancing) .trade-box .row:first-of-type {
+    padding-bottom: 40px;
+  }
   /* Start Murabaha Financing */
   .MurabahaFinancing .headingTitle {
     margin-top: 20px;
@@ -470,4 +688,42 @@
     line-height: 1.2;
   }
   /* end Our Partners */
+  
+  /* start Strategy page */
+  .StrategyWrapper {
+    padding: 60px 0px 40px;
+  }
+  .StrategyWrapper .StrategyBox {
+    margin-bottom: 30px;
+    height: auto;
+  }
+  .StrategyWrapper .headSection h2 {
+    font-size: 25px;
+  }
+  .StrategyWrapper .headSection p {
+    font-size: 17px;
+  }
+  .StrategyWrapper .StrategyBox .SText .STitle {
+    height: auto;
+  }
+  .COVIDImpact .boxCI img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .BeyondStatus {
+    padding: 80px 0 0px 0px;
+    background-size: cover;  
+  }
+  .BeyondStatus .leftBS p span,
+  .BeyondStatus .leftBS p {
+    font-size: 25px;
+  }
+  .BeyondStatus .rightBS p {
+    font-size: 16px;
+    padding-top: 25px;
+  }
+  .COVIDImpact {
+    padding: 60px 0;
+}
+  /* end Strategy page */
 }

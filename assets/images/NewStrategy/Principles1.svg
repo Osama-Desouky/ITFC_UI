@@ -1,0 +1,14 @@
+<svg id="Principles1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.996" height="44.85" viewBox="0 0 57.996 44.85">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11673" data-name="Rectangle 11673" width="57.996" height="44.85" fill="#ef7e25" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_39" data-name="Mask Group 39" clip-path="url(#clip-path)">
+    <g id="Group_24201" data-name="Group 24201" transform="translate(5.737 0.92)">
+      <path id="Path_49207" data-name="Path 49207" d="M38,96.192H61.607l12.415,13.187L50.657,138.631,27.539,108.608l1.2-1.448Z" transform="translate(-27.539 -96.192)" fill="none" stroke="#c2b263" stroke-miterlimit="10" stroke-width="1.84" fill-rule="evenodd"/>
+      <line id="Line_194" data-name="Line 194" x1="44.678" transform="translate(0.903 12.679)" fill="none" stroke="#c2b263" stroke-miterlimit="10" stroke-width="1.84"/>
+      <path id="Path_49208" data-name="Path 49208" d="M40.686,96.569l9.124,11.136-9.255,29.759L30.81,107.705Z" transform="translate(-17.435 -95.026)" fill="none" stroke="#c2b263" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.84" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
