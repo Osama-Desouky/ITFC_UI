@@ -641,13 +641,125 @@
 /* End StructuredTrade Finance */
 
 
+/* Start LC Confirmation  */
+.LCConfirmation .trade-box {
+  padding: 25px 21px;
+}
+.LCConfirmation h2 {
+  font-family: "montserrat";
+    line-height: 52px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+.LCConfirmation  h2 span {
+  color: #FE9E36;
+}
+.solutionSection {
+  margin: 50px 0 100px;
+}
+.BenefitSection .SolTitle ,
+.solutionSection .SolTitle {
+  font-size: 31px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 31px;
+    text-align: center;
+    font-weight: bold;
+}
+.solutionSection .boxImg {
+  height: 850px;
+}
+.solutionSection .boxImg img {
+  max-width: 100%;
+}
+.BenefitSection {
+  background-color: #F3F6FB;
+    padding: 133px 0 100px;
+}
+.BenefitSection .SolTitle {
+  margin-bottom: 81px;
+}
+.BenefitSection .BenBox {
+  margin-bottom: 35px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.BenefitSection .BenBox .Bimg {
+  height: 205px;
+  position: relative;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.BenefitSection .BenBox .Bimg::before {
+  position: absolute;
+  content: "";
+  /*background-color: #000000;
+  */inset: 0;
+  opacity: .3;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.BenefitSection .BenBox .Bimg img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  
+}
+.BenefitSection .BenBox .Btext  {
+  height: 157px;
+  background-color: #fff;
+  padding: 12px;
+  overflow: hidden;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+.BenefitSection .BenBox .Btext p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.BenefitSection .BenBox:hover {
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.BenefitSection .BenBox:hover .Bimg{ 
+  height:175px;
+}
+.BenefitSection .longText.BenBox:hover .Bimg{ 
+  height: 140px;
+}
+.BenefitSection .BenBox:hover .Bimg::before {
+  background-color: #000000;
+}
+.BenefitSection .BenBox:hover .Btext{
+  height: 187px;
+}
+.BenefitSection .longText.BenBox:hover .Btext{
+  height: 223px;
+}
+/* End LC Confirmation  */
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
     max-width: 1314px;
   }
 }
+@media (min-width: 1001px) and (max-width: 1400px) {
 
+  .BenefitSection .longText.BenBox:hover .Btext p {
+    line-height: 22px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1000px) {
   .customAccordion .textBox {
     margin-left: 23px;
@@ -695,6 +807,24 @@
       margin-bottom: 30px;
     }
     /* end StructuredTrade Finance */
+      /* Start LC Confirmation  */
+  .BenefitSection .col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .BenefitSection .longText.BenBox:hover .Bimg {
+    height: 80px;
+  }
+  .BenefitSection .longText.BenBox:hover .Btext {
+    height: 280px;
+  }
+  .solutionSection .boxImg {
+    height: auto;
+    padding: 0 25px;
+  }
+  /* End LC Confirmation  */
 }
 
 @media (max-width: 767px) {
@@ -841,4 +971,29 @@
       margin-bottom: 40px;
     }
     /* end StructuredTrade Finance */
+      /* start LC Confirmation  */
+
+  .BenefitSection .longText.BenBox:hover .Bimg {
+    height: 80px;
+  }
+  .BenefitSection .longText.BenBox:hover .Btext {
+    height: 280px;
+  }
+  .LCConfirmation h2 {
+    margin-bottom: 10px;
+  }
+  .BenefitSection {
+    padding: 45px 0 35px;
+  }
+  .BenefitSection .SolTitle, .solutionSection .SolTitle {
+    font-size: 25px;
+  }
+  .BenefitSection .SolTitle {
+    margin-bottom: 50px;
+  }
+  .solutionSection .boxImg {
+    height: auto;
+    padding: 0 25px;
+  }
+  /* End LC Confirmation  */
 }
