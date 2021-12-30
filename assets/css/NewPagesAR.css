@@ -671,6 +671,7 @@
 }
 .solutionSection .boxImg img {
   max-width: 100%;
+  padding: 0 15px;
 }
 .BenefitSection {
   background-color: #F3F6FB;
@@ -748,6 +749,40 @@
   height: 223px;
 }
 /* End LC Confirmation  */
+/* start Financial Institution */
+.FinancialClass {
+  padding-bottom: 0px;
+}
+.FinancialClass::before {
+  background-image: url(../images/NewTradeAndFinancialAndPolicy/nstitutionBG.svg);
+}
+.FinancialClass .trade-box .img-box2 {
+  margin-bottom: 28px;
+}
+.FinancialClass .trade-box .row:first-of-type {
+  padding-bottom: 0px !important;
+}
+.FinancialClass .pragh p {
+  color: #1d1d1b;
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.project-tabs.ColorOrange .rounded-tabs li.nav-item a.nav-link.active {
+  color: #EF7E25;
+  border-bottom: 3px solid #EF7E25;
+}
+.project-tabs.ColorOrange .custom-list ul li::before {
+  background: #EF7E25;
+  border: 2px solid #EF7E25;
+  margin-top: 8px;
+}
+.project-tabs.ColorOrange .tab-content .content .custom-list ul li {
+  display: -webkit-box;display: -ms-flexbox;display: flex;
+}
+/* End Financial Institution */
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
@@ -822,7 +857,7 @@
   }
   .solutionSection .boxImg {
     height: auto;
-    padding: 0 25px;
+    /* padding: 0 25px; */
   }
   /* End LC Confirmation  */
 }
@@ -996,4 +1031,10 @@
     padding: 0 25px;
   }
   /* End LC Confirmation  */
+  /* start Financial Institution */
+  .FinancialClass .pragh p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  /* end Financial Institution */
 }
