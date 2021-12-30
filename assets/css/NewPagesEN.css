@@ -52,6 +52,7 @@
   color: #ef7e25;
   font-size: 40px;
 }
+
 .MurabahaCalss .trade-box .header p,
 .TreasuryDealing .trade-box .header p {
   color: #1d1d1b;
@@ -752,8 +753,39 @@
 .BenefitSection .longText.BenBox:hover .Btext{
   height: 223px;
 }
-/* End LC Confirmation  */
 
+/* End LC Confirmation  */
+/* start Financial Institution */
+.FinancialClass {
+  padding-bottom: 0px;
+}
+.FinancialClass .trade-box .img-box2 {
+  margin-bottom: 28px;
+}
+.FinancialClass .trade-box .row:first-of-type {
+  padding-bottom: 0px !important;
+}
+.FinancialClass .pragh p {
+  color: #1d1d1b;
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.project-tabs.ColorOrange .rounded-tabs li.nav-item a.nav-link.active {
+  color: #EF7E25;
+  border-bottom: 3px solid #EF7E25;
+}
+.project-tabs.ColorOrange .custom-list ul li::before {
+  background: #EF7E25;
+  border: 2px solid #EF7E25;
+  margin-top: 8px;
+}
+.project-tabs.ColorOrange .tab-content .content .custom-list ul li {
+  display: -webkit-box;display: -ms-flexbox;display: flex;
+}
+/* End Financial Institution */
 
 /* media */
 @media (min-width: 1440px) {
@@ -844,6 +876,7 @@
   .MurabahaCalss:not(.MurabahaFinancing) .trade-box .row:first-of-type {
     padding-bottom: 40px;
   }
+ 
   .MurabahaCalss .trade-box .header p,
   .TreasuryDealing .trade-box .header p {
     margin-bottom: 35px;
