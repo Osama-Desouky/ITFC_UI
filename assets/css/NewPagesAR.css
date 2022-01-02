@@ -783,6 +783,61 @@
   display: -webkit-box;display: -ms-flexbox;display: flex;
 }
 /* End Financial Institution */
+
+/* start Trade Development Fund */
+.MurabahaCalss::before {
+  background-image: url(../images/NewTradeAndFinancialAndPolicy/DevelopmentBG.jpg);
+}
+.TradeFundClass  .trade-box .row:first-of-type {
+  padding-bottom: 45px !important;
+}
+.TradeFundClass + .solutionSection {
+  margin-bottom: 38px;
+}
+.TradeFundClass + .solutionSection .SolTitle {
+  margin-bottom: 51px;
+}
+.TradeFundClass + .solutionSection .boxImg {
+  height: 700px;
+}
+.TradeFundBoxClass  {
+  padding-top: 0;
+  background: #fff;
+}
+.TradeFundBoxClass .BenBox {
+  position: relative;
+}
+.TradeFundBoxClass .BenBox .number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #EF7E25;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.TradeFundBoxClass .BenBox .Btext {
+  background-color: #F8F8F8;
+}
+.TradeFundBoxClass .longText.BenBox:hover .Bimg {
+  height: 115px;
+}
+.TradeFundBoxClass .longText.BenBox:hover .Btext {
+  height: 245px;
+}
+/* end Trade Development Fund */
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
@@ -1028,7 +1083,7 @@
   }
   .solutionSection .boxImg {
     height: auto;
-    padding: 0 25px;
+    /* padding: 0 25px; */
   }
   /* End LC Confirmation  */
   /* start Financial Institution */
@@ -1037,4 +1092,12 @@
     font-size: 16px;
   }
   /* end Financial Institution */
+    /* start Trade Development Fund */
+    .TradeFundClass + .solutionSection .boxImg {
+      height: auto;
+    }
+    .TradeFundClass .trade-box .row:first-of-type {
+      padding-bottom: 0px !important;
+    }
+    /* end Trade Development Fund */
 }
