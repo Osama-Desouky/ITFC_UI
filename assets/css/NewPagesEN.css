@@ -59,7 +59,7 @@
   margin-top: 10px;
   line-height: 2;
   font-size: 18px;
-  height: 220px;
+  /* height: 220px; */
   overflow: hidden;
 }
 
@@ -277,6 +277,9 @@
 /* End Murabaha Financing */
 
 /* Start Our Partners */
+.Partnerships {
+  padding-bottom: 50px;
+}
 .itfc-trade.Partnerships::before {
   background-image: url(../images/NewOurPartners/sectionBG2.jpg);
 }
@@ -315,9 +318,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fe9e36;
+  color: #cd2233;
 }
-
+.project-tabs.PartnershipsTabs .rounded-tabs {
+  -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly;
+}
+.project-tabs.PartnershipsTabs > .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.project-tabs.PartnershipsTabs .tab-content {
+  padding-top: 47px;
+  padding-left: 0;
+  padding-right: 0;
+}
 .PartnershipsB {
   padding-bottom: 120px;
 }
@@ -341,6 +355,7 @@
   justify-content: center;
 }
 .PartnershipsB .PRbox .PRlogo img {
+  -webkit-transition: .4s;-o-transition: .4s;transition: .4s;
 }
 .PartnershipsB .PRtext {
   /* max-height: 125px; */
@@ -356,8 +371,14 @@
   color: #000000;
   padding: 24px;
   margin: 0;
+  -webkit-transition: .4s;-o-transition: .4s;transition: .4s;
 }
-
+.PartnershipsB .PRbox:hover .PRtext p{
+  color: #D5313A;
+}
+.PartnershipsB .PRbox:hover .PRlogo img {
+  -webkit-transform: scale(.8);    -ms-transform: scale(.8);    transform: scale(.8);
+}
 /* End Our Partners */
 
 /* Start Strategy page */
@@ -647,14 +668,30 @@
 /* End StructuredTrade Finance */
 
 /* Start LC Confirmation  */
+
+.LCConfirmation::before {
+  background-image: url(../images/NewTradeAndFinancialAndPolicy/bg2202.jpg);
+}
 .LCConfirmation .trade-box {
   padding: 25px 21px;
+}
+.LCConfirmation .pragh p {
+  line-height: 2;
+  font-size: 18px;
+  color: #1d1d1b;
+  font-weight: 600;
+}
+.LCConfirmation .trade-box .img-box2 {
+  height: 326px;
+}
+.LCConfirmation:not(.MurabahaFinancing) .trade-box .row:first-of-type {
+  padding-bottom: 0;
 }
 .LCConfirmation h2 {
   font-family: "montserrat";
     line-height: 52px;
     font-weight: bold;
-    margin-bottom: 55px;
+    margin-bottom: 24px;
 }
 .LCConfirmation  h2 span {
   color: #FE9E36;
@@ -662,6 +699,7 @@
 .solutionSection {
   margin: 50px 0 100px;
 }
+
 .BenefitSection .SolTitle ,
 .solutionSection .SolTitle {
   font-size: 31px;
@@ -763,12 +801,15 @@
 .FinancialClass::before {
   background-image: url(../images/NewTradeAndFinancialAndPolicy/nstitutionBG.svg);
 }
+.InformationPolicy .trade-box .img-box2,
 .FinancialClass .trade-box .img-box2 {
   margin-bottom: 28px;
 }
+.InformationPolicy  .trade-box .row:first-of-type,
 .FinancialClass .trade-box .row:first-of-type {
   padding-bottom: 0px !important;
 }
+.InformationPolicy  .pragh p,
 .FinancialClass .pragh p {
   color: #1d1d1b;
   margin-top: 0px;
@@ -792,7 +833,7 @@
 /* End Financial Institution */
 
 /* start Trade Development Fund */
-.MurabahaCalss::before {
+.TradeFundClass::before {
   background-image: url(../images/NewTradeAndFinancialAndPolicy/DevelopmentBG.jpg);
 }
 .TradeFundClass  .trade-box .row:first-of-type {
@@ -845,7 +886,135 @@
   height: 245px;
 }
 /* end Trade Development Fund */
+/* start Information Policy */
+.InformationPolicy {
+  padding-bottom: 5px;
+}
+.InformationPolicy::before {
+  background-image: url(../images/NewTradeAndFinancialAndPolicy/PolicyBG.png);
+}
+.InformationPolicy .trade-box .header span,
+.InformationPolicy .inner-heading h1 span {
+  color: #D5313A !important;
+}
+.titlePolice {
+  font-size: 35px;
+  font-weight: 600;
+  color: #D5313A;
+  margin-bottom: 24px;
+}
+.subTitlePolicy {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.pointsUl {
+  padding: 0;
+  list-style-position: inside;
+}
+.PointSection2 .boxP2 p,
+.pragPolicy,
+.pointsUl li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #646464;
+  margin-bottom: 12px;
+}
+.pointsUl li {
+  list-style: initial;
+  margin-left: 22px;
+}
+.pointsUl li::marker{
+  color: #D5313A;
+}
+.introduction {
+  margin-bottom: 48px;
+}
+.PointSection1 .subTitlePolicy {
+  font-size: 18px;
+}
+.PointSection1 .pragPolicy {
+  margin-bottom: 24px;
+  padding-left: 12px;
+}
+.PointSection1 {
+  margin-bottom: 27px;
+}
 
+.PointSection2 {
+  background-color: #F3F6FB;
+  padding: 40px 0 20px;
+}
+.PointSection2 .P2BoxImg img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 434px;
+  margin-bottom: 35px;
+}
+.PointSection2 .subTitlePolicy {
+  margin-bottom: 40px; 
+}
+.PointSection2 .boxP2  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.PointSection2 .boxP2 p {
+  margin-bottom: 40px;
+}
+
+.PointSection2 .boxP2 span {
+  
+  border: 2px solid #D5313A;
+  width: 24px;
+  height: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #D5313A;
+  font-weight: 500;
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 18px;
+}
+.PointSection3 {
+  padding: 40px 0;
+}
+.PointSection3 + footer {
+  margin-top: 80px;
+}
+.PointSection3 .titlePolice {
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+.PointSection3 .subTitlePolicy {
+  margin-bottom: 15px;
+}
+.PointSection3 .P3BoxImg img {
+  max-height: 398px;
+  max-width: 100%;
+  width: 100%;
+}
+.PointSection3 .row ,
+.PointSection2 .row ,
+.PointSection1 .row ,
+.introduction .row {
+  padding: 0 32px;
+}
+
+
+/* end Information Policy */
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
@@ -923,6 +1092,24 @@
     padding: 0 25px;
   }
   /* End LC Confirmation  */
+
+  /* start Information Policy */
+    .PointSection2 .col-md-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .PointSection3 .row {
+      -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;
+    }
+    .PointSection3 .col-md-6 {
+      -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+  /* end Information Policy */
 }
 
 @media (max-width: 767px) {
@@ -1005,6 +1192,7 @@
   /* End Murabaha Financing */
 
   /* Start Our Partners */
+
   .Partnerships .header .headingTitle span,
   .Partnerships .header .headingTitle {
     font-size: 25px;
@@ -1098,6 +1286,7 @@
   }
   /* End LC Confirmation  */
   /* start Financial Institution */
+  .InformationPolicy .pragh p,
   .FinancialClass .pragh p {
     line-height: 24px;
     font-size: 16px;
@@ -1112,4 +1301,21 @@
     padding-bottom: 0px !important;
   }
   /* end Trade Development Fund */
+
+
+    /* start Information Policy */
+    .PointSection3 .row, .PointSection2 .row, .PointSection1 .row, .introduction .row {
+      padding: 0 15px;
+    }
+    .titlePolice {
+      font-size: 25px;
+    }
+    .PointSection3 .row {
+      -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;
+    }
+    .subTitlePolicy {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    /* end Information Policy */
 }
