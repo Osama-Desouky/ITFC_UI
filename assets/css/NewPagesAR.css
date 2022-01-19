@@ -200,7 +200,7 @@
 }
 
 .TreasuryProducts .TPbox {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .TreasuryProducts .TPbox .TPicon img {
@@ -388,6 +388,9 @@
 .StrategyClass {
   padding-bottom: 0;
 }
+.StrategyClass .trade-box .row:first-of-type {
+  padding-bottom: 100px !important;
+}
 .StrategyClass .trade-box,
 .StrategyClass .trade-box .img-box2 {
   margin-bottom: 0px;
@@ -403,6 +406,9 @@
 .StrategyWrapper {
   padding: 100px 0 40px;
 }
+.StrategyWrapper.StrategyObjectives {
+  padding-top: 0;
+  }
 .StrategyWrapper .headSection {
   text-align: center;
 }
@@ -412,7 +418,7 @@
   margin-bottom: 12px;
 }
 .StrategyObjectives .headSection h2 {
-  color: #ef7e25;
+  color: #ef7e25 !important;
 }
 .StrategyWrapper .headSection p {
   font-size: 18px;
@@ -676,7 +682,7 @@
   font-weight: 600;
 }
 .LCConfirmation .trade-box .img-box2 {
-  height: 326px;
+  height: 404px;
 }
 .LCConfirmation:not(.MurabahaFinancing) .trade-box .row:first-of-type {
   padding-bottom: 0;
@@ -1006,10 +1012,90 @@
 }
 /* end Information Policy */
 
+/* start Trade Finance Overview */
+
+.FinanceOverview::before {
+  background-image: url(../images/NewTradeFinanceOverview/bg.svg);
+}
+.FinanceOverview .trade-box .img-box {
+  margin-bottom: 179px;
+}
+
+.FinanceProducts {
+  background-color: #f3f6fb;
+  padding: 82px 0 93px;
+}
+
+.FinanceProducts .FPBox {
+  margin-bottom: 39px;
+  transition: 0.3s;
+}
+.FinanceProducts .FPBox .FPImg {
+  overflow: hidden;
+}
+.FinanceProducts .FPBox .FPImg img {
+  max-height: 228px;
+  width: 100%;
+  transition: 0.3s;
+}
+.FinanceProducts .FPBox .FPText {
+  padding: 24px 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.FinanceProducts .FPBox .FPText h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.FinanceProducts .FPBox .FPText a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef7e25;
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
+  display: inline-flex;
+  position: relative;
+  padding-left: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.4s;
+  transition: opacity 0.3s, -webkit-transform 0.4s;
+  -o-transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s, -webkit-transform 0.4s;
+}
+.FinanceProducts .FPBox .FPText a::after {
+  content: "";
+  background-image: url(../images/NewTradeFinanceOverview/arrow-right.svg);
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);
+}
+.FinanceProducts .FPBox:hover {
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.FinanceProducts .FPBox:hover .FPText a {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.FinanceProducts .FPBox:hover .FPImg img {
+  -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
+}
+/* end Trade Finance Overview */
+
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
-    max-width: 1314px;
+    /* max-width: 1314px; */
   }
 }
 @media (min-width: 1001px) and (max-width: 1400px) {
@@ -1100,6 +1186,9 @@
     max-width: 100%;
     }
   /* end Information Policy */
+  .FinanceProducts .emptyBox {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1144,12 +1233,13 @@
   .TreasuryProducts {
     margin-bottom: 60px;
   }
-  .TreasuryProducts .col-md-2 {
+  .TreasuryProducts .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .FinanceProducts .emptyBox,
   .TreasuryProducts .emptyBox {
     display: none;
   }
@@ -1304,4 +1394,18 @@
       line-height: 1.5;
     }
     /* end Information Policy */
+    .titleAccordion {
+      font-size: 25px;
+    }
+    .FinanceProducts .FPBox .FPText h3 {
+      font-size: 18px;
+    }
+    .FinanceProducts .FPBox .FPText a {
+      font-size: 16px;
+    }
+    .FinanceProducts .FPBox .FPText a::after {
+      background-size: 90%;
+      background-repeat: no-repeat;
+      top: 2px;
+    }
 }

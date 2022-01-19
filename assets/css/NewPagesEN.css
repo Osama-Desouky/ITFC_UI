@@ -199,7 +199,7 @@
 }
 
 .TreasuryProducts .TPbox {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .TreasuryProducts .TPbox .TPicon img {
@@ -321,7 +321,9 @@
   color: #cd2233;
 }
 .project-tabs.PartnershipsTabs .rounded-tabs {
-  -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 .project-tabs.PartnershipsTabs > .container {
   padding-left: 0;
@@ -355,7 +357,9 @@
   justify-content: center;
 }
 .PartnershipsB .PRbox .PRlogo img {
-  -webkit-transition: .4s;-o-transition: .4s;transition: .4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 .PartnershipsB .PRtext {
   /* max-height: 125px; */
@@ -371,19 +375,26 @@
   color: #000000;
   padding: 24px;
   margin: 0;
-  -webkit-transition: .4s;-o-transition: .4s;transition: .4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
-.PartnershipsB .PRbox:hover .PRtext p{
-  color: #D5313A;
+.PartnershipsB .PRbox:hover .PRtext p {
+  color: #d5313a;
 }
 .PartnershipsB .PRbox:hover .PRlogo img {
-  -webkit-transform: scale(.8);    -ms-transform: scale(.8);    transform: scale(.8);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 /* End Our Partners */
 
 /* Start Strategy page */
 .StrategyClass {
   padding-bottom: 0;
+}
+.StrategyClass .trade-box .row:first-of-type {
+  padding-bottom: 100px !important;
 }
 .StrategyClass .trade-box,
 .StrategyClass .trade-box .img-box2 {
@@ -400,6 +411,9 @@
 .StrategyWrapper {
   padding: 100px 0 40px;
 }
+.StrategyWrapper.StrategyObjectives {
+  padding-top: 0;
+}
 .StrategyWrapper .headSection {
   text-align: center;
 }
@@ -409,7 +423,7 @@
   margin-bottom: 12px;
 }
 .StrategyObjectives .headSection h2 {
-  color: #ef7e25;
+  color: #ef7e25 !important;
 }
 .StrategyWrapper .headSection p {
   font-size: 18px;
@@ -682,32 +696,32 @@
   font-weight: 600;
 }
 .LCConfirmation .trade-box .img-box2 {
-  height: 326px;
+  height: 404px;
 }
 .LCConfirmation:not(.MurabahaFinancing) .trade-box .row:first-of-type {
   padding-bottom: 0;
 }
 .LCConfirmation h2 {
   font-family: "montserrat";
-    line-height: 52px;
-    font-weight: bold;
-    margin-bottom: 24px;
+  line-height: 52px;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
-.LCConfirmation  h2 span {
-  color: #FE9E36;
+.LCConfirmation h2 span {
+  color: #fe9e36;
 }
 .solutionSection {
   margin: 50px 0 100px;
 }
 
-.BenefitSection .SolTitle ,
+.BenefitSection .SolTitle,
 .solutionSection .SolTitle {
   font-size: 31px;
-    line-height: 38px;
-    color: #000000;
-    margin-bottom: 31px;
-    text-align: center;
-    font-weight: bold;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 31px;
+  text-align: center;
+  font-weight: bold;
 }
 .solutionSection .boxImg {
   height: 850px;
@@ -717,79 +731,79 @@
   padding: 0 15px;
 }
 .BenefitSection {
-  background-color: #F3F6FB;
-    padding: 133px 0 100px;
+  background-color: #f3f6fb;
+  padding: 133px 0 100px;
 }
 .BenefitSection .SolTitle {
   margin-bottom: 81px;
 }
 .BenefitSection .BenBox {
   margin-bottom: 35px;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 .BenefitSection .BenBox .Bimg {
   height: 205px;
   position: relative;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .BenefitSection .BenBox .Bimg::before {
   position: absolute;
   content: "";
   /*background-color: #000000;
-  */inset: 0;
-  opacity: .3;
-  transition: .4s;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  */
+  inset: 0;
+  opacity: 0.3;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 .BenefitSection .BenBox .Bimg img {
   max-width: 100%;
   width: 100%;
   height: 100%;
-  
 }
-.BenefitSection .BenBox .Btext  {
+.BenefitSection .BenBox .Btext {
   height: 157px;
   background-color: #fff;
   padding: 12px;
   overflow: hidden;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 .BenefitSection .BenBox .Btext p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
 }
 .BenefitSection .BenBox:hover {
   -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
-.BenefitSection .BenBox:hover .Bimg{ 
-  height:175px;
+.BenefitSection .BenBox:hover .Bimg {
+  height: 175px;
 }
-.BenefitSection .longText.BenBox:hover .Bimg{ 
+.BenefitSection .longText.BenBox:hover .Bimg {
   height: 140px;
 }
 .BenefitSection .BenBox:hover .Bimg::before {
   background-color: #000000;
 }
-.BenefitSection .BenBox:hover .Btext{
+.BenefitSection .BenBox:hover .Btext {
   height: 187px;
 }
-.BenefitSection .longText.BenBox:hover .Btext{
+.BenefitSection .longText.BenBox:hover .Btext {
   height: 223px;
 }
 
@@ -805,11 +819,11 @@
 .FinancialClass .trade-box .img-box2 {
   margin-bottom: 28px;
 }
-.InformationPolicy  .trade-box .row:first-of-type,
+.InformationPolicy .trade-box .row:first-of-type,
 .FinancialClass .trade-box .row:first-of-type {
   padding-bottom: 0px !important;
 }
-.InformationPolicy  .pragh p,
+.InformationPolicy .pragh p,
 .FinancialClass .pragh p {
   color: #1d1d1b;
   margin-top: 0px;
@@ -819,16 +833,18 @@
   margin-bottom: 0;
 }
 .project-tabs.ColorOrange .rounded-tabs li.nav-item a.nav-link.active {
-  color: #EF7E25;
-  border-bottom: 3px solid #EF7E25;
+  color: #ef7e25;
+  border-bottom: 3px solid #ef7e25;
 }
 .project-tabs.ColorOrange .custom-list ul li::before {
-  background: #EF7E25;
-  border: 2px solid #EF7E25;
+  background: #ef7e25;
+  border: 2px solid #ef7e25;
   margin-top: 8px;
 }
 .project-tabs.ColorOrange .tab-content .content .custom-list ul li {
-  display: -webkit-box;display: -ms-flexbox;display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /* End Financial Institution */
 
@@ -836,7 +852,7 @@
 .TradeFundClass::before {
   background-image: url(../images/NewTradeAndFinancialAndPolicy/DevelopmentBG.jpg);
 }
-.TradeFundClass  .trade-box .row:first-of-type {
+.TradeFundClass .trade-box .row:first-of-type {
   padding-bottom: 45px !important;
 }
 .TradeFundClass + .solutionSection {
@@ -848,7 +864,7 @@
 .TradeFundClass + .solutionSection .boxImg {
   height: 700px;
 }
-.TradeFundBoxClass  {
+.TradeFundBoxClass {
   padding-top: 0;
   background: #fff;
 }
@@ -861,23 +877,23 @@
   left: 0;
   width: 40px;
   height: 40px;
-  background-color: #EF7E25;
+  background-color: #ef7e25;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
 .TradeFundBoxClass .BenBox .Btext {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 .TradeFundBoxClass .longText.BenBox:hover .Bimg {
   height: 115px;
@@ -895,12 +911,12 @@
 }
 .InformationPolicy .trade-box .header span,
 .InformationPolicy .inner-heading h1 span {
-  color: #D5313A !important;
+  color: #d5313a !important;
 }
 .titlePolice {
   font-size: 35px;
   font-weight: 600;
-  color: #D5313A;
+  color: #d5313a;
   margin-bottom: 24px;
 }
 .subTitlePolicy {
@@ -927,8 +943,8 @@
   list-style: initial;
   margin-left: 22px;
 }
-.pointsUl li::marker{
-  color: #D5313A;
+.pointsUl li::marker {
+  color: #d5313a;
 }
 .introduction {
   margin-bottom: 48px;
@@ -945,7 +961,7 @@
 }
 
 .PointSection2 {
-  background-color: #F3F6FB;
+  background-color: #f3f6fb;
   padding: 40px 0 20px;
 }
 .PointSection2 .P2BoxImg img {
@@ -955,9 +971,9 @@
   margin-bottom: 35px;
 }
 .PointSection2 .subTitlePolicy {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
-.PointSection2 .boxP2  {
+.PointSection2 .boxP2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,8 +983,7 @@
 }
 
 .PointSection2 .boxP2 span {
-  
-  border: 2px solid #D5313A;
+  border: 2px solid #d5313a;
   width: 24px;
   height: 24px;
   display: -webkit-inline-box;
@@ -976,16 +991,16 @@
   display: inline-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 50%;
-  color: #D5313A;
+  color: #d5313a;
   font-weight: 500;
   font-size: 16px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-right: 18px;
 }
 .PointSection3 {
@@ -1006,23 +1021,101 @@
   max-width: 100%;
   width: 100%;
 }
-.PointSection3 .row ,
-.PointSection2 .row ,
-.PointSection1 .row ,
+.PointSection3 .row,
+.PointSection2 .row,
+.PointSection1 .row,
 .introduction .row {
   padding: 0 32px;
 }
 
-
 /* end Information Policy */
+
+/* start Trade Finance Overview */
+
+.FinanceOverview::before {
+  background-image: url(../images/NewTradeFinanceOverview/bg.svg);
+}
+.FinanceOverview .trade-box .img-box {
+  margin-bottom: 179px;
+}
+
+.FinanceProducts {
+  background-color: #f3f6fb;
+  padding: 82px 0 93px;
+}
+
+.FinanceProducts .FPBox {
+  margin-bottom: 39px;
+  transition: 0.3s;
+}
+.FinanceProducts .FPBox .FPImg {
+  overflow: hidden;
+}
+.FinanceProducts .FPBox .FPImg img {
+  max-height: 228px;
+  width: 100%;
+  transition: 0.3s;
+}
+.FinanceProducts .FPBox .FPText {
+  padding: 24px 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.FinanceProducts .FPBox .FPText h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.FinanceProducts .FPBox .FPText a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef7e25;
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
+  display: inline-flex;
+  position: relative;
+  padding-right: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.4s;
+  transition: opacity 0.3s, -webkit-transform 0.4s;
+  -o-transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s, -webkit-transform 0.4s;
+}
+.FinanceProducts .FPBox .FPText a::after {
+  content: "";
+  background-image: url(../images/NewTradeFinanceOverview/arrow-right.svg);
+  background-size: cover;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+.FinanceProducts .FPBox:hover {
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.FinanceProducts .FPBox:hover .FPText a {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.FinanceProducts .FPBox:hover .FPImg img {
+  -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
+}
+/* end Trade Finance Overview */
+
 /* media */
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
-    max-width: 1314px;
+    /* max-width: 1314px; */
   }
 }
 @media (min-width: 1001px) and (max-width: 1400px) {
-
   .BenefitSection .longText.BenBox:hover .Btext p {
     line-height: 22px;
   }
@@ -1094,22 +1187,28 @@
   /* End LC Confirmation  */
 
   /* start Information Policy */
-    .PointSection2 .col-md-4 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-    .PointSection3 .row {
-      -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;
-    }
-    .PointSection3 .col-md-6 {
-      -webkit-box-flex: 0;
+  .PointSection2 .col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PointSection3 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .PointSection3 .col-md-6 {
+    -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    }
+  }
   /* end Information Policy */
+  .FinanceProducts .emptyBox {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1122,7 +1221,7 @@
   .MurabahaCalss:not(.MurabahaFinancing) .trade-box .row:first-of-type {
     padding-bottom: 40px;
   }
- 
+
   .MurabahaCalss .trade-box .header p,
   .TreasuryDealing .trade-box .header p {
     margin-bottom: 35px;
@@ -1158,12 +1257,13 @@
   .TreasuryProducts {
     margin-bottom: 60px;
   }
-  .TreasuryProducts .col-md-2 {
+  .TreasuryProducts .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .FinanceProducts .emptyBox,
   .TreasuryProducts .emptyBox {
     display: none;
   }
@@ -1274,7 +1374,8 @@
   .BenefitSection {
     padding: 45px 0 35px;
   }
-  .BenefitSection .SolTitle, .solutionSection .SolTitle {
+  .BenefitSection .SolTitle,
+  .solutionSection .SolTitle {
     font-size: 25px;
   }
   .BenefitSection .SolTitle {
@@ -1302,20 +1403,38 @@
   }
   /* end Trade Development Fund */
 
-
-    /* start Information Policy */
-    .PointSection3 .row, .PointSection2 .row, .PointSection1 .row, .introduction .row {
-      padding: 0 15px;
-    }
-    .titlePolice {
-      font-size: 25px;
-    }
-    .PointSection3 .row {
-      -webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;
-    }
-    .subTitlePolicy {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    /* end Information Policy */
+  /* start Information Policy */
+  .PointSection3 .row,
+  .PointSection2 .row,
+  .PointSection1 .row,
+  .introduction .row {
+    padding: 0 15px;
+  }
+  .titlePolice {
+    font-size: 25px;
+  }
+  .PointSection3 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .subTitlePolicy {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  /* end Information Policy */
+  .titleAccordion {
+    font-size: 25px;
+  }
+  .FinanceProducts .FPBox .FPText h3 {
+    font-size: 18px;
+  }
+  .FinanceProducts .FPBox .FPText a {
+    font-size: 16px;
+  }
+  .FinanceProducts .FPBox .FPText a::after {
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
 }
