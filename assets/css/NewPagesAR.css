@@ -1,3 +1,139 @@
+/* start in focus section */
+.in-focus {
+  background-image: url(../images/NewInFocus/World_Map_v2.png);
+  padding: 120px 0 210px 0;
+}
+.in-focus .container {
+  background: #fff;
+  padding: 0 25px;
+  border: 2px solid #F2F6F9;
+}
+.in-focus .heading {
+  padding-top: 61px;
+}
+.in-focus .focus-card {
+  border: 0px solid #eceff1;
+  text-align: center;
+}
+.in-focus .focus-card .icon {
+  margin: 0 auto;
+}
+.in-focus .focus-card .icon::after {
+  display: none;
+}
+.in-focus .slider-wrapper .owl-carousel::before {
+  background-image: url(../images/NewInFocus/right-side-angel-v2.svg), url(../images/NewInFocus/left-side-angel-v2.svg);
+}
+.in-focus .focus-card .icon {
+  height: 120px;
+  width: 120px;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.in-focus .focus-card .icon img {
+  border-radius: 50%;
+}
+.in-focus .focus-card:hover {
+  /* background-color: red; */
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.1);
+  transition: .35s;
+}
+.in-focus .owl-carousel.owl-rtl .owl-item {
+  padding: 20px 0;
+}
+.in-focus .focus-card:hover::before {
+  background-color: #fff;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.in-focus .focus-card:hover .icon img {
+  filter: unset;
+  transform: scale(1.1111);
+}
+.in-focus .focus-card:hover h4 {
+  color: #EF7E25;
+}
+.in-focus .focus-card:hover p {
+  color: #949486;
+}
+.in-focus .slider-wrapper .actions .navigations a {
+  border: unset;
+  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.1);
+}
+.in-focus .slider-wrapper {
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.in-focus .slider-wrapper .actions .navigations a{
+  /* top: 40%; */
+  /* position: absolute; */
+}
+.in-focus .slider-wrapper .actions .navigations a.prev-arrow {
+  background-image: url(../images//NewInFocus/next-sm-arrow-v2.svg.png);
+  right: -105px;
+
+}
+.in-focus .slider-wrapper .actions .navigations a.next-arrow {
+  background-image: url(../images//NewInFocus/prev-sm-arrow.png);
+  left: -105px;
+}
+.in-focus .owl-theme .owl-nav.disabled+.owl-dots {
+  /* margin-top: 10px;
+  background: #fdc2c2;
+  display: block; */
+}
+.in-focus .owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #c2005d;
+  border-radius: 50%;
+  margin: 0 6px;
+  opacity: .3;
+  cursor: pointer;
+}
+.in-focus .owl-dot.active {
+  width: 10px;
+  height: 10px;
+  background-color: #cd2233;
+  opacity: 1;
+}
+.in-focus .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-width: 70px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+.focus-card p {
+  line-height: 32px;
+  height: calc(45px * 3);
+}
+
+@media(min-width:1400px) {
+  .in-focus .slider-wrapper .actions .navigations a{
+    top: 40%;
+    position: absolute;
+  }
+  .in-focus .owl-dots {
+    -webkit-transform: translateY(29px);-ms-transform: translateY(29px);transform: translateY(29px);
+  }
+}
+/* end in focus section */
+
 .MurabahaCalss::before,
 .TreasuryDealing::before {
   content: "";
