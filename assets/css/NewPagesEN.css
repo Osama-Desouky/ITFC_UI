@@ -123,7 +123,83 @@
 
 
 
+/* start global style */
+.headingTitlecol12 {
+  margin-bottom: 19px;
+  line-height: 40px;
+}
+.subTitle {
+  font-size: 35px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "montserrat";
+}
+.accordion.customAccordion2 .card .card-body {
+  padding-top: 0;
+}
+.customAccordion2 .card .card-header h2 button img {
+  max-height: 48px;
+  margin-right: 24px;
+}
+.accordion.customAccordion2 .card .card-header h2 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.accordion.customAccordion2 .card .card-header h2 button:not(.collapsed) {
+  padding-bottom: 12px;
+  
+}
+.accordion.customAccordion2 .card .card-header h2 button.collapsed::after,
+.customAccordion2 .card .card-header h2 button.collapsed img {
+  -webkit-filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(42deg) brightness(0) contrast(103%);
+          filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(42deg) brightness(0) contrast(103%);
+}
+.accordion.customAccordion2 .card .card-header h2 button.collapsed::after {
+  background-image: url(../images/TreasuryDealing/arrowDBorder.svg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  
+}
+.accordion.customAccordion2 .card .card-header h2 button::after {
+  width: 25px;
+  height: 26px;
+  background-image: url(../images/TreasuryDealing/arrowDBorder.svg);
+   -webkit-transform: rotate(0deg);
+       -ms-transform: rotate(0deg);
+           transform: rotate(0deg);
+}
+.customAccordion2 .FXStyle span ,
+.customAccordion2 .FXStyle {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #646464;
+  font-family: "montserrat";
+  font-weight: 600;
+}
+.accordion.customAccordion2 .card .card-body .textBox ul li p {
+  font-weight: 600;
+}
+.customAccordion2 .FXStyle img {
+  max-height: 30px;
+  padding-right: 6px;
+  max-width: 30px;
+}
 
+.forHightContent #trade-content.collapsed {
+  max-height: 100px;
+}
+
+
+
+/* end global style */
 
 @media(min-width:1400px) {
   .in-focus .slider-wrapper .actions .navigations a{
@@ -174,6 +250,7 @@
   padding: 0;
   margin-bottom: 0;
 }
+.headingTitlecol12 ,
 .MurabahaCalss .trade-box .header .headingTitle,
 .TreasuryDealing .trade-box .header .headingTitle {
   font-size: 40px;
@@ -182,6 +259,7 @@
   font-weight: 900;
   color: #1d1d1b;
 }
+.headingTitlecol12 span ,
 .MurabahaCalss .trade-box .header .headingTitle span,
 .TreasuryDealing .trade-box .header .headingTitle span {
   color: #ef7e25;
@@ -291,6 +369,7 @@
   font-size: 20px;
   font-weight: 600;
   font-family: "montserrat";
+  line-height: 32px;
 }
 
 .customAccordion .card .card-body .textBox ul {
@@ -397,9 +476,9 @@
   transform: translateY(-2px);
 }
 .project-tabs.MurabahaFinancing .tab-content > .fade {
-  -webkit-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  transform: translateY(50px);
+  -webkit-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  transform: translateX(-150px);
   -webkit-transition: all 0.4s !important;
   -o-transition: all 0.4s !important;
   transition: all 0.4s !important;
@@ -456,9 +535,9 @@
   color: #cd2233;
 }
 .project-tabs.PartnershipsTabs .rounded-tabs {
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack:center !important;
+  -ms-flex-pack:center !important;
+  justify-content: center !important;
 }
 .project-tabs.PartnershipsTabs > .container {
   padding-left: 0;
@@ -496,12 +575,15 @@
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+.PartnershipsB .col-md-4 {
+  margin-bottom: 30px;
+}
 .PartnershipsB .PRtext {
-  /* max-height: 125px; */
   overflow: hidden;
   height: calc(100% - 180px);
   border: 1px solid #f3f6fb;
-  min-height: 125px;
+  /* min-height: 125px; */
+  min-height: 67px;
 }
 .PartnershipsB .PRtext p {
   font-size: 16px;
@@ -513,14 +595,25 @@
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  text-align: center;
+}
+.PartnershipsB .PRbox {
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+.PartnershipsB .PRbox:hover {
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
 .PartnershipsB .PRbox:hover .PRtext p {
   color: #d5313a;
+  text-decoration: underline;
 }
 .PartnershipsB .PRbox:hover .PRlogo img {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 /* End Our Partners */
 
@@ -744,6 +837,23 @@
   font-weight: 500;
   color: #48494c;
   line-height: 36px;
+}
+
+.headSection2 {
+text-align: center;
+padding-top: 100px;
+}
+.headSection2 h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #D5313A;
+}
+.headSection2 p{
+  font-size: 25px;
+  color: #1D1D1B;
+  font-weight: 600;
+  margin-bottom: 60px;
 }
 /* end Strategy page */
 
@@ -1256,6 +1366,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
+  .subTitle {
+    margin: 30px 0;
+  }
   .customAccordion .textBox {
     margin-left: 23px;
   }
@@ -1289,6 +1402,8 @@
   .BeyondStatus .leftBS p {
     font-size: 33px;
   }
+
+
   /* end Strategy page */
   /* start StructuredTrade Finance */
   .SFTwoBox .col-md-6 {
@@ -1479,6 +1594,23 @@
   .COVIDImpact {
     padding: 60px 0;
   }
+  .headSection2 {
+    padding-top: 0;
+  }
+  .headSection2 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .headSection2 p {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .StrategyClass .trade-box .header .headingTitle {
+    line-height: 1.2;
+  }
+  .StrategyClass .trade-box .header .headingTitle br {
+    display: none;
+  }
   /* end Strategy page */
 
   /* start StructuredTrade Finance */
@@ -1572,4 +1704,53 @@
     background-size: 90%;
     background-repeat: no-repeat;
   }
+
+  /* start global style */
+  .subTitle {
+    line-height: 1.2;
+    font-size: 25px;
+  }
+  .headingTitlecol12 span ,
+  .headingTitlecol12 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .accordion.customAccordion2 .card .card-header h2 button {
+    font-size: 18px;
+    padding-right: 50px;
+  }
+  .accordion.customAccordion2 .card .card-header h2 button::after {
+    top: 27px;
+  }
+  .customAccordion2 .card .card-header h2 button img {
+    max-height: 28px;
+    margin-right: 10px;
+  }
+  .customAccordion2 .card .card-body .textBox h2 {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 13px;
+  }
+  .customAccordion2 .card .card-body .textBox ul li p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .customAccordion2 .FXStyle span, .customAccordion2 .FXStyle {
+    font-size: 12px;
+  }
+  .customAccordion2 .FXStyle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+  }
+  .customAccordion2 .FXStyle span {
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  /* end global style */
+
 }
