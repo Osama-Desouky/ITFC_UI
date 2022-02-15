@@ -1,0 +1,11 @@
+<svg id="StructuredAcIcon6" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="vuesax_linear_ship" data-name="vuesax/linear/ship">
+    <g id="ship">
+      <path id="Vector" d="M37.691,6.385a4.329,4.329,0,0,1,2.521,4.771l-.854,3.875a14.039,14.039,0,0,1-14.25,11.417H15.191A14.039,14.039,0,0,1,.941,15.031L.087,11.156A4.329,4.329,0,0,1,2.608,6.385L5.566,5.2,17.045.594a8.411,8.411,0,0,1,6.208,0L34.733,5.2Z" transform="translate(4.851 19.385)" fill="none" stroke="#434343" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,25V0" transform="translate(25 20.833)" fill="none" stroke="#434343" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Vector-3" data-name="Vector" d="M29.167,6.25v7.917l-11.479-4.6a8.411,8.411,0,0,0-6.208,0L0,14.167V6.25A6.268,6.268,0,0,1,6.25,0H22.917A6.268,6.268,0,0,1,29.167,6.25Z" transform="translate(10.417 10.417)" fill="none" stroke="#434343" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Vector-4" data-name="Vector" d="M10.417,6.25H0V2.083A2.089,2.089,0,0,1,2.083,0h6.25a2.089,2.089,0,0,1,2.083,2.083Z" transform="translate(19.792 4.167)" fill="none" stroke="#434343" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Vector-5" data-name="Vector" d="M0,0H50V50H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

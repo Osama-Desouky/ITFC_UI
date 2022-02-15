@@ -29,13 +29,19 @@
   width: 120px;
   padding: 0;
   margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .in-focus .focus-card .icon img {
   border-radius: 50%;
 }
+.in-focus .focus-card h4 {
+  font-size: 21px;
+  margin-bottom: 23px;
+}
 .in-focus .focus-card:hover {
-  /* background-color: red; */
-  box-shadow: 0 15px 26px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 15px 26px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
   transition: .35s;
 }
 .in-focus .owl-carousel.owl-rtl .owl-item {
@@ -373,10 +379,11 @@
   font-weight: 600;
   font-family: "DINNextLT";
   line-height: 32px;
+  margin-top: -8px;
 }
 
 .customAccordion .card .card-body .textBox ul {
-  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .customAccordion .card .card-body .textBox ul li p {
@@ -385,6 +392,7 @@
   font-family: "DINNextLT";
   font-size: 14px;
   margin-bottom: 12px;
+  line-height: normal;
 }
 
 .customAccordion .card .card-body .textBox ul li::marker {
@@ -540,9 +548,7 @@
   color: #cd2233;
 }
 .project-tabs.PartnershipsTabs .rounded-tabs {
-  -webkit-box-pack:center !important;
-  -ms-flex-pack:center !important;
-  justify-content: center !important;
+  -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly;
 }
 .project-tabs.PartnershipsTabs > .container {
   padding-left: 0;
@@ -1094,7 +1100,7 @@
   margin-bottom: 51px;
 }
 .TradeFundClass + .solutionSection .boxImg {
-  height: 700px;
+  height: 800px;
 }
 .TradeFundBoxClass  {
   padding-top: 0;
@@ -1347,6 +1353,11 @@
   .TreasuryProducts .container {
     /* max-width: 1314px; */
   }
+  .customAccordion .col-md-1 {
+    margin-bottom: 35px;
+    flex: 0 0 6.33333%;
+    max-width: 6.33333%;
+  }
 }
 @media (min-width: 1001px) and (max-width: 1400px) {
 
@@ -1441,6 +1452,9 @@
   /* end Information Policy */
   .FinanceProducts .emptyBox {
     display: none;
+  }
+  .TradeFundClass + .solutionSection .boxImg {
+    height: auto;
   }
 }
 
@@ -1722,6 +1736,11 @@
   .headingTitlecol12 {
     font-size: 25px;
     line-height: 1.2;
+  }
+  .project-tabs.PartnershipsTabs .rounded-tabs {
+    -webkit-box-pack:center !important;
+    -ms-flex-pack:center !important;
+    justify-content: center !important;
   }
   /* end global style */
 }
