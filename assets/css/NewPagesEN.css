@@ -205,6 +205,74 @@
 }
 
 
+.ulStyleWithheading h3 {
+  font-size: 18px;
+  color: #1D1D1B;
+  font-weight: bold;
+}
+.ulStyleWithheading ul {
+  padding-left: 18px;
+}
+.ulStyleWithheading ul li {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1D1D1B;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.ulStyleWithheading ul li::marker {
+  color: #ef7e25;
+}
+body .finiancialImg .SolTitle {
+  margin-bottom: 35px;
+}
+body .finiancialImg {
+  margin: 30px 0 45px;
+}
+body .solutionSection .boxImg {
+  height: 555px;
+}
+.MurabahaFinancing.ColorOrange .subTitle {
+  margin-bottom: 46px;
+}
+.MurabahaFinancing.ColorOrange .custom-list ul li {
+  margin-bottom: 24px;
+}
+.interestedLink {
+  padding: 50px 0 120px;
+}
+.interestedLink .boxImg {
+  height: 342px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.interestedLink .boxImg img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.interestedLink .boxImg h3 a,
+.interestedLink .boxImg h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+.interestedLink .boxImg h3 a {
+  color: #D5313A;
+}
+
 
 /* end global style */
 
@@ -215,7 +283,10 @@
   }
 }
 /* end in focus section */
-
+/* .MurabahaCalss,
+.TreasuryDealing {
+  height: calc(100vh - 135px);
+} */
 .MurabahaCalss::before,
 .TreasuryDealing::before {
   content: "";
@@ -233,6 +304,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 530px;
+  /* height: 100%; */
 }
 .MurabahaCalss::before {
   background-image: url(../images/NewMurabaha/BGMurabaha.svg.jpg);
@@ -1093,6 +1165,7 @@ padding-top: 100px;
   background: #ef7e25;
   border: 2px solid #ef7e25;
   margin-top: 8px;
+  flex-shrink: 0;
 }
 .project-tabs.ColorOrange .tab-content .content .custom-list ul li {
   display: -webkit-box;
@@ -1363,6 +1436,12 @@ padding-top: 100px;
 /* end Trade Finance Overview */
 
 /* media */
+@media (min-width: 2000px) {
+  /* .MurabahaCalss,
+  .TreasuryDealing {
+  height: 600px;
+  } */
+}
 @media (min-width: 1440px) {
   .TreasuryProducts .container {
     /* max-width: 1314px; */
@@ -1442,6 +1521,13 @@ padding-top: 100px;
   }
   .BenefitSection .longText.BenBox:hover .Btext {
     height: 280px;
+  }
+  .ulStyleWithheading {
+    padding-top: 20px;
+  }
+  body .solutionSection .boxImg {
+    height: auto ;
+    padding: 0;
   }
   .solutionSection .boxImg {
     height: auto;
@@ -1668,6 +1754,7 @@ padding-top: 100px;
   .BenefitSection .SolTitle {
     margin-bottom: 50px;
   }
+  body .solutionSection .boxImg,
   .solutionSection .boxImg {
     height: auto;
     /* padding: 0 25px; */
@@ -1774,6 +1861,30 @@ padding-top: 100px;
     -webkit-box-pack:center !important;
     -ms-flex-pack:center !important;
     justify-content: center !important;
+  }
+  .project-tabs.MurabahaFinancing.ColorOrange .tab-content .title {
+    font-size: 20px;
+  } 
+  .interestedLink {
+    padding: 35px 0 60px;
+  }
+  .interestedLink .boxImg h3 a, .interestedLink .boxImg h3 {
+    font-size: 20px;
+  }
+  .interestedLink .boxImg h3 a {
+    display: block;
+  }
+  .interestedLink .boxImg img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position:center;
+       object-position:center;
+  }
+  .MurabahaFinancing.ColorOrange .subTitle,
+  .finiancialImg .SolTitle {
+    font-size: 19px;
+    line-height: normal; 
+    margin-bottom: 20px;
   }
   /* end global style */
 
