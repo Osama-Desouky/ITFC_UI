@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g id="logo3" transform="translate(-403 -2679)">
+    <rect id="Rectangle_12738" data-name="Rectangle 12738" width="88" height="88" rx="44" transform="translate(403 2679)" fill="#fff" opacity="0.79"/>
+    <g id="Group_26858" data-name="Group 26858">
+      <circle id="Ellipse_11759" data-name="Ellipse 11759" cx="32" cy="32" r="32" transform="translate(415 2691)" fill="#ef7e25"/>
+      <g id="cloud-minus_twotone" data-name="cloud-minus/twotone" transform="translate(423 2699)">
+        <g id="vuesax_twotone_cloud-minus" data-name="vuesax/twotone/cloud-minus">
+          <g id="cloud-minus">
+            <path id="Vector" d="M8,0H0" transform="translate(17.94 40)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+            <path id="Vector-2" data-name="Vector" d="M22.954,32.084a10.647,10.647,0,0,0,7.24-2.78c6.54-5.72,3.04-17.2-5.58-18.28C21.534-7.656-5.406-.576.974,17.2" transform="translate(10.266 7.916)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path id="Vector-3" data-name="Vector" d="M10.4.8A7.289,7.289,0,0,0,6.983,0c-9.32.66-9.3,14.22,0,14.88" transform="translate(4.157 25.139)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path id="Vector-4" data-name="Vector" d="M0,.82A7.678,7.678,0,0,1,3.32,0" transform="translate(31.64 18.96)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            <path id="Vector-5" data-name="Vector" d="M0,0H48V48H0Z" transform="translate(48 48) rotate(180)" fill="none" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg id="quote-up_bold" data-name="quote-up/bold" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="vuesax_bold_quote-up" data-name="vuesax/bold/quote-up" transform="translate(0 0)">
+    <g id="quote-up">
+      <path id="Vector" d="M0,48H48V0H0Z" fill="none" opacity="0"/>
+      <path id="Vector-2" data-name="Vector" d="M6.18,16.88h9.38C15.4,7.54,13.56,6,7.82,2.6A1.4,1.4,0,0,1,7.34.68,1.373,1.373,0,0,1,9.24.2c6.76,4,9.12,6.44,9.12,18.06V29.04a6.184,6.184,0,0,1-6.18,6.18h-6A6.048,6.048,0,0,1,0,29.04v-6A6.044,6.044,0,0,1,6.18,16.88Z" transform="translate(25.64 6.38)" fill="#d5313a"/>
+      <path id="Vector-3" data-name="Vector" d="M6.16,16.88h9.38C15.38,7.54,13.54,6,7.8,2.6A1.4,1.4,0,0,1,9.24.2c6.76,4,9.12,6.44,9.12,18.08V29.06a6.184,6.184,0,0,1-6.18,6.18h-6A6.048,6.048,0,0,1,0,29.06v-6A6.02,6.02,0,0,1,6.16,16.88Z" transform="translate(4.02 6.38)" fill="#d5313a"/>
+    </g>
+  </g>
+</svg>
